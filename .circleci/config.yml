@@ -58,6 +58,10 @@ jobs:
           command: |
             pwd 
             ls
+            cd src
+            ls 
+            cd dist
+            ls
       - aws-s3/copy:
           from: src/dist/
           to: 's3://ameyrupji.com/'
