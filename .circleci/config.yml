@@ -34,12 +34,15 @@ jobs:
           command: | 
             cd src
             npm install parcel-bundler --save-dev
-            ls
             npm run build
-            ls
   upload:
     <<: *deploy_default_config
     steps:
+      - run: 
+          name: testing
+          command: |
+            pwd 
+            ls
       - aws-s3/copy:
           from: src/dist/
           to: 's3://ameyrupji.com/'
