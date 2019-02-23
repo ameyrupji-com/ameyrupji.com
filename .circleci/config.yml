@@ -63,7 +63,7 @@ jobs:
             cd dist
             ls
       - aws-s3/copy:
-          from: src/dist/
+          from: /home/circleci/ameyrupji/src/dist/
           to: 's3://ameyrupji.com/'
 
 workflows:
