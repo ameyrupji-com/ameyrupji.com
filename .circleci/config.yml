@@ -24,6 +24,19 @@ deploy_default_config: &deploy_default_config
     - image: *deploy_base_image
   working_directory: *working_directory
 
+repo_cache_key: &repo_cache_key
+  ameyrupji-com-{{ .Branch }}-{{ .Revision }}
+
+restore_repo: &restore_repo
+  restore_cache:
+    key: *repo_cache_key
+
+save_repo: &save_repo
+  save_cache:
+    key: *repo_cache_key
+    paths:
+      - *working_directory
+
 jobs:
   build:
     <<: *build_default_config
@@ -35,9 +48,11 @@ jobs:
             cd src
             npm install parcel-bundler --save-dev
             npm run build
+      - *save_repo
   upload:
     <<: *deploy_default_config
     steps:
+      - *restore_repo
       - run: 
           name: testing
           command: |
