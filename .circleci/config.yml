@@ -44,8 +44,8 @@ workflows:
     jobs:
       - build
       - upload:
-        requires:
-            - build
-        filters:
-            branches:
-              only: master
+          requires:
+              - build
+          filters:
+              branches:
+                only: master
