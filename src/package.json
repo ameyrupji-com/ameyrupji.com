@@ -1,0 +1,13 @@
+{
+  "name": "ameyrupji.com",
+  "version": "0.0.1",
+  "description": "Person Website for Amey Rupji",
+  "main": "index.js",
+  "repository": "https://github.com/ameyrupji/ameyrupji.com",
+  "author": "Amey Rupji",
+  "license": "GPL-3.0",
+  "private": false,
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  }
+}
