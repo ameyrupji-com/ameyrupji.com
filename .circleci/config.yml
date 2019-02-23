@@ -1,12 +1,12 @@
 version: 2.1
 
 orbs:
-  aws-s3: circleci/aws-s3@1.0.0
+  aws-s3: circleci/aws-s3@1.0.4
 
 references:
 
 base_image: &base_image
-  circleci/awscli:latest
+  circleci/node:11.10.0
 
 working_directory: &working_directory
   ~/ameyrupji
