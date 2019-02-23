@@ -6,7 +6,7 @@ orbs:
 references:
 
 base_image: &base_image
-  circleci/node:11.10.0
+  circleci/python:2.7
 
 working_directory: &working_directory
   ~/ameyrupji
