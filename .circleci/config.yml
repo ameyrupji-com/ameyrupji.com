@@ -63,8 +63,9 @@ jobs:
             cd dist
             ls
       - aws-s3/copy:
-          from: /home/circleci/ameyrupji/src/dist/
+          from: /home/circleci/ameyrupji/src/dist/ 
           to: 's3://ameyrupji.com/'
+          arguments: --recursive
 
 workflows:
   version: 2
