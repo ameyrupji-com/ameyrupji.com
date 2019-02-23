@@ -6,7 +6,7 @@ orbs:
 references:
 
 base_image: &base_image
-  hashicorp/terraform:light
+  circleci/awscli:latest
 
 working_directory: &working_directory
   ~/ameyrupji
