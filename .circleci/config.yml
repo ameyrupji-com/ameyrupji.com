@@ -32,19 +32,13 @@ jobs:
       - run: 
           name: build
           command: | 
-            npm
-            pwd
-            ls
+            cd ./src
+            npm run build
   upload:
     <<: *deploy_default_config
     steps:
-      - run: 
-          name: create test file
-          command: |
-            mkdir bucket 
-            echo "lorum ipsum" > bucket/build_asset.txt
       - aws-s3/copy:
-          from: bucket/build_asset.txt
+          from: src/
           to: 's3://ameyrupji.com/'
 
 workflows:
