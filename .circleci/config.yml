@@ -1,5 +1,8 @@
 version: 2.1
 
+orbs:
+  aws-s3: circleci/aws-s3@1.0.0
+
 references:
 
 base_image: &base_image
@@ -12,9 +15,6 @@ default_config: &default_config
   docker:
     - image: *base_image
   working_directory: *working_directory
-
-orbs:
-  aws-s3: circleci/aws-s3@1.0.0
 
 jobs:
   build:
@@ -49,5 +49,4 @@ workflows:
         filters:
             branches:
               only: master
-
-        
+              
