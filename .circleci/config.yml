@@ -5,10 +5,10 @@ orbs:
 
 references:
 
-build_base_image: &base_image
+build_base_image: &build_base_image
   circleci/node:11.10.0
 
-deploy_base_image: &base_image
+deploy_base_image: &deploy_base_image
   circleci/python:2.7
 
 working_directory: &working_directory
