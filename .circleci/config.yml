@@ -5,29 +5,38 @@ orbs:
 
 references:
 
-base_image: &base_image
+build_base_image: &base_image
+  circleci/node:11.10.0
+
+deploy_base_image: &base_image
   circleci/python:2.7
 
 working_directory: &working_directory
   ~/ameyrupji
 
-default_config: &default_config
+build_default_config: &build_default_config
   docker:
-    - image: *base_image
+    - image: *build_base_image
+  working_directory: *working_directory
+
+deploy_default_config: &deploy_default_config
+  docker:
+    - image: *deploy_base_image
   working_directory: *working_directory
 
 jobs:
   build:
-    <<: *default_config
+    <<: *build_default_config
     steps:
       - checkout
       - run: 
           name: build
           command: | 
+            npm
             pwd
             ls
   upload:
-    <<: *default_config
+    <<: *deploy_default_config
     steps:
       - run: 
           name: create test file
