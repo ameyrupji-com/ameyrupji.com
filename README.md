@@ -19,4 +19,5 @@ Git hub repository for my personal website deployed on the cloud (aws)
 ## TODOs:
 - [x] Setup CI Build and Deploy using CircleCI
 - [x] Build a basic cover page (coming soon)
-- [ ] Setup CI build to deploy develop and feature branches to beta.ameyrupji.com
+- [x] Setup CI build to deploy develop branche to beta.ameyrupji.com
+- [ ] Setup CI build to deploy feature branches to beta.ameyrupji.com
