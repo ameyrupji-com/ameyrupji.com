@@ -79,9 +79,16 @@ workflows:
   build-upload:
     jobs:
       - build
+      - approve-master:
+          type: approval
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
       - upload-master:
           requires:
-              - build
+              - approve-master
           filters:
               branches:
                 only: master
