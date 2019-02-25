@@ -71,7 +71,7 @@ jobs:
       - *restore_repo
       - aws-s3/copy:
           from: /home/circleci/ameyrupji/src/dist/ 
-          to: 's3://beta.ameyrupji.com/${Branch}/'
+          to: 's3://beta.ameyrupji.com/'${Branch}
           arguments: --recursive
 
 workflows:
