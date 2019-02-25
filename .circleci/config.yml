@@ -49,22 +49,29 @@ jobs:
             npm install parcel-bundler --save-dev
             npm run build
       - *save_repo
-  upload:
+  upload-master:
     <<: *deploy_default_config
     steps:
       - *restore_repo
-      - run: 
-          name: testing
-          command: |
-            pwd 
-            ls
-            cd src
-            ls 
-            cd dist
-            ls
       - aws-s3/copy:
           from: /home/circleci/ameyrupji/src/dist/ 
           to: 's3://ameyrupji.com/'
+          arguments: --recursive
+  upload-develop:
+    <<: *deploy_default_config
+    steps:
+      - *restore_repo
+      - aws-s3/copy:
+          from: /home/circleci/ameyrupji/src/dist/ 
+          to: 's3://beta.ameyrupji.com/'
+          arguments: --recursive
+  upload-branches:
+    <<: *deploy_default_config
+    steps:
+      - *restore_repo
+      - aws-s3/copy:
+          from: /home/circleci/ameyrupji/src/dist/ 
+          to: 's3://beta.ameyrupji.com/{{ .Branch }}/'
           arguments: --recursive
 
 workflows:
@@ -72,9 +79,24 @@ workflows:
   build-upload:
     jobs:
       - build
-      - upload:
+      - upload-master:
           requires:
               - build
           filters:
               branches:
                 only: master
+      - upload-develop:
+          requires:
+              - build
+          filters:
+              branches:
+                only: develop
+      - upload-branches:
+          requires:
+              - build
+          filters:
+              branches:
+                ignore: 
+                  - master
+                  - develop
+
