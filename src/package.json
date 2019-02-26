@@ -8,7 +8,8 @@
   "license": "GPL-3.0",
   "private": false,
   "dependencies": {
-    "bootstrap": "^4.3.1"
+    "bootstrap": "^4.3.1",
+    "typed.js": "^2.0.10"
   },
   "devDependencies": {
     "cssnano": "^4.1.10",
@@ -16,6 +17,6 @@
   },
   "scripts": {
     "dev": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html --public-url '.'"
   }
 }
