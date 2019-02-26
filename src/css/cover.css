@@ -38,3 +38,15 @@ body, html {
   -ms-user-select: none;
   user-select: none;
 }
+
+#jumbotron-content {
+  padding:100px; color:#fff; 
+  font-weight: 100; 
+  text-align: center;
+}
+
+.navbar {
+  margin-top: 20px;
+  filter: drop-shadow(0 0 30px #888);
+  border-radius: 5px;
+}
