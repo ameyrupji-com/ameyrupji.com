@@ -36,12 +36,14 @@ body, html {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  font-weight: 200 !important; 
 }
 
 #jumbotron-content {
-  padding:100px; color:#fff; 
-  font-weight: 100; 
+  padding:100px; 
+  color:#fff; 
   text-align: center;
+  font-weight: 200;
 }
 
 .navbar {
@@ -181,3 +183,4 @@ body, html {
     100% { opacity: 1; }
   }
 }
+
