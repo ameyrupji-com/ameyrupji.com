@@ -22,7 +22,7 @@
         <div class="jumbotron" id="gradient-main">
             <div class="container">
                 <nav class="navbar navbar-expand-sm navbar-light bg-light">
-                  <a class="navbar-brand" href="#">Amey Rupji <span class="badge badge-secondary">ALPHA RELEASE</span></a>
+                  <a class="navbar-brand" href="#">Amey Rupji</a>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse-menu">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -48,7 +48,12 @@
                 </div>
             </div>
         </div>
-        <div class="mouse-container">
+        <div class="scroll-container">
+            <div class="finger">
+              <div class="swipe swipe-vertical">
+                <i class="fas fa-hand-point-left fa-2x"></i>
+              </div>
+            </div>
             <div class="mouse">
               <div class="wheel">
               </div>
@@ -62,9 +67,9 @@
       </div>
 
       <div class="container text-center mb-6" id="qualifications-main">
-            
             <h1>Qualification</h1>
-            <hr> <i class="fa fa-graduation-cap fa-2x"></i>
+            <br/>
+            <i class="fa fa-graduation-cap fa-2x"></i>
             <h3>Masters Degree In Computer Science From Texas Tech University</h3>
             <!-- REPLACE WITH YOUR FILE -->
             <a class="btn" href="./assets/pdf/dummy_resume.pdf" download="">
@@ -73,22 +78,64 @@
       </div>
 
       <div class="container-fluid" id="timeline-main">
-        <div class="container ">
+        <div class="container">
+          <h1 class="text-center">Timeline</h1>
+          
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <div class="btn-group center" role="group">
+                <button type="button" class="btn btn-primary">Complete</button>
+                <button type="button" class="btn btn-light">Work Experience</button>
+                <button type="button" class="btn btn-light">Education</button>
+              </div>
+            </div>
+          </div>
           <!-- Example row of columns -->
-            <div class="row">
+          <div class="row">
               <div class="col-md-12">
                   <section id="timeline" class="container">
-                      <div class="timeline-start">
-                          <div class="timeline-start-img">
+                      <div class="timeline-block">
+                          <div class="timeline-img-container top">
+                              <img src="./images/me.jpeg" >
                           </div>
                       </div>
                       <div class="timeline-block">
-                          <div class="timeline-img">
+                          <div class="timeline-img-container">
+                              <i class="fas fa-briefcase fa-2x"></i>
+                          </div>
+
+                          <div class="timeline-content service-box-content" data-toggle="modal" data-target="#sse-modal">
+                              <div class="heading">
+                                  <h2>Senior Software Engineer</h2>
+                              </div>
+                              <div class="text">
+                                <p>Timeline event text.</p>
+                              </div>
+                          </div>
+                          <div class="modal" id="sse-modal" tabindex="-1" role="dialog" aria-labelledby="sse-modal-label" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header text-center">
+                                  <h1 class="modal-title text-center" id="sse-modal-label">Senior Software Engineer</h1>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  This is where the content that does not fit into the timeline text area gos.
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="timeline-block">
+                          <div class="timeline-img-container">
+                              <i class="fas fa-briefcase fa-2x"></i>
                           </div>
 
                           <div class="timeline-content service-box-content">
                               <div class="heading">
-                                  <h2>Timeline Event</h2>
+                                  <h2>Software Engineer</h2>
                               </div>
                               <div class="text">
                                 <p>Timeline event text.</p>
@@ -96,12 +143,55 @@
                           </div>
                       </div>
                       <div class="timeline-block">
-                          <div class="timeline-img">
+                          <div class="timeline-img-container">
+                              <i class="fas fa-briefcase fa-2x"></i>
                           </div>
 
                           <div class="timeline-content service-box-content">
                               <div class="heading">
-                                  <h2>Timeline Event</h2>
+                                  <h2>Associate Software Engineer</h2>
+                              </div>
+                              <div class="text">
+                                <p>Timeline event text.</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="timeline-block-alt">
+                          <div class="timeline-img-container-alt">
+                              <button type="button" class="btn link" data-placement="right" data-toggle="tooltip" data-html="true" title="Moved to <b>Austin</b>">
+                                <i class="fas fa-car fa-2x" ></i>
+                              </button>
+                          </div>
+                      </div>
+                      <div class="timeline-block">
+                          <div class="timeline-img-container">
+                              <i class="fas fa-graduation-cap fa-2x"></i>
+                          </div>
+
+                          <div class="timeline-content service-box-content">
+                              <div class="heading">
+                                  <h2>Masters of Science in Computer Science</h2>
+                              </div>
+                              <div class="text">
+                                <p>Timeline event text.</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="timeline-block-alt">
+                          <div class="timeline-img-container-alt">
+                              <button type="button" class="btn link" data-placement="right" data-toggle="tooltip" data-html="true" title="Moved to <b>USA</b>">
+                                <i class="fas fa-plane fa-2x" ></i>
+                              </button>
+                          </div>
+                      </div>
+                      <div class="timeline-block">
+                          <div class="timeline-img-container">
+                              <i class="fas fa-user-graduate fa-2x"></i>
+                          </div>
+
+                          <div class="timeline-content service-box-content">
+                              <div class="heading">
+                                  <h2>Bachelors of Engg. in Information Technology</h2>
                               </div>
                               <div class="text">
                                 <p>Timeline event text.</p>
@@ -109,49 +199,8 @@
                           </div>
                       </div>
                       <div class="timeline-block">
-                          <div class="timeline-img">
-                          </div>
-
-                          <div class="timeline-content service-box-content">
-                              <div class="heading">
-                                  <h2>Timeline Event</h2>
-                              </div>
-                              <div class="text">
-                                <p>Timeline event text.</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="timeline-block">
-                          <div class="timeline-img">
-                          </div>
-
-                          <div class="timeline-content service-box-content">
-                              <div class="heading">
-                                  <h2>Timeline Event</h2>
-                              </div>
-                              <div class="text">
-                                <p>Timeline event text.</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="timeline-block">
-                          <div class="timeline-img">
-                          </div>
-
-                          <div class="timeline-content service-box-content">
-                              <div class="heading">
-                                  <h2>Timeline Event</h2>
-                              </div>
-                              <div class="text">
-                                <p>Timeline event text.</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="timeline-block">
-                          <div class="timeline-img">
-                              <span style="color: #fff; font-size: 3rem;">
-                                <i class="fas fa-baby"></i>
-                              </span>
+                          <div class="timeline-img-container">
+                            <i class="fas fa-baby fa-2x"></i>
                           </div>
                       </div>
                       
