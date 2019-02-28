@@ -736,6 +736,12 @@ margin-bottom: 1rem;
 }
 
 
+@media (max-width:768px) {
+    .service-box-content {
+        margin: 0px;
+    }
+}
+
 /*
 * Full Page Modal 
 */
