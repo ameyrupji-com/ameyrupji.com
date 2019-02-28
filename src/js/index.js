@@ -36,8 +36,6 @@ $(document).ready(function() {
   
   // scroll amination
   $('a').click(function() {
-    // alert("link clicked");
-    console.log("link clicked");
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -62,4 +60,69 @@ $(document).ready(function() {
   
   //Enable tooltips everywhere
   $('[data-toggle="tooltip"]').tooltip()
+
+  $('#timeline-btn-all').click(function() {
+    $('#timeline-main .btn-group .btn').removeClass('btn-primary').addClass('btn-light')
+    $(this).removeClass('btn-light').addClass('btn-primary')
+
+    $timeline_block.each(function(){
+      $(this).find('.timeline-img-container, .timeline-content').show();
+    });
+
+    $timeline_block_alt.each(function(){
+      $(this).find('.timeline-img-container-alt').show();
+    });
+  });
+  $('#timeline-btn-work').click(function() {
+    $('#timeline-main .btn-group .btn').removeClass('btn-primary').addClass('btn-light')
+    $(this).removeClass('btn-light').addClass('btn-primary')
+
+    // unhide everything
+    $timeline_block.each(function(){
+      $(this).find('.timeline-img-container, .timeline-content').show();
+    });
+
+    $timeline_block_alt.each(function(){
+      $(this).find('.timeline-img-container-alt').show();
+    });
+
+    // hide everything thing but the work
+    $timeline_block.each(function(){
+      if(!$(this).hasClass('work')) {
+        $(this).find('.timeline-img-container, .timeline-content').hide();
+      }
+    });
+
+    $timeline_block_alt.each(function(){
+      if(!$(this).hasClass('work')) {
+        $(this).find('.timeline-img-container-alt').hide();
+      }
+    });
+  });
+  $('#timeline-btn-education').click(function() {
+    $('#timeline-main .btn-group .btn').removeClass('btn-primary').addClass('btn-light')
+    $(this).removeClass('btn-light').addClass('btn-primary')
+
+    // unhide everything
+    $timeline_block.each(function(){
+      $(this).find('.timeline-img-container, .timeline-content').show();
+    });
+
+    $timeline_block_alt.each(function(){
+      $(this).find('.timeline-img-container-alt').show();
+    });
+
+    // hide everything thing but the work
+    $timeline_block.each(function(){
+      if(!$(this).hasClass('education')) {
+        $(this).find('.timeline-img-container, .timeline-content').hide();
+      }
+    });
+
+    $timeline_block_alt.each(function(){
+      if(!$(this).hasClass('education')) {
+        $(this).find('.timeline-img-container-alt').hide();
+      }
+    });
+  });
 });

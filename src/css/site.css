@@ -252,7 +252,8 @@ margin-bottom: 1rem;
     margin-top: 0;
 }
 
-.timeline-block:last-child {
+.timeline-block:last-child,
+.timeline-block-alt:last-child, {
     margin-bottom: 0;
 }
 
@@ -282,16 +283,18 @@ margin-bottom: 1rem;
     }
 }
 @media only screen and (min-width: 1170px) {
+    .timeline-block-alt {
+        height:80px;
+    }
+
     .timeline-block:first-child {
         margin-top: 0;
     }
 
-    .timeline-block:last-child {
+    .timeline-block:last-child,
+    .timeline-block-alt:last-child {
         margin-bottom: 0;
-    }
-
-    .timeline-block-alt {
-        height:80px;
+        height: 0px;
     }
 
     .timeline-img-container-alt {
@@ -324,7 +327,6 @@ margin-bottom: 1rem;
         -webkit-transform: translateZ(0);
         -webkit-backface-visibility: hidden;
         color: #fff;
-        
     }
 
     .timeline-img-container {
@@ -731,9 +733,8 @@ margin-bottom: 1rem;
 
 
 /*
-* Modal Changes
+* Full Page Modal 
 */
-
 
 .modal-dialog {
     max-width: 100%;

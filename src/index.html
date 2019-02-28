@@ -41,8 +41,8 @@
                   </div>
                 </nav>
                 <div id="jumbotron-content">
-                  <h3>Hi There...</h3>
-                  <h1>I'am Amey Rupji</h1>
+                  <h3>Hey There...</h3>
+                  <h1>I'm Amey Rupji</h1>
                   <br/>
                   <h3 class="typed"></h3>
                 </div>
@@ -67,26 +67,31 @@
       </div>
 
       <div class="container text-center mb-6" id="qualifications-main">
-            <h1>Qualification</h1>
+            <h1>Qualifications</h1>
             <br/>
-            <i class="fa fa-graduation-cap fa-2x"></i>
+            <i class="fas fa-graduation-cap fa-2x"></i>
             <h3>Masters Degree In Computer Science From Texas Tech University</h3>
             <!-- REPLACE WITH YOUR FILE -->
             <a class="btn" href="./assets/pdf/dummy_resume.pdf" download="">
-              <i class="fa fa-download"></i> Download PDF Copy
+              <i class="fas fa-download"></i> Download a Copy
             </a>
       </div>
 
       <div class="container-fluid" id="timeline-main">
         <div class="container">
-          <h1 class="text-center">Timeline</h1>
-          
+          <div class="row">
+              <div class="col-md-12 text-center">
+                <h1>Timeline</h1>
+                <br/>
+                <br/>
+              </div>
+          </div>
           <div class="row">
             <div class="col-md-12 text-center">
               <div class="btn-group center" role="group">
-                <button type="button" class="btn btn-primary">Complete</button>
-                <button type="button" class="btn btn-light">Work Experience</button>
-                <button type="button" class="btn btn-light">Education</button>
+                <button type="button" class="btn btn-primary" id="timeline-btn-all">Complete</button>
+                <button type="button" class="btn btn-light" id="timeline-btn-work">Work Experience</button>
+                <button type="button" class="btn btn-light" id="timeline-btn-education">Education</button>
               </div>
             </div>
           </div>
@@ -94,12 +99,12 @@
           <div class="row">
               <div class="col-md-12">
                   <section id="timeline" class="container">
-                      <div class="timeline-block">
+                      <div class="timeline-block education work">
                           <div class="timeline-img-container top">
                               <img src="./images/me.jpeg" >
                           </div>
                       </div>
-                      <div class="timeline-block">
+                      <div class="timeline-block work">
                           <div class="timeline-img-container">
                               <i class="fas fa-briefcase fa-2x"></i>
                           </div>
@@ -109,7 +114,17 @@
                                   <h2>Senior Software Engineer</h2>
                               </div>
                               <div class="text">
-                                <p>Timeline event text.</p>
+                                  <div class="location-date" >
+                                    <p style="color: rgba(0, 0, 0, 0.6); margin-bottom: 5px;">
+                                      <i class="far fa-calendar-alt"></i>
+                                      <span class="from"> Mar 2018</span> - <span class="to">Present</span>
+                                    </p>
+                                    <p style="color:rgba(0, 0, 0, 0.6)">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span class="city-state"> Austin, Texas Area</span>
+                                    </p>
+                                  </div>
+                                <p>Timeline event small amount of text. This can be a few sentences. When this is clicked it will open a model to view more data.</p>
                               </div>
                           </div>
                           <div class="modal" id="sse-modal" tabindex="-1" role="dialog" aria-labelledby="sse-modal-label" aria-hidden="true">
@@ -122,13 +137,34 @@
                                   </button>
                                 </div>
                                 <div class="modal-body">
-                                  This is where the content that does not fit into the timeline text area gos.
+                                  <button type="button" class="btn btn-primary">
+                                      <i class="far fa-calendar-alt"></i>
+                                      <span class="from"> Mar 2018</span> - <span class="to">Present</span>
+                                  </button>
+                                  <button type="button" class="btn btn-primary">
+                                      <i class="fas fa-map-marker-alt"></i>
+                                      <span class="city-state"> Austin, Texas Area</span>
+                                  </button>
+                                  <br/>
+                                  <br/>
+                                  <br/>
+                                  <h3>Role and Responsibility</h3>
+                                  <p>
+                                    This is where the content that does not fit into the timeline text area goes.
+                                  </p>
+                                  <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tristique risus eget dui consectetur ullamcorper. Fusce eget elit quis turpis tempor fringilla. Quisque purus sapien, interdum sed porta eget, feugiat id enim. Suspendisse et velit dolor. Nam vitae quam nec lacus sagittis rutrum. Mauris erat justo, pharetra eu aliquam non, lobortis a tortor. Aliquam id lectus mi. Ut a vulputate ex.
+                                  </p>
+                                  <br/>
+                                  
+                                  <h3>Technologies Worked on</h3>
+                                  
                                 </div>
                               </div>
                             </div>
                           </div>
                       </div>
-                      <div class="timeline-block">
+                      <div class="timeline-block work">
                           <div class="timeline-img-container">
                               <i class="fas fa-briefcase fa-2x"></i>
                           </div>
@@ -142,7 +178,7 @@
                               </div>
                           </div>
                       </div>
-                      <div class="timeline-block">
+                      <div class="timeline-block work">
                           <div class="timeline-img-container">
                               <i class="fas fa-briefcase fa-2x"></i>
                           </div>
@@ -163,14 +199,42 @@
                               </button>
                           </div>
                       </div>
-                      <div class="timeline-block">
+                      <div class="timeline-block education">
                           <div class="timeline-img-container">
                               <i class="fas fa-graduation-cap fa-2x"></i>
                           </div>
 
                           <div class="timeline-content service-box-content">
                               <div class="heading">
-                                  <h2>Masters of Science in Computer Science</h2>
+                                  <h2>Master of Science in Computer Science</h2>
+                              </div>
+                              <div class="text">
+                                <p>Timeline event text.</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="timeline-block work">
+                          <div class="timeline-img-container">
+                              <i class="fas fa-graduation-cap fa-2x"></i>
+                          </div>
+
+                          <div class="timeline-content service-box-content">
+                              <div class="heading">
+                                  <h2>Graduate Assistant</h2>
+                              </div>
+                              <div class="text">
+                                <p>Timeline event text.</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="timeline-block work">
+                          <div class="timeline-img-container">
+                              <i class="fas fa-graduation-cap fa-2x"></i>
+                          </div>
+
+                          <div class="timeline-content service-box-content">
+                              <div class="heading">
+                                  <h2>Web Project Manager</h2>
                               </div>
                               <div class="text">
                                 <p>Timeline event text.</p>
@@ -184,7 +248,7 @@
                               </button>
                           </div>
                       </div>
-                      <div class="timeline-block">
+                      <div class="timeline-block education">
                           <div class="timeline-img-container">
                               <i class="fas fa-user-graduate fa-2x"></i>
                           </div>
@@ -198,12 +262,39 @@
                               </div>
                           </div>
                       </div>
-                      <div class="timeline-block">
+                      <div class="timeline-block education">
                           <div class="timeline-img-container">
-                            <i class="fas fa-baby fa-2x"></i>
+                              <i class="fas fa-user-graduate fa-2x"></i>
+                          </div>
+                          <div class="timeline-content service-box-content">
+                              <div class="heading">
+                                  <h2>K. C. College of Arts Science and Commerce</h2>
+                              </div>
+                              <div class="text">
+                                <p>Timeline event text.</p>
+                              </div>
                           </div>
                       </div>
-                      
+                      <div class="timeline-block education">
+                          <div class="timeline-img-container">
+                              <i class="fas fa-school fa-2x"></i>
+                          </div>
+                          <div class="timeline-content service-box-content">
+                              <div class="heading">
+                                  <h2>St. Mary's High School ICSE</h2>
+                              </div>
+                              <div class="text">
+                                <p>Timeline event text.</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="timeline-block-alt">
+                          <div class="timeline-img-container-alt">
+                              <button type="button" class="btn link" data-placement="right" data-toggle="tooltip" data-html="true" title="Born in <b>India</b>">
+                                <i class="fas fa-baby fa-2x"></i>
+                              </button>
+                          </div>
+                      </div>
                   </section>
               </div>
           </div>
@@ -211,9 +302,10 @@
       </div> <!-- /container -->
       
       <div class="container-fluid" id="contact-main">
-        <div class="container text-center mb-6" >
+        <div class="container text-center mb-6">
           <h1>Get In Touch</h1>
-          <p>Wanna reach out? Don't hesitate!<i class="fa fa-smile-o"></i></p>
+          <br/>
+          <p>Wanna reach out? Don't hesitate!</p>
         </div>
         <div class="container">
           <div class="row">
