@@ -50,7 +50,7 @@ $(document).ready(function() {
 
   // typing animations
   var options = {
-    strings: ["Welcome to my website!", "I am still in the process of build this website."],
+    strings: ["Welcome to my website!", "I am still in the process of building this website."],
     typeSpeed: 70,
     backSpeed: 60,
     loop: true
@@ -159,5 +159,4 @@ $(document).ready(function() {
     // The marker, positioned at Uluru
     var marker = new google.maps.Marker({position: uluru, map: map});
   }
-  initMap()
 });
