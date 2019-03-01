@@ -98,16 +98,6 @@ body p {
     text-decoration: none
 }
 
-#contact-main .btn.btn-primary {
-    background-color: rgba(132, 80, 7, 1); /*#845007*/
-    background: linear-gradient(141deg, rgba(189, 149, 94, 1), rgba(132, 80, 7, 1));
-    background: -webkit-linear-gradient(141deg,rgba(189, 149, 94, 1), rgba(132, 80, 7, 1));
-    background: -moz-linear-gradient(141deg, rgba(189, 149, 94, 1), rgba(132, 80, 7, 1));
-    background: -o-linear-gradient(141deg, rgba(189, 149, 94, 1), rgba(132, 80, 7, 1));
-    background: linear-gradient(141deg, rgba(189, 149, 94, 1), rgba(132, 80, 7, 1));
-    color: #fff;
-    border: none;
-}
 
 /*
 * Contact 
@@ -119,6 +109,11 @@ body p {
 
 #contact-main h1 {
     
+}
+
+#contact-main #map {
+    height: 400px;  /* The height is 400 pixels */
+    width: 100%;  /* The width is the width of the web page */
 }
 
 :root {
@@ -199,6 +194,16 @@ margin-bottom: 1rem;
     color: #777;
 }
 
+#contact-main .btn.btn-primary {
+    background-color: rgba(132, 80, 7, 1); /*#845007*/
+    background: linear-gradient(141deg, rgba(189, 149, 94, 1), rgba(132, 80, 7, 1));
+    background: -webkit-linear-gradient(141deg,rgba(189, 149, 94, 1), rgba(132, 80, 7, 1));
+    background: -moz-linear-gradient(141deg, rgba(189, 149, 94, 1), rgba(132, 80, 7, 1));
+    background: -o-linear-gradient(141deg, rgba(189, 149, 94, 1), rgba(132, 80, 7, 1));
+    background: linear-gradient(141deg, rgba(189, 149, 94, 1), rgba(132, 80, 7, 1));
+    color: #fff;
+    border: none;
+}
 
 /*
 * TIMELINE
@@ -823,6 +828,10 @@ margin-bottom: 1rem;
     }
 }
 
+.modal-content .skills-block i {
+    font-size: 60px;
+}
+
 /*
 * skills-block 
 */
@@ -851,10 +860,6 @@ margin-bottom: 1rem;
    
 }
 
-.skills-block i  {
-    font-size: 50px;
-}
-
 #skills-main .btn-group .btn.btn-primary {
     background-color: rgba(31, 55, 75, 1);
     background: linear-gradient(141deg, rgba(31, 55, 75, 1), rgba(53, 92, 125, 1));
@@ -866,8 +871,46 @@ margin-bottom: 1rem;
     border: none;
 }
 
+#skills-main .skills-block i {
+    font-size: 60px;
+}
+#skills-main .skills-block i,
+#skills-main .skills-block p {
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
 
-#map {
-    height: 400px;  /* The height is 400 pixels */
-    width: 100%;  /* The width is the width of the web page */
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
 }
