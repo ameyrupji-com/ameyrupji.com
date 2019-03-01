@@ -1,5 +1,9 @@
-body {
-    font-weight: 200;
+body h1,
+body h2,
+body h3,
+body h4,
+body p {
+    font-weight: 100 !important;
 }
 
 #qualifications-main{
@@ -8,18 +12,19 @@ body {
 
 #qualifications-main h1{
     margin-bottom: 50px;
-    font-weight: 200;
+    
 }
 #qualifications-main h3{
     margin-bottom: 25px;
-    font-weight: 200;
+    
 }
 #qualifications-main > .fa-graduation-cap, .fa-code{
-    background: rgb(31, 55, 75);
-    background: -webkit-linear-gradient(141deg, rgba(31, 55, 75, 1), rgba(53, 92, 125, 1));
-    background: -moz-linear-gradient(141deg, rgba(31, 55, 75, 1), rgba(53, 92, 125, 1));
-    background: -o-linear-gradient(141deg, rgba(31, 55, 75, 1), rgba(53, 92, 125, 1));
-    background: linear-gradient(141deg, rgba(31, 55, 75, 1), rgba(53, 92, 125, 1));
+    background-color: rgba(132, 80, 7, 1); /*#845007*/
+    background: linear-gradient(141deg, rgba(189, 149, 94, 1), rgba(132, 80, 7, 1));
+    background: -webkit-linear-gradient(141deg, rgba(189, 149, 94, 1), rgba(132, 80, 7, 1));
+    background: -moz-linear-gradient(141deg, rgba(189, 149, 94, 1), rgba(132, 80, 7, 1));
+    background: -o-linear-gradient(141deg, rgba(189, 149, 94, 1), rgba(132, 80, 7, 1));
+    background: linear-gradient(141deg, rgba(189, 149, 94, 1), rgba(132, 80, 7, 1));
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -o-background-clip: text;
@@ -31,7 +36,12 @@ body {
 }
 
 #qualifications-main .btn{
-	background: linear-gradient(141deg, rgba(31, 55, 75, 1), rgba(53, 92, 125, 1));
+    background-color: rgba(31, 55, 75, 1);
+    background: linear-gradient(141deg, rgba(31, 55, 75, 1), rgba(53, 92, 125, 1));
+    background: -webkit-linear-gradient(141deg, rgba(31, 55, 75, 1), rgba(53, 92, 125, 1));
+    background: -moz-linear-gradient(141deg, rgba(31, 55, 75, 1), rgba(53, 92, 125, 1));
+    background: -o-linear-gradient(141deg, rgba(31, 55, 75, 1), rgba(53, 92, 125, 1));
+    background: linear-gradient(141deg, rgba(31, 55, 75, 1), rgba(53, 92, 125, 1));
 	border: none;
 	font-size: 16px;
 	width: 35%;
@@ -69,9 +79,34 @@ body {
 }
 
 #footer-main {
-    background-color: #355c7d;
+    background: rgb(31, 55, 75);
+    background: -webkit-linear-gradient(141deg, rgba(31, 55, 75, 1), rgba(53, 92, 125, 1));
+    background: -moz-linear-gradient(141deg, rgba(31, 55, 75, 1), rgba(53, 92, 125, 1));
+    background: -o-linear-gradient(141deg, rgba(31, 55, 75, 1), rgba(53, 92, 125, 1));
+    background: linear-gradient(141deg, rgba(31, 55, 75, 1), rgba(53, 92, 125, 1));
     color: #fff;
     padding: 20px 0 30px 0;
+}
+
+#footer-main p,
+#footer-main a {
+    color: #ccc;
+}
+
+#footer-main a:hover {
+    color: #fff;
+    text-decoration: none
+}
+
+#contact-main .btn.btn-primary {
+    background-color: rgba(132, 80, 7, 1); /*#845007*/
+    background: linear-gradient(141deg, rgba(189, 149, 94, 1), rgba(132, 80, 7, 1));
+    background: -webkit-linear-gradient(141deg,rgba(189, 149, 94, 1), rgba(132, 80, 7, 1));
+    background: -moz-linear-gradient(141deg, rgba(189, 149, 94, 1), rgba(132, 80, 7, 1));
+    background: -o-linear-gradient(141deg, rgba(189, 149, 94, 1), rgba(132, 80, 7, 1));
+    background: linear-gradient(141deg, rgba(189, 149, 94, 1), rgba(132, 80, 7, 1));
+    color: #fff;
+    border: none;
 }
 
 /*
@@ -83,7 +118,7 @@ body {
 }
 
 #contact-main h1 {
-    font-weight: 200;
+    
 }
 
 :root {
@@ -174,10 +209,6 @@ margin-bottom: 1rem;
     padding: 100px 0;
     border-top:2px solid #ddd;
     border-bottom:2px solid #ddd;
-}
-
-#timeline-main h1 {
-    font-weight: 200;
 }
 
 #timeline-main .btn-group {
@@ -482,14 +513,14 @@ margin-bottom: 1rem;
 
 .timeline-content h2 {
     font-size: 22px !important;
-    font-weight: 200;
     color: #333;
     margin-top: 0;
     padding-bottom: 10px;
 }
 
-.timeline-content .read-more, .timeline-content .date {
-    display: inline-block;
+.timeline-content .read-more, 
+.timeline-content .date {
+    margin-right: 10px;
 }
 
 .timeline-content p {
@@ -497,7 +528,6 @@ margin-bottom: 1rem;
     color: #333;
     line-height: 24px;
 }
-
 
 @media only screen and (min-width: 1170px) {
   
@@ -719,6 +749,11 @@ margin-bottom: 1rem;
 }
 
 .service-box-content .heading {
+    background-color: rgba(31, 55, 75, 1);
+    background: linear-gradient(141deg, rgba(31, 55, 75, 1), rgba(53, 92, 125, 1));
+    background: -webkit-linear-gradient(141deg, rgba(31, 55, 75, 1), rgba(53, 92, 125, 1));
+    background: -moz-linear-gradient(141deg, rgba(31, 55, 75, 1), rgba(53, 92, 125, 1));
+    background: -o-linear-gradient(141deg, rgba(31, 55, 75, 1), rgba(53, 92, 125, 1));
     background: linear-gradient(141deg, rgba(31, 55, 75, 1), rgba(53, 92, 125, 1));
     padding: 10px 20px;
     border-top-left-radius: 10px;
@@ -732,7 +767,7 @@ margin-bottom: 1rem;
 }
 
 .service-box-content .text {
-    padding: 25px 20px;
+    padding: 15px 20px;
 }
 
 
@@ -764,18 +799,13 @@ margin-bottom: 1rem;
 }
 
 .modal-header button {
+    font-size: 4em;
     font-weight: 100;
-    font-size: 4em
 }
 
-.modal-content h1,
-.modal-content h2,
-.modal-content h3,
-.modal-content h4,
-.modal-content p {
-    font-weight: 100 !important;
+.timeline-content .text p:last-child {
+    margin-bottom: 0;
 }
-
 
 @media only screen and (max-width: 1169px) {
     .modal-header {
@@ -790,4 +820,53 @@ margin-bottom: 1rem;
         display: flex;
         min-height: 100vh;
     }
+}
+
+/*
+* skills-block 
+*/
+
+#skills-main {
+    background-color: rgba(132, 80, 7, 1); /*#845007*/
+    background: linear-gradient(141deg, rgba(189, 149, 94, 1), rgba(132, 80, 7, 1));
+    background: -webkit-linear-gradient(141deg,rgba(189, 149, 94, 1), rgba(132, 80, 7, 1));
+    background: -moz-linear-gradient(141deg, rgba(189, 149, 94, 1), rgba(132, 80, 7, 1));
+    background: -o-linear-gradient(141deg, rgba(189, 149, 94, 1), rgba(132, 80, 7, 1));
+    background: linear-gradient(141deg, rgba(189, 149, 94, 1), rgba(132, 80, 7, 1));
+    color: #fff;
+    padding: 150px 0;
+}
+
+#skills-main .unused{
+    opacity: .5;
+}
+
+.skills-block {
+    width: 120px;
+    height: 120px;
+    padding: 23px;
+    margin: auto;
+    border: 1px solid transparent;
+   
+}
+
+.skills-block i  {
+    font-size: 50px;
+}
+
+#skills-main .btn-group .btn.btn-primary {
+    background-color: rgba(31, 55, 75, 1);
+    background: linear-gradient(141deg, rgba(31, 55, 75, 1), rgba(53, 92, 125, 1));
+    background: -webkit-linear-gradient(141deg, rgba(31, 55, 75, 1), rgba(53, 92, 125, 1));
+    background: -moz-linear-gradient(141deg, rgba(31, 55, 75, 1), rgba(53, 92, 125, 1));
+    background: -o-linear-gradient(141deg, rgba(31, 55, 75, 1), rgba(53, 92, 125, 1));
+    background: linear-gradient(141deg, rgba(31, 55, 75, 1), rgba(53, 92, 125, 1));
+    color: #fff;
+    border: none;
+}
+
+
+#map {
+    height: 400px;  /* The height is 400 pixels */
+    width: 100%;  /* The width is the width of the web page */
 }
