@@ -18,7 +18,7 @@
   </head>
   <body>
     <main role="main">
-      <div class="container-full-bg" id="image-back-main">  <!--  increased the jumbotron width -->
+      <div class="container-full-bg" id="image-back-main">
         <div class="jumbotron" id="gradient-main">
             <div class="container">
                 <nav class="navbar navbar-expand-sm navbar-light bg-light">
@@ -35,7 +35,7 @@
                           <a href="#skills-main" class="nav-link">Skills</a>
                         </li>
                       <li class="nav-item">
-                        <a href="#timeline-main" class="nav-link">Timeline</a>
+                        <a href="#timeline-main" class="nav-link">Story</a>
                       </li>
                       <li class="nav-item">
                         <a href="#contact-main" class="nav-link">Contact</a>
@@ -84,7 +84,7 @@
         <div class="container">
           <div class="row">
               <div class="col-md-12 text-center">
-                <h1>My [ Array ] of Skills & Technologies</h1>
+                <h1>My [ Array ] of Technical Skills</h1>
                 <br/>
                 <br/>
               </div>
@@ -186,7 +186,7 @@
             </div>
             <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
               <div class="skills-block text-center">
-                <i class="devicon-IntelliJ-plain"></i>
+                <i class="devicon-intellij-plain"></i>
                 <p>IntelliJ</p>
               </div>
             </div>
@@ -228,7 +228,7 @@
             </div>
             <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
               <div class="skills-block text-center">
-                <i class="devicon-newrelic-plain"></i>
+                <i class="fas fa-code fa-2x"></i>
                 <p>New Relic</p>
               </div>
             </div>
@@ -238,6 +238,12 @@
                 <p>Node.js</p>
               </div>
             </div>
+            <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6 unused">
+                <div class="skills-block text-center">
+                  <i class="devicon-photoshop-plain"></i>
+                  <p>Photoshop</p>
+                </div>
+              </div>
             <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6 unused">
               <div class="skills-block text-center">
                 <i class="devicon-php-plain"></i>
@@ -265,15 +271,14 @@
 
             <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
               <div class="skills-block text-center">
-                <i class="fab fa-scala fa-2x"></i>
+                <i class="fas fa-code fa-2x"></i>
                 <p>Scala</p>
               </div>
             </div>
             <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
-                <div class="skills-block text-center">
-                  <i class="fab fa-splunk fa-2x"></i>
-                  <p>Splunk</p>
-                </div>
+              <div class="skills-block text-center">
+                <i class="fas fa-code fa-2x"></i>
+                <p>Splunk</p>
               </div>
             </div>
             <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6 unused">
@@ -286,12 +291,11 @@
         </div>
       </div>
             
-
       <div class="container-fluid" id="timeline-main">
         <div class="container">
           <div class="row">
               <div class="col-md-12 text-center">
-                <h1>Timeline</h1>
+                <h1>Story</h1>
                 <br/>
                 <br/>
               </div>
@@ -300,7 +304,7 @@
             <div class="col-md-12 text-center">
               <div class="btn-group center" role="group">
                 <button type="button" class="btn btn-primary" id="timeline-btn-all">Complete</button>
-                <button type="button" class="btn btn-light" id="timeline-btn-work">Work Experience</button>
+                <button type="button" class="btn btn-light" id="timeline-btn-work">Work</button>
                 <button type="button" class="btn btn-light" id="timeline-btn-education">Education</button>
               </div>
             </div>
@@ -309,41 +313,40 @@
           <div class="row">
               <div class="col-md-12">
                   <section id="timeline" class="container">
-                      <div class="timeline-block education work">
+                      <div class="timeline-block education work" id="me-image">
                           <div class="timeline-img-container top">
                               <img src="./images/me.jpeg" >
                           </div>
                       </div>
-                      <div class="timeline-block-alt">
+                      <div class="timeline-block-alt" id="built-website">
                           <div class="timeline-img-container-alt">
-                              <button type="button" class="btn link" data-placement="right" data-toggle="tooltip" data-html="true" title="Built this Website">
+                              <button type="button" class="btn link" data-placement="right" data-toggle="tooltip" data-html="true" title="I built this Website">
                                 <i class="fas fa-terminal fa-2x"></i>
                               </button>
                           </div>
                       </div>
-                      <div class="timeline-block work">
+                      <div class="timeline-block work" id="uhg-sse">
                           <div class="timeline-img-container">
-                              <i class="fas fa-briefcase fa-2x"></i>
                           </div>
 
                           <div class="timeline-content service-box-content" data-toggle="modal" data-target="#sse-modal">
                               <div class="heading">
                                   <h2>Senior Software Engineer</h2>
                               </div>
-                              <div class="heading-secondary" style="background-color: #ddd; padding:10px 20px;" >
-                                  <p style="color: rgba(0, 0, 0, 0.6); margin-bottom: 5px;">
-                                    <i class="far fa-building" style="width: 25px;"></i>
+                              <div class="heading-secondary">
+                                  <p>
+                                    <i class="far fa-building"></i>
                                     <span class="company">UnitedHealth Group</span>
                                   </p>
-                                  <p style="color: rgba(0, 0, 0, 0.6); margin-bottom: 5px;">
-                                    <i class="far fa-calendar-alt" style="width: 25px;"></i>
+                                  <p>
+                                    <i class="far fa-calendar-alt"></i>
                                     <span class="from">Mar 2018</span> 
                                     - 
                                     <span class="to">Present</span>
-                                    <span class="duration" style="font-style: italic;">(3 years)</span>
+                                    <span class="duration">(3 years)</span>
                                   </p>
-                                  <p style="color:rgba(0, 0, 0, 0.6);  margin-bottom: 5px;">
-                                      <i class="fas fa-map-marker-alt" style="width: 25px;"></i>
+                                  <p>
+                                      <i class="fas fa-map-marker-alt"></i>
                                       <span class="city-state">Austin, Texas Area</span>
                                   </p>
                               </div>
@@ -351,7 +354,7 @@
                                 <p>Developed a scalable cloud based data mastering platform.</p>
                               </div>
                               <div class="read-more">
-                                <p align="right" style="margin-bottom: 0; font-size: 12px !important; color: #777;">Click Read More...</p>
+                                <p align="right">Click/Tap to Read More...</p>
                               </div>
                           </div>
                           <div class="modal" id="sse-modal" tabindex="-1" role="dialog" aria-labelledby="sse-modal-label" aria-hidden="true">
@@ -369,8 +372,8 @@
                                   </h2>
                                   <h4 class="text-center">
                                       <span class="from"> Mar 2018</span> - <span class="to">Present</span>
-                                      <span class="duration" style="font-style: italic;">(3 years)</span>
-                                      <span class="text-center" style="padding:0 10px;">|</span> 
+                                      <span class="duration">(3 years)</span>
+                                      <span class="separator">|</span> 
                                       <span class="city-state"> Austin, Texas Area</span>
                                   </h3>
                                   <br/>
@@ -443,7 +446,7 @@
                                     </div>
                                     <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
                                       <div class="skills-block text-center">
-                                        <i class="devicon-IntelliJ-plain"></i>
+                                        <i class="devicon-intellij-plain"></i>
                                         <p>IntelliJ</p>
                                       </div>
                                     </div>
@@ -461,7 +464,7 @@
                                     </div>
                                     <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
                                       <div class="skills-block text-center">
-                                        <i class="devicon-newrelic-plain"></i>
+                                        <i class="fas fa-code fa-2x"></i>
                                         <p>New Relic</p>
                                       </div>
                                     </div>
@@ -485,13 +488,13 @@
                                     </div>
                                     <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
                                       <div class="skills-block text-center">
-                                        <i class="fab fa-scala fa-2x"></i>
+                                        <i class="fas fa-code fa-2x"></i>
                                         <p>Scala</p>
                                       </div>
                                     </div>
                                     <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
                                         <div class="skills-block text-center">
-                                          <i class="fab fa-splunk fa-2x"></i>
+                                          <i class="fas fa-code fa-2x"></i>
                                           <p>Splunk</p>
                                         </div>
                                       </div>
@@ -501,141 +504,812 @@
                             </div>
                           </div>
                       </div>
-                      <div class="timeline-block work">
-                          <div class="timeline-img-container">
-                              <i class="fas fa-briefcase fa-2x"></i>
-                          </div>
-
-                          <div class="timeline-content service-box-content">
-                              <div class="heading">
-                                  <h2>Software Engineer</h2>
-                              </div>
-                              <div class="text">
-                                <p>Timeline event text.</p>
-                              </div>
+                      <div class="timeline-block-alt" id="advisory-to-uhg">
+                          <div class="timeline-img-container-alt">
+                              <button type="button" class="btn link" data-placement="right" data-toggle="tooltip" data-html="true" title="<b>Advisory</b> got Acquired by <b>UnitedHealth</b>">
+                                <i class="fas fa-terminal fa-2x"></i>
+                              </button>
                           </div>
                       </div>
-                      <div class="timeline-block work">
-                          <div class="timeline-img-container">
-                              <i class="fas fa-briefcase fa-2x"></i>
-                          </div>
+                      <div class="timeline-block work" id="advisory-se">
+                        <div class="timeline-img-container">
+                        </div>
 
-                          <div class="timeline-content service-box-content">
+                        <div class="timeline-content service-box-content" data-toggle="modal" data-target="#advisory-se-modal">
+                            <div class="heading">
+                                <h2>Software Engineer</h2>
+                            </div>
+                            <div class="heading-secondary">
+                                <p>
+                                  <i class="far fa-building"></i>
+                                  <span class="company">The Advisory Board Company (UnitedHealth)</span>
+                                </p>
+                                <p>
+                                  <i class="far fa-calendar-alt"></i>
+                                  <span class="from">Dec 2013</span> 
+                                  - 
+                                  <span class="to">Mar 2015</span>
+                                  <span class="duration">(1 yr 4 mos)</span>
+                                </p>
+                                <p>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span class="city-state">Austin, Texas Area</span>
+                                </p>
+                            </div>
+                            <div class="text">
+                              <p>Developed a maintained application to deploy software suites.</p>
+                            </div>
+                            <div class="read-more">
+                              <p align="right">Click/Tap to Read More...</p>
+                            </div>
+                        </div>
+                        <div class="modal" id="advisory-se-modal" tabindex="-1" role="dialog" aria-labelledby="sse-modal-label" aria-hidden="true">
+                          <div class="modal-dialog modal-full" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <h1 class="modal-title text-center" id="sse-modal-label">Software Engineer</h1>
+                                <h2 class="text-center">
+                                  <span class="company">The Advisory Board Company (UnitedHealth Group)</span>
+                                </h2>
+                                <h4 class="text-center">
+                                    <span class="from"> Dec 2013</span> - <span class="to">Mar 2015</span>
+                                    <span class="duration">(1 yr 4 mos)</span>
+                                    <span class="separator">|</span> 
+                                    <span class="city-state"> Austin, Texas Area</span>
+                                </h3>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <h3>Work and Impact</h3>
+                                <p>
+                                  Developed and maintained user facing website and backend web services to deploy automation tools and websites for single and multi tenant software suites within the company.
+                                </p>
+                                <p>
+                                  This product empowered 4+ product teams to maintain their deployment SLAs and easily scale deployments of hundreds of health system clients within the country. 
+                                </p>
+                                <br/>
+                                <h3>Technologies and Tools Used</h3>
+                                <div class="row">
+                                  <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
+                                    <div class="skills-block text-center">
+                                      <i class="fab fa-atlassian fa-2x"></i>
+                                      <p>Atlassian</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
+                                    <div class="skills-block text-center">
+                                        <i class="fab fa-bitbucket fa-2x"></i>
+                                        <p>Bitbucket</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
+                                    <div class="skills-block text-center">
+                                      <i class="devicon-csharp-plain"></i>
+                                      <p>C#</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
+                                    <div class="skills-block text-center">
+                                      <i class="devicon-css3-plain"></i>
+                                      <p>CSS</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
+                                    <div class="skills-block text-center">
+                                        <i class="fab fa-confluence fa-2x"></i>
+                                        <p>Confluence</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
+                                    <div class="skills-block text-center">
+                                      <i class="devicon-dot-net-plain"></i>
+                                      <p>.Net</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
+                                    <div class="skills-block text-center">
+                                      <i class="devicon-git-plain"></i>
+                                      <p>Git</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
+                                    <div class="skills-block text-center">
+                                      <i class="devicon-github-plain"></i>
+                                      <p>GitHub</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
+                                      <div class="skills-block text-center">
+                                        <i class="fab fa-html5 fa-2x"></i>
+                                        <p>HTML</p>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
+                                      <div class="skills-block text-center">
+                                        <i class="devicon-javascript-plain"></i>
+                                        <p>JavaScript</p>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
+                                      <div class="skills-block text-center">
+                                        <i class="fab fa-jira fa-2x"></i>
+                                        <p>Jira</p>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
+                                    <div class="skills-block text-center">
+                                      <i class="fas fa-code fa-2x"></i>
+                                      <p>New Relic</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
+                                    <div class="skills-block text-center">
+                                      <i class="fas fa-code fa-2x"></i>
+                                      <p>Splunk</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="timeline-block work" id="advisory-ase">
+                          <div class="timeline-img-container">
+                          </div>
+  
+                          <div class="timeline-content service-box-content" data-toggle="modal" data-target="#advisory-ase-modal">
                               <div class="heading">
                                   <h2>Associate Software Engineer</h2>
                               </div>
+                              <div class="heading-secondary">
+                                  <p>
+                                    <i class="far fa-building"></i>
+                                    <span class="company">The Advisory Board Company (UnitedHealth Group)</span>
+                                  </p>
+                                  <p>
+                                    <i class="far fa-calendar-alt"></i>
+                                    <span class="from">Sept 2012</span> 
+                                    - 
+                                    <span class="to">Dec 2013</span>
+                                    <span class="duration">(1 yr 3 mos)</span>
+                                  </p>
+                                  <p>
+                                      <i class="fas fa-map-marker-alt"></i>
+                                      <span class="city-state">Austin, Texas Area</span>
+                                  </p>
+                              </div>
                               <div class="text">
-                                <p>Timeline event text.</p>
+                                <p>Developed an Single Sign On application and user provisioning platform.</p>
+                              </div>
+                              <div class="read-more">
+                                <p align="right">Click/Tap to Read More...</p>
                               </div>
                           </div>
-                      </div>
-                      <div class="timeline-block-alt">
-                          <div class="timeline-img-container-alt">
-                              <button type="button" class="btn link" data-placement="right" data-toggle="tooltip" data-html="true" title="Moved to <b>Austin</b>">
-                                <i class="fas fa-car fa-2x" ></i>
-                              </button>
+                          <div class="modal" id="advisory-ase-modal" tabindex="-1" role="dialog" aria-labelledby="ase-modal-label" aria-hidden="true">
+                            <div class="modal-dialog modal-full" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  <h1 class="modal-title text-center" id="sse-modal-label">Associate Software Engineer</h1>
+                                  <h2 class="text-center">
+                                    <span class="company">The Advisory Board Company (UnitedHealth Group)</span>
+                                  </h2>
+                                  <h4 class="text-center">
+                                      <span class="from"> Dec 2013</span> - <span class="to">Mar 2015</span>
+                                      <span class="duration">(1 yr 4 mos)</span>
+                                      <span class="separator">|</span> 
+                                      <span class="city-state"> Austin, Texas Area</span>
+                                  </h3>
+                                  <br/>
+                                  <br/>
+                                  <br/>
+                                  <h3>Work and Impact</h3>
+                                  <p>
+                                    Collaborated with Product Management, User Experience, Engineering Teams, Quality Assurance, Services and Stakeholders to develop, organize, and evangelize a Single Sign-On platform for the company.
+                                  </p>
+                                  <p>
+                                      Worked with 10+ internal product teams to replace their ad-hoc password protection with SAML 2.0 protocol support to facilitate Single Sign-On and a unified security policy across all integrated products.
+                                  </p>
+                                  <br/>
+                                  <h3>Technologies and Tools Used</h3>
+                                  <div class="row">
+                                    <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
+                                      <div class="skills-block text-center">
+                                        <i class="devicon-apache-plain"></i>
+                                        <p>Apache</p>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
+                                      <div class="skills-block text-center">
+                                          <i class="fab fa-bitbucket fa-2x"></i>
+                                          <p>Bitbucket</p>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
+                                      <div class="skills-block text-center">
+                                        <i class="devicon-csharp-plain"></i>
+                                        <p>C#</p>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
+                                      <div class="skills-block text-center">
+                                        <i class="devicon-css3-plain"></i>
+                                        <p>CSS</p>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
+                                      <div class="skills-block text-center">
+                                          <i class="fab fa-confluence fa-2x"></i>
+                                          <p>Confluence</p>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
+                                      <div class="skills-block text-center">
+                                          <i class="devicon-dot-net-plain"></i>
+                                          <p>.Net</p>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
+                                      <div class="skills-block text-center">
+                                        <i class="devicon-dot-net-plain"></i>
+                                        <p>.Net</p>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
+                                      <div class="skills-block text-center">
+                                        <i class="devicon-git-plain"></i>
+                                        <p>Git</p>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
+                                      <div class="skills-block text-center">
+                                        <i class="devicon-github-plain"></i>
+                                        <p>GitHub</p>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
+                                        <div class="skills-block text-center">
+                                          <i class="fab fa-html5 fa-2x"></i>
+                                          <p>HTML</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
+                                        <div class="skills-block text-center">
+                                          <i class="devicon-javascript-plain"></i>
+                                          <p>JavaScript</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
+                                        <div class="skills-block text-center">
+                                          <i class="fab fa-jira fa-2x"></i>
+                                          <p>Jira</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
+                                      <div class="skills-block text-center">
+                                        <i class="fas fa-code fa-2x"></i>
+                                        <p>New Relic</p>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
+                                      <div class="skills-block text-center">
+                                        <i class="fas fa-code fa-2x"></i>
+                                        <p>Splunk</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                           </div>
                       </div>
-                      <div class="timeline-block education">
-                          <div class="timeline-img-container">
-                              <i class="fas fa-graduation-cap fa-2x"></i>
-                          </div>
+                      <div class="timeline-block-alt" id="moved-to-austin">
+                        <div class="timeline-img-container-alt">
+                          <button type="button" class="btn link" data-placement="right" data-toggle="tooltip" data-html="true" title="Moved to <b>Austin</b>.">
+                          </button>
+                        </div>
+                      </div>
+                      <div class="timeline-block education" id="ttu-ms">
+                        <div class="timeline-img-container">
+                        </div>
 
-                          <div class="timeline-content service-box-content">
-                              <div class="heading">
-                                  <h2>Master of Science in Computer Science</h2>
+                        <div class="timeline-content service-box-content" data-toggle="modal" data-target="#ttu-ms-modal">
+                            <div class="heading">
+                                <h2>Master of Science in Computer Science</h2>
+                            </div>
+                            <div class="heading-secondary">
+                                <p>
+                                  <i class="fas fa-university"></i>
+                                  <span class="company">Texas Tech University</span>
+                                </p>
+                                <p>
+                                  <i class="far fa-calendar-alt"></i>
+                                  <span class="from">Aug 2010</span> 
+                                  - 
+                                  <span class="to">Aug 2012</span>
+                                  <span class="duration">(2 yrs)</span>
+                                </p>
+                                <p>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span class="city-state">Lubbock, Texas Area</span>
+                                </p>
+                            </div>
+                            <div class="text">
+                              <p>Completed my Masters degree in Computer Science with a GPA of 3.66/4</p>
+                            </div>
+                            <div class="read-more">
+                              <p align="right">Click/Tap to Read More...</p>
+                            </div>
+                        </div>
+                        <div class="modal" id="ttu-ms-modal" tabindex="-1" role="dialog" aria-labelledby="ttu-ms-modal-label" aria-hidden="true">
+                          <div class="modal-dialog modal-full" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
                               </div>
-                              <div class="text">
-                                <p>Timeline event text.</p>
+                              <div class="modal-body">
+                                <h1 class="modal-title text-center" id="ttu-ms-modal-label">Master of Science in Computer Science</h1>
+                                <h2 class="text-center">
+                                  <span class="company">Texas Tech University</span>
+                                </h2>
+                                <h4 class="text-center">
+                                    <span class="from">Aug 2010</span> - <span class="to">Aug 2012</span>
+                                    <span class="duration">(2 yrs)</span>
+                                    <span class="separator">|</span> 
+                                    <span class="city-state">Lubbock, Texas Area</span>
+                                </h3>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <h3>Grades</h3>
+                                <div class="row">
+                                </div>
+                                <br/>
+                                <h3>Courses Taken</h3>
+                                <div class="row">
+                                </div>
                               </div>
+                            </div>
                           </div>
+                        </div>
                       </div>
-                      <div class="timeline-block work">
-                          <div class="timeline-img-container">
-                              <i class="fas fa-graduation-cap fa-2x"></i>
-                          </div>
+                      <div class="timeline-block work" id="ttu-ga">
+                        <div class="timeline-img-container">
+                        </div>
 
-                          <div class="timeline-content service-box-content">
-                              <div class="heading">
-                                  <h2>Graduate Assistant</h2>
+                        <div class="timeline-content service-box-content" data-toggle="modal" data-target="#ttu-ga-modal">
+                            <div class="heading">
+                                <h2>Graduate Assistant</h2>
+                            </div>
+                            <div class="heading-secondary">
+                                <p>
+                                  <i class="far fa-building"></i>
+                                  <span class="company">Texas Tech University</span>
+                                </p>
+                                <p>
+                                  <i class="far fa-calendar-alt"></i>
+                                  <span class="from">Aug 2011</span> 
+                                  - 
+                                  <span class="to">July 2012</span>
+                                  <span class="duration">(1 yr)</span>
+                                </p>
+                                <p>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span class="city-state">Lubbock, Texas Area</span>
+                                </p>
+                            </div>
+                            <div class="text">
+                              <p>Worked part time with the Technology Support team to maintain websites IT Department websites.</p>
+                            </div>
+                            <div class="read-more">
+                              <p align="right">Click/Tap to Read More...</p>
+                            </div>
+                        </div>
+                        <div class="modal" id="ttu-ga-modal" tabindex="-1" role="dialog" aria-labelledby="ttu-ga-label" aria-hidden="true">
+                          <div class="modal-dialog modal-full" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
                               </div>
-                              <div class="text">
-                                <p>Timeline event text.</p>
+                              <div class="modal-body">
+                                <h1 class="modal-title text-center" id="sse-modal-label">Graduate Assistant</h1>
+                                <h2 class="text-center">
+                                  <span class="company">IT Division, Texas Tech University</span>
+                                </h2>
+                                <h4 class="text-center">
+                                    <span class="from">Aug 2011</span> - <span class="to">Jul 2012</span>
+                                    <span class="duration">(1 yr)</span>
+                                    <span class="separator">|</span> 
+                                    <span class="city-state">Lubbock, Texas Area</span>
+                                </h3>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <h3>Work and Impact</h3>
+                                <p>
+                                  Collaborated with the Information Technology team on building, re-organizing and testing for web standards and web accessibility, and documenting various websites and web applications within Texas Tech University. 
+                                </p>
+                                <br/>
+                                <h3>Technologies and Tools Used</h3>
+                                <div class="row">
+                                  <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
+                                    <div class="skills-block text-center">
+                                      <i class="devicon-css3-plain"></i>
+                                      <p>CSS</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
+                                      <div class="skills-block text-center">
+                                        <i class="fab fa-html5 fa-2x"></i>
+                                        <p>HTML</p>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
+                                      <div class="skills-block text-center">
+                                        <i class="devicon-javascript-plain"></i>
+                                        <p>JavaScript</p>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
+                                      <div class="skills-block text-center">
+                                        <i class="devicon-jquery-plain"></i>
+                                        <p>jQuery</p>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
+                                    <div class="skills-block text-center">
+                                      <i class="devicon-photoshop-plain"></i>
+                                      <p>Photoshop</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
+                                    <div class="skills-block text-center">
+                                      <i class="devicon-php-plain"></i>
+                                      <p>PHP</p>
+                                    </div>
+                                  </div>
+                                </div>
                               </div>
+                            </div>
                           </div>
+                        </div>
                       </div>
-                      <div class="timeline-block work">
-                          <div class="timeline-img-container">
-                              <i class="fas fa-graduation-cap fa-2x"></i>
-                          </div>
+                      <div class="timeline-block work" id="ttu-sa">
+                        <div class="timeline-img-container">
+                        </div>
 
-                          <div class="timeline-content service-box-content">
-                              <div class="heading">
-                                  <h2>Web Project Manager</h2>
+                        <div class="timeline-content service-box-content" data-toggle="modal" data-target="#ttu-sa-modal">
+                            <div class="heading">
+                                <h2>Student Assistant</h2>
+                            </div>
+                            <div class="heading-secondary">
+                                <p>
+                                  <i class="far fa-building"></i>
+                                  <span class="company">Texas Tech University</span>
+                                </p>
+                                <p>
+                                  <i class="far fa-calendar-alt"></i>
+                                  <span class="from">Jul 2010</span> 
+                                  - 
+                                  <span class="to">Aug 2011</span>
+                                  <span class="duration">(1 yr)</span>
+                                </p>
+                                <p>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span class="city-state">Lubbock, Texas Area</span>
+                                </p>
+                            </div>
+                            <div class="text">
+                              <p>Worked part time on improving and maintaining websites for the Rawls College of Business.</p>
+                            </div>
+                            <div class="read-more">
+                              <p align="right">Click/Tap to Read More...</p>
+                            </div>
+                        </div>
+                        <div class="modal" id="ttu-sa-modal" tabindex="-1" role="dialog" aria-labelledby="ttu-sa-label" aria-hidden="true">
+                          <div class="modal-dialog modal-full" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
                               </div>
-                              <div class="text">
-                                <p>Timeline event text.</p>
+                              <div class="modal-body">
+                                <h1 class="modal-title text-center" id="sse-modal-label">Student Assistant</h1>
+                                <h2 class="text-center">
+                                  <span class="company">Rawls College of Business, Texas Tech University</span>
+                                </h2>
+                                <h4 class="text-center">
+                                    <span class="from">Jul 2010</span> - <span class="to">Aug 2011</span>
+                                    <span class="duration">(1 yr)</span>
+                                    <span class="separator">|</span> 
+                                    <span class="city-state">Lubbock, Texas Area</span>
+                                </h3>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <h3>Work and Impact</h3>
+                                <p>
+                                  Worked on improving and maintaining 26+ websites and web applications for the Rawls College of Business. 
+                                </p>
+                                <p>
+                                  Developed an easy to use framework for websites to be more mobile friendly and have a better cross-platform user experience.
+                                </p>
+                                <p>
+                                  Provided Support and helped troubleshoot technical issues in a printing lab for students of the Rawls College of Business (3 mos).
+                                </p>
+                                <br/>
+                                <h3>Technologies and Tools Used</h3>
+                                <div class="row">
+                                  <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
+                                    <div class="skills-block text-center">
+                                      <i class="fas fa-code fa-2x"></i>
+                                      <p>CSS</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
+                                      <div class="skills-block text-center">
+                                        <i class="fas fa-code fa-2x"></i>
+                                        <p>HTML</p>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
+                                      <div class="skills-block text-center">
+                                        <i class="devicon-javascript-plain"></i>
+                                        <p>JavaScript</p>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
+                                      <div class="skills-block text-center">
+                                        <i class="devicon-jquery-plain"></i>
+                                        <p>jQuery</p>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
+                                    <div class="skills-block text-center">
+                                      <i class="devicon-photoshop-plain"></i>
+                                      <p>Photoshop</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
+                                    <div class="skills-block text-center">
+                                      <i class="devicon-php-plain"></i>
+                                      <p>PHP</p>
+                                    </div>
+                                  </div>
+                                </div>
                               </div>
+                            </div>
                           </div>
+                        </div>
                       </div>
-                      <div class="timeline-block-alt">
-                          <div class="timeline-img-container-alt">
-                              <button type="button" class="btn link" data-placement="right" data-toggle="tooltip" data-html="true" title="Moved to <b>USA</b>">
-                                <i class="fas fa-plane fa-2x" ></i>
-                              </button>
-                          </div>
+                      <div class="timeline-block-alt" id="moved-to-usa">
+                        <div class="timeline-img-container-alt">
+                          <button type="button" class="btn link" data-placement="right" data-toggle="tooltip" data-html="true" title="Moved to the <b>US</b>.">
+                          </button>
+                        </div>
                       </div>
-                      <div class="timeline-block education">
-                          <div class="timeline-img-container">
-                              <i class="fas fa-user-graduate fa-2x"></i>
-                          </div>
+                      <div class="timeline-block education" id="mu-boe-it">
+                        <div class="timeline-img-container">
+                        </div>
 
-                          <div class="timeline-content service-box-content">
-                              <div class="heading">
-                                  <h2>Bachelors of Engg. in Information Technology</h2>
+                        <div class="timeline-content service-box-content" data-toggle="modal" data-target="#mu-boe-it-modal">
+                            <div class="heading">
+                                <h2>Bachelors of Engineering in Information Technology</h2>
+                            </div>
+                            <div class="heading-secondary">
+                                <p>
+                                  <i class="fas fa-university"></i>
+                                  <span class="company">Mumbai University</span>
+                                </p>
+                                <p>
+                                  <i class="far fa-calendar-alt"></i>
+                                  <span class="from">Jun 2006</span> 
+                                  - 
+                                  <span class="to">Jul 2010</span>
+                                  <span class="duration">(4 yrs)</span>
+                                </p>
+                                <p>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span class="city-state">Mumbai, India</span>
+                                </p>
+                            </div>
+                            <div class="text">
+                              <p>Completed my Bachelors of Engineering in Information Technology from K. J. Somaiya College of Engineering with First Class.</p>
+                            </div>
+                            <div class="read-more">
+                              <p align="right">Click/Tap to Read More...</p>
+                            </div>
+                        </div>
+                        <div class="modal" id="mu-boe-it-modal" tabindex="-1" role="dialog" aria-labelledby="mu-boe-it--modal-label" aria-hidden="true">
+                          <div class="modal-dialog modal-full" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
                               </div>
-                              <div class="text">
-                                <p>Timeline event text.</p>
+                              <div class="modal-body">
+                                <h1 class="modal-title text-center" id="ttu-ms-modal-label">Bachelors of Engineering in Information Technology</h1>
+                                <h2 class="text-center">
+                                  <span class="company">Mumbai University</span>
+                                </h2>
+                                <h4 class="text-center">
+                                    <span class="from">Jun 2006</span> - <span class="to">Jul 2010</span>
+                                    <span class="duration">(4 yrs)</span>
+                                    <span class="separator">|</span> 
+                                    <span class="city-state">Mumbai, India</span>
+                                </h3>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <h3>Grades</h3>
+                                <div class="row">
+                                </div>
+                                <br/>
+                                <h3>Courses Taken</h3>
+                                <div class="row">
+                                </div>
                               </div>
+                            </div>
                           </div>
+                        </div>
                       </div>
-                      <div class="timeline-block education">
-                          <div class="timeline-img-container">
-                              <i class="fas fa-user-graduate fa-2x"></i>
-                          </div>
-                          <div class="timeline-content service-box-content">
-                              <div class="heading">
-                                  <h2>K. C. College of Arts Science and Commerce</h2>
+                      <div class="timeline-block education" id="mu-hsc-science">
+                        <div class="timeline-img-container">
+                        </div>
+
+                        <div class="timeline-content service-box-content" data-toggle="modal" data-target="#mu-boe-it-modal">
+                            <div class="heading">
+                                <h2>Higher Secondary Examination in Science</h2>
+                            </div>
+                            <div class="heading-secondary">
+                                <p>
+                                  <i class="fas fa-university"></i>
+                                  <span class="company">Mumbai University</span>
+                                </p>
+                                <p>
+                                  <i class="far fa-calendar-alt"></i>
+                                  <span class="from">Jun 2004</span> 
+                                  - 
+                                  <span class="to">Jul 2006</span>
+                                  <span class="duration">(2 yrs)</span>
+                                </p>
+                                <p>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span class="city-state">Mumbai, India</span>
+                                </p>
+                            </div>
+                            <div class="text">
+                              <p>Completed my Higher Secondary Examination in Science from KC College with First Class.</p>
+                            </div>
+                            <div class="read-more">
+                              <p align="right">Click/Tap to Read More...</p>
+                            </div>
+                        </div>
+                        <div class="modal" id="mu-boe-it-modal" tabindex="-1" role="dialog" aria-labelledby="mu-boe-it-modal-label" aria-hidden="true">
+                          <div class="modal-dialog modal-full" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
                               </div>
-                              <div class="text">
-                                <p>Timeline event text.</p>
+                              <div class="modal-body">
+                                <h1 class="modal-title text-center" id="ttu-ms-modal-label">Higher Secondary Examination in Science</h1>
+                                <h2 class="text-center">
+                                  <span class="company">KC College Mumbai University</span>
+                                </h2>
+                                <h4 class="text-center">
+                                    <span class="from">Jun 2004</span> - <span class="to">Jul 2006</span>
+                                    <span class="duration">(2 yrs)</span>
+                                    <span class="separator">|</span> 
+                                    <span class="city-state">Mumbai, India</span>
+                                </h3>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <h3>Grades</h3>
+                                <div class="row">
+                                </div>
+                                <br/>
+                                <h3>Courses Taken</h3>
+                                <div class="row">
+                                </div>
                               </div>
+                            </div>
                           </div>
+                        </div>
                       </div>
-                      <div class="timeline-block education">
-                          <div class="timeline-img-container">
-                              <i class="fas fa-school fa-2x"></i>
-                          </div>
-                          <div class="timeline-content service-box-content">
-                              <div class="heading">
-                                  <h2>St. Mary's High School ICSE</h2>
+                      <div class="timeline-block education" id="icse">
+                        <div class="timeline-img-container">
+                        </div>
+
+                        <div class="timeline-content service-box-content" data-toggle="modal" data-target="#icse-modal">
+                            <div class="heading">
+                                <h2>Indian Certificate of Secondary Education (ICSE)</h2>
+                            </div>
+                            <div class="heading-secondary">
+                                <p>
+                                  <i class="fas fa-university"></i>
+                                  <span class="company">Council for the Indian School Certificate Examination</span>
+                                </p>
+                                <p>
+                                  <i class="far fa-calendar-alt"></i>
+                                  <span class="from">Mar 1993</span> 
+                                  - 
+                                  <span class="to">Apr 2004</span>
+                                  <span class="duration">(11 yrs)</span>
+                                </p>
+                                <p>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span class="city-state">Mumbai, India</span>
+                                </p>
+                            </div>
+                            <div class="text">
+                              <p>Completed schooling from The St. Mary’s School I.C.S.E.</p>
+                            </div>
+                            <div class="read-more">
+                              <p align="right">Click/Tap to Read More...</p>
+                            </div>
+                        </div>
+                        <div class="modal" id="icse-modal" tabindex="-1" role="dialog" aria-labelledby="icse-modal-label" aria-hidden="true">
+                          <div class="modal-dialog modal-full" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
                               </div>
-                              <div class="text">
-                                <p>Timeline event text.</p>
+                              <div class="modal-body">
+                                <h1 class="modal-title text-center" id="ttu-ms-modal-label">Indian Certificate of Secondary Education (ICSE)</h1>
+                                <h2 class="text-center">
+                                  <span class="company">The St. Mary’s School I.C.S.E.</span>
+                                </h2>
+                                <h4 class="text-center">
+                                    <span class="from">Mar 1993</span> - <span class="to">Apr 2004</span>
+                                    <span class="duration">(11 yrs)</span>
+                                    <span class="separator">|</span> 
+                                    <span class="city-state">Mumbai, India</span>
+                                </h3>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <h3>Grades</h3>
+                                <div class="row">
+                                </div>
+                                <br/>
+                                <h3>Extra Curricular Activities</h3>
+                                <div class="row">
+                                </div>
                               </div>
+                            </div>
                           </div>
+                        </div>
                       </div>
                       <div class="timeline-block-alt">
                           <div class="timeline-img-container-alt">
                               <button type="button" class="btn link" data-placement="right" data-toggle="tooltip" data-html="true" title="Swam Elephanta Caves to Gateway of India <b>(7.6 miles)</b>">
-                                <i class="fas fa-swimmer fa-2x"></i>
                               </button>
                           </div>
                       </div>
                       <div class="timeline-block-alt">
                           <div class="timeline-img-container-alt">
                               <button type="button" class="btn link" data-placement="right" data-toggle="tooltip" data-html="true" title="Born in <b>India</b>">
-                                <i class="fas fa-baby fa-2x"></i>
                               </button>
                           </div>
                       </div>
@@ -643,7 +1317,7 @@
               </div>
           </div>
         </div>
-      </div> <!-- /container -->
+      </div>
       
       <div class="container-fluid" id="contact-main">
         <div class="container text-center mb-6">
@@ -651,36 +1325,39 @@
           <br/>
           <br/>
         </div>
-        <div id="map"></div>
+        <div id="map" class="text-center" style="overflow: hidden; opacity: .1; font-size: 500px; font-weight: 900; line-height: .5; background-color: #999; margin-bottom: 100px;">
+          Map
+        </div>
         <div class="container">
           <div class="row">
-            <div class="col-md-6">
-                <form>
+            <div class="col-md-6 col-lg-6 col-xl-6 col-12">
+              <form>
                 <p>Fill Out The Form Below And I'll Get Back To You</p>
-                  <div class="form-label-group">
-                    <input type="text" class="form-control" id="full-name" placeholder="Full Name" required></input>
-                    <label for="full-name">Full Name</label>
-                  </div>
-                  <div class="form-label-group">
-                    <input type="email" class="form-control" id="email" placeholder="Email" required></input>
-                    <label for="email">Email</label>
-                  </div>
-                  <div class="form-label-group">
-                    <textarea class="form-control" id="message" placeholder="Message"></textarea>
-                    <label for="message">Message</label>
-                  </div>
-                  <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
-                </form>
-              </div>
-              <div class="col-md-4 col-lg-3 col-xl-2 ">
-                <i class="fa user-skills-block text-center"></i><p> Amey Rupji</p>
-                <p><i class="fa at"></i> me@ameyrupji.com</p>
-              </div>
+                <div class="form-label-group">
+                  <input type="text" class="form-control" id="full-name" placeholder="Full Name" required></input>
+                  <label for="full-name">Full Name</label>
+                </div>
+                <div class="form-label-group">
+                  <input type="email" class="form-control" id="email" placeholder="Email" required></input>
+                  <label for="email">Email</label>
+                </div>
+                <div class="form-label-group">
+                  <textarea class="form-control" id="message" placeholder="Message"></textarea>
+                  <label for="message">Message</label>
+                </div>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+              </form>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-6 col-12">
+              <i class="fa fa-user-alt"> Amey Rupji</i>
+              <br/>
+              <i class="fa fa-at">me@ameyrupji.com</i>
+              <br/>
+              <i class="fab fa-linkedin">ameyrupji</i>
             </div>
           </div>
         </div>
       </div>
-
     </main>
 
     <footer class="container-fluid text-center" id="footer-main">

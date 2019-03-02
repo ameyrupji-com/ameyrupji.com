@@ -1,3 +1,16 @@
+*.unselectable {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+
+    /*
+        Introduced in IE 10.
+        See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+    */
+    -ms-user-select: none;
+    user-select: none;
+}
+
 body h1,
 body h2,
 body h3,
@@ -18,7 +31,7 @@ body p {
     margin-bottom: 25px;
     
 }
-#qualifications-main > .fa-graduation-cap, .fa-code{
+#qualifications-main > .fa-graduation-cap {
     background-color: rgba(132, 80, 7, 1); /*#845007*/
     background: linear-gradient(141deg, rgba(189, 149, 94, 1), rgba(132, 80, 7, 1));
     background: -webkit-linear-gradient(141deg, rgba(189, 149, 94, 1), rgba(132, 80, 7, 1));
@@ -112,7 +125,7 @@ body p {
 }
 
 #contact-main #map {
-    height: 400px;  /* The height is 400 pixels */
+    height: 350px;  /* The height is 400 pixels */
     width: 100%;  /* The width is the width of the web page */
 }
 
@@ -232,7 +245,7 @@ margin-bottom: 1rem;
 
 #timeline {
     position: relative;
-    padding: 2em 0;
+    padding-top: 2em;
     margin-top: 2em;
     margin-bottom: 2em;
 }
@@ -275,7 +288,6 @@ margin-bottom: 1rem;
 
 .timeline-block {
     position: relative;
-    margin-bottom: 20px;
 }
 
 .timeline-block:after {
@@ -289,12 +301,19 @@ margin-bottom: 1rem;
 }
 
 .timeline-block:last-child,
-.timeline-block-alt:last-child, {
+.timeline-block-alt:last-child {
     margin-bottom: 0;
+    top: 10px;
 }
 
 .timeline-hide {
     display:none;
+}
+
+.timeline-block .read-more p{
+    margin-bottom: 0; 
+    font-size: 12px !important; 
+    color: #777;
 }
 
 @media only screen and (max-width: 1169px) {
@@ -326,17 +345,16 @@ margin-bottom: 1rem;
 
 @media only screen and (min-width: 1170px) {
     .timeline-block-alt {
-        height:80px;
+        height:25px;
     }
 
     .timeline-block:first-child {
         margin-top: 0;
     }
 
-    .timeline-block:last-child,
-    .timeline-block-alt:last-child {
-        margin-bottom: 0;
-        height: 0px;
+    .timeline-block:last-child .timeline-img-container,
+    .timeline-block-alt:last-child .timeline-img-container-alt {
+        top: 10px;
     }
 
     .timeline-img-container-alt {
@@ -348,10 +366,10 @@ margin-bottom: 1rem;
         background: linear-gradient(141deg, rgba(31, 55, 75, 1), rgba(53, 92, 125, 1));
         border: 3px solid #ccc;
         position: relative;
-        width: 60px;
-        height: 60px;
+        width: 20px;
+        height: 20px;
         left: 50%;
-        margin-left: -30px;
+        margin-left: -10px;
         /* Force Hardware Acceleration in WebKit */
         -webkit-transform: translateZ(0);
         -webkit-backface-visibility: hidden;
@@ -359,7 +377,7 @@ margin-bottom: 1rem;
     }
 
     .timeline-img-container-alt i {
-        display: block;
+        display: none;
         text-align: center;
         align-content: center;
         margin: auto auto;
@@ -376,44 +394,30 @@ margin-bottom: 1rem;
         border: 3px solid #ccc;
         position: absolute;
         top: 15px;
-        width: 60px;
-        height: 60px;
+        width: 20px;
+        height: 20px;
         left: 50%;
-        margin-left: -30px;
+        margin-left: -10px;
         /* Force Hardware Acceleration in WebKit */
         -webkit-transform: translateZ(0);
         -webkit-backface-visibility: hidden;
     }
 
-    .timeline-img-container.top {
-        background-color: transparent;
-        border: 0;
-        border-radius: 50%;
-        position: absolute;
-        top: 50px;
-        width: 150px;
-        height: 150px;
-        left: 50%;
-        margin-left: -75px;
-        margin-top: -150px;
-        /* Force Hardware Acceleration in WebKit */
-        -webkit-transform: translateZ(0);
-        -webkit-backface-visibility: hidden;
-    }
+
 
     .timeline-img-container.top img {
         width: 150px;
         height: 150px;
         border-radius: 50%;
-        border: 3px solid #ccc;
+        border: 4px solid #ccc;
     }
 
     .timeline-block:nth-child(odd) .timeline-img-container {
-        top: -5px;
+        top: 15px;
     }
     
     .timeline-img-container i {
-        display: block;
+        display: none;
         text-align: center;
         align-content: center;
         margin: auto auto;
@@ -432,6 +436,21 @@ margin-bottom: 1rem;
         -webkit-animation: bounce-1 0.6s;
         -moz-animation: bounce-1 0.6s;
         animation: bounce-1 0.6s;
+    }
+    .timeline-block:nth-child(odd) .timeline-img-container.top {
+        background-color: transparent;
+        border: 0;
+        border-radius: 50%;
+        position: absolute;
+        top: -20px;
+        width: 150px;
+        height: 150px;
+        left: 50%;
+        margin-left: -75px;
+        margin-top: -150px;
+        /* Force Hardware Acceleration in WebKit */
+        -webkit-transform: translateZ(0);
+        -webkit-backface-visibility: hidden;
     }
 }
 
@@ -498,7 +517,6 @@ margin-bottom: 1rem;
 .timeline-content {
     border: 1px solid #ddd;
     position: relative;
-    margin-left: 60px;
     background-color: #fff;
     border-radius: 10px;
     display: block;
@@ -537,7 +555,7 @@ margin-bottom: 1rem;
 @media only screen and (min-width: 1170px) {
   
     .timeline-content {
-        width: 44%;
+        width: 47%;
     }
 
     .timeline-block:nth-child(even) .timeline-content {
@@ -749,10 +767,6 @@ margin-bottom: 1rem;
     }
 }
 
-.service-box-content {
-    margin: 20px;
-}
-
 .service-box-content .heading {
     background-color: rgba(31, 55, 75, 1);
     background: linear-gradient(141deg, rgba(31, 55, 75, 1), rgba(53, 92, 125, 1));
@@ -763,6 +777,29 @@ margin-bottom: 1rem;
     padding: 10px 20px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+}
+
+.service-box-content .heading-secondary {
+    background-color: #ddd; 
+    padding:10px 20px;
+}
+
+.service-box-content .heading-secondary p {
+    color: rgba(0, 0, 0, 0.6); 
+    margin-bottom: 5px;
+}
+
+.service-box-content .heading-secondary p i {
+    width: 25px;
+}
+
+.service-box-content .heading-secondary .duration
+.modal-content .modal-body .duration {
+    font-style: italic;
+}
+
+.modal-content .modal-body .separator {
+    padding: 0 10px;
 }
 
 .service-box-content .heading h2 {
@@ -777,8 +814,9 @@ margin-bottom: 1rem;
 
 
 @media (max-width:768px) {
+
     .service-box-content {
-        margin: 0px;
+        margin: 10px 0 10px 0;
         padding-bottom: 0px;
     }
 }
