@@ -2,11 +2,6 @@
     -moz-user-select: -moz-none;
     -khtml-user-select: none;
     -webkit-user-select: none;
-
-    /*
-        Introduced in IE 10.
-        See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
-    */
     -ms-user-select: none;
     user-select: none;
 }
@@ -101,16 +96,30 @@ body p {
     padding: 20px 0 30px 0;
 }
 
-#footer-main p,
-#footer-main a {
-    color: #ccc;
+#footer-main ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 10px;
 }
 
+#footer-main p,
+#footer-main a,
+#footer-main i {
+    color: #ccc;
+}
 #footer-main a:hover {
     color: #fff;
     text-decoration: none
 }
 
+#footer-main a i {
+    width: 30px;
+}
+
+#footer-main ul#ci li {
+    display: inline-block;
+    padding: 0 10px;
+}
 
 /*
 * Contact 
@@ -231,7 +240,7 @@ margin-bottom: 1rem;
 
 #timeline-main .btn-group {
     border: 2px solid #ddd;
-    border-radius: 4px;
+    border-radius: 6px;
 }
 
 #timeline-main .btn-group .btn.btn-primary {
@@ -260,14 +269,6 @@ margin-bottom: 1rem;
         padding-bottom: 40px;
     }
 }
-
-@media (max-width:1170px) {
-    .timeline-content {
-        margin-top: 60px;
-        padding-bottom: 40px;
-    }
-}
-
 @media only screen and (min-width: 1170px) {
     #timeline {
         margin-top: 10em;
@@ -515,12 +516,12 @@ margin-bottom: 1rem;
 }
 
 .timeline-content {
-    border: 1px solid #ddd;
+    border: 1px solid #ccc;
     position: relative;
-    background-color: #fff;
     border-radius: 10px;
     display: block;
     cursor: pointer;
+    background-color: #fff;
 }
 
 .timeline-content:hover {
@@ -553,7 +554,6 @@ margin-bottom: 1rem;
 }
 
 @media only screen and (min-width: 1170px) {
-  
     .timeline-content {
         width: 47%;
     }
@@ -578,8 +578,8 @@ margin-bottom: 1rem;
         left: -15px;
         display: inline-block;
         border-top: 15px solid transparent;
-        border-left: 0 solid #ddd;
-        border-right: 15px solid #ddd;
+        border-left: 0 solid #ccc;
+        border-right: 15px solid #ccc;
         border-bottom: 15px solid transparent;
         content: " ";
         -webkit-box-sizing: border-box;
@@ -590,7 +590,7 @@ margin-bottom: 1rem;
     .timeline-block:nth-child(even) .timeline-content::after {
         position: absolute;
         top: 11px;
-        left: -14px;
+        left: -13px;
         display: inline-block;
         border-top: 14px solid transparent;
         border-left: 0 solid #fff;
@@ -605,8 +605,8 @@ margin-bottom: 1rem;
         right: -15px;
         display: inline-block;
         border-top: 15px solid transparent;
-        border-left: 15px solid #ddd;
-        border-right: 0 solid #ddd;
+        border-left: 15px solid #ccc;
+        border-right: 0 solid #ccc;
         border-bottom: 15px solid transparent;
         content: " ";
         -webkit-box-sizing: border-box;
@@ -617,7 +617,7 @@ margin-bottom: 1rem;
     .timeline-block:nth-child(odd) .timeline-content::after {
         position: absolute;
         top: 11px;
-        right: -14px;
+        right: -13px;
         display: inline-block;
         border-top: 14px solid transparent;
         border-left: 14px solid #355c7d;
@@ -766,6 +766,9 @@ margin-bottom: 1rem;
         transform: translateX(0);
     }
 }
+.service-box-content {
+    margin-bottom: 15px;
+}
 
 .service-box-content .heading {
     background-color: rgba(31, 55, 75, 1);
@@ -775,8 +778,8 @@ margin-bottom: 1rem;
     background: -o-linear-gradient(141deg, rgba(31, 55, 75, 1), rgba(53, 92, 125, 1));
     background: linear-gradient(141deg, rgba(31, 55, 75, 1), rgba(53, 92, 125, 1));
     padding: 10px 20px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
 }
 
 .service-box-content .heading-secondary {
@@ -883,6 +886,11 @@ margin-bottom: 1rem;
     background: linear-gradient(141deg, rgba(189, 149, 94, 1), rgba(132, 80, 7, 1));
     color: #fff;
     padding: 150px 0;
+}
+
+#skills-main .btn-group {
+    border: 2px solid #ddd;
+    border-radius: 6px;
 }
 
 #skills-main .unused{
