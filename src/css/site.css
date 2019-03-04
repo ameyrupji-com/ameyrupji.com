@@ -26,7 +26,7 @@ body p {
     margin-bottom: 25px;
     
 }
-#qualifications-main > .fa-graduation-cap {
+#qualifications-main > .fas {
     background-color: rgba(132, 80, 7, 1); /*#845007*/
     background: linear-gradient(141deg, rgba(189, 149, 94, 1), rgba(132, 80, 7, 1));
     background: -webkit-linear-gradient(141deg, rgba(189, 149, 94, 1), rgba(132, 80, 7, 1));
