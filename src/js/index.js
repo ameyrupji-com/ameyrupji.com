@@ -132,8 +132,8 @@ $(document).ready(function() {
   });
 
   $('#skills-btn-all').click(function() {
-    $('#skills-main .btn-group .btn').removeClass('btn-primary').addClass('btn-light')
-    $(this).removeClass('btn-light').addClass('btn-primary')
+    $('#skills-main .btn-group .btn').removeClass('btn-light').addClass('btn-primary')
+    $(this).removeClass('btn-primary').addClass('btn-light')
 
     $skills_blocks.each(function(){
       $(this).show()
@@ -141,8 +141,8 @@ $(document).ready(function() {
   });
 
   $('#skills-btn-current').click(function() {
-    $('#skills-main .btn-group .btn').removeClass('btn-primary').addClass('btn-light')
-    $(this).removeClass('btn-light').addClass('btn-primary')
+    $('#skills-main .btn-group .btn').removeClass('btn-light').addClass('btn-primary')
+    $(this).removeClass('btn-primary').addClass('btn-light')
 
     $skills_blocks.each(function(){
       $(this).hide()
