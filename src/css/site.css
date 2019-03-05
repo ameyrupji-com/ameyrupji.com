@@ -14,45 +14,64 @@ body p {
     font-weight: 100 !important;
 }
 
-#qualifications-main{
+/*
+* Summary
+*/
+
+#summary-main{
     padding: 150px 0;
 }
 
-#qualifications-main h1{
-    margin-bottom: 50px;
-    
-}
-#qualifications-main h3{
-    margin-bottom: 25px;
-    
-}
-#qualifications-main > .fas {
-    background-color: rgba(132, 80, 7, 1); /*#845007*/
-    background: linear-gradient(141deg, rgba(189, 149, 94, 1), rgba(132, 80, 7, 1));
-    background: -webkit-linear-gradient(141deg, rgba(189, 149, 94, 1), rgba(132, 80, 7, 1));
-    background: -moz-linear-gradient(141deg, rgba(189, 149, 94, 1), rgba(132, 80, 7, 1));
-    background: -o-linear-gradient(141deg, rgba(189, 149, 94, 1), rgba(132, 80, 7, 1));
-    background: linear-gradient(141deg, rgba(189, 149, 94, 1), rgba(132, 80, 7, 1));
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -o-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    -o-text-fill-color: transparent;
-    text-fill-color: transparent;
+#summary-main h1 {
+    margin-bottom: 100px;
 }
 
-#qualifications-main .btn{
-    background-color: rgba(31, 55, 75, 1);
-    background: linear-gradient(141deg, rgba(31, 55, 75, 1), rgba(53, 92, 125, 1));
-    background: -webkit-linear-gradient(141deg, rgba(31, 55, 75, 1), rgba(53, 92, 125, 1));
-    background: -moz-linear-gradient(141deg, rgba(31, 55, 75, 1), rgba(53, 92, 125, 1));
-    background: -o-linear-gradient(141deg, rgba(31, 55, 75, 1), rgba(53, 92, 125, 1));
-    background: linear-gradient(141deg, rgba(31, 55, 75, 1), rgba(53, 92, 125, 1));
-	border: none;
+#summary-main p {
+    font-size: 25px !important;
+}
+
+/*
+* Qualifications
+*/
+
+#resume-main{
+    padding: 150px 0;
+    background-color: #357D5C;
+    background: linear-gradient(141deg, #357D5C, #1F4B37);
+    background: -webkit-linear-gradient(141deg, #357D5C, #1F4B37);
+    background: -moz-linear-gradient(141deg, #357D5C, #1F4B37);
+    background: -o-linear-gradient(141deg, #357D5C, #1F4B37);
+    background: linear-gradient(141deg, #357D5C, #1F4B37);
+}
+
+#resume-main h1{
+    margin-bottom: 200px;
+    color: #fff;
+    
+}
+#resume-main h3 {
+    margin-bottom: 25px;
+}
+
+#resume-main .file-icon i {
+    display: block;
+    z-index: 99;
+    position: relative;
+    top: -130px;
+    color: #000;
+    opacity: .1;
+    font-size: 250px;
+}
+
+#resume-main .download-btn {
+    display: block;
+    position: relative;
+    z-index: 100;
+}
+
+#resume-main .btn {
 	font-size: 16px;
-	width: 35%;
+	width: 70%;
 	margin: auto;
 	padding: 10px;
     -webkit-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -62,27 +81,41 @@ body p {
     -ms-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
-    color: #fff;
+    border: none;
 }
 
-#qualifications-main .btn:hover, 
-#qualifications-main .btn:focus {
+#resume-main .btn.word {
+    background-color: rgba(31, 55, 75, 1);
+    background: linear-gradient(141deg, rgba(31, 55, 75, 1), rgba(53, 92, 125, 1));
+    background: -webkit-linear-gradient(141deg, rgba(31, 55, 75, 1), rgba(53, 92, 125, 1));
+    background: -moz-linear-gradient(141deg, rgba(31, 55, 75, 1), rgba(53, 92, 125, 1));
+    background: -o-linear-gradient(141deg, rgba(31, 55, 75, 1), rgba(53, 92, 125, 1));
+    background: linear-gradient(141deg, rgba(31, 55, 75, 1), rgba(53, 92, 125, 1));
+	color: #fff;
+}
+
+#resume-main .btn.pdf {
+    background-color: rgba(153, 25, 30, 1);
+    background: linear-gradient(141deg, rgba(153, 25, 30, 1), rgba(216, 31, 40, 1));
+    background: -webkit-linear-gradient(141deg, rgba(153, 25, 30, 1), rgba(216, 31, 40, 1));
+    background: -moz-linear-gradient(141deg, rgba(153, 25, 30, 1), rgba(216, 31, 40, 1));
+    background: -o-linear-gradient(141deg, rgba(153, 25, 30, 1), rgba(216, 31, 40, 1));
+    background: linear-gradient(141deg, rgba(153, 25, 30, 1), rgba(216, 31, 40, 1));
+	color: #fff;
+}
+
+#resume-main .btn:hover, 
+#resume-main .btn:focus {
     -webkit-box-shadow: 0 15px 16px 0 rgba(0,0,0,0.2);
     box-shadow: 0 15px 16px 0 rgba(0,0,0,0.2);
-    color: #fff;
 }
 
-#qualifications-main .btn i{
-	color: #fff
-}
-
-#qualifications-main .btn:hover, .btn:focus{
+#resume-main .btn:hover, .btn:focus{
     -webkit-box-shadow: 0 15px 16px 0 rgba(0,0,0,0.2);
     box-shadow: 0 15px 16px 0 rgba(0,0,0,0.2);
-    color: #fff
 }
 
-#qualifications-main .btn:active{
+#resume-main .btn:active{
 	color: #1c1c1c;
 }
 
@@ -107,6 +140,7 @@ body p {
 #footer-main i {
     color: #ccc;
 }
+
 #footer-main a:hover {
     color: #fff;
     text-decoration: none
@@ -126,16 +160,19 @@ body p {
 */
 
 #contact-main{
-	padding: 50px 0;
+	padding: 0 0 100px 0;
 }
 
 #contact-main h1 {
-    
+    margin-bottom: 100px;
 }
 
 #contact-main #map {
-    height: 350px;  /* The height is 400 pixels */
-    width: 100%;  /* The width is the width of the web page */
+    height: 350px; 
+    width: 100%;
+    background-image: url("../images/austin_map.jpg");
+    background-size: cover; 
+    background-position: 50% 0%;
 }
 
 :root {

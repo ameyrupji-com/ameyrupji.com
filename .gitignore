@@ -81,3 +81,6 @@ typings/
 
 # from parcel/.gitignore
 dist
+
+# macOS file
+.DS_Store

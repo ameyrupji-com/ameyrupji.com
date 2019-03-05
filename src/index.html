@@ -29,13 +29,16 @@
                   <div class="collapse navbar-collapse" id="navbar-collapse-menu">
                     <ul class="navbar-nav ml-auto">
                       <li class="nav-item">
-                        <a href="#qualifications-main" class="nav-link">Qualifications</a>
+                        <a href="#summary-main" class="nav-link">Summary</a>
                       </li>
                       <li class="nav-item">
                           <a href="#skills-main" class="nav-link">Skills</a>
                         </li>
                       <li class="nav-item">
                         <a href="#timeline-main" class="nav-link">Timeline</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#resume-main" class="nav-link">Resume</a>
                       </li>
                       <li class="nav-item">
                         <a href="#contact-main" class="nav-link">Contact</a>
@@ -69,26 +72,23 @@
           </div>
       </div>
 
-      <div class="container text-center mb-6" id="qualifications-main">
-        <h1>Qualifications</h1>
-        <br/>
-        <i class="fas fa-graduation-cap fa-2x"></i>
-        <h3>Masters Degree In Computer Science from Texas Tech University</h3>
-        <br/>
-        <h1>Professional Summery</h1>
-        <br/>
-        <i class="fas fa-user-tie fa-2x"></i>
-        <h3>
-          6+ years of experience in designing and developing Enterprise Applications and Platform Applications Components deployed on-premises and on the cloud using open source and proprietary tools for healthcare space.
-        </h3>
-        <h3>
-          Key strengths include sharp analytical skills, sharp focused and high-quality software engineering skills with thirst for continuous improvement, and excellent communication skills to engage business and technology stakeholders.
-        </h3>
-        <br/>
-        <br/>
-        <a class="btn" href="./assets/pdf/ameyrupji_resume.pdf">
-          <i class="fas fa-download"></i> Download Resume
-        </a>
+      <div class="container mb-6" id="summary-main">
+        <h1 class="text-center">Professional Summary</h1>
+        <div class="row">
+          <div class="col-xl-4 offset-xl-1 col-lg-4 offset-lg-1 col-md-12 col-12 text-center">
+            <p>
+              6+ years of experience in designing, developing, and delivering highly scalable enterprise wide applications and platform components deployed on-premises and on the cloud using open source as well as proprietary tools and services in the healthcare domain.
+            </p>
+          </div>
+          <div class="col-xl-2 col-lg-2 col-md-0 col-0">
+            <p>&nbsp;</p>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-12 col-12 text-center">
+            <p>
+              Key strengths include sharp analytical skills, constant focus on quality and process improvements, good software engineering and problem-solving capabilities along with excellent communication skills to engage business and technology stakeholders.
+            </p>
+          </div>
+        </div>
       </div>
 
       <div class="container-fluid" id="skills-main">
@@ -111,6 +111,12 @@
           <br/>
           <br/>
           <div class="row">
+            <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
+              <div class="skills-block text-center">
+                <i class="devicon-apple-original"></i>
+                <p>Apple (macOS)</p>
+              </div>
+            </div>
             <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
               <div class="skills-block text-center">
                 <i class="devicon-amazonwebservices-original"></i>
@@ -225,6 +231,12 @@
                 <p>jQuery</p>
               </div>
             </div>
+            <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
+                <div class="skills-block text-center">
+                  <i class="devicon-linux-plain"></i>
+                  <p>Linux</p>
+                </div>
+              </div>
             <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6 unused">
               <div class="skills-block text-center">
                 <i class="devicon-mongodb-plain-wordmark"></i>
@@ -279,7 +291,6 @@
                 <p>PyCharm</p>
               </div>
             </div>
-
             <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
               <div class="skills-block text-center">
                 <i class="fas fa-code fa-2x"></i>
@@ -290,6 +301,24 @@
               <div class="skills-block text-center">
                 <i class="fas fa-code fa-2x"></i>
                 <p>Splunk</p>
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6 unused">
+              <div class="skills-block text-center">
+                <i class="fas fa-database"></i>
+                <p>SQL Server</p>
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
+              <div class="skills-block text-center">
+                <i class="fas fa-code fa-2x"></i>
+                <p>Terraform</p>
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6 unused">
+              <div class="skills-block text-center">
+                <i class="devicon-windows8-plain"></i>
+                <p>Windows</p>
               </div>
             </div>
             <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6 unused">
@@ -320,7 +349,6 @@
               </div>
             </div>
           </div>
-          <!-- Example row of columns -->
           <div class="row">
               <div class="col-md-12">
                   <section id="timeline" class="container">
@@ -392,21 +420,27 @@
                                   <br/>
                                   <h3>Work and Impact</h3>
                                   <p>
-                                    Developed a scalable cloud-based data mastering platform to consolidate, organize, enrich, and publish single source of truth for healthcare entities. 
+                                    Developed a scalable cloud-based data mastering platform to consolidate, organize, aggregate, and enrich healthcare entities like Patients, Providers, Payors, and Practices.
                                   </p>
                                   <p>
-                                    Worked with 6+ teams across the globe to provide a unified view of patient and provider data across the organization supporting use cases like health system planning, care coordination of patients, consumer outreach, etc.
+                                    Implemented model and rule based distributed matching algorithm to link healthcare entities form disparate data sources each having millions of records for batch and streaming use cases.
                                   </p>
                                   <p>
-                                    Collaborate with teams to implement the best practices in infrastructure automation, security, data governance, and data stewardship.
+                                    Worked with 6+ teams across the globe to support use cases like Health System Planning, Patient Care Coordination, Consumer Outreach Initiatives to drive healthy outcomes for patients.
                                   </p>
                                   <p>
-                                    Implement distributed rules based matching algorithm to link hundreds of data sets of patients and providers representing hundreds of millions of records.
+                                    Collaborated with teams to implement the best practices in Cloud Infrastructure Automation, Cloud Application Security, Data Governance, and Data Stewardship. Onboarded and mentored new developers and members of partnering products on various aspects of the product through hands on training and technical product documentation.
                                   </p>
                                   <br/>
                                   
                                   <h3>Technologies and Tools Used</h3>
                                   <div class="row">
+                                    <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
+                                      <div class="skills-block text-center">
+                                        <i class="devicon-apple-original"></i>
+                                        <p>Apple (macOS)</p>
+                                      </div>
+                                    </div>
                                     <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
                                       <div class="skills-block text-center">
                                         <i class="devicon-amazonwebservices-original"></i>
@@ -474,6 +508,12 @@
                                         </div>
                                     </div>
                                     <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
+                                        <div class="skills-block text-center">
+                                          <i class="devicon-linux-plain"></i>
+                                          <p>Linux</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
                                       <div class="skills-block text-center">
                                         <i class="fas fa-code fa-2x"></i>
                                         <p>New Relic</p>
@@ -504,11 +544,17 @@
                                       </div>
                                     </div>
                                     <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
-                                        <div class="skills-block text-center">
-                                          <i class="fas fa-code fa-2x"></i>
-                                          <p>Splunk</p>
-                                        </div>
+                                      <div class="skills-block text-center">
+                                        <i class="fas fa-code fa-2x"></i>
+                                        <p>Splunk</p>
                                       </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
+                                      <div class="skills-block text-center">
+                                        <i class="fas fa-code fa-2x"></i>
+                                        <p>Terraform</p>
+                                      </div>
+                                    </div>
                                   </div>
                                 </div>
                               </div>
@@ -578,10 +624,13 @@
                                 <br/>
                                 <h3>Work and Impact</h3>
                                 <p>
-                                  Developed and maintained user facing website and backend web services to deploy automation tools and websites for single and multi-tenant software suites within the company.
+                                  Developed and maintained user facing website and backend web services to deploy websites and web api applications for single and multi-tenant SaaS products within the company.
                                 </p>
                                 <p>
-                                  This product empowered 4+ product teams to maintain their deployment Service Level Agreements and easily scale deployments of hundreds of health system clients within the country. 
+                                  This empowered 4+ product teams easily scale their SaaS offerings to hundreds of health system clients maintaining their Service Level Agreements.
+                                </p>
+                                <p>
+                                  Enhanced the Single Sign On platform by adding new functionalities and making it more robust by improving on existing testing infrastructure. Demonstrated ownership by handling numerous product integrations on the developed Single Sign-On platform by collaborating with Team Leads, Developers, Quality Assurance, and Services Team from these products.
                                 </p>
                                 <br/>
                                 <h3>Technologies and Tools Used</h3>
@@ -619,7 +668,13 @@
                                   <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
                                     <div class="skills-block text-center">
                                       <i class="devicon-dot-net-plain"></i>
-                                      <p>.Net</p>
+                                      <p>.Net MVC</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
+                                    <div class="skills-block text-center">
+                                      <i class="fas fa-database"></i>
+                                      <p>SQL Server</p>
                                     </div>
                                   </div>
                                   <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
@@ -662,6 +717,12 @@
                                     <div class="skills-block text-center">
                                       <i class="fas fa-code fa-2x"></i>
                                       <p>Splunk</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
+                                    <div class="skills-block text-center">
+                                      <i class="devicon-windows8-plain"></i>
+                                      <p>Windows</p>
                                     </div>
                                   </div>
                                 </div>
@@ -726,10 +787,13 @@
                                   <br/>
                                   <h3>Work and Impact</h3>
                                   <p>
-                                    Collaborated with Product Management, User Experience, Engineering Teams, Quality Assurance, Services and Stakeholders to develop, organize, and evangelize a Single Sign-On platform for the company.
+                                    Collaborated with Product Management, User Experience, Engineering Teams, Quality Assurance, Services and Stakeholders to evangelize, organize, and develop a Single Sign-On platform for the company using SAML 2.0 protocol.
                                   </p>
                                   <p>
-                                      Worked with 10+ internal product teams to replace their ad-hoc password protection for their users with developed Single Sign-On solution using SAML 2.0 protocol to provide better user experience and unified security policy.
+                                    Worked with 10+ internal product teams to replace their ad-hoc password protection policies for their users my migrating them over to the SSO platform using stateless RESTful web services combined with intuitive workflow application. This enabled end users of the system to have a more secure and unified experience to numerous SaaS offerings within the company. This implementation also supported Federated Single Sign-On Experience for users of configured clients.
+                                  </p>
+                                  <p>
+                                    Robustness and reliability of the application was ensured by building testing frameworks. These frameworks eased extensibility of Unit, Integration, Functional, and Regression Tests and supported Test Driven Development.
                                   </p>
                                   <br/>
                                   <h3>Technologies and Tools Used</h3>
@@ -767,13 +831,13 @@
                                     <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
                                       <div class="skills-block text-center">
                                           <i class="devicon-dot-net-plain"></i>
-                                          <p>.Net</p>
+                                          <p>.Net MVC</p>
                                       </div>
                                     </div>
                                     <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
                                       <div class="skills-block text-center">
-                                        <i class="devicon-dot-net-plain"></i>
-                                        <p>.Net</p>
+                                        <i class="fas fa-database"></i>
+                                        <p>SQL Server</p>
                                       </div>
                                     </div>
                                     <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
@@ -816,6 +880,12 @@
                                       <div class="skills-block text-center">
                                         <i class="fas fa-code fa-2x"></i>
                                         <p>Splunk</p>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-3 col-xl-2 col-sm-6 col-6">
+                                      <div class="skills-block text-center">
+                                        <i class="devicon-windows8-plain"></i>
+                                        <p>Windows</p>
                                       </div>
                                     </div>
                                   </div>
@@ -1339,21 +1409,61 @@
           </div>
         </div>
       </div>
+
+      <div class="container-fluid" id="resume-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1>Resume</h1>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-4 col-lg-4 col-md-12 col-12 text-center">
+                <div class="download-btn">
+                  <a class="btn word" href="./assets/word/ameyrupji_resume.docx">
+                    Download Word
+                  </a>
+                </div>
+                <div class="file-icon">
+                  <i class="far fa-file-word"></i>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-12 col-12 text-center">
+                <div class="download-btn">
+                  <a class="btn pdf" href="./assets/pdf/ameyrupji_resume.pdf">
+                    Download PDF
+                  </a>
+                </div>
+                <div class="file-icon">
+                  <i class="far fa-file-pdf"></i>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-12 col-12 text-center">
+                <div class="download-btn">
+                  <a class="btn btn-light sharer" href="#" id="share-email-btn">
+                   Share
+                  </a>
+                </div>
+                <div class="file-icon">
+                  <i class="fas fa-share"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       
       <div class="container-fluid" id="contact-main">
+        <div id="map" class="text-center" style="overflow: hidden; margin-bottom: 100px;">
+        </div>
         <div class="container text-center mb-6">
           <h1>Get In Touch</h1>
-          <br/>
-          <br/>
-        </div>
-        <div id="map" class="text-center" style="overflow: hidden; opacity: .1; font-size: 500px; font-weight: 900; line-height: .5; background-color: #999; margin-bottom: 100px;">
-          Map
         </div>
         <div class="container">
           <div class="row">
             <div class="col-md-6 offset-md-3 col-lg-6 offset-lg-3 col-xl-6 offset-xl-3 col-12">
               <form>
-                <p>For professional inquiries please fill in the form below.</p>
+                <p class="text-center">For professional inquiries please fill in the form below.</p>
                 <div class="form-label-group">
                   <input type="text" class="form-control" id="full-name" placeholder="Full Name" required></input>
                   <label for="full-name">Full Name</label>
@@ -1366,7 +1476,8 @@
                   <textarea class="form-control" id="message" placeholder="Message"></textarea>
                   <label for="message">Message</label>
                 </div>
-                <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+                <button class="btn btn-light btn-block" type="reset">Cancel</button>
+                <button class="btn btn-primary btn-block" type="submit">Submit</button>
               </form>
             </div>
           </div>
@@ -1410,7 +1521,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
-    <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"> -->
+    <script src="https://cdn.jsdelivr.net/sharer.js/latest/sharer.min.js"></script>
     <script src="./js/index.js"></script>
   </body>
 </html>
