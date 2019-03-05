@@ -149,14 +149,15 @@ $(document).ready(function() {
     });
   });
 
-  // Initialize and add the map
-  function initMap() {
-    // The location of Uluru
-    var uluru = {lat: -25.344, lng: 131.036};
-    // The map, centered at Uluru
-    var map = new google.maps.Map(
-        document.getElementById('map'), {zoom: 4, center: uluru});
-    // The marker, positioned at Uluru
-    var marker = new google.maps.Marker({position: uluru, map: map});
-  }
+  //https://ellisonleao.github.io/sharer.js
+  var url = window.location.href.split('#')[0] + '/assets/pdf/ameyrupji_resume.pdf';
+  var title = 'Check out Amey Rupji\'s resume at:';
+  var subject = 'Check out Amey Rupji\'s - Resume';
+  var to = ""
+
+  $('#share-email-btn').attr('data-url', url).attr('data-title', title).attr('data-subject', subject).attr('data-to', to).attr('data-sharer', 'email');
+  $(document).on('click','.sharer.btn',function(e){
+    e.preventDefault();
+    return false;
+   });
 });
