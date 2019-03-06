@@ -40,6 +40,28 @@ body, html {
   filter: drop-shadow(0 0 30px #000);
 }
 
+.navbar.bg-transparent {
+  background-color: transparent !important;
+}
+
+.navbar.bg-transparent .navbar-brand {
+  color: #fff;
+  font-weight: 100;
+}
+.navbar.bg-transparent .nav-item a {
+  color: rgba(255,255,255,.8);
+  font-weight: 100;
+}
+
+.navbar.bg-transparent .nav-item a:hover {
+  color: rgba(255,255,255,1);
+}
+
+.navbar.bg-transparent .navbar-toggler {
+  color: rgba(255,255,255,.8);
+  border: 0px;
+}
+
 #jumbotron-content {
   padding:100px; 
   color:#fff; 
@@ -136,6 +158,12 @@ body, html {
   -moz-animation: mouse-wheel 1.2s ease infinite;
 }
 
+@media (max-width:1169px) {
+  .scroll-container .mouse {
+    display: none;
+  }
+}
+
 @-webkit-keyframes mouse-wheel
 {
   0% {
@@ -185,75 +213,49 @@ body, html {
   100% { opacity: 1; }
 }
 
-@media (max-width:1169px) {
-  :root {
-    --finger-scroll-height: 50px;
-  }
-
-  .scroll-container .mouse
-  {
-    display: none;
-  }
-
-  .scroll-container .wheel
-  {
-    display: none;
-  }
-
-  .scroll-container .finger
-  {
-    height: 35px;
-    width: 24px;
-    transform: none;
-    top: 180px;
-  }
-
-  .scroll-container .finger .swipe.swipe-vertical {
+@media only screen and (max-width: 991px) {
+  #burger {
+    width: 18px;
+    height: 8px;
     position: relative;
+    display: block;
+    margin: -8px auto 0;
+    top: 50%;
+  }
+  #burger .bar {
+    width: 100%;
+    height: 1px;
+    display: block;
+    position: relative;
+    background: #fff;
+    transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+    transition-delay: 0s;
+  }
+  #burger .bar.top {
+    -webkit-transform: translateY(0px) rotate(0deg);
+            transform: translateY(0px) rotate(0deg);
+  }
+  #burger .bar.bottom {
+    -webkit-transform: translateY(6px) rotate(0deg);
+            transform: translateY(6px) rotate(0deg);
   }
 
-  .scroll-container .finger .swipe.swipe-vertical i {
-    position: absolute;
-			display: inline-block;
-			color: #fff;
-      border-radius: 100%;
-      border:0px;
-			animation: finger ease-in 4s;
-			animation-iteration-count: infinite;
-      z-index: 100;
-      left: 0;
+  .navbar.bg-transparent.navbar-open {
+    height: 100%;
+    transition: all 0.3s ease-in;
+    transition-delay: 0.25s;
   }
 
-  @keyframes finger{
-    0% {
-      bottom: -45px;
-      transform: scale(1);
-    }
-    20% {
-      bottom: -45px;
-      transform: scale(.7);
-    }
-    50% {
-      bottom: 0;
-      transform: scale(.7);
-    }
-    60% {
-      transform: scale(1);
-    }
-    70% {
-      bottom: 0;
-    }
-    100% {
-      bottom: -45px;
-      transform: scale(1);
-    }
+  .navbar.bg-transparent.navbar-open #burger .bar {
+    transition: all 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+    transition-delay: 0.2s;
   }
-}
-
-@media only screen and (min-width: 1170px) {
-
-  .finger {
-    display:none;
+  .navbar.bg-transparent.navbar-open #burger .bar.top {
+    -webkit-transform: translateY(4px) rotate(45deg);
+            transform: translateY(4px) rotate(45deg);
+  }
+  .navbar.bg-transparent.navbar-open #burger .bar.bottom {
+    -webkit-transform: translateY(3px) rotate(-45deg);
+            transform: translateY(3px) rotate(-45deg);
   }
 }
-

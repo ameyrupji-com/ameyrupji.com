@@ -3,6 +3,11 @@ import Typed from 'typed.js';
 
 
 $(document).ready(function() {
+  // navbar
+  $('.navbar-toggler').click(function() {
+    $('.navbar').toggleClass('navbar-open') 
+  })
+
   var $timeline_block = $('.timeline-block');
   var $timeline_block_alt = $('.timeline-block-alt');
 
@@ -34,7 +39,7 @@ $(document).ready(function() {
   });
 
   
-  // scroll amination
+  // scroll animation
   $('a').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
@@ -58,7 +63,7 @@ $(document).ready(function() {
 
   var typed = new Typed(".typed", options);
   
-  //Enable tooltips everywhere
+  //Enable tooltip everywhere
   $('[data-toggle="tooltip"]').tooltip()
 
   $('#timeline-btn-all').click(function() {
