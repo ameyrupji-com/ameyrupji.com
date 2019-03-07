@@ -10,7 +10,8 @@
   "dependencies": {
     "bootstrap": "^4.3.1",
     "cover": "^0.2.9",
-    "typed.js": "^2.0.10"
+    "typed.js": "^2.0.10",
+    "var": "^0.3.2"
   },
   "devDependencies": {
     "cssnano": "^4.1.10",

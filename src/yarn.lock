@@ -4959,6 +4959,13 @@ v8-compile-cache@^2.0.0:
   resolved "https://registry.yarnpkg.com/v8-compile-cache/-/v8-compile-cache-2.0.2.tgz#a428b28bb26790734c4fc8bc9fa106fccebf6a6c"
   integrity sha512-1wFuMUIM16MDJRCrpbpuEPTUGmM5QMUg0cr3KFwra2XgOgFcPGDQHDh3CszSCD2Zewc/dh/pamNEW8CbfDebUw==
 
+var@^0.3.2:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/var/-/var-0.3.2.tgz#d41a6ef2944bb9f87d3fe16d3ff1c1380298b55f"
+  integrity sha512-3yUw+Rfknz4RtsJX4E/j5d6HIKE2FmSuV30L6ZAm3Lj5em2fDQ3HTTEr97Tvdfg9aEka+/bOGvcF881kCubwWQ==
+  dependencies:
+    lodash "^4.17.4"
+
 vendors@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/vendors/-/vendors-1.0.2.tgz#7fcb5eef9f5623b156bcea89ec37d63676f21801"
