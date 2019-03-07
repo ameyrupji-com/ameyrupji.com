@@ -47,7 +47,18 @@ jobs:
           command: | 
             cd src
             npm install parcel-bundler --save-dev
-            npm run build
+            PUBLIC_URL='.' npm run build 
+      - *save_repo
+  build-branches: 
+    <<: *build_default_config
+    steps:
+      - checkout
+      - run: 
+          name: build
+          command: | 
+            cd src
+            npm install parcel-bundler --save-dev
+            PUBLIC_URL='${CIRCLE_BRANCH}' npm run build 
       - *save_repo
   upload-master:
     <<: *deploy_default_config
@@ -79,6 +90,17 @@ workflows:
   build-upload:
     jobs:
       - build
+          filters:
+            branches:
+              only: 
+                - master
+                - develop
+      - build-branches
+          filters:
+            branches:
+              ignore: 
+                - master
+                - develop
       - approve-master:
           type: approval
           requires:
@@ -100,7 +122,7 @@ workflows:
                 only: develop
       - upload-branches:
           requires:
-              - build
+              - build-branches
           filters:
               branches:
                 ignore: 
