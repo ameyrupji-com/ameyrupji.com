@@ -1,0 +1,15 @@
+/*
+* Summary
+*/
+
+#summary-main{
+    padding: 150px 0;
+}
+
+#summary-main h1 {
+    margin-bottom: 100px;
+}
+
+#summary-main p {
+    font-size: 25px !important;
+}

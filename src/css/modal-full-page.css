@@ -1,0 +1,47 @@
+/*
+* modal-full 
+*/
+
+.modal-full {
+    min-width: 100%;
+    margin: 0;
+}
+
+.modal-full .modal-content {
+    min-height: 100vh;
+    padding: 10px 100px 200px;
+}
+
+.modal-header {
+    border-radius: 0;
+    border-bottom: 0;
+    margin-bottom: 50px;
+}
+
+.modal-header button {
+    font-size: 4em;
+    font-weight: 100;
+}
+
+.timeline-content .text p:last-child {
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width: 1169px) {
+    .modal-header {
+        border-radius: 0;
+        border-bottom: 0;
+        margin-bottom: 0;
+    }
+    .modal-full .modal-content {
+        border: none;
+        border-radius: 0;
+        padding: 10px 10px;
+        display: flex;
+        min-height: 100vh;
+    }
+}
+
+.modal-content .skills-block i {
+    font-size: 60px;
+}
