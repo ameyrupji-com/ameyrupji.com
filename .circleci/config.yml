@@ -89,13 +89,13 @@ workflows:
   version: 2
   build-upload:
     jobs:
-      - build
+      - build:
           filters:
             branches:
               only: 
                 - master
                 - develop
-      - build-branches
+      - build-branches:
           filters:
             branches:
               ignore: 
