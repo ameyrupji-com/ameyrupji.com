@@ -47,7 +47,7 @@ jobs:
           command: | 
             cd src
             npm install parcel-bundler --save-dev
-            PUBLIC_URL='.' npm run build 
+            npm run build 
       - *save_repo
   build-branches: 
     <<: *build_default_config
@@ -58,7 +58,7 @@ jobs:
           command: | 
             cd src
             npm install parcel-bundler --save-dev
-            PUBLIC_URL=/${CIRCLE_BRANCH} npm run build 
+            npm run build-branch 
       - *save_repo
   upload-master:
     <<: *deploy_default_config
