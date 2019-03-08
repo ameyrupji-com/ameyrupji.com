@@ -13,7 +13,7 @@
 #contact-main #map {
     height: 350px; 
     width: 100%;
-    background-image: url("../images/austin_map.jpg");
+    background-image: url("/images/austin_map.jpg");
     background-size: cover; 
     background-position: 50% 0%;
 }
