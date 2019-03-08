@@ -18,7 +18,8 @@
     "parcel-bundler": "^1.11.0"
   },
   "scripts": {
-    "dev": "",
-    "build": ""
+    "dev": "parcel index.html",
+    "prebuild": "rm -rf src/dist/",
+    "build": "parcel build index.html --public-url ."
   }
 }
