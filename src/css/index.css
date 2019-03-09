@@ -1,13 +1,13 @@
-@import url('./site.css');
+@import './site.css';
 
-@import url('./variables.css');
-@import url('./index.css');
-@import url('./cover.css');
-@import url('./summary.css');
-@import url('./skills.css');
-@import url('./timeline.css');
-@import url('./resume.css');
-@import url('./contact.css');
-@import url('./footer.css');
+@import './variables.css';
+@import './index.css';
+@import './cover.css';
+@import './summary.css';
+@import './skills.css';
+@import './timeline.css';
+@import './resume.css';
+@import './contact.css';
+@import './footer.css';
 
-@import url('./modal-full-page.css');
+@import './modal-full-page.css';

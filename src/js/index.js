@@ -1,7 +1,4 @@
 // Can also be included with a regular script tag
-import Typed from 'typed.js';
-
-
 $(document).ready(function() {
   // navbar
   $('.navbar-toggler').click(function() {
