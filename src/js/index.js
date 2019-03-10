@@ -162,4 +162,11 @@ $(document).ready(function() {
     e.preventDefault();
     return false;
    });
+
+  // get the latest release 
+  // https://api.github.com/repos/ameyrupji/ameyrupji.com/releases/latest
+  $.ajax({url: "https://api.github.com/repos/ameyrupji/ameyrupji.com/releases/latest", success: function(result){
+    var release_number = result['tag_name'] 
+    $("#release-number").html(release_number);
+  }});
 });
