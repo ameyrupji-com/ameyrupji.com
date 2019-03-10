@@ -17,7 +17,8 @@
 
 @media (max-width:768px) {
     #summary-main p {
-        font-size: 17px !important;
+        font-size: 16px !important;
+        line-height: 24px;
         margin-left: 10px;
         margin-right: 10px;
     }
