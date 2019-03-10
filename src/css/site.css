@@ -11,6 +11,11 @@ body, html {
     height: 100%;
 }
 
+body.modal-open {
+    overflow: hidden;
+    position: fixed;
+}
+
 body h1,
 body h2,
 body h3,
