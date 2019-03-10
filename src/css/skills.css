@@ -10,7 +10,8 @@
     background: -o-linear-gradient(141deg, rgba(189, 149, 94, 1), rgba(132, 80, 7, 1));
     background: linear-gradient(141deg, rgba(189, 149, 94, 1), rgba(132, 80, 7, 1));
     color: #fff;
-    padding: 150px 0;
+    padding-top: 150px;
+    padding-bottom: 100px;
 }
 
 #skills-main .btn-group {
