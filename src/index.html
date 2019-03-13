@@ -49,7 +49,7 @@
         <div class="jumbotron" id="gradient-main">
             <div class="container">
                 <nav class="navbar navbar-expand-sm navbar-light bg-transparent">
-                  <a class="navbar-brand" href="#">Amey Rupji</a>
+                  <a class="navbar-brand" href="#">Amey <span id="last-name">Rupji</span></a>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse-menu">
                       <div id="burger">
                         <div class="bar top"></div>
@@ -1491,22 +1491,26 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6 offset-md-3 col-lg-6 offset-lg-3 col-xl-6 offset-xl-3 col-12">
-              <form>
+              <form id="contact-me-form">
                 <p class="text-center">For professional inquiries please fill in the form below.</p>
                 <div class="form-label-group">
-                  <input type="text" class="form-control" id="full-name" placeholder="Full Name" required></input>
-                  <label for="full-name">Full Name</label>
+                  <input type="text" class="form-control" id="full-name-input" placeholder="Full Name" required></input>
+                  <label for="full-name-input">Full Name</label>
                 </div>
                 <div class="form-label-group">
-                  <input type="email" class="form-control" id="email" placeholder="Email" required></input>
-                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email-input" placeholder="Email" required></input>
+                  <label for="email-input">Email</label>
                 </div>
                 <div class="form-label-group">
-                  <textarea class="form-control" id="message" placeholder="Message"></textarea>
-                  <label for="message">Message</label>
+                  <input type="tel" class="form-control" id="telephone-input" placeholder="Telephone" required></input>
+                  <label for="telephone-input">Telephone</label>
                 </div>
-                <button class="btn btn-light btn-block" type="reset">Cancel</button>
-                <button class="btn btn-primary btn-block" type="submit">Submit</button>
+                <div class="form-label-group">
+                  <textarea class="form-control" id="message-input" placeholder="Message" rows="8"></textarea>
+                  <label for="message-input">Message</label>
+                </div>
+                <button class="btn btn-light btn-block" type="reset" id="cancel-btn">Cancel</button>
+                <button class="btn btn-primary btn-block" type="submit" id="contact-submit-btn">Submit</button>
               </form>
             </div>
           </div>

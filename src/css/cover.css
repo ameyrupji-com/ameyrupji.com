@@ -4,6 +4,14 @@
   }
 }
 
+.navbar-brand {
+  text-transform: uppercase;
+}
+
+#last-name {
+  font-weight: 900;
+}
+
 #gradient-main {
   width: 100%;
   padding: 0;
