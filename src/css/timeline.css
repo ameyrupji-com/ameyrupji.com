@@ -313,6 +313,10 @@
         margin-left: 10px;
     }
 
+    .btn-group {
+        margin-top: 10px;
+    }
+
     .timeline-img-container.top {
         display: inline-block;
         border-radius: 50%;
