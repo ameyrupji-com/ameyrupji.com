@@ -1,3 +1,37 @@
+// Sample code link:
+// https://www.codeproject.com/Tips/1077599/The-JavaScript-Module-Pattern-With-jQuery
+//
+
+var siteModule = (function () {
+  "use strict"
+
+  var Model = {
+
+  },
+  View = {
+
+  },
+  Controller = {
+    init: function init() {
+      // TODO: Move the code below into here.
+      console.log('In siteModule:init()')
+    }
+  }
+ 
+  return {
+      init: Controller.init,
+  };
+})();
+
+
+$(document).ready(function() {
+  siteModule.init();
+});
+
+
+
+
+
 // Can also be included with a regular script tag
 $(document).ready(function() {
   // navbar
@@ -49,16 +83,6 @@ $(document).ready(function() {
       }
     }
   });
-
-  // typing animations
-  var options = {
-    strings: ["Welcome to my website!", "I am still in the process of building this website."],
-    typeSpeed: 70,
-    backSpeed: 60,
-    loop: true
-  }
-
-  var typed = new Typed(".typed", options);
   
   //Enable tooltip everywhere
   $('[data-toggle="tooltip"]').tooltip()
