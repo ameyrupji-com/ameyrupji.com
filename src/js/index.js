@@ -28,10 +28,6 @@ $(document).ready(function() {
   siteModule.init();
 });
 
-
-
-
-
 // Can also be included with a regular script tag
 $(document).ready(function() {
   // navbar

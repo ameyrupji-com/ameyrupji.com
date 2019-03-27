@@ -7,12 +7,14 @@
   "author": "Amey Rupji",
   "license": "GPL-3.0",
   "private": false,
-  "dependencies": {},
-  "devDependencies": {
-    "parcel-bundler": "^1.12.0"
+  "dependencies": {
+    "parcel-bundler": "^1.12.3",
+    "parcel-plugin-handlebars": "^0.4.4"
+  },
+  "devDependencies": {    
   },
   "scripts": {
-    "dev": "parcel index.html",
-    "build": "parcel build index.html --public-url ./"
+    "dev": "parcel pages/index.hbs --no-cache",
+    "build": "parcel build pages/index.hbs --no-cache --public-url ./"
   }
 }
