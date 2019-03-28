@@ -13,7 +13,6 @@ body, html {
 
 body.modal-open {
     overflow: hidden;
-    position: fixed;
 }
 
 body h1,
