@@ -34,10 +34,9 @@
             <div class="col-md-12 col-lg-12 col-xl-12 col-12">
                 <h2>Follow me</h2>
                 <ul id="follow-me">
-                <li><a href="https://www.linkedin.com/in/ameyrupji/"><i class="fab fa-linkedin fa-3x"></i></a></li>
-                <li><a href="https://github.com/ameyrupji"><i class="fab fa-github fa-3x"></i></a></li>
-                <li><a href="https://www.facebook.com/ameyrupji"><i class="fab fa-facebook fa-3x"></i></a></li>
-                <li><a href="https://twitter.com/ameyrupji"><i class="fab fa-twitter fa-3x"></i></a></li>
+                    {{#each contact.follow-links}}
+                    <li><a href="{{this.url}}"><i class="fab {{this.css-class}} fa-3x"></i></a></li>
+                    {{/each}}
                 </ul>
             </div>
         </div>

@@ -59,6 +59,21 @@
         ]
     },
     "follow-links": [
-
+        {
+            "url": "https://www.linkedin.com/in/ameyrupji/",
+            "css-class": "fa-linkedin"
+        },
+        {
+            "url": "https://github.com/ameyrupji",
+            "css-class": "fa-github"
+        },
+        {
+            "url": "https://www.facebook.com/ameyrupji",
+            "css-class": "fa-facebook"
+        },
+        {
+            "url": "https://twitter.com/ameyrupji",
+            "css-class": "fa-twitter"
+        }
     ]
 }

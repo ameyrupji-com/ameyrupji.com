@@ -18,13 +18,10 @@
     padding: 0;
 }
 
-#footer-main ul li
-{
-    list-style-type: none;
-    display: inline;
-    padding: 0 10px;
-    text-align: center!important;
+#footer-main ul li.list-heading {
+    font-weight: 600;
 }
+
 
 #footer-main ul#links li:not(:first-child),
 #footer-main ul#ci li:not(:first-child) {
@@ -49,6 +46,7 @@
 #footer-main a i {
     width: 30px;
 }
+
 
 @media (max-width:768px) {
 }

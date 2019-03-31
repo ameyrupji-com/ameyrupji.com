@@ -1,20 +1,23 @@
 <footer class="container-fluid" id="footer-main">
-    <div class="container text-center">
+    <div class="container">
         <div class="row">
-            <div class="col-md-12 col-lg-12 col-xl-12 col-12">
-                <ul id="links">
-                    <li><a href="#image-back-main">Top</a></li>
-                    <li><a href="#summary-main">Summary</a></li>
-                    <li><a href="#skills-main">Skills</a></li>
-                    <li><a href="#timeline-main">Timeline</a></li>
-                    <li><a href="#resume-main">Resume</a></li>
-                    <li><a href="#contact-main">Contact</a></li>
-                    <li><a href="http://blog.ameyrupji.com/">Blog <i class="fas fa-external-link-alt"></i></a></li>
-                    <li><a href="http://code.ameyrupji.com/">Code <i class="fas fa-external-link-alt"></i></a></li>
-                    <li><a href="http://ioc.ameyrupji.com/">IOC<i class="fas fa-external-link-alt"></i></a></li>
+            <div class="col-md-12 col-lg-4 col-xl-4 col-4">
+                <ul>
+                    <li class="list-heading">Site Links</li>
+                    {{#each footer.site-links}}
+                    <li><a href="{{this.href}}">{{this.text}}</a></li>
+                    {{/each}}
                 </ul>
             </div>
-            <div class="col-md-12 col-lg-12 col-xl-12 col-12">
+            <div class="col-md-12 col-lg-4 col-xl-4 col-4">
+                <ul>
+                    <li class="list-heading">Other Links</li>
+                    {{#each footer.other-links}}
+                    <li><a href="{{this.href}}">{{this.text}}</a></li>
+                    {{/each}}
+                </ul>
+            </div>
+            {{!-- <div class="col-md-12 col-lg-12 col-xl-12 col-12">
                 <h4>Share on</h4>
                 <ul id="share-me">
                     <li>
@@ -43,14 +46,7 @@
                         </a>
                     </li>
                 </ul>
-            </div>
-            <div class="col-12 col-md-12 col-lg-12 col-xl-12">
-                <ul id="ci">
-                    <li>Build: <img src="https://circleci.com/gh/ameyrupji/ameyrupji.com.svg?style=svg"></li>
-                    <li>Release: <span id="release-number"></span></li>
-                    <li>Powered By: <i class="fab fa-aws"></i></li>
-                </ul>
-            </div>
+            </div> --}}
         </div>
     </div>
 </footer>

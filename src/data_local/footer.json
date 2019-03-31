@@ -1,0 +1,56 @@
+{
+    "site-links": [
+        {
+            "text": "Top",
+            "href": "#image-back-main"
+        },
+        {
+            "text": "Summary",
+            "href": "#summary-main"
+        },
+        {
+            "text": "Skills",
+            "href": "#skills-main"
+        },
+        {
+            "text": "Timeline",
+            "href": "#timeline-main"
+        },
+        {
+            "text": "Resume",
+            "href": "#resume-main"
+        },
+        {
+            "text": "Contact",
+            "href": "#contact-main"
+        }
+    ],
+    "other-links": [
+        {
+            "text": "Blog",
+            "href": "http://blog.ameyrupji.com/"
+        },
+        {
+            "text": "Website Code",
+            "href": "http://code.ameyrupji.com/"
+        },
+        {
+            "text": "Infrastructure Code",
+            "href": "http://ioc.ameyrupji.com/"
+        },
+        {
+            "text": "Build: <img src='https://circleci.com/gh/ameyrupji/ameyrupji.com.svg?style=svg'>",
+            "href": "#"
+        },
+        {
+            "text": "Powered By: <i class='fab fa-aws'></i>",
+            "href": "#"
+        }
+    ],
+    "share-links": [
+        {
+            "text": "",
+            "href": ""
+        }
+    ]
+}
