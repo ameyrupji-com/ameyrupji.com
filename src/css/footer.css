@@ -18,8 +18,15 @@
     padding: 0;
 }
 
+
 #footer-main ul li.list-heading {
-    font-weight: 600;
+    font-weight: 100;
+    margin-bottom: 10px;
+    opacity: 1;
+}
+
+#footer-main ul li.list-heading .list-heading-strong {
+    font-weight: 900;
 }
 
 
@@ -45,6 +52,11 @@
 
 #footer-main a i {
     width: 30px;
+}
+
+#footer-main a.sharer {
+    margin: 0;
+    padding: 0;
 }
 
 

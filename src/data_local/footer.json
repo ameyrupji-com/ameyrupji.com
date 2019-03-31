@@ -1,10 +1,6 @@
 {
     "site-links": [
         {
-            "text": "Top",
-            "href": "#image-back-main"
-        },
-        {
             "text": "Summary",
             "href": "#summary-main"
         },
@@ -39,18 +35,48 @@
             "href": "http://ioc.ameyrupji.com/"
         },
         {
-            "text": "Build: <img src='https://circleci.com/gh/ameyrupji/ameyrupji.com.svg?style=svg'>",
-            "href": "#"
+            "text": "Build ",
+            "href": "#",
+            "img-src": "https://circleci.com/gh/ameyrupji/ameyrupji.com.svg?style=svg"
         },
         {
-            "text": "Powered By: <i class='fab fa-aws'></i>",
-            "href": "#"
+            "text": "Powered By AWS",
+            "href": "http://www.aws.com/"
         }
     ],
     "share-links": [
         {
-            "text": "",
-            "href": ""
+            "text": "Linkedin",
+            "id": "share-linkedin-btn",
+            "data-sharer": "linkedin",
+            "icon-class": "fab fa-linkedin"
+        },
+        {
+            "text": "Facebook",
+            "id": "share-facebook-btn",
+            "data-sharer": "facebook",
+            "icon-class": "fab fa-facebook",
+            "data-title": "Visit Amey Rupji's Website @ "
+        },
+        {
+            "text": "Twitter",
+            "id": "share-twitter-btn",
+            "data-sharer": "twitter",
+            "icon-class": "fab fa-twitter",
+            "data-title": "Visit Amey Rupji's Website @ "
+        },
+        {
+            "text": "WhatsApp",
+            "id": "share-whatsapp-btn",
+            "data-sharer": "whatsapp",
+            "icon-class": "fab fa-whatsapp",
+            "data-title": "Visit Amey Rupji's Website @ "
+        },
+        {
+            "text": "Reddit",
+            "id": "share-reddit-btn",
+            "data-sharer": "reddit",
+            "icon-class": "fab fa-reddit"
         }
     ]
 }
