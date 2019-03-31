@@ -4,7 +4,8 @@
   }
 }
 
-.navbar-brand {
+.navbar-brand,
+.navbar.bg-transparent .nav-item a {
   text-transform: uppercase;
 }
 

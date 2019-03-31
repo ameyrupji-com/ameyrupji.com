@@ -30,3 +30,11 @@ h1.title {
 h1.title span.title-strong {
     font-weight: 900;
 }
+
+.container-title {
+    margin-bottom: 50px;
+}
+
+.container-btns {
+    margin-bottom: 20px;
+}

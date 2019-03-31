@@ -27,6 +27,16 @@
     margin-bottom: 0;
 }
 
+.modal-full .modal-body-content .title-light,
+.modal-full .modal-body-content .title-strong {
+    text-transform: uppercase;
+    margin: 25px 0;
+}
+
+.modal-full .modal-body-content .title-strong {
+    font-weight: 900;
+}
+
 @media only screen and (max-width: 1169px) {
     .modal-header {
         border-radius: 0;

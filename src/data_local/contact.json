@@ -1,0 +1,64 @@
+{
+    "title-light": "Get In",
+    "title-strong": "Touch",
+    "contact-form": {
+        "form-id": "contact-me-form",
+        "field-class": "form-label-group",
+        "form-text": "For professional inquiries, please fill in the form below.",
+        "fields": [
+            {
+                "element": "input",
+                "type": "text",
+                "css-id": "full-name-input",
+                "css-class": "form-control",
+                "placeholder": "Full Name",
+                "label": "Full Name",
+                "required": true
+            },
+            {
+                "element": "input",
+                "type": "email",
+                "css-id": "email-input",
+                "css-class": "form-control",
+                "placeholder": "Email Address",
+                "label": "Email Address",
+                "required": true
+            },
+            {
+                "element": "input",
+                "type": "tel",
+                "css-id": "telephone-input",
+                "css-class": "form-control",
+                "placeholder": "Phone Number",
+                "label": "Phone Number",
+                "required": true
+            },
+            {
+                "element": "textarea",
+                "rows": "8",
+                "css-id": "message-textarea",
+                "css-class": "form-control",
+                "placeholder": "Message",
+                "label": "Message",
+                "required": true
+            },
+            {
+                "element": "button",
+                "type": "reset",
+                "css-id": "cancel-btn",
+                "css-class": "btn btn-light btn-block",
+                "text": "Reset"
+            },
+            {
+                "element": "button",
+                "type": "submit",
+                "css-id": "contact-submit-btn",
+                "css-class": "btn btn-primary btn-block",
+                "text": "Submit"
+            }
+        ]
+    },
+    "follow-links": [
+
+    ]
+}

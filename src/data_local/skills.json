@@ -1,0 +1,181 @@
+{
+    "title-light": "Technical",
+    "title-strong": "Skills",
+    "skills": [
+        {
+            "skill-name": "Apache",
+            "skill-css": "devicon-apache-plain",
+            "skill-using": false
+        },
+        {
+            "skill-name": "AWS",
+            "skill-css": "devicon-amazonwebservices-original",
+            "skill-using": true
+        },
+        {
+            "skill-name": "Atlassian",
+            "skill-css": "fab fa-atlassian",
+            "skill-using": true
+        },
+        {
+            "skill-name": "Bitbucket",
+            "skill-css": "fab fa-bitbucket",
+            "skill-using": true
+        },
+        {
+            "skill-name": "Bootstrap",
+            "skill-css": "devicon-bootstrap-plain",
+            "skill-using": false
+        },
+        {
+            "skill-name": "C#",
+            "skill-css": "devicon-csharp-plain",
+            "skill-using": false
+        },
+        {
+            "skill-name": "C++",
+            "skill-css": "devicon-cplusplus-plain",
+            "skill-using": false
+        },
+        {
+            "skill-name": "Code",
+            "skill-css": "devicon-visualstudio-plain",
+            "skill-using": true
+        },
+        {
+            "skill-name": "Confluence",
+            "skill-css": "fab fa-confluence",
+            "skill-using": true
+        },
+        {
+            "skill-name": "CSS 3",
+            "skill-css": "devicon-css3-plain",
+            "skill-using": true
+        },
+        {
+            "skill-name": "Git",
+            "skill-css": "devicon-git-plain",
+            "skill-using": true
+        },
+        {
+            "skill-name": "GitHub",
+            "skill-css": "devicon-github-plain",
+            "skill-using": true
+        },
+        {
+            "skill-name": "Microsoft .Net",
+            "skill-css": "devicon-dot-net-plain",
+            "skill-using": false
+        },
+        {
+            "skill-name": "HTML 5",
+            "skill-css": "devicon-html5-plain-wordmark",
+            "skill-using": false
+        },
+        {
+            "skill-name": "IntelliJ",
+            "skill-css": "devicon-intellij-plain",
+            "skill-using": true
+        },
+        {
+            "skill-name": "JavaScript",
+            "skill-css": "devicon-javascript-plain",
+            "skill-using": false
+        },
+        {
+            "skill-name": "Jenkins",
+            "skill-css": "fab fa-jenkins",
+            "skill-using": true
+        },
+        {
+            "skill-name": "Jira",
+            "skill-css": "fab fa-jira",
+            "skill-using": true
+        },
+        {
+            "skill-name": "jQuery",
+            "skill-css": "devicon-jquery-plain",
+            "skill-using": false
+        },
+        {
+            "skill-name": "Linux",
+            "skill-css": "devicon-linux-plain",
+            "skill-using": true
+        },
+        {
+            "skill-name": "macOS",
+            "skill-css": "devicon-apple-original",
+            "skill-using": true
+        },
+        {
+            "skill-name": "MongoDB",
+            "skill-css": "devicon-mongodb-plain",
+            "skill-using": false
+        },
+        {
+            "skill-name": "MySQL",
+            "skill-css": "devicon-mysql-plain",
+            "skill-using": false
+        },
+        {
+            "skill-name": "New Relic",
+            "skill-css": "fas fa-code",
+            "skill-using": true
+        },
+        {
+            "skill-name": "Node.js",
+            "skill-css": "devicon-nodejs-plain",
+            "skill-using": false
+        },
+        {
+            "skill-name": "Photoshop",
+            "skill-css": "devicon-photoshop-plain",
+            "skill-using": false
+        },
+        {
+            "skill-name": "PHP",
+            "skill-css": "devicon-php-plain",
+            "skill-using": true
+        },
+        {
+            "skill-name": "PostgreSQL",
+            "skill-css": "devicon-postgresql-plain",
+            "skill-using": true
+        },
+        {
+            "skill-name": "Python",
+            "skill-css": "devicon-python-plain",
+            "skill-using": true
+        },
+        {
+            "skill-name": "PyCharm",
+            "skill-css": "devicon-pycharm-plain",
+            "skill-using": true
+        },
+        {
+            "skill-name": "Scala",
+            "skill-css": "fas fa-code",
+            "skill-using": true
+        },
+        {
+            "skill-name": "SQL Server",
+            "skill-css": "fas fa-database",
+            "skill-using": false
+        },
+        {
+            "skill-name": "Terraform",
+            "skill-css": "fas fa-code",
+            "skill-using": true
+        },
+        {
+            "skill-name": "Windows",
+            "skill-css": "devicon-windows8-plain",
+            "skill-using": false
+        },
+        {
+            "skill-name": "WordPress",
+            "skill-css": "devicon-wordpress-plain",
+            "skill-using": false
+        }
+    ] 
+}
