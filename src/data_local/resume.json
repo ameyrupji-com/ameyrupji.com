@@ -17,6 +17,13 @@
             "file-icon-css": "far fa-file-pdf"
         },
         {
+            "btn-class": "btn btn-light",
+            "btn-id": "parser-friendly-btn",
+            "btn-href": "../assets/word/ameyrupji_resume.docx",
+            "text": "Parser Friendly",
+            "file-icon-css": "far fa-file-alt"
+        },
+        {
             "btn-class": "btn btn-light sharer",
             "btn-id": "share-email-btn",
             "btn-href": "#",

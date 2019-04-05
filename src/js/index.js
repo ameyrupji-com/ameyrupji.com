@@ -3,10 +3,10 @@
 
 $(document).ready(function() {
   site.all.init();
-  site.resume.init();
   site.cover.init();
   site.skills.init();
   site.timeline.init();
-  site.footer.init();
+  site.resume.init();
   site.contact.init();
+  site.footer.init();
 });

@@ -9,15 +9,13 @@
     background: -o-linear-gradient(141deg, rgba(31, 55, 75, 1), rgba(53, 92, 125, 1));
     background: linear-gradient(141deg, rgba(31, 55, 75, 1), rgba(53, 92, 125, 1));
     color: #fff;
-    padding: 150px 0 100px 0;
+    padding: 150px 0 50px 0;
 }
 
 #footer-main ul {
     list-style-type: none;
-    margin-top:30px;
     padding: 0;
 }
-
 
 #footer-main ul li.list-heading {
     font-weight: 100;
@@ -29,12 +27,20 @@
     font-weight: 900;
 }
 
-
-#footer-main ul#links li:not(:first-child),
-#footer-main ul#ci li:not(:first-child) {
-    border-left: 1px solid #fff;
+#footer-main .footer-no-icons-list {
+    text-transform: uppercase;
 }
 
+#footer-main .footer-no-icons-flat-list li {
+    display: inline-block;
+}
+
+#footer-main .footer-no-icons-flat-list li:not(:first-child) a,
+#footer-main .footer-no-icons-flat-list li:not(:first-child) a {
+    border-left: 1px solid #fff;
+    padding-left: 10px;
+    margin-left: 10px;
+}
 
 #footer-main p,
 #footer-main a,
@@ -42,7 +48,16 @@
 #footer-main li {
     color: #fff;
     opacity: .8;
-    text-transform: uppercase;
+}
+
+#footer-main hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #aaa;
+    opacity: .8;
+    margin: 1em 0;
+    padding: 0; 
 }
 
 #footer-main a:hover {
@@ -58,7 +73,6 @@
     margin: 0;
     padding: 0;
 }
-
 
 @media (max-width:768px) {
 }
