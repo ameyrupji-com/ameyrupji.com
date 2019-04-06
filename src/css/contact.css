@@ -92,6 +92,48 @@ margin-bottom: 1rem;
     color: #777;
 }
 
+.form-label-group.error .form-control {
+    border-color: red;
+}
+
+
+.form-label-group.error > label {
+    color: red
+}
+
+.form-label-group.error > label.error {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0; /* Override default `<label>` margin */
+    line-height: 1.5;
+    color: red;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    transition: all .1s ease-in-out;
+    text-align: right;
+}
+
+
+.form-label-group.success > label.valid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0; /* Override default `<label>` margin */
+    line-height: 1.5;
+    color: green;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    transition: all .1s ease-in-out;
+    text-align: right;
+}
+
 #contact-main .btn.btn-primary {
     background-color: rgba(132, 80, 7, 1); /*#845007*/
     background: linear-gradient(141deg, rgba(189, 149, 94, 1), rgba(132, 80, 7, 1));
@@ -103,11 +145,6 @@ margin-bottom: 1rem;
     border: none;
 }
 
-
-#contact-main #contact-follow {
-    margin:50px 0;
-}
-
 #contact-main #contact-follow ul {
     list-style-type: none;
     margin-top:30px;
@@ -116,15 +153,38 @@ margin-bottom: 1rem;
 
 #contact-main #contact-follow ul li {
     list-style-type: none;
-    display: inline;
+    display: block;
     padding: 0 10px;
     text-align: center!important;
+    margin-bottom: 15px;
 }
 #contact-main #contact-follow ul li a {
     color: #000;
     opacity: .6;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+#contact-main #contact-follow ul li a span.handles {
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-weight: 100;
+}
+
+#contact-main #contact-follow ul li a i {
+    margin-right: 20px;
 }
 
 #contact-main #contact-follow ul li a:hover {
     opacity: 1;
+}
+
+#contact-main .btn i {
+    display: none;
+}
+
+
+@media (max-width:768px) {
+    #contact-follow {
+        margin-top: 50px;
+    }
 }

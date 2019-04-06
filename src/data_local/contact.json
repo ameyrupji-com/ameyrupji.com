@@ -9,7 +9,7 @@
             {
                 "element": "input",
                 "type": "text",
-                "css-id": "full-name-input",
+                "css-id": "fullNameInput",
                 "css-class": "form-control",
                 "placeholder": "Full Name",
                 "label": "Full Name",
@@ -18,7 +18,7 @@
             {
                 "element": "input",
                 "type": "email",
-                "css-id": "email-input",
+                "css-id": "emailInput",
                 "css-class": "form-control",
                 "placeholder": "Email Address",
                 "label": "Email Address",
@@ -27,7 +27,7 @@
             {
                 "element": "input",
                 "type": "tel",
-                "css-id": "telephone-input",
+                "css-id": "telephoneInput",
                 "css-class": "form-control",
                 "placeholder": "Phone Number",
                 "label": "Phone Number",
@@ -36,7 +36,7 @@
             {
                 "element": "textarea",
                 "rows": "8",
-                "css-id": "message-textarea",
+                "css-id": "messageTextarea",
                 "css-class": "form-control",
                 "placeholder": "Message",
                 "label": "Message",
@@ -61,19 +61,23 @@
     "follow-links": [
         {
             "url": "https://www.linkedin.com/in/ameyrupji/",
-            "css-class": "fa-linkedin"
+            "css-class": "fa-linkedin",
+            "handle": "ameyrupji"
         },
         {
             "url": "https://github.com/ameyrupji",
-            "css-class": "fa-github"
+            "css-class": "fa-github",
+            "handle": "ameyrupji"
         },
         {
             "url": "https://www.facebook.com/ameyrupji",
-            "css-class": "fa-facebook"
+            "css-class": "fa-facebook",
+            "handle": "ameyrupji"
         },
         {
             "url": "https://twitter.com/ameyrupji",
-            "css-class": "fa-twitter"
+            "css-class": "fa-twitter",
+            "handle": "ameyrupji"
         }
     ]
 }

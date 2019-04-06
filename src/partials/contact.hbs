@@ -7,13 +7,22 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6 offset-md-3 col-lg-6 offset-lg-3 col-xl-6 offset-xl-3 col-12">
-                <form id="contact-me-form">
+            <div class="col-md-12 col-lg-12 col-xl-12 col-12">
+                <div id="contact-me-form-alerts" class="alert">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-lg-8 col-xl-6 offset-xl-1 col-12">
+                <div class="text-center">
+                    <h2>Contact Me</h2>
+                </div>
+                <form id="contact-me-form" method="post" target="{{app.api_base_url}}/email">
                     <p class="text-center">{{contact.contact-form.form-text}}</p>
                     {{#each contact.contact-form.fields}}
                     {{#is this.element "input"}}
                     <div class="form-label-group">
-                        <input type="{{this.type}}" class="{{this.css-class}}" id="{{this.css-id}}" placeholder="{{this.placeholder}}" {{#if this.required}}required{{/if}}></input>
+                        <input type="{{this.type}}" class="{{this.css-class}}" id="{{this.css-id}}" name="{{this.css-id}}" placeholder="{{this.placeholder}}" {{#if this.required}}required{{/if}}></input>
                         <label for="{{this.css-id}}">{{this.placeholder}}</label>
                     </div>
                     {{/is}}
@@ -24,24 +33,21 @@
                     </div>
                     {{/is}}
                     {{#is this.element "button"}}
-                    <button class="{{this.css-class}}" type="{{this.type}}" id="{{this.css-id}}">{{this.text}}</button>
+                    <button class="{{this.css-class}}" type="{{this.type}}" id="{{this.css-id}}">
+                        <i class="fas fa-circle-notch fa-spin"></i>
+                        {{this.text}}
+                    </button>
                     {{/is}}
                     {{/each}}
                 </form>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 offset-md-3 col-lg-6 offset-lg-3 col-xl-6 offset-xl-3 col-12">
-                <div id="contact-me-form-alerts" class="alert">
+            <div class="col-md-4 col-lg-4 col-xl-4 offset-xl-1 col-12" id="contact-follow">
+                <div class="text-center">
+                    <h2 class="text-center">Follow Me</h2>
                 </div>
-            </div>
-        </div>
-        <div class="row text-center" id="contact-follow">
-            <div class="col-md-12 col-lg-12 col-xl-12 col-12">
-                <h2>Follow me</h2>
                 <ul id="follow-me">
                     {{#each contact.follow-links}}
-                    <li><a href="{{this.url}}"><i class="fab {{this.css-class}} fa-3x"></i></a></li>
+                    <li><a href="{{this.url}}"><i class="fab {{this.css-class}} fa-2x"></i><span class="handles">{{this.handle}}</span></a></li>
                     {{/each}}
                 </ul>
             </div>
