@@ -6,7 +6,7 @@
             "type": "image",
             "css-id": "me-image",
             "css-class": [ "work", "education"],
-            "image-src": "../images/me.jpeg"
+            "image-src": "./images/me.jpeg"
         },
         {
             "type": "alternate",

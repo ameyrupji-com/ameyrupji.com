@@ -14,7 +14,7 @@
   "devDependencies": {    
   },
   "scripts": {
-    "dev": "parcel pages/index.hbs --no-cache",
-    "build": "parcel build pages/index.hbs --no-cache --public-url ./"
+    "dev": "parcel index.hbs --no-cache",
+    "build": "parcel build index.hbs --no-cache --public-url ./"
   }
 }
