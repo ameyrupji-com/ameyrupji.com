@@ -1,6 +1,6 @@
 {
     "app_name": "Amey Rupji",
     "app_url": "http://localhost:1234/",
-    "environment": "",
+    "icons_folder": "icon",
     "api_base_url": "http://api.ameyrupji.com"
 }

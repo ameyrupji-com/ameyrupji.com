@@ -1,6 +1,6 @@
 {
-    "app_name": "Amey Rupji",
+    "app_name": "Amey Rupji - Local",
     "app_url": "http://localhost:1234/",
-    "environment": "",
+    "icons_folder": "beta-icons",
     "api_base_url": "http://api.beta.ameyrupji.com"
 }
