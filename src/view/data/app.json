@@ -2,5 +2,5 @@
     "app_name": "Amey Rupji - Local",
     "app_url": "http://localhost:1234/",
     "icons_folder": "beta-icons",
-    "api_base_url": "http://api.beta.ameyrupji.com"
+    "api_base_url": "https://api.beta.ameyrupji.com"
 }
