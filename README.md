@@ -1,6 +1,6 @@
 # [ameyrupji.com](http://www.ameyrupji.com/)
 
-[![CircleCI](https://circleci.com/gh/ameyrupji/ameyrupji.com.svg?style=svg)](https://circleci.com/gh/ameyrupji/ameyrupji.com)
+[![CircleCI](https://circleci.com/gh/ameyrupji-com/ameyrupji.com.svg?style=svg)](https://circleci.com/gh/ameyrupji/ameyrupji.com)
 
 
 Git hub repository for my personal website deployed on the cloud (aws)
