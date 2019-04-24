@@ -35,17 +35,14 @@
 }
 
 .skills-block {
-    width: 120px;
-    height: 120px;
     padding: 23px;
-    margin: auto;
-    border: 1px solid transparent;
-   
+    margin: auto;   
 }
 
 #skills-main .skills-block i {
     font-size: 60px;
 }
+
 #skills-main .skills-block i,
 #skills-main .skills-block p {
     animation: fadein 2s;
@@ -53,6 +50,26 @@
     -webkit-animation: fadein 2s; /* Safari and Chrome */
     -o-animation: fadein 2s; /* Opera */
 }
+
+
+@media (max-width:768px) {
+    .skills-block {
+        padding: 20px 0px;
+    }
+    #skills-main .skills-block i {
+        font-size: 50px;
+    }
+}
+
+
+@media only screen and (min-width:769px) and (max-width: 1169px) {
+
+}
+
+@media only screen and (min-width: 1170px) {
+
+}
+
 
 @keyframes fadein {
     from { opacity:0; }

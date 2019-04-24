@@ -2,7 +2,7 @@
 * Summary
 */
 
-#summary-main{
+#summary-main {
     padding-top: 150px;
     padding-bottom: 100px;
 }
@@ -12,11 +12,16 @@
 }
 
 @media (max-width:768px) {
-    #summary-main p {
+    #summary-main {
+        padding-bottom: 50px;
+    }
+
+    #summary-main div p {
         font-size: 16px !important;
         line-height: 24px;
         margin-left: 10px;
         margin-right: 10px;
+        margin-bottom: 50px;
     }
 }
 
