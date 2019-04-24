@@ -108,9 +108,9 @@ site.contact = (function ($) {
                                 $(View.contatForm.submitBtnSendingId).css('display', 'none')
                                 $(View.contatForm.formId).trigger("reset")
                                 $(View.contatForm.submitBtnId).removeAttr('disabled')
-                                setTimeout(() => {
-                                    contactFromAlert.css('display', 'none')
-                                }, 3000);
+                                // setTimeout(() => {
+                                //     contactFromAlert.css('display', 'none')
+                                // }, 3000);
                             }
                         });
                         return false;
