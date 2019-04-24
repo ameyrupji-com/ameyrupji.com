@@ -89,21 +89,28 @@ site.contact = (function ($) {
                             contentType: 'application/json',
                             data: JSON.stringify(data),
                             success: function () {
-                            contactFromAlert
-                                .removeClass('alert-danger')
-                                .addClass('alert-success')
-                                .html('Your message has been successfully sent! I will get back at my earliest convinience.')
+                                console.log("Contact form successfully submitted!")
+                                contactFromAlert
+                                    .css('display', 'visible')
+                                    .removeClass('alert-danger')
+                                    .addClass('alert-success')
+                                    .html('Your message has been successfully sent! I will get back at my earliest convinience.')
                             },
                             error: function () {
-                            contactFromAlert
-                                .removeClass('alert-success')
-                                .addClass('alert-danger')
-                                .html('Error sending your message! I have taken a note of this and will try to fix this ASAP.')
+                                console.log("Contact form errored!")
+                                contactFromAlert
+                                    .css('display', 'visible')
+                                    .removeClass('alert-success')
+                                    .addClass('alert-danger')
+                                    .html('Error sending your message! I have taken a note of this and will try to fix this ASAP.')
                             },
                             complete: function() {
                                 $(View.contatForm.submitBtnSendingId).css('display', 'none')
                                 $(View.contatForm.formId).trigger("reset")
                                 $(View.contatForm.submitBtnId).removeAttr('disabled')
+                                setTimeout(() => {
+                                    contactFromAlert.css('display', 'none')
+                                }, 3000);
                             }
                         });
                         return false;
