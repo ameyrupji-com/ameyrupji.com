@@ -94,7 +94,7 @@ site.contact = (function ($) {
                                     .css('display', 'visible')
                                     .removeClass('alert-danger')
                                     .addClass('alert-success')
-                                    .html('Your message has been successfully sent! I will get back at my earliest convinience.')
+                                    .html('<i class="fas fa-circle-notch fa-spin"></i> Your message has been successfully sent! I will get back at my earliest convinience.')
                             },
                             error: function () {
                                 console.log("Contact form errored!")
@@ -102,15 +102,15 @@ site.contact = (function ($) {
                                     .css('display', 'visible')
                                     .removeClass('alert-success')
                                     .addClass('alert-danger')
-                                    .html('Error sending your message! I have taken a note of this and will try to fix this ASAP.')
+                                    .html('<i class="fas fa-circle-notch fa-spin"></i> Error sending your message! I have taken a note of this and will try to fix this ASAP.')
                             },
                             complete: function() {
                                 $(View.contatForm.submitBtnSendingId).css('display', 'none')
                                 $(View.contatForm.formId).trigger("reset")
                                 $(View.contatForm.submitBtnId).removeAttr('disabled')
-                                // setTimeout(() => {
-                                //     contactFromAlert.css('display', 'none')
-                                // }, 3000);
+                                setTimeout(() => {
+                                    contactFromAlert.css('display', 'none')
+                                }, 4000);
                             }
                         });
                         return false;
