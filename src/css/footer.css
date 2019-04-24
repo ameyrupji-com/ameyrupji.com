@@ -75,6 +75,18 @@
 }
 
 @media (max-width:768px) {
+    #footer-main .footer-no-icons-flat-list li {
+        width: 45%;
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    #footer-main .footer-no-icons-flat-list li:not(:first-child) a,
+    #footer-main .footer-no-icons-flat-list li:not(:first-child) a {
+        border: 0px;
+        padding: 0px;
+        margin: 0px;
+    }
 }
 
 
