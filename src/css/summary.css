@@ -33,3 +33,11 @@
 
 @media only screen and (min-width: 1170px) {
 }
+
+
+/* @media (prefers-color-scheme: dark) {
+    #summary-main {
+        background-color: #333;
+        color: #fff
+    }
+} */
