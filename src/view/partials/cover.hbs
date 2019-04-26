@@ -13,7 +13,7 @@
                 <div class="collapse navbar-collapse" id="navbar-collapse-menu">
                     <ul class="navbar-nav ml-auto">
                         {{#each cover.links}}
-                        <li class="nav-item">
+                        <li class="nav-item delay-{{@index}}">
                             <a href="{{this.href}}" class="nav-link">{{this.text}}</a>
                         </li>
                         {{/each}}
