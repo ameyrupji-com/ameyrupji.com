@@ -17,8 +17,8 @@ site.skills = (function ($) {
       });
 
       $(View.skillsAllBtnId).click(function() {
-        $(View.skillsBtnGroupBtnClass).removeClass('btn-light').addClass('btn-primary')
-        $(this).removeClass('btn-primary').addClass('btn-light')
+        $(View.skillsBtnGroupBtnClass).removeClass('btn-primary').addClass('btn-light')
+        $(this).removeClass('btn-light').addClass('btn-primary')
 
         $skills_blocks.each(function(){
         $(this).show()
@@ -26,8 +26,8 @@ site.skills = (function ($) {
       });
 
       $(View.skillsCurrentBtnId).click(function() {
-        $(View.skillsBtnGroupBtnClass).removeClass('btn-light').addClass('btn-primary')
-        $(this).removeClass('btn-primary').addClass('btn-light')
+        $(View.skillsBtnGroupBtnClass).removeClass('btn-primary').addClass('btn-light')
+        $(this).removeClass('btn-light').addClass('btn-primary')
 
         $skills_blocks.each(function(){
         $(this).hide()
