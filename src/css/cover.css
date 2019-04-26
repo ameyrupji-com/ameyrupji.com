@@ -22,7 +22,7 @@
   background-image: linear-gradient(141deg, rgba(189, 141, 75, 0.9), rgba(53, 92, 125, 0.9));
 }
 
-#image-back-main{
+#image-back-main {
   background-image: url("../images/background.jpg");
   background-size: cover;
   height: 100%;
@@ -88,6 +88,14 @@
 #jumbotron-content h3,
 #jumbotron-content h1 {
   font-weight: 200;
+}
+
+#image-back-main h1.title {
+  font-size: 70px;
+}
+
+#image-back-main h3.title span.title-hollow {
+  text-transform: uppercase;
 }
 
 .scroll-container {

@@ -2,11 +2,13 @@ site.cover = (function ($) {
     "use strict"
   
     var Model = {
+        MenuHeight: '70px'
     },
     View = {
         navbarClass: '.navbar',
         navbarTogglerBtnClass: '.navbar-toggler',
-        navbarBtnClass: '.navbar'
+        navbarBtnClass: '.navbar',
+        contentClass: '#jumbotron-content'
     },
     Controller = {
         initializefixedNavBarOnScroll: function fixedNavBarOnScroll() {
@@ -14,17 +16,21 @@ site.cover = (function ($) {
             
             if($(window).scrollTop() > 20) {
                 $(View.navbarClass).removeClass('bg-transparent').addClass('fixed-top');
+                $(View.contentClass).css('margin-top', Model.MenuHeight)
             }
             if($(window).scrollTop() < 20) {
                 $(View.navbarClass).removeClass('fixed-top').addClass('bg-transparent');
+                $(View.contentClass).css('margin-top', 0)
             }
 
             $(window).on('scroll', function(){
                 if($(window).scrollTop() > 20) {
                     $(View.navbarClass).removeClass('bg-transparent').addClass('fixed-top');
+                    $(View.contentClass).css('margin-top', Model.MenuHeight)
                 }
                 if($(window).scrollTop() < 20) {
                     $(View.navbarClass).removeClass('fixed-top').addClass('bg-transparent');
+                    $(View.contentClass).css('margin-top', 0)
                 }
             })
         },
