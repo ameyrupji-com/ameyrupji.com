@@ -15,7 +15,7 @@
         <div class="row">
             <div class="col-md-8 col-lg-8 col-xl-6 offset-xl-1 col-12">
                 <div class="text-center">
-                    <h2>Contact Me</h2>
+                    <h2 class="title">Contact <span class="title-strong">Me</span></h2>
                 </div>
                 <form id="contact-me-form" method="post" target="{{app.api_base_url}}/email">
                     <p class="text-center">{{contact.contact-form.form-text}}</p>
@@ -43,7 +43,7 @@
             </div>
             <div class="col-md-4 col-lg-4 col-xl-4 offset-xl-1 col-12" id="contact-follow">
                 <div class="text-center">
-                    <h2 class="text-center">Follow Me</h2>
+                    <h2 class="title">Follow <span class="title-strong">Me</span></h2>
                 </div>
                 <ul id="follow-me">
                     {{#each contact.follow-links}}

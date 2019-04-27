@@ -49,10 +49,15 @@
 .navbar.fixed-top {
   margin-top: 0px;
   padding: 10px 18px;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.7);
   -webkit-backdrop-filter: blur(30px);
   backdrop-filter: blur(30px);
   box-shadow: none;
+
+  animation: fade-in 1s;
+  -moz-animation: fade-in 1s; /* Firefox */
+  -webkit-animation: fade-in 1s; /* Safari and Chrome */
+  -o-animation: fade-in 1s; /* Opera */
 }
 
 .navbar.bg-transparent {
