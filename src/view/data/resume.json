@@ -19,7 +19,7 @@
         {
             "btn-class": "btn btn-light",
             "btn-id": "parser-friendly-btn",
-            "btn-href": "./assets/word/ameyrupji_resume.docx",
+            "btn-href": "./assets/word/ameyrupji_resume_parsable.docx",
             "text": "Parser Friendly",
             "file-icon-css": "far fa-file-alt"
         },
