@@ -83,7 +83,7 @@ jobs:
       - aws-s3/copy:
           from: /home/circleci/ameyrupji/src/dist/ 
           to: 's3://beta.ameyrupji.com/'
-          arguments:
+          arguments: --recursive
   upload-branches:
     <<: *deploy_default_config
     steps:
@@ -91,7 +91,7 @@ jobs:
       - aws-s3/sync:
           from: /home/circleci/ameyrupji/src/dist/ 
           to: s3://beta.ameyrupji.com/${CIRCLE_BRANCH}
-          arguments: --recursive
+          arguments:
 
 workflows:
   version: 2
