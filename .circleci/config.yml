@@ -88,7 +88,7 @@ jobs:
     <<: *deploy_default_config
     steps:
       - *restore_repo
-      - aws-s3/copy:
+      - aws-s3/sync:
           from: /home/circleci/ameyrupji/src/dist/ 
           to: s3://beta.ameyrupji.com/${CIRCLE_BRANCH}
           arguments: --recursive
