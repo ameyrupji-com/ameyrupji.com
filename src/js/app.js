@@ -8,6 +8,7 @@ site.all = (function (){
     var Model = {
     },
     View = {
+        navBarClass: '.navbar'
     },
     Controller = {
         initializeTooltip: function initializeTooltip() {
@@ -16,17 +17,24 @@ site.all = (function (){
         },
         initilizeScrollAnimation: function initilizeScrollAnimation() {
             // scroll animation
-            $('a').click(function() {
-                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-                if (target.length) {
-                    $('html,body').animate({
-                    scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
+            $('a').on('click', function() {
+                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+                    && location.hostname == this.hostname) {
+                    
+
+                    $(View.navBarClass).removeClass('navbar-open')
+
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                    if (target.length) {
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return true;
+                    }
                 }
-                }
+
+                
             });
         },
         init: function init() {
