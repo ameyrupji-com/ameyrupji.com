@@ -20,13 +20,11 @@
 }
 
 #skills-main .btn-group .btn.btn-primary {
-    background-color: rgba(31, 55, 75, 1);
-    background: linear-gradient(141deg, rgba(31, 55, 75, 1), rgba(53, 92, 125, 1));
+    background: rgb(31, 55, 75);
     background: -webkit-linear-gradient(141deg, rgba(31, 55, 75, 1), rgba(53, 92, 125, 1));
     background: -moz-linear-gradient(141deg, rgba(31, 55, 75, 1), rgba(53, 92, 125, 1));
     background: -o-linear-gradient(141deg, rgba(31, 55, 75, 1), rgba(53, 92, 125, 1));
     background: linear-gradient(141deg, rgba(31, 55, 75, 1), rgba(53, 92, 125, 1));
-    color: #fff;
     border: none;
 }
 
@@ -35,38 +33,37 @@
 }
 
 .skills-block {
-    width: 120px;
-    height: 120px;
     padding: 23px;
-    margin: auto;
-    border: 1px solid transparent;
-   
+    margin: auto;   
 }
 
 #skills-main .skills-block i {
     font-size: 60px;
 }
+
 #skills-main .skills-block i,
 #skills-main .skills-block p {
-    animation: fadein 2s;
-    -moz-animation: fadein 2s; /* Firefox */
-    -webkit-animation: fadein 2s; /* Safari and Chrome */
-    -o-animation: fadein 2s; /* Opera */
+    animation: fade-in 2s;
+    -moz-animation: fade-in 2s; /* Firefox */
+    -webkit-animation: fade-in 2s; /* Safari and Chrome */
+    -o-animation: fade-in 2s; /* Opera */
 }
 
-@keyframes fadein {
-    from { opacity:0; }
-    to { opacity:1; }
+
+@media (max-width:768px) {
+    .skills-block {
+        padding: 20px 0px;
+    }
+    #skills-main .skills-block i {
+        font-size: 50px;
+    }
 }
-@-moz-keyframes fadein { /* Firefox */
-    from { opacity:0; }
-    to { opacity:1; }
+
+
+@media only screen and (min-width:769px) and (max-width: 1169px) {
+
 }
-@-webkit-keyframes fadein { /* Safari and Chrome */
-    from { opacity:0; }
-    to { opacity:1; }
-}
-@-o-keyframes fadein { /* Opera */
-    from { opacity:0; }
-    to { opacity:1; }
+
+@media only screen and (min-width: 1170px) {
+
 }

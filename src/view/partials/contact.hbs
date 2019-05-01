@@ -1,0 +1,56 @@
+<div class="container-fluid" id="contact-main">
+    <div class="container-fluid" id="map"></div>
+    <div class="container">
+        <div class="row container-title" id="timeline-title">
+            <div class="col-md-12 text-center">
+                <h1 class="title">{{contact.title-light}} <span class="title-strong">{{contact.title-strong}}</span></h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-lg-12 col-xl-12 col-12">
+                <div id="contact-me-form-alerts" class="alert">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-lg-8 col-xl-6 offset-xl-1 col-12">
+                <div class="text-center">
+                    <h2 class="title">Contact <span class="title-strong">Me</span></h2>
+                </div>
+                <form id="contact-me-form" method="post" target="{{app.api_base_url}}/email">
+                    <p class="text-center">{{contact.contact-form.form-text}}</p>
+                    {{#each contact.contact-form.fields}}
+                    {{#is this.element "input"}}
+                    <div class="form-label-group">
+                        <input type="{{this.type}}" class="{{this.css-class}}" id="{{this.css-id}}" name="{{this.css-id}}" placeholder="{{this.placeholder}}" {{#if this.required}}required{{/if}}></input>
+                        <label for="{{this.css-id}}">{{this.placeholder}}</label>
+                    </div>
+                    {{/is}}
+                    {{#is this.element "textarea"}}
+                    <div class="form-label-group">
+                        <textarea class="{{this.css-class}}" id="{{this.css-id}}" placeholder="{{this.placeholder}}" rows="{{this.rows}}" {{#if this.required}}required{{/if}}></textarea>
+                        <label for="{{this.css-id}}">{{this.placeholder}}</label>
+                    </div>
+                    {{/is}}
+                    {{#is this.element "button"}}
+                    <button class="{{this.css-class}}" type="{{this.type}}" id="{{this.css-id}}">
+                        <i class="fas fa-circle-notch fa-spin"></i>
+                        {{this.text}}
+                    </button>
+                    {{/is}}
+                    {{/each}}
+                </form>
+            </div>
+            <div class="col-md-4 col-lg-4 col-xl-4 offset-xl-1 col-12" id="contact-follow">
+                <div class="text-center">
+                    <h2 class="title">Follow <span class="title-strong">Me</span></h2>
+                </div>
+                <ul id="follow-me">
+                    {{#each contact.follow-links}}
+                    <li><a href="{{this.url}}"><i class="fab {{this.css-class}} fa-2x"></i><span class="handles">{{this.handle}}</span></a></li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

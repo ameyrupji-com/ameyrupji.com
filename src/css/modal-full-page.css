@@ -27,6 +27,20 @@
     margin-bottom: 0;
 }
 
+.modal-full .modal-body-content .title-light,
+.modal-full .modal-body-content .title-strong {
+    text-transform: uppercase;
+    margin: 25px 0;
+}
+
+.modal-full .modal-body-content .title-strong {
+    font-weight: 900;
+}
+
+.modal-content .skills-block i {
+    font-size: 60px;
+}
+
 @media only screen and (max-width: 1169px) {
     .modal-header {
         border-radius: 0;
@@ -42,6 +56,11 @@
     }
 }
 
-.modal-content .skills-block i {
-    font-size: 60px;
+@media (max-width:768px) {
+    .skills-block {
+        padding: 20px 0px;
+    }
+    .modal-full .skills-block i {
+        font-size: 50px;
+    }
 }

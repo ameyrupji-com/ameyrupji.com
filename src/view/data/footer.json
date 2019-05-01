@@ -1,0 +1,82 @@
+{
+    "site-links": [
+        {
+            "text": "Summary",
+            "href": "#summary-main"
+        },
+        {
+            "text": "Skills",
+            "href": "#skills-main"
+        },
+        {
+            "text": "Timeline",
+            "href": "#timeline-main"
+        },
+        {
+            "text": "Resume",
+            "href": "#resume-main"
+        },
+        {
+            "text": "Contact",
+            "href": "#contact-main"
+        }
+    ],
+    "other-links": [
+        {
+            "text": "Blog",
+            "href": "http://blog.ameyrupji.com/"
+        },
+        {
+            "text": "Website Code",
+            "href": "http://code.ameyrupji.com/"
+        },
+        {
+            "text": "Infrastructure Code",
+            "href": "http://iac.ameyrupji.com/"
+        },
+        {
+            "text": "Build ",
+            "href": "#",
+            "img-src": "https://circleci.com/gh/ameyrupji-com/ameyrupji.com.svg?style=svg"
+        },
+        {
+            "text": "Powered By AWS",
+            "href": "http://www.aws.com/"
+        }
+    ],
+    "share-links": [
+        {
+            "text": "Linkedin",
+            "id": "share-linkedin-btn",
+            "data-sharer": "linkedin",
+            "icon-class": "fab fa-linkedin"
+        },
+        {
+            "text": "Facebook",
+            "id": "share-facebook-btn",
+            "data-sharer": "facebook",
+            "icon-class": "fab fa-facebook",
+            "data-title": "Visit Amey Rupji's Website @ "
+        },
+        {
+            "text": "Twitter",
+            "id": "share-twitter-btn",
+            "data-sharer": "twitter",
+            "icon-class": "fab fa-twitter",
+            "data-title": "Visit Amey Rupji's Website @ "
+        },
+        {
+            "text": "WhatsApp",
+            "id": "share-whatsapp-btn",
+            "data-sharer": "whatsapp",
+            "icon-class": "fab fa-whatsapp",
+            "data-title": "Visit Amey Rupji's Website @ "
+        },
+        {
+            "text": "Reddit",
+            "id": "share-reddit-btn",
+            "data-sharer": "reddit",
+            "icon-class": "fab fa-reddit"
+        }
+    ]
+}

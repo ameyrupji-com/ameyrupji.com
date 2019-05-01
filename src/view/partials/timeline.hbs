@@ -1,0 +1,231 @@
+<div class="container-fluid" id="timeline-main">
+    <div class="container">
+        <div class="row container-title" id="timeline-title">
+            <div class="col-md-12 text-center">
+                <h1 class="title">{{timeline.title-light}} <span class="title-strong">{{timeline.title-strong}}</span></h1>
+            </div>
+        </div>
+        <div class="row container-btns" id="timeline-btns">
+            <div class="col-md-12 text-center">
+                <div class="btn-group center" role="group">
+                    <button type="button" class="btn btn-primary" id="timeline-btn-all">Complete</button>
+                    <button type="button" class="btn btn-light" id="timeline-btn-work">Work</button>
+                    <button type="button" class="btn btn-light" id="timeline-btn-education">Education</button>
+                </div>
+                {{!-- <div class="btn-group center" role="group">
+                    <button type="button" class="btn btn-light" id="timeline-btn-3plus" disabled>+3 Years</button>
+                    <button type="button" class="btn btn-light" id="timeline-btn-5plus" disabled>+5 Years</button>
+                </div> --}}
+            </div>
+        </div>
+        <section id="timeline" class="container">
+            {{#each timeline.blocks}}
+            {{#is this.type "image"}}
+            <div class="timeline-block{{#each this.css-class}} {{this}}{{/each}}" id="{{css-id}}">
+                <div class="timeline-img-container top">
+                    <img src="{{this.image-src}}">
+                </div>
+            </div>
+            {{/is}}
+            {{#is this.type "alternate"}}
+            <div class="timeline-block-alt{{#each this.css-class}} {{this}}{{/each}}" id="{{css-id}}">
+                <div class="timeline-img-container-alt">
+                    <button type="button" class="btn link" data-placement="right" data-toggle="tooltip" data-html="true" title="{{tooltip-title}}">
+                    </button>
+                </div>
+            </div>
+            {{/is}}
+            {{#is this.type "work"}}
+            <div class="timeline-block work{{#each this.css-class}} {{this}}{{/each}}" id="{{css-id}}">
+                <div class="timeline-img-container">
+                </div>
+                <div class="timeline-content timeline-block-content" data-toggle="modal" data-target="#{{this.css-id}}-modal">
+                    <div class="heading">
+                        <h2>{{this.block-content.heading}}</h2>
+                    </div>
+                    <div class="heading-secondary">
+                        <p>
+                            <i class="{{this.block-content.organization.css-class}}"></i>
+                            <span class="company">{{this.block-content.organization.name}}</span>
+                        </p>
+                        <p>
+                            <i class="far fa-calendar-alt"></i>
+                            <span class="from">{{this.block-content.timeline.from}}</span>
+                            -
+                            <span class="to">{{this.block-content.timeline.to}}</span>
+                            <span class="duration">{{this.block-content.timeline.duration}}</span>
+                        </p>
+                        <p>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span class="city-state">
+                                {{this.block-content.location.city}}
+                                , {{this.block-content.location.state}}
+                                {{#if this.block-content.location.country}}, {{this.block-content.location.country}}{{/if}}
+                            </span>
+                        </p>
+                    </div>
+                    <div class="text">
+                        <p>{{this.block-content.short-description}}</p>
+                    </div>
+                    <div class="read-more">
+                        <p align="right"><span class="read-more-click">Click</span><span class="read-more-tap">Tap</span> to Read More...</p>
+                    </div>
+                </div>
+                <div class="modal" id="{{this.css-id}}-modal" tabindex="-1" role="dialog" aria-labelledby="{{this.css-id}}-modal-label" aria-hidden="true">
+                    <div class="modal-dialog modal-full" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="modal-body-head">
+                                    <h1 class="modal-title text-center" id="sse-modal-label">{{this.block-content.heading}}</h1>
+                                    <h2 class="text-center">
+                                        <span class="company">{{this.block-content.organization.name}}</span>
+                                    </h2>
+                                    <h4 class="text-center">
+                                        <span class="from">{{this.block-content.timeline.from}}</span> - <span class="to">{{this.block-content.timeline.to}}</span>
+                                        <span class="duration">{{this.block-content.timeline.duration}}</span>
+                                        <span class="separator">|</span>
+                                        <span class="city-state">
+                                            {{this.block-content.location.city}}
+                                            , {{this.block-content.location.state}}
+                                            {{#if this.block-content.location.country}}, {{this.block-content.location.country}}{{/if}}
+                                        </span>
+                                    </h3>
+                                </div>
+                                <div class="modal-body-content">
+                                    <h3 class="title-light">Work <span class="title-strong">Impact</span></h3>
+                                    {{#each this.block-content.work-impact}}
+                                    <p>{{this}}</p>
+                                    {{/each}}
+                                    <h3 class="title-light">Technologies & <span class="title-strong">Tools</span></h3>
+                                    <div class="row">
+                                        {{#each this.block-content.technology-tools}}
+                                        <div class="col-md-4 col-lg-3 col-xl-2 col-sm-4 col-4">
+                                            <div class="skills-block text-center">
+                                                <i class="{{skill-css}}"></i>
+                                                <p>{{skill-name}}</p>
+                                            </div>
+                                        </div>
+                                        {{/each}}
+                                    </div>
+                                </div>
+                                <div class="modal-mobile-close">
+                                    <button type="button" class="btn btn-light float-right" data-dismiss="modal" aria-label="Close">
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{/is}}
+            {{#is this.type "education"}}
+            <div class="timeline-block education{{#each this.css-class}} {{this}}{{/each}}" id="{{css-id}}">
+                <div class="timeline-img-container">
+                </div>
+                <div class="timeline-content timeline-block-content" data-toggle="modal" data-target="#{{this.css-id}}-modal">
+                    <div class="heading">
+                        <h2>{{this.block-content.heading}}</h2>
+                    </div>
+                    <div class="heading-secondary">
+                        <p>
+                            <i class="{{this.block-content.organization.css-class}}"></i>
+                            <span class="company">{{this.block-content.organization.name}}</span>
+                        </p>
+                        <p>
+                            <i class="far fa-calendar-alt"></i>
+                            <span class="from">{{this.block-content.timeline.from}}</span>
+                            -
+                            <span class="to">{{this.block-content.timeline.to}}</span>
+                            <span class="duration">{{this.block-content.timeline.duration}}</span>
+                        </p>
+                        <p>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span class="city-state">
+                                {{this.block-content.location.city}}
+                                , {{this.block-content.location.state}}
+                                {{#if this.block-content.location.country}}, {{this.block-content.location.country}}{{/if}}
+                            </span>
+                        </p>
+                    </div>
+                    <div class="text">
+                        <p>{{this.block-content.short-description}}</p>
+                    </div>
+                    <div class="read-more">
+                        <p align="right"><span class="read-more-click">Click</span><span class="read-more-tap">Tap</span> to Read More...</p>
+                    </div>
+                </div>
+                <div class="modal" id="{{this.css-id}}-modal" tabindex="-1" role="dialog" aria-labelledby="{{this.css-id}}-modal-label" aria-hidden="true">
+                    <div class="modal-dialog modal-full" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="modal-body-head">
+                                    <h1 class="modal-title text-center" id="sse-modal-label">{{this.block-content.heading}}</h1>
+                                    <h2 class="text-center">
+                                        <span class="company">{{this.block-content.organization.name}}</span>
+                                    </h2>
+                                    <h4 class="text-center">
+                                        <span class="from">{{this.block-content.timeline.from}}</span> - <span class="to">{{this.block-content.timeline.to}}</span>
+                                        <span class="duration">{{this.block-content.timeline.duration}}</span>
+                                        <span class="separator">|</span>
+                                        <span class="city-state">
+                                            {{this.block-content.location.city}}
+                                            , {{this.block-content.location.state}}
+                                            {{#if this.block-content.location.country}}, {{this.block-content.location.country}}{{/if}}
+                                        </span>
+                                    </h3>
+                                </div>
+                                <div class="modal-body-content">
+                                    <h3 class="title-light">Course <span class="title-strong">Impact</span></h3>
+                                    {{#each this.block-content.course-impact}}
+                                    <p>{{this}}</p>
+                                    {{/each}}
+                                    {{#if this.block-content.courses}}
+                                    <h3 class="title-light"><span class="title-strong">Courses</span></h3>
+                                    {{/if}}
+                                    <div class="row">
+                                        <ul>
+                                            {{#each this.block-content.courses}}
+                                            <li>
+                                                {{course-name}}
+                                                <i>{{course-number}}</i>
+                                            </li>
+                                            {{/each}}
+                                        </ul>
+                                    </div>
+                                    {{#if this.block-content.activities}}
+                                    <h3 class="title-light">Extracurricular <span class="title-strong">Activities</span></h3>
+                                    {{/if}}
+                                    <div class="row">
+                                        <ul>
+                                            {{#each this.block-content.activities}}
+                                            <li>{{this}}</li>
+                                            {{/each}}
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="modal-mobile-close">
+                                    <button type="button" class="btn btn-light float-right" data-dismiss="modal" aria-label="Close">
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{/is}}
+            {{/each}}
+        </section>
+    </div>
+</div>
