@@ -1,0 +1,143 @@
+#launchpad-main {
+    padding-top: 100px;
+}
+
+#launchpad-main h1.title,
+#launchpad-main h3.title {
+    color: #000;
+    margin: 0 auto;
+}
+
+#launchpad-main h1.title {
+    font-size: 75px;
+}
+
+#launchpad-main h3.title {
+    margin-bottom: 50px
+}
+
+#launchpad-main .title .title-hollow {
+    -webkit-text-stroke-color: #000;
+}
+
+#launchpad-main .title .title-hollow {
+    -webkit-text-stroke-color: #000;
+    text-transform: uppercase
+}
+
+#launchpad-main #displays {
+    position: absolute;
+}
+
+#launchpad-main .display {
+    position: relative;
+}
+
+#launchpad-main #thunderboalt-display {
+    background-image: url("../images/launch-layout-thunderboalt-display.png");
+    width: 631px;
+    height: 485px;
+    position: relative;
+    left: 300px;
+}
+
+#launchpad-main #thunderboalt-display iframe {
+    position: relative;
+    top: 27px;
+    left: 26px;
+    border: 0;
+    width: 1660px;
+    height: 932px;
+    border-radius: 0;
+
+    -ms-zoom: 0.35;
+    -moz-transform: scale(0.35);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.35);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.35);
+    -webkit-transform-origin: 0 0;
+}
+
+
+#launchpad-main #macbook-pro-display {
+    background-image: url("../images/launch-layout-macbook-pro-display.png");
+    width: 560px;
+    height: 326px;
+    left: -40px;
+    top:-320px;
+}
+
+#launchpad-main #macbook-pro-display iframe {
+    position: relative;
+    top: 23px;
+    left: 62px;
+    border: 0;
+    width: 1230px;
+    height: 760px;
+    border-radius: 0;
+
+    -ms-zoom: 0.35;
+    -moz-transform: scale(0.35);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.35);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.35);
+    -webkit-transform-origin: 0 0;
+}
+
+
+#launchpad-main #ipad-display {
+    background-image: url("../images/launch-layout-ipad-display.png");
+    width: 217px;
+    height: 305px;
+    left: 850px;
+    top: -630px;
+}
+
+
+#launchpad-main #ipad-display iframe {
+    position: relative;
+    top: 28px;
+    left: 15px;
+    border: 0;
+    width: 540px;
+    height: 720px;
+    border-radius: 0;
+
+    -ms-zoom: 0.35;
+    -moz-transform: scale(0.35);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.35);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.35);
+    -webkit-transform-origin: 0 0;
+}
+
+
+#launchpad-main #iphone-display {
+    background-image: url("../images/launch-layout-iphone-display.png");
+    width: 110px;
+    height: 218px;
+    left: 1000px;
+    top: -848px;
+
+}
+
+#launchpad-main #iphone-display iframe {
+    position: relative;
+    top: 18px;
+    left: 7px;
+    border: 0;
+    width: 480px;
+    height: 920px;
+    border-radius: 0;
+
+    -ms-zoom: 0.20;
+    -moz-transform: scale(0.20);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.20);
+    -o-transform-origin: 0 100;
+    -webkit-transform: scale(0.20);
+    -webkit-transform-origin: 0 0;
+}

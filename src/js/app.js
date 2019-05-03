@@ -32,9 +32,7 @@ site.all = (function (){
                         }, 1000);
                         return true;
                     }
-                }
-
-                
+                }             
             });
         },
         init: function init() {
