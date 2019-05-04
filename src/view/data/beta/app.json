@@ -2,5 +2,6 @@
     "app_name": "Amey Rupji - Beta",
     "app_url": "http://localhost:1234/",
     "icons_folder": "beta-icons",
-    "api_base_url": "https://api.beta.ameyrupji.com"
+    "api_base_url": "https://api.beta.ameyrupji.com",
+    "google_analytics_tracking_id": "UA-16933728-5"
 }
