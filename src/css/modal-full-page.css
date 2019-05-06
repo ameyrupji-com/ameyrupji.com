@@ -41,6 +41,10 @@
     font-size: 60px;
 }
 
+.modal-content .modal-mobile-close {
+    margin-bottom: 50px;
+}
+
 @media only screen and (max-width: 1169px) {
     .modal-header {
         border-radius: 0;

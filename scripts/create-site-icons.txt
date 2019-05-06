@@ -11,3 +11,10 @@ Prod:
 
 Copy and rename Prod"
 cp ../src/images/icons/favicon-64x64.png ../src/favicon.ico
+
+
+
+
+Refence Links:
+https://realfavicongenerator.net/api/#.XM4ABC-ZPUJ
+https://www.npmjs.com/package/icon-gen 

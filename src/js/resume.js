@@ -2,7 +2,7 @@ site.resume = (function ($) {
     "use strict"
   
     var Model = {
-        resumeUrl: window.location.href.split('#')[0] + '/assets/pdf/ameyrupji_resume.pdf',
+        resumeUrl: window.location.href.split('#')[0] + 'assets/pdf/ameyrupji_resume.pdf',
         emailTitle: 'Check out Amey Rupji\'s resume at:',
         emailSubject: 'Check out Amey Rupji\'s - Resume',
         emailTo: ''
