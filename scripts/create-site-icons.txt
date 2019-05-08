@@ -3,7 +3,7 @@ Commands to be run to create the favicons for this website
 
 
 Beta: 
-./icons.sh -i ../src/images/icon-white-square-beta.png -o ../src/images/beta-icons
+./icons.sh -i ../src/images/icon-gradient-altertnate-beta.png -o ../src/images/beta-icons
 
 Prod:
 ./icons.sh -i ../src/images/icon-white-square.png -o ../src/images/icons
