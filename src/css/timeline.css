@@ -292,6 +292,10 @@
         padding-bottom: 40px;
     }
 
+    .read-more .read-more-click {
+        display: none;
+    }
+
     .timeline-block-content {
         margin: 10px 0 10px 0;
         padding-bottom: 0px;
