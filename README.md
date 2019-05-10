@@ -3,17 +3,24 @@
 [![CircleCI](https://circleci.com/gh/ameyrupji-com/ameyrupji.com.svg?style=svg)](https://circleci.com/gh/ameyrupji-com/ameyrupji.com)
 
 
-Git hub repository for my personal website deployed accross muliple cloud providers (AWS, Google)
+GitHub repository for my personal website deployed accross muliple cloud providers (AWS, Google)
 
 The aim of this website it to showcase my skills in all areas of the software development lifecycle which include and are not limited to conceptualizing, website designing, planning for a minimal viable product, testing, release planning, releasing, and documenting and user-facing technical and non-technical documentation. I am using CircleCI to build and deploy my website using enterprise style deployment pattern by deploying feature branches.
 
 
 Please feel free to use any part of this repository. If you find this useful please dont forget to Star or Folk this repository. If there are things that you would like me to improve in this code feel free to point it out via email or by creating an Issue.
 
-## Prerequisites Software
+## Prerequisites
+
+### Installed Software 
 
 - HomeBrew
 - Parcel web package manager (Link: https://parceljs.org/getting_started.html)
+- Web browser
+
+### Editors 
+
+- Visual Sudio Code or Atom or any other text exitor of your choice 
 
 
 ## Branching / Deployment model
