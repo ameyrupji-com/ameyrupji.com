@@ -45,9 +45,44 @@ jobs:
       - run: 
           name: build
           command: | 
-            cd src
+            cd src/
+            rm view/data/app.json
+            mv view/data/prod/app.json view/data/app.json
+            rm -rf dist/
             npm install parcel-bundler --save-dev
             npm run build
+      - *save_repo
+  build-develop:
+    <<: *build_default_config
+    steps:
+      - checkout
+      - run: 
+          name: build
+          command: | 
+            cd src/
+            rm view/data/app.json
+            mv view/data/beta/app.json view/data/app.json
+            rm -rf dist/
+            npm install parcel-bundler --save-dev
+            npm run build
+            cd dist/
+            find ./ -type f -name '*.css' -exec sed -i 's|url(../|url(|g' {} \;
+      - *save_repo
+  build-branch:
+    <<: *build_default_config
+    steps:
+      - checkout
+      - run: 
+          name: build
+          command: | 
+            cd src/
+            rm view/data/app.json
+            mv view/data/beta/app.json view/data/app.json
+            rm -rf dist/
+            npm install parcel-bundler --save-dev
+            npm run build
+            cd dist/
+            find ./ -type f -name '*.css' -exec sed -i 's|url(../|url(|g' {} \;
       - *save_repo
   upload-master:
     <<: *deploy_default_config
@@ -78,7 +113,22 @@ workflows:
   version: 2
   build-upload:
     jobs:
-      - build
+      - build:
+          filters:
+            branches:
+              only: 
+                - master
+      - build-develop:
+          filters:
+            branches:
+              only: 
+                - develop
+      - build-branch:
+          filters:
+            branches:
+              ignore: 
+                - master
+                - develop
       - approve-master:
           type: approval
           requires:
@@ -94,13 +144,13 @@ workflows:
                 only: master
       - upload-develop:
           requires:
-              - build
+              - build-develop 
           filters:
               branches:
                 only: develop
       - upload-branches:
           requires:
-              - build
+              - build-branch
           filters:
               branches:
                 ignore: 

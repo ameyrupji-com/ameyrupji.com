@@ -1,0 +1,47 @@
+<div class="container-full-bg" id="image-back-main">
+    <div class="jumbotron" id="gradient-main">
+        
+        <nav class="navbar navbar-expand-sm navbar-light bg-transparent">
+            <div class="container">
+                <a class="navbar-brand" href="#summary-main">{{cover.first-name}} <span id="last-name">{{cover.last-name}}</span></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse-menu">
+                    <div id="burger">
+                        <div class="bar top"></div>
+                        <div class="bar bottom"></div>
+                    </div>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-collapse-menu">
+                    <ul class="navbar-nav ml-auto">
+                        {{#each cover.links}}
+                        <li class="nav-item delay-{{@index}}">
+                            <a href="{{this.href}}" class="nav-link" data-toggle="collapse" data-target="#navbar-collapse-menu">{{this.text}}</a>
+                        </li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="jumbotron-content">
+            <h1 class="title">Amey 
+                <span class="title-strong">Rupji</span> 
+                {{!-- <span class="title-hollow">.com</span> --}}
+            </h1>
+            <h3 class="title">
+                Software 
+                <span class="title-strong">Engineer</span>
+                <span class="title-hollow">Artist</span>
+            </h3>
+        </div>
+    </div>
+    <div class="scroll-container">
+        <div class="mouse">
+            <div class="wheel">
+            </div>
+        </div>
+        <div>
+            <span class="unu"></span>
+            <span class="doi"></span>
+            <span class="trei"></span>
+        </div>
+    </div>
+</div>

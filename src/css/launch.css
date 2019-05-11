@@ -1,0 +1,201 @@
+#launchpad-main {
+    padding-top: 100px;
+}
+
+#launchpad-main #app-icon {
+    background-image: url("../images/icons/apple-touch-icon-114x114.png");
+    width: 114px;
+    height: 114px;
+    border-radius: 25%;
+    position: absolute;
+    margin-left: 200px;
+    margin-top: 10px;
+}
+
+#launchpad-main h1.title,
+#launchpad-main h3.title {
+    color: #000;
+    margin: 0 auto;
+}
+
+#launchpad-main h1.title {
+    font-size: 75px;
+    margin-left: 250px;
+}
+
+#launchpad-main h3.title {
+    margin-bottom: 50px;
+    margin-left: 250px;
+}
+
+#launchpad-main .title .title-hollow {
+    -webkit-text-stroke-color: #000;
+}
+
+#launchpad-main .title .title-hollow {
+    -webkit-text-stroke-color: #000;
+    text-transform: uppercase
+}
+
+#launchpad-main #displays {
+    position: absolute;
+}
+
+#launchpad-main .display {
+    position: relative;
+}
+
+#launchpad-main #thunderboalt-display {
+    background-image: url("../images/launch-layout-thunderboalt-display.png");
+    width: 631px;
+    height: 485px;
+    position: relative;
+    left: 300px;
+    z-index: 100;
+}
+
+#launchpad-main #thunderboalt-display iframe {
+    position: relative;
+    top: 27px;
+    left: 26px;
+    border: 0;
+    width: 1660px;
+    height: 932px;
+    border-radius: 0;
+
+    -ms-zoom: 0.35;
+    -moz-transform: scale(0.35);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.35);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.35);
+    -webkit-transform-origin: 0 0;
+}
+
+
+#launchpad-main #macbook-pro-display {
+    background-image: url("../images/launch-layout-macbook-pro-display.png");
+    width: 560px;
+    height: 326px;
+    left: -40px;
+    top:-320px;
+    z-index: 200;
+}
+
+#launchpad-main #macbook-pro-display iframe {
+    position: relative;
+    top: 23px;
+    left: 62px;
+    border: 0;
+    width: 1234px;
+    height: 764px;
+    border-radius: 0;
+
+    -ms-zoom: 0.35;
+    -moz-transform: scale(0.35);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.35);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.35);
+    -webkit-transform-origin: 0 0;
+}
+
+
+#launchpad-main #ipad-display {
+    background-image: url("../images/launch-layout-ipad-display.png");
+    width: 217px;
+    height: 305px;
+    left: 850px;
+    top: -630px;
+    z-index: 200;
+}
+
+
+#launchpad-main #ipad-display iframe {
+    position: relative;
+    top: 28px;
+    left: 15px;
+    border: 0;
+    width: 540px;
+    height: 720px;
+    border-radius: 0;
+
+    -ms-zoom: 0.35;
+    -moz-transform: scale(0.35);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.35);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.35);
+    -webkit-transform-origin: 0 0;
+}
+
+
+#launchpad-main #iphone-display {
+    background-image: url("../images/launch-layout-iphone-display.png");
+    width: 110px;
+    height: 218px;
+    left: 1000px;
+    top: -848px;
+    z-index: 300;
+
+}
+
+#launchpad-main #iphone-display iframe {
+    position: relative;
+    top: 18px;
+    left: 7px;
+    border: 0;
+    width: 480px;
+    height: 920px;
+    border-radius: 0;
+
+    -ms-zoom: 0.20;
+    -moz-transform: scale(0.20);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.20);
+    -o-transform-origin: 0 100;
+    -webkit-transform: scale(0.20);
+    -webkit-transform-origin: 0 0;
+}
+
+#launchpad-main #resume-pdf {
+    width: 200px;
+    height: 250px;
+    left: 1000px;
+    top: -1330px;
+    z-index: 100;
+}
+
+#launchpad-main #resume-pdf iframe {
+    position: relative;
+    top: 0;
+    left: 0;
+    border: 0;
+    width: 1000px;
+    height: 1300px;
+    border-radius: 0;
+
+    -ms-zoom: 0.20;
+    -moz-transform: scale(0.20);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.20);
+    -o-transform-origin: 0 100;
+    -webkit-transform: scale(0.20);
+    -webkit-transform-origin: 0 0;
+}
+
+#launchpad-main #resume-pdf i {
+    position: relative;
+    top: -1070px;
+    left: 94%;
+    
+    background-color: #fff;
+
+    color: #99191e;
+    color: -webkit-linear-gradient(141deg,#99191e,#d81f28);
+    color: -moz-linear-gradient(141deg,#99191e,#d81f28);
+    color: -o-linear-gradient(141deg,#99191e,#d81f28);
+    color: linear-gradient(141deg,#99191e,#d81f28);
+}
+
+

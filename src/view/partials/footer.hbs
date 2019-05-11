@@ -1,0 +1,60 @@
+<footer class="container-fluid" id="footer-main">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-3 col-xl-3 col-6">
+                <ul class="footer-no-icons-list">
+                    <li class="list-heading">Site <span class="list-heading-strong">Links</span></li>
+                    {{#each footer.site-links}}
+                    <li><a href="{{this.href}}">{{this.text}}</a></li>
+                    {{/each}}
+                </ul>
+            </div>
+            <div class="col-md-6 col-lg-3 col-xl-3 col-6">
+                <ul class="footer-no-icons-list">
+                    <li class="list-heading">Other <span class="list-heading-strong">Links</span></li>
+                    {{#each footer.other-links}}
+                    <li>
+                        <a href="{{this.href}}">
+                            {{this.text}}
+                            {{#if this.img-src}}
+                            <img src="{{this.img-src}}">
+                            {{/if}}
+                        </a>
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+            <div class="col-md-6 col-lg-3 col-xl-3 col-6">
+                <ul class="footer-no-icons-list">
+                    <li class="list-heading">Share <span class="list-heading-strong">website</span></li>
+                    {{#each footer.share-links}}
+                    <li>
+                        <a class="btn btn-link sharer" href="#" id="{{this.id}}" data-sharer="{{this.data-sharer}}" data-title="{{this.data-title}}" data-url="{{app.app_url}}">
+                        <i class="{{this.icon-class}}"></i>
+                        {{this.text}}
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+            <div class="col-md-6 col-lg-3 col-xl-3 col-6">
+                <ul class="footer-no-icons-list">
+                    <li class="list-heading">Website <span class="list-heading-strong">License</span></li>
+                    <li>The code of this website is Open Sourced. This website is protected under GNU General Public License.</li>
+                    <li>&nbsp;</li>
+                    </li><a href="https://github.com/ameyrupji/ameyrupji.com/blob/develop/LICENSE">Read More...</a></ul>
+                </ul>
+            </div>
+        </div>
+        <hr/>
+        <div class="row">
+            <div class="col-md-12 col-lg-12 col-xl-12 col-12">
+                <ul class="footer-no-icons-flat-list">
+                    <li><a href="https://github.com/ameyrupji/ameyrupji.com/blob/develop/Privacy-Policy.md">Privacy Policy</a></li>
+                    <li><a href="https://github.com/ameyrupji/ameyrupji.com/blob/develop/Cookie-Policy.md">Cookie Policy</a></li>
+                    <li><a href="https://github.com/ameyrupji/ameyrupji.com/releases/">Version: <span id="release-number"></span></a></li>
+                    <li><a href="https://github.com/ameyrupji/ameyrupji.com/releases/">Release Notes</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>

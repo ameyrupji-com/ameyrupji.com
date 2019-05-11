@@ -1,0 +1,69 @@
+/*
+* Skills 
+*/
+
+#skills-main {
+    background-color: rgba(132, 80, 7, 1); /*#845007*/
+    background: linear-gradient(141deg, rgba(189, 149, 94, 1), rgba(132, 80, 7, 1));
+    background: -webkit-linear-gradient(141deg,rgba(189, 149, 94, 1), rgba(132, 80, 7, 1));
+    background: -moz-linear-gradient(141deg, rgba(189, 149, 94, 1), rgba(132, 80, 7, 1));
+    background: -o-linear-gradient(141deg, rgba(189, 149, 94, 1), rgba(132, 80, 7, 1));
+    background: linear-gradient(141deg, rgba(189, 149, 94, 1), rgba(132, 80, 7, 1));
+    color: #fff;
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+#skills-main .btn-group {
+    border: 2px solid #ddd;
+    border-radius: 6px;
+}
+
+#skills-main .btn-group .btn.btn-primary {
+    background: rgb(31, 55, 75);
+    background: -webkit-linear-gradient(141deg, rgba(31, 55, 75, 1), rgba(53, 92, 125, 1));
+    background: -moz-linear-gradient(141deg, rgba(31, 55, 75, 1), rgba(53, 92, 125, 1));
+    background: -o-linear-gradient(141deg, rgba(31, 55, 75, 1), rgba(53, 92, 125, 1));
+    background: linear-gradient(141deg, rgba(31, 55, 75, 1), rgba(53, 92, 125, 1));
+    border: none;
+}
+
+#skills-main .unused{
+    opacity: .5;
+}
+
+.skills-block {
+    padding: 23px;
+    margin: auto;   
+}
+
+#skills-main .skills-block i {
+    font-size: 60px;
+}
+
+#skills-main .skills-block i,
+#skills-main .skills-block p {
+    animation: fade-in 2s;
+    -moz-animation: fade-in 2s; /* Firefox */
+    -webkit-animation: fade-in 2s; /* Safari and Chrome */
+    -o-animation: fade-in 2s; /* Opera */
+}
+
+
+@media (max-width:768px) {
+    .skills-block {
+        padding: 20px 0px;
+    }
+    #skills-main .skills-block i {
+        font-size: 50px;
+    }
+}
+
+
+@media only screen and (min-width:769px) and (max-width: 1169px) {
+
+}
+
+@media only screen and (min-width: 1170px) {
+
+}
