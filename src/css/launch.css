@@ -8,7 +8,7 @@
     height: 114px;
     border-radius: 25%;
     position: absolute;
-    margin-left: 200px;
+    margin-left: 150px;
     margin-top: 10px;
 }
 
@@ -20,12 +20,12 @@
 
 #launchpad-main h1.title {
     font-size: 75px;
-    margin-left: 250px;
+    margin-left: 150px;
 }
 
 #launchpad-main h3.title {
     margin-bottom: 50px;
-    margin-left: 250px;
+    margin-left: 150px;
 }
 
 #launchpad-main .title .title-hollow {
@@ -88,7 +88,7 @@
     left: 62px;
     border: 0;
     width: 1234px;
-    height: 764px;
+    height: 770px;
     border-radius: 0;
 
     -ms-zoom: 0.35;
