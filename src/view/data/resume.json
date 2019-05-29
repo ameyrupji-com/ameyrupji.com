@@ -10,7 +10,7 @@
             "file-icon-css": "far fa-file-word"
         },
         {
-            "btn-class": "btn light",
+            "btn-class": "btn pages",
             "btn-id": "pages-btn",
             "btn-href": "./assets/pages/ameyrupji_resume.pages",
             "text": "Download Pages",
