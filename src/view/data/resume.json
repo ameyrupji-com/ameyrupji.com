@@ -11,7 +11,7 @@
         },
         {
             "btn-class": "btn light",
-            "btn-id": "word-pages",
+            "btn-id": "pages-btn",
             "btn-href": "./assets/pages/ameyrupji_resume.pages",
             "text": "Download Pages",
             "file-icon-css": "far fa-file"
