@@ -10,6 +10,13 @@
             "file-icon-css": "far fa-file-word"
         },
         {
+            "btn-class": "btn light",
+            "btn-id": "word-pages",
+            "btn-href": "./assets/pages/ameyrupji_resume.pages",
+            "text": "Download Pages",
+            "file-icon-css": "far fa-file"
+        },
+        {
             "btn-class": "btn pdf",
             "btn-id": "pdf-btn",
             "btn-href": "./assets/pdf/ameyrupji_resume.pdf",
