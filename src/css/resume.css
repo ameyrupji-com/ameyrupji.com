@@ -57,6 +57,16 @@
     border: none;
 }
 
+#resume-main .btn.pages {
+    background-color: rgba(31, 55, 75, 1);
+    background: linear-gradient(141deg, rgba(255, 185, 2, 1), rgba(255, 135, 0, 1));
+    background: -webkit-linear-gradient(141deg,  rgba(255, 185, 2, 1), rgba(255, 135, 0, 1));
+    background: -moz-linear-gradient(141deg,  rgba(255, 185, 2, 1), rgba(255, 135, 0, 1));
+    background: -o-linear-gradient(141deg,  rgba(255, 185, 2, 1), rgba(255, 135, 0, 1));
+    background: linear-gradient(141deg,  rgba(255, 185, 2, 1), rgba(255, 135, 0, 1));
+    color: #fff;
+}
+
 #resume-main .btn.word {
     background-color: rgba(31, 55, 75, 1);
     background: linear-gradient(141deg, rgba(31, 55, 75, 1), rgba(53, 92, 125, 1));
