@@ -7,7 +7,7 @@
         </div>
         <div class="row" id="resume-download-row">
             {{#each resume.resumes}}
-            <div class="col-xl-3 col-lg-3 col-md-6 col-12 text-center">
+            <div class="resume-cols col-xl-4 col-lg-4 col-md-4 col-12 text-center {{this.col-class}}">
                 <div class="download-btn">
                     <a class="{{this.btn-class}}" href="{{this.btn-href}}" id="{{this.btn-id}}">
                     {{this.text}}
