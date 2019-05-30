@@ -3,20 +3,7 @@
     "title-strong" : "Resume",
     "resumes": [
         {
-            "btn-class": "btn word",
-            "btn-id": "word-btn",
-            "btn-href": "./assets/word/ameyrupji_resume.docx",
-            "text": "Download Word",
-            "file-icon-css": "far fa-file-word"
-        },
-        {
-            "btn-class": "btn pages",
-            "btn-id": "pages-btn",
-            "btn-href": "./assets/pages/ameyrupji_resume.pages",
-            "text": "Download Pages",
-            "file-icon-css": "far fa-file"
-        },
-        {
+            "col-class": "",
             "btn-class": "btn pdf",
             "btn-id": "pdf-btn",
             "btn-href": "./assets/pdf/ameyrupji_resume.pdf",
@@ -24,13 +11,15 @@
             "file-icon-css": "far fa-file-pdf"
         },
         {
-            "btn-class": "btn btn-light",
+            "col-class": "",
+            "btn-class": "btn word",
             "btn-id": "parser-friendly-btn",
             "btn-href": "./assets/word/ameyrupji_resume_parsable.docx",
             "text": "Parser Friendly",
-            "file-icon-css": "far fa-file-alt"
+            "file-icon-css": "far fa-file-word"
         },
         {
+            "col-class": "",
             "btn-class": "btn btn-light sharer",
             "btn-id": "share-email-btn",
             "btn-href": "#",
