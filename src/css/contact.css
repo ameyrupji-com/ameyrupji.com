@@ -30,13 +30,14 @@ margin-bottom: 1rem;
 }
 
 .form-label-group > input,
+.form-label-group > select,
+.form-label-group > textarea,
 .form-label-group > label {
     padding: var(--input-padding-y) var(--input-padding-x);
 }
 
-.form-label-group > textarea,
-.form-label-group > label {
-    padding: var(--input-padding-y) var(--input-padding-x);
+.form-label-group select.form-control:not([size]):not([multiple]) {
+    height: calc(3rem + 2px);
 }
 
 .form-label-group > label {
@@ -91,6 +92,10 @@ margin-bottom: 1rem;
     padding-bottom: calc(var(--input-padding-y) / 3);
     font-size: 12px;
     color: #777;
+}
+
+.form-label-group select.form-control:not([size]):not([multiple]) ~ label {
+    display: none
 }
 
 .form-label-group.error .form-control {

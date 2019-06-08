@@ -4,7 +4,7 @@ site.contact = (function ($) {
     var Model = {
     },
     View = {
-        contatForm: {
+        contactForm: {
             formId: '#contact-me-form',
             nameInputId: '#fullNameInput',
             telephoneInputId: '#telephoneInput',
@@ -12,20 +12,18 @@ site.contact = (function ($) {
             messageInputId: '#messageTextarea',
             submitBtnId: '#contact-submit-btn',
             submitBtnSendingId: '#contact-submit-btn i',
-            cancelBtnId: '#cancel-btn'
+            cancelBtnId: '#cancel-btn',
+            reasonInputId: '#reasonInput'
         },
         contactFromAlertsId: '#contact-me-form-alerts'
     },
     Controller = {
         initilizeContactFromSendBtn: function initilizeContactFromSendBtn() {
-            
-
-
             $.validator.addMethod("fullName", function(value, element) {
                 return this.optional(element) || /[A-Za-z]{2,}\s[A-Za-z]{1,}\s{0}[A-Za-z]{0,}/.test( value );
             }, "Please enter the valid Full Name");
-            $(View.contatForm.submitBtnId).click(function() {
-                $(View.contatForm.formId).validate({
+            $(View.contactForm.submitBtnId).click(function() {
+                $(View.contactForm.formId).validate({
                     rules: {
                         fullNameInput: {
                             required: true,
@@ -63,20 +61,22 @@ site.contact = (function ($) {
                     },
                     submitHandler: function(form) {
                         console.log('Form Valid! Submitting form.')
-                        $(View.contatForm.submitBtnSendingId).css('display', 'visible')
-                        var name = $(View.contatForm.nameInputId).val();
-                        var email = $(View.contatForm.emailInputId).val();
-                        var message = $(View.contatForm.messageInputId).val();
-                        var telephone = $(View.contatForm.telephoneInputId).val();
+                        $(View.contactForm.submitBtnSendingId).css('display', 'visible')
+                        var name = $(View.contactForm.nameInputId).val();
+                        var email = $(View.contactForm.emailInputId).val();
+                        var message = $(View.contactForm.messageInputId).val();
+                        var telephone = $(View.contactForm.telephoneInputId).val();
+                        var reason = $(View.contactForm.reasonInputId + ' option:selected').text();
                         var data = {
                             name: name,
                             telephone: telephone,
                             email: email,
-                            message: message
+                            message: message,
+                            reason: reason
                         }
                     
                         var contactFromAlert =  $(View.contactFromAlertsId)
-                        var url = $(View.contatForm.formId).attr('target')
+                        var url = $(View.contactForm.formId).attr('target')
                         console.log('Submitting to:')
                         console.log(url)
                         console.log('Data:')
@@ -105,9 +105,9 @@ site.contact = (function ($) {
                                     .html('<i class="fas fa-circle-notch fa-spin"></i> Error sending your message! I have taken a note of this and will try to fix this ASAP.')
                             },
                             complete: function() {
-                                $(View.contatForm.submitBtnSendingId).css('display', 'none')
-                                $(View.contatForm.formId).trigger("reset")
-                                $(View.contatForm.submitBtnId).removeAttr('disabled')
+                                $(View.contactForm.submitBtnSendingId).css('display', 'none')
+                                $(View.contactForm.formId).trigger("reset")
+                                $(View.contactForm.submitBtnId).removeAttr('disabled')
                                 setTimeout(() => {
                                     contactFromAlert.css('display', 'none')
                                 }, 4000);
@@ -118,6 +118,10 @@ site.contact = (function ($) {
                 });
             })
         },
+        changeReason: function changeReason(value) {
+            console.log('In contact:changeReason(' + value + ')')
+            $(View.contactForm.reasonInputId).val(value);
+        },
         init: function init() {
             console.log('In contact:init()')
             Controller.initilizeContactFromSendBtn()
@@ -126,5 +130,6 @@ site.contact = (function ($) {
    
     return {
         init: Controller.init,
+        changeReason: Controller.changeReason
     };
 })(jQuery);
