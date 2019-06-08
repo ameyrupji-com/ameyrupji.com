@@ -4,7 +4,8 @@ site.footer = (function ($) {
   var Model = {
   },
   View = {
-    releaseNumberSpanId: '#release-number'
+    releaseNumberSpanId: '#release-number',
+    feedbackLink: '#feedback-link'
   },
   Controller = {
     initilizeVersionForSite: function initilizeVersionForSite() {
@@ -15,9 +16,15 @@ site.footer = (function ($) {
         $(View.releaseNumberSpanId).html(release_number);
       }});
     },
+    initializeFeedbackLink: function initializeFeedbackLink() {
+        $(View.feedbackLink).on('click', function() {
+          site.contact.changeReason('feedback')
+        })
+    },
     init: function init() {
       console.log('In footer:init()')
       Controller.initilizeVersionForSite()
+      Controller.initializeFeedbackLink()
     }
   }
   

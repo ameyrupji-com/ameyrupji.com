@@ -4,8 +4,32 @@
     "contact-form": {
         "form-id": "contact-me-form",
         "field-class": "form-label-group",
-        "form-text": "For professional inquiries, please fill in the form below.",
+        "form-text": "For inquiries, questions or feeback please fill in the form below.",
         "fields": [
+            {
+                "element": "select",
+                "css-id": "reasonInput",
+                "css-class": "form-control",
+                "placeholder": "Reason",
+                "label": "Reason",
+                "options": [
+                    {
+                        "text": "Professional Inquiries",
+                        "value": "professional",
+                        "selected": true
+                    },
+                    {
+                        "text": "Questions",
+                        "value": "questions",
+                        "selected": false
+                    },
+                    {
+                        "text": "Feedback",
+                        "value": "feedback",
+                        "selected": false
+                    }
+                ]
+            },
             {
                 "element": "input",
                 "type": "text",

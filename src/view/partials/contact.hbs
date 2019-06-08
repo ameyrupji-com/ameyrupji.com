@@ -38,6 +38,17 @@
                         {{this.text}}
                     </button>
                     {{/is}}
+                    {{#is this.element "select"}}
+                    <div class="form-label-group">
+                        <select class="{{this.css-class}}" id="{{this.css-id}}">
+                            <i class="fas fa-circle-notch fa-spin"></i>
+                            {{#each this.options}}
+                            <option value="{{this.value}}"{{#if this.selected}} selected="selected"{{/if}}>{{this.text}}</option>
+                            {{/each}}
+                        </select>
+                        <label for="{{this.css-id}}">{{this.placeholder}}</label>
+                    </div>
+                    {{/is}}
                     {{/each}}
                 </form>
             </div>
