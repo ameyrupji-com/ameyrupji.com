@@ -13,7 +13,7 @@ site.cover = (function ($) {
     },
     Controller = {
         scrollFunction: function scrollFunction() {
-            console.log('In cover:scrollFunction()')
+            // console.log('In cover:scrollFunction()')
             if ( $(window).scrollTop() > Model.scrollStart  && $(window).scrollTop() < ($(window).height() - 200) ) {
                 $(View.navbarClass).removeClass('bg-transparent');
                 $(View.navbarClass).removeClass('nav-scrolled-vh');
@@ -41,9 +41,21 @@ site.cover = (function ($) {
                 $(View.navbarBtnClass).toggleClass('navbar-open') 
             })
         },
+        initilizeMobileNavbarToggleEvents: function initilizMobileNavbarToggleEvents() {
+            console.log('In cover:initilizeMobileNavbarToggleEvents()');
+            $(View.navbarClass).on('shown.bs.collapse', function() {
+                console.log('Navbar Closed');
+                $('body').addClass('fixed-position')
+            })
+            $(View.navbarClass).on('hidden.bs.collapse', function() {
+                console.log('Navbar Opened');
+                $('body').removeClass('fixed-position')
+            })
+        },
         init: function init() {
             console.log('In cover:init()')
             Controller.initilizeNavbarTogglerBtn()
+            Controller.initilizeMobileNavbarToggleEvents()
             Controller.scrollFunction()
             Controller.initializefixedNavBarOnScroll()
         }

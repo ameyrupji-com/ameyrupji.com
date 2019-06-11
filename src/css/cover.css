@@ -30,6 +30,10 @@
   border-radius: 0;
 }
 
+.fixed-position {
+  position: fixed;
+}
+
 /* navbar */
 .navbar .navbar-brand,
 .navbar .nav-item a,
