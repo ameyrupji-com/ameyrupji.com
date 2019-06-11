@@ -299,6 +299,35 @@
     -webkit-transform: translateY(3px) rotate(-45deg);
             transform: translateY(3px) rotate(-45deg);
   }
+
+  .navbar.navbar-open {
+    transition: 1s;
+    background: rgba(255, 255, 255, 0.6) !important;
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    min-height: 100vh;
+  }
+  .navbar.navbar-open .container { 
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 20px;
+  }
+
+  .navbar.navbar-open .navbar-brand {
+    color: rgba(0,0,0,.9);
+  }
+
+  .navbar.navbar-open .nav-item a,
+  .navbar.navbar-open .nav-item a:hover {
+    color: rgba(0,0,0,.5); 
+  }
+
+  .navbar.navbar-open #burger .bar {
+    background: #000;
+  }
+
 }
 
 
@@ -326,13 +355,24 @@
 
 /* TODO: Figure out menu transition later */
 /* https://bootsnipp.com/snippets/z85Qd */
+
+
+
 /* .navbar.navbar-open li.nav-item {
   -webkit-animation: appear-down 1s;
   -moz-animation: appear-down 1s;
   animation: appear-down 1s;
+} */
+
+
+
+.navbar.navbar-open li.nav-item {
+  transition: 1s;
+
 }
 
-.navbar.navbar-open li.nav-item.delay-1{-webkit-animation-delay:0.1s; -moz-animation-delay:0.1s; -ms-animation-delay:0.1s; -o-animation-delay:0.1s; animation-delay:0.1s; }
+
+/* .navbar.navbar-open li.nav-item.delay-1{-webkit-animation-delay:0.1s; -moz-animation-delay:0.1s; -ms-animation-delay:0.1s; -o-animation-delay:0.1s; animation-delay:0.1s; }
 .navbar.navbar-open li.nav-item.delay-2{-webkit-animation-delay:0.2s; -moz-animation-delay:0.2s; -ms-animation-delay:0.2s; -o-animation-delay:0.2s; animation-delay:0.2s; }
 .navbar.navbar-open li.nav-item.delay-3{-webkit-animation-delay:0.3s; -moz-animation-delay:0.3s; -ms-animation-delay:0.3s; -o-animation-delay:0.3s; animation-delay:0.3s; }
 .navbar.navbar-open li.nav-item.delay-4{-webkit-animation-delay:0.4s; -moz-animation-delay:0.4s; -ms-animation-delay:0.4s; -o-animation-delay:0.4s; animation-delay:0.4s; }
