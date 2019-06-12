@@ -3,5 +3,64 @@
     "app_url": "http://localhost:1234/",
     "icons_folder": "icons",
     "api_base_url": "https://api.ameyrupji.com",
-    "google_analytics_tracking_id": "UA-16933728-4"
+    "google_analytics_tracking_id": "UA-16933728-4",
+    "other-links": [
+        {
+            "text": "Blog",
+            "href": "http://blog.ameyrupji.com/"
+        },
+        {
+            "text": "Old Website",
+            "href": "http://old.ameyrupji.com/"
+        },
+        {
+            "text": "Website Code",
+            "href": "http://code.ameyrupji.com/"
+        },
+        {
+            "text": "Infrastructure Code",
+            "href": "http://iac.ameyrupji.com/"
+        },
+        {
+            "text": "Build ",
+            "href": "#",
+            "img-src": "https://circleci.com/gh/ameyrupji-com/ameyrupji.com.svg?style=svg"
+        },
+        {
+            "text": "Powered By AWS",
+            "href": "http://www.aws.com/"
+        }
+    ],
+    "policy_links": [
+        {
+            "text": "Privacy Policy",
+            "href": "https://github.com/ameyrupji/ameyrupji.com/blob/master/Privacy-Policy.md",
+            "id": "privacy-policy"
+        },
+        {
+            "text": "Cookie Policy",
+            "href": "https://github.com/ameyrupji/ameyrupji.com/blob/master/Cookie-Policy.md",
+            "id": "cookie-policy"
+        },
+        {
+            "text": "Version:",
+            "href": "https://github.com/ameyrupji/ameyrupji.com/releases/",
+            "id": "release-number"
+        },
+        {
+            "text": "Release Notes",
+            "href": "https://github.com/ameyrupji/ameyrupji.com/releases/",
+            "id": "release-notes"
+        },
+        {
+            "text": "Feedback",
+            "href": "#contact-main",
+            "id": "feedback-link"
+        }
+    ],
+    "license-link": {
+        "text": "Read More...",
+        "href": "https://github.com/ameyrupji/ameyrupji.com/blob/develop/LICENSE",
+        "id": "license-link"
+    }
 }

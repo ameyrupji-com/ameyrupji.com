@@ -13,8 +13,21 @@
                 <div class="collapse navbar-collapse" id="navbar-collapse-menu">
                     <ul class="navbar-nav ml-auto">
                         {{#each cover.links}}
-                        <li class="nav-item delay-{{@index}}">
+                        <li class="nav-item">
                             <a href="{{this.href}}" class="nav-link" data-toggle="collapse" data-target="#navbar-collapse-menu">{{this.text}}</a>
+                        </li>
+                        {{/each}}
+                    </ul>
+                    <hr/ class="d-block d-md-none d-lg-none d-xl-none">
+                    <ul class="navbar-nav ml-auto d-block d-md-none d-lg-none d-xl-none">
+                        {{#each app.other-links}}
+                        <li class="nav-item">
+                            <a href="{{this.href}}" class="nav-link" data-toggle="collapse" data-target="#navbar-collapse-menu">
+                                {{this.text}}
+                                {{#if this.img-src}}
+                                    <img src="{{this.img-src}}">
+                                {{/if}}
+                            </a>
                         </li>
                         {{/each}}
                     </ul>

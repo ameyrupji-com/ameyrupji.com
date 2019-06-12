@@ -4,7 +4,7 @@ site.footer = (function ($) {
   var Model = {
   },
   View = {
-    releaseNumberSpanId: '#release-number',
+    releaseNumberSpanId: '#release-number-span',
     feedbackLink: '#feedback-link'
   },
   Controller = {
