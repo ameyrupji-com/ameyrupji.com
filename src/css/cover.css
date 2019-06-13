@@ -332,6 +332,10 @@
     background: #000;
   }
 
+  .navbar.navbar-open i {
+    opacity: .3;
+  }
+
 }
 
 

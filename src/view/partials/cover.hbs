@@ -26,10 +26,19 @@
                                 {{this.text}}
                                 {{#if this.img-src}}
                                     <img src="{{this.img-src}}">
-                                {{/if}}
+                                {{/if}} &nbsp;
+                                <i class="fas fa-external-link-alt"></i>
                             </a>
                         </li>
                         {{/each}}
+                    </ul>
+                    <hr/ class="d-block d-md-none d-lg-none d-xl-none">
+                    <ul class="navbar-nav ml-auto d-block d-md-none d-lg-none d-xl-none">
+                        <li class="nav-item">
+                            <a href="{{this.href}}" class="nav-link" data-toggle="collapse" data-target="#navbar-collapse-menu">
+                                Version: <span id="release-number-span" style="text-transform: lowercase;"></span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
