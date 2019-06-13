@@ -29,8 +29,9 @@ site.all = (function (){
                         }, 1000);
                         return true;
                     }
+                } else {
+                    window.location = $(this).attr("href");        
                 }
-                window.location = $(this).attr("href");        
             });
         },
         init: function init() {
