@@ -43,14 +43,14 @@ site.cover = (function ($) {
         },
         initilizeMobileNavbarToggleEvents: function initilizMobileNavbarToggleEvents() {
             console.log('In cover:initilizeMobileNavbarToggleEvents()');
-            $(View.navbarClass).on('shown.bs.collapse', function() {
-                console.log('Navbar Closed');
-                $('body').addClass('fixed-position')
-            })
-            $(View.navbarClass).on('hidden.bs.collapse', function() {
-                console.log('Navbar Opened');
-                $('body').removeClass('fixed-position')
-            })
+            // $(View.navbarClass).on('shown.bs.collapse', function() {
+            //     console.log('Navbar Closed');
+            //     $('body').addClass('fixed-position')
+            // })
+            // $(View.navbarClass).on('hidden.bs.collapse', function() {
+            //     console.log('Navbar Opened');
+            //     $('body').removeClass('fixed-position')
+            // })
         },
         init: function init() {
             console.log('In cover:init()')
