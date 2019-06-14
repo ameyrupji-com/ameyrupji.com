@@ -31,7 +31,7 @@
 }
 
 .fixed-position {
-  position: fixed;
+  overflow: hidden;
 }
 
 /* navbar */
@@ -66,7 +66,6 @@
 }
 
 /* navbar animations web */
-
 .navbar {
   animation: fade-in 1s;
   -moz-animation: fade-in 1s; /* Firefox */
@@ -323,6 +322,10 @@
     color: rgba(0,0,0,.9);
   }
 
+  .navbar.navbar-open .nav-item {
+    padding-left: 10px;
+  }
+
   .navbar.navbar-open .nav-item a,
   .navbar.navbar-open .nav-item a:hover {
     color: rgba(0,0,0,.5); 
@@ -335,7 +338,6 @@
   .navbar.navbar-open i {
     opacity: .3;
   }
-
 }
 
 
@@ -361,88 +363,10 @@
 
 }
 
-/* TODO: Figure out menu transition later */
-/* https://bootsnipp.com/snippets/z85Qd */
-
-
-
-/* .navbar.navbar-open li.nav-item {
-  -webkit-animation: appear-down 1s;
-  -moz-animation: appear-down 1s;
-  animation: appear-down 1s;
-} */
-
-
-
 .navbar.navbar-open li.nav-item {
   transition: 1s;
 
 }
 
-
-/* .navbar.navbar-open li.nav-item.delay-1{-webkit-animation-delay:0.1s; -moz-animation-delay:0.1s; -ms-animation-delay:0.1s; -o-animation-delay:0.1s; animation-delay:0.1s; }
-.navbar.navbar-open li.nav-item.delay-2{-webkit-animation-delay:0.2s; -moz-animation-delay:0.2s; -ms-animation-delay:0.2s; -o-animation-delay:0.2s; animation-delay:0.2s; }
-.navbar.navbar-open li.nav-item.delay-3{-webkit-animation-delay:0.3s; -moz-animation-delay:0.3s; -ms-animation-delay:0.3s; -o-animation-delay:0.3s; animation-delay:0.3s; }
-.navbar.navbar-open li.nav-item.delay-4{-webkit-animation-delay:0.4s; -moz-animation-delay:0.4s; -ms-animation-delay:0.4s; -o-animation-delay:0.4s; animation-delay:0.4s; }
-.navbar.navbar-open li.nav-item.delay-5{-webkit-animation-delay:0.5s; -moz-animation-delay:0.5s; -ms-animation-delay:0.5s; -o-animation-delay:0.5s; animation-delay:0.5s; }
-.navbar.navbar-open li.nav-item.delay-6{-webkit-animation-delay:0.6s; -moz-animation-delay:0.6s; -ms-animation-delay:0.6s; -o-animation-delay:0.6s; animation-delay:0.6s; }
-.navbar.navbar-open li.nav-item.delay-7{-webkit-animation-delay:0.7s; -moz-animation-delay:0.7s; -ms-animation-delay:0.7s; -o-animation-delay:0.7s; animation-delay:0.7s; }
-.navbar.navbar-open li.nav-item.delay-8{-webkit-animation-delay:0.8s; -moz-animation-delay:0.8s; -ms-animation-delay:0.8s; -o-animation-delay:0.8s; animation-delay:0.8s; }
-.navbar.navbar-open li.nav-item.delay-9{-webkit-animation-delay:0.9s; -moz-animation-delay:0.9s; -ms-animation-delay:0.9s; -o-animation-delay:0.9s; animation-delay:0.9s; }
-
-@-webkit-keyframes appear-down {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-40px);
-    -moz-transform: translateY(-40px);
-    -ms-transform: translateY(-40px);
-    -o-transform: translateY(-40px);
-    transform: translateY(-40px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
-    transform: translateY(0);
-  }
-}
-
-@-moz-keyframes appear-down {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-40px);
-    -moz-transform: translateY(-40px);
-    -ms-transform: translateY(-40px);
-    -o-transform: translateY(-40px);
-    transform: translateY(-40px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
-    transform: translateY(0);
-  }
-}
-
-@keyframes appear-down {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-40px);
-    -moz-transform: translateY(-40px);
-    -ms-transform: translateY(-40px);
-    -o-transform: translateY(-40px);
-    transform: translateY(-40px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
-    transform: translateY(0);
-  }
-} */
+/* TODO: Figure out menu transition later */
+/* https://bootsnipp.com/snippets/z85Qd */
