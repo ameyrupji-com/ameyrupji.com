@@ -21,33 +21,6 @@
             "href": "#contact-main"
         }
     ],
-    "other-links": [
-        {
-            "text": "Blog",
-            "href": "http://blog.ameyrupji.com/"
-        },
-        {
-            "text": "Old Website",
-            "href": "http://old.ameyrupji.com/"
-        },
-        {
-            "text": "Website Code",
-            "href": "http://code.ameyrupji.com/"
-        },
-        {
-            "text": "Infrastructure Code",
-            "href": "http://iac.ameyrupji.com/"
-        },
-        {
-            "text": "Build ",
-            "href": "#",
-            "img-src": "https://circleci.com/gh/ameyrupji-com/ameyrupji.com.svg?style=svg"
-        },
-        {
-            "text": "Powered By AWS",
-            "href": "http://www.aws.com/"
-        }
-    ],
     "share-links": [
         {
             "text": "Linkedin",
