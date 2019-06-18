@@ -1,6 +1,7 @@
 {
     "app_name": "Amey Rupji - Beta",
-    "app_url": "http://localhost:1234/",
+    "app_url": "http://beta.ameyrupji.com/",
+    "app_version": "Beta",
     "icons_folder": "beta-icons",
     "api_base_url": "https://api.beta.ameyrupji.com",
     "google_analytics_tracking_id": "UA-16933728-5",
@@ -43,7 +44,7 @@
             "id": "cookie-policy"
         },
         {
-            "text": "Version:",
+            "text": "Version: Beta",
             "href": "https://github.com/ameyrupji/ameyrupji.com/releases/",
             "id": "release-number-footer"
         },

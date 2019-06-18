@@ -1,6 +1,7 @@
 {
     "app_name": "Amey Rupji",
-    "app_url": "http://localhost:1234/",
+    "app_url": "http://ameyrupji.com/",
+    "app_version": "v1.1.0",
     "icons_folder": "icons",
     "api_base_url": "https://api.ameyrupji.com",
     "google_analytics_tracking_id": "UA-16933728-4",
@@ -34,17 +35,17 @@
     "policy_links": [
         {
             "text": "Privacy Policy",
-            "href": "https://github.com/ameyrupji/ameyrupji.com/blob/master/Privacy-Policy.md",
+            "href": "https://github.com/ameyrupji/ameyrupji.com/blob/v1.1.0/Privacy-Policy.md",
             "id": "privacy-policy"
         },
         {
             "text": "Cookie Policy",
-            "href": "https://github.com/ameyrupji/ameyrupji.com/blob/master/Cookie-Policy.md",
+            "href": "https://github.com/ameyrupji/ameyrupji.com/blob/v1.1.0/Cookie-Policy.md",
             "id": "cookie-policy"
         },
         {
-            "text": "Version:",
-            "href": "https://github.com/ameyrupji/ameyrupji.com/releases/",
+            "text": "Version: v1.1.0",
+            "href": "https://github.com/ameyrupji/ameyrupji.com/releases/tag/v1.1.0/",
             "id": "release-number-footer"
         },
         {
@@ -60,7 +61,7 @@
     ],
     "license-link": {
         "text": "Read More...",
-        "href": "https://github.com/ameyrupji/ameyrupji.com/blob/master/LICENSE",
+        "href": "https://github.com/ameyrupji/ameyrupji.com/blob/v1.1.0/LICENSE",
         "id": "license-link"
     }
 }
