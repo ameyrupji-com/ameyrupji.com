@@ -9,18 +9,9 @@ site.cover = (function ($) {
         navbarClass: '.navbar',
         navbarTogglerBtnClass: '.navbar-toggler',
         navbarBtnClass: '.navbar',
-        contentClass: '#jumbotron-content',
-        releaseNumberSpanId: '#release-number-span',
+        contentClass: '#jumbotron-content'
     },
     Controller = {
-        initilizeVersionForMenu: function initilizeVersionForMenu() {
-            // get the latest release 
-            $.ajax({url: "https://api.github.com/repos/ameyrupji/ameyrupji.com/releases/latest", success: function(result){
-              var release_number = result['tag_name'] 
-              console.log('Found release number: ' + release_number)
-              $(View.releaseNumberSpanId).html(release_number);
-            }});
-        },
         scrollFunction: function scrollFunction() {
             // console.log('In cover:scrollFunction()')
             if ( $(window).scrollTop() > Model.scrollStart  && $(window).scrollTop() < ($(window).height() - 200) ) {
@@ -39,8 +30,8 @@ site.cover = (function ($) {
                 $(View.navbarClass).removeClass('nav-scrolled-vh');
             }
         },
-        initializefixedNavBarOnScroll: function fixedNavBarOnScroll() {
-            console.log('In cover:initializefixedNavBarOnScroll()')
+        initializeFixedNavBarOnScroll: function fixedNavBarOnScroll() {
+            console.log('In cover:initializeFixedNavBarOnScroll()')
             window.onscroll = function() {
                 Controller.scrollFunction()
             }
@@ -63,11 +54,10 @@ site.cover = (function ($) {
         },
         init: function init() {
             console.log('In cover:init()')
-            Controller.initilizeVersionForMenu()
             Controller.initilizeNavbarTogglerBtn()
             Controller.initilizeMobileNavbarToggleEvents()
             Controller.scrollFunction()
-            Controller.initializefixedNavBarOnScroll()
+            Controller.initializeFixedNavBarOnScroll()
         }
     }
    
