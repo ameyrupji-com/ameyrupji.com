@@ -161,13 +161,13 @@ workflows:
                 only: develop
       - upload-releases:
           requires:
-              - build-release
+              - build
           filters:
             branches:
               only: /release.*/
       - upload-branches:
           requires:
-              - build
+              - build-branch
           filters:
               branches:
                 ignore: 
