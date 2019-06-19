@@ -108,6 +108,14 @@ jobs:
           from: /home/circleci/ameyrupji/src/dist/ 
           to: s3://beta.ameyrupji.com/${CIRCLE_BRANCH}
           arguments: --recursive
+  upload-releases:
+    <<: *deploy_default_config
+    steps:
+      - *restore_repo
+      - aws-s3/copy:
+          from: /home/circleci/ameyrupji/src/dist/ 
+          to: s3://ameyrupji.com/${CIRCLE_BRANCH}
+          arguments: --recursive
 
 workflows:
   version: 2
@@ -118,6 +126,7 @@ workflows:
             branches:
               only: 
                 - master
+                - /release.*/
       - build-develop:
           filters:
             branches:
@@ -135,7 +144,9 @@ workflows:
             - build
           filters:
             branches:
-              only: master
+              only: 
+                - master
+                - /release.*/
       - upload-master:
           requires:
               - approve-master
@@ -148,12 +159,19 @@ workflows:
           filters:
               branches:
                 only: develop
+      - upload-releases:
+          requires:
+              - build-release
+          filters:
+            branches:
+              only: /release.*/
       - upload-branches:
           requires:
-              - build-branch
+              - build
           filters:
               branches:
                 ignore: 
                   - master
                   - develop
+                  - /release.*/
 
