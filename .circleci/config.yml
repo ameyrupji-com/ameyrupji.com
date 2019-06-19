@@ -138,7 +138,7 @@ workflows:
               ignore: 
                 - master
                 - develop
-      - approve-master:
+      - approve:
           type: approval
           requires:
             - build
@@ -149,7 +149,7 @@ workflows:
                 - /release.*/
       - upload-master:
           requires:
-              - approve-master
+              - approve
           filters:
               branches:
                 only: master
@@ -161,7 +161,7 @@ workflows:
                 only: develop
       - upload-releases:
           requires:
-              - build
+              - approve
           filters:
             branches:
               only: /release.*/
