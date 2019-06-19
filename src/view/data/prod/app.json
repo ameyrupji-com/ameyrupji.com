@@ -1,7 +1,67 @@
 {
     "app_name": "Amey Rupji",
-    "app_url": "http://localhost:1234/",
+    "app_url": "http://ameyrupji.com/",
+    "app_version": "v1.2.0",
     "icons_folder": "icons",
     "api_base_url": "https://api.ameyrupji.com",
-    "google_analytics_tracking_id": "UA-16933728-4"
+    "google_analytics_tracking_id": "UA-16933728-4",
+    "other-links": [
+        {
+            "text": "Blog",
+            "href": "http://blog.ameyrupji.com/"
+        },
+        {
+            "text": "Old Website",
+            "href": "http://old.ameyrupji.com/"
+        },
+        {
+            "text": "Website Code",
+            "href": "http://code.ameyrupji.com/"
+        },
+        {
+            "text": "Infrastructure Code",
+            "href": "http://iac.ameyrupji.com/"
+        },
+        {
+            "text": "Build ",
+            "href": "https://circleci.com/gh/ameyrupji-com/workflows/ameyrupji.com/tree/master",
+            "img-src": "https://circleci.com/gh/ameyrupji-com/ameyrupji.com.svg?style=svg"
+        },
+        {
+            "text": "Powered By AWS",
+            "href": "http://www.aws.com/"
+        }
+    ],
+    "policy_links": [
+        {
+            "text": "Privacy Policy",
+            "href": "https://github.com/ameyrupji/ameyrupji.com/blob/v1.2.0/Privacy-Policy.md",
+            "id": "privacy-policy"
+        },
+        {
+            "text": "Cookie Policy",
+            "href": "https://github.com/ameyrupji/ameyrupji.com/blob/v1.2.0/Cookie-Policy.md",
+            "id": "cookie-policy"
+        },
+        {
+            "text": "Version: v1.2.0",
+            "href": "https://github.com/ameyrupji/ameyrupji.com/releases/tag/v1.2.0/",
+            "id": "release-number-footer"
+        },
+        {
+            "text": "Release Notes",
+            "href": "https://github.com/ameyrupji/ameyrupji.com/releases/",
+            "id": "release-notes"
+        },
+        {
+            "text": "Feedback",
+            "href": "#contact-main",
+            "id": "feedback-link"
+        }
+    ],
+    "license-link": {
+        "text": "Read More...",
+        "href": "https://github.com/ameyrupji/ameyrupji.com/blob/v1.2.0/LICENSE",
+        "id": "license-link"
+    }
 }

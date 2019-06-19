@@ -12,7 +12,7 @@
             <div class="col-md-6 col-lg-3 col-xl-3 col-6">
                 <ul class="footer-no-icons-list">
                     <li class="list-heading">Other <span class="list-heading-strong">Links</span></li>
-                    {{#each footer.other-links}}
+                    {{#each app.other-links}}
                     <li>
                         <a href="{{this.href}}">
                             {{this.text}}
@@ -41,7 +41,7 @@
                     <li class="list-heading">Website <span class="list-heading-strong">License</span></li>
                     <li>The code of this website is Open Sourced. This website is protected under GNU General Public License.</li>
                     <li>&nbsp;</li>
-                    </li><a href="https://github.com/ameyrupji/ameyrupji.com/blob/develop/LICENSE">Read More...</a></ul>
+                    </li><a href="{{app.license-link.href}}" id="{{app.license-link.id}}">{{app.license-link.text}} <span id="{{app.license-link.id}}-span"></span></a></li>
                 </ul>
             </div>
         </div>
@@ -49,10 +49,9 @@
         <div class="row">
             <div class="col-md-12 col-lg-12 col-xl-12 col-12">
                 <ul class="footer-no-icons-flat-list">
-                    <li><a href="https://github.com/ameyrupji/ameyrupji.com/blob/develop/Privacy-Policy.md">Privacy Policy</a></li>
-                    <li><a href="https://github.com/ameyrupji/ameyrupji.com/blob/develop/Cookie-Policy.md">Cookie Policy</a></li>
-                    <li><a href="https://github.com/ameyrupji/ameyrupji.com/releases/">Version: <span id="release-number"></span></a></li>
-                    <li><a href="https://github.com/ameyrupji/ameyrupji.com/releases/">Release Notes</a></li>
+                    {{#each app.policy_links}}
+                    <li><a href="{{this.href}}" id="{{this.id}}">{{this.text}} <span id="{{this.id}}-span"></span></a></li>
+                    {{/each}}
                 </ul>
             </div>
         </div>
