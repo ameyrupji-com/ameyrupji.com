@@ -138,6 +138,7 @@ workflows:
               ignore: 
                 - master
                 - develop
+                - /release.*/
       - approve:
           type: approval
           requires:
