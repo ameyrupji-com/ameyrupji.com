@@ -1,0 +1,76 @@
+@import './variables.scss';
+
+#skills-main {
+    background-color: $background-color-3-light;
+    background: $gradient-3-light;
+    background: $-webkit-gradient-3-light;
+    background: $-moz-gradient-3-light;
+    background: $-o-gradient-3-light;
+    padding-top: 150px;
+    padding-bottom: 100px;
+
+    .btn-group {
+        border: 2px solid #ddd;
+        border-radius: 6px;
+
+        .btn.btn-primary {
+            background: $background-color-2-light-alternate;
+            background: $gradient-2-light;
+            background: $-webkit-gradient-2-light;
+            background: $-moz-gradient-2-light;
+            background: $-o-gradient-2-light;
+            border: none;
+        }
+    }
+
+    .title {
+        color : #fff;
+    }
+    
+    .unused{
+        opacity: .5;
+    }
+
+    .skills-block {
+        padding: 23px;
+        margin: auto;
+        
+        i {
+            font-size: 60px;
+            
+        }
+
+        i,
+        p {
+            animation: fade-in 2s;
+            -moz-animation: fade-in 2s; /* Firefox */
+            -webkit-animation: fade-in 2s; /* Safari and Chrome */
+            -o-animation: fade-in 2s; /* Opera */
+            color: #fff;
+        }
+    }
+}
+
+
+
+
+@media (max-width:768px) {
+    #skills-main {
+        .skills-block {
+            padding: 20px 0px;
+        
+            i {
+                font-size: 50px;
+            }
+        }
+    }
+}   
+
+
+@media only screen and (min-width:769px) and (max-width: 1169px) {
+
+}
+
+@media only screen and (min-width: 1170px) {
+
+}

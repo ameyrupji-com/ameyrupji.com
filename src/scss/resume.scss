@@ -1,0 +1,112 @@
+@import './variables.scss';
+
+#resume-main {
+    padding-top: 150px;
+    padding-bottom: 100px;
+    background-color: $background-color-4-light;
+    background: $gradient-4-light;
+    background: $-webkit-gradient-4-light;
+    background: $-moz-gradient-4-light;
+    background: $-o-gradient-4-light;
+    
+    .title {
+        margin-bottom: 100px;
+        color: #fff;
+    }
+
+    #resume-download-row {
+        margin-top: 100px;
+    }
+
+    .file-icon i {
+        display: block;
+        z-index: 99;
+        position: relative;
+        top: -150px;
+        color: #000;
+        opacity: .1;
+        font-size: 250px;
+    }
+
+    .download-btn {
+        display: block;
+        position: relative;
+        z-index: 100;
+    }
+
+    .btn {
+        font-size: 16px;
+        width: 70%;
+        margin: auto;
+        padding: 10px;
+        -webkit-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        -webkit-transition: all 0.3s ease-out;
+        -moz-transition: all 0.3s ease-out;
+        -ms-transition: all 0.3s ease-out;
+        -o-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+        border: none;
+
+        &.pdf {
+            background-color: $background-color-4-light-alternate;
+            background: $gradient-5-light;
+            background: $-webkit-gradient-5-light;
+            background: $-moz-gradient-5-light;
+            background: $-o-gradient-5-light;
+            color: #fff;
+        }
+
+        &.word {
+            background-color: $background-color-2-light;
+            background: $gradient-2-light;
+            background: $-webkit-gradient-2-light;
+            background: $-moz-gradient-2-light;
+            background: $-o-gradient-2-light;
+            color: #fff;
+        }
+
+        &:hover, 
+        &:focus {
+            -webkit-box-shadow: 0 15px 16px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 15px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        &:active{
+            color: #1c1c1c;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    #resume-main {
+        .file-icon i {
+            top: -70px;
+            left: 20px;
+            font-size: 100px;
+            text-align: left!important;
+        }
+        #resume-download-row {
+            margin-top: 0px;
+        }
+    }
+}
+
+
+@media only screen and (min-width:769px) and (max-width: 1169px) {
+    #resume-main {
+        .file-icon i {
+            top: -130px;
+            left: 10px;
+            font-size: 200px;
+            text-align: center!important;
+        }
+
+        #resume-download-row {
+            margin-top: 100px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1170px) {
+}
