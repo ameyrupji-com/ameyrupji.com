@@ -1,0 +1,27 @@
+@import './variables.scss';
+
+#summary-main {
+    background-color: $background-color-1-light;
+
+    .title {
+        color: $font-color-light;
+    }
+
+    p {
+        color: $font-color-light;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    #summary-main {
+        background-color: $background-color-1-dark;
+
+        .title {
+            color: $font-color-dark;
+        }
+
+        p {
+            color: $font-color-dark;
+        }
+    }
+}

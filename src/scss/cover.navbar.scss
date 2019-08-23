@@ -29,11 +29,11 @@
         
         .nav-item {
             a {
-                color: $navbar-items-light;
                 font-weight: $font-weight-default;
-                
+                color: $navbar-items;
+
                 &:hover {
-                    color: $navbar-items-hover-light;
+                    color: $navbar-items-hover;
                 }
             }
         }
@@ -41,14 +41,20 @@
 
     &.nav-scrolled-20 {
         transition: 1s;
-        background: $navbar-background-light;
         padding-top: 8px;
         -webkit-backdrop-filter: blur(30px);
         backdrop-filter: blur(30px);
+
+        .nav-item {
+            a {
+                font-weight: $font-weight-default;
+            }
+        }
+
     }
 
     &.nav-scrolled-vh {
-        box-shadow: $navbar-shadow-light 0px 1px 4px 0px;
+        box-shadow: $navbar-shadow 0px 1px 4px 0px;
     }
 
     &.fixed-top {
@@ -78,7 +84,6 @@
                 height: 1px;
                 display: block;
                 position: relative;
-                background: #fff;
                 transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
                 transition-delay: 0s;
 
@@ -95,11 +100,7 @@
             }
 
         }
-
-        &.nav-scrolled-20 #burger .bar {
-            background: $font-color-light;
-        }
-
+        
         &.bg-transparent.navbar-open {
             .container { 
                 padding: 1rem 1rem;
@@ -108,7 +109,6 @@
 
         &.navbar-open {
             transition: 1s;
-            background: $navbar-background-light !important;
             -webkit-backdrop-filter: blur(30px);
             backdrop-filter: blur(30px);
             min-height: 100vh;
@@ -126,7 +126,6 @@
             }
             
             #burger .bar {
-                background: $font-color-light;
                 transition: all 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
                 transition-delay: 0.2s;
 
@@ -141,20 +140,8 @@
                 }
             }
 
-            .navbar-brand {
-                color: $font-color-light;
-            }
-
             .nav-item {
                 padding-left: 10px;
-
-                a {
-                    color: $navbar-open-items-light;
-                    
-                    &:hover {
-                        color: $navbar-open-items-hover-light; 
-                    }
-                }
             }
 
             i {

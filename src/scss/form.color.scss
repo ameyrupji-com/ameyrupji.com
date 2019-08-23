@@ -1,0 +1,79 @@
+@import './variables.scss';
+
+
+.form-label-group {
+    > label {
+        color: #495057;
+    }
+
+    input:not(:placeholder-shown) ~ label,
+    textarea:not(:placeholder-shown) ~ label {
+        color: #777;
+    }
+
+    &.error {
+        .form-control {
+            border-color: red;
+        }
+
+        > label {
+            color: red
+        }
+
+        > label.error {
+            color: red;
+        }
+    }
+
+    &.success > label.valid {
+        color: green;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .form-label-group {
+
+        background-color: $form-element-background-dark;
+        
+        input,
+        input:focus,
+        textarea,
+        textarea:focus,
+        select,
+        select:focus {
+            color: #fff;
+            background-color: transparent;
+        }
+        
+
+        > label {
+            color: #fff;
+            background-color: transparent;
+        }
+
+        
+        input:not(:placeholder-shown) ~ label,
+        textarea:not(:placeholder-shown) ~ label {
+            color: #fff;
+        }
+
+        &.error {
+            .form-control {
+                border-color: red;
+            }
+
+            > label {
+                color: red
+            }
+
+            > label.error {
+                color: red;
+            }
+        }
+
+        &.success > label.valid {
+            color: green;
+        }
+    }
+}
+
