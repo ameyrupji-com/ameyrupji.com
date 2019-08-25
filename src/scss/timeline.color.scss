@@ -1,15 +1,6 @@
 @import './variables.scss';
 
 
-$timeline-outlines-light: rgba(204, 204, 204, 1);
-$timeline-block-shadow-light: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-$timeline-block-shadow-hover-light: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-
-$timeline-outlines-dark: rgba(47, 47, 50, 1);
-$timeline-block-shadow-dark: 0 4px 8px 0 rgba(200, 200, 200, 0.2);
-$timeline-block-shadow-hover-dark: 0 8px 16px 0 rgba(200, 200, 200, 0.2);
-
-
 #timeline-main {
     background-color: $background-color-1-light-alternate;
 
@@ -68,6 +59,10 @@ $timeline-block-shadow-hover-dark: 0 8px 16px 0 rgba(200, 200, 200, 0.2);
 
         .heading-secondary {
             background-color: #ddd; 
+        }
+
+        .read-more p {
+            color: #777;
         }
     }
 }
@@ -198,6 +193,10 @@ $timeline-block-shadow-hover-dark: 0 8px 16px 0 rgba(200, 200, 200, 0.2);
                 p{
                     color: #fff;
                 }
+            }
+
+            .read-more p {
+                color: #fff;
             }
         }
     }
