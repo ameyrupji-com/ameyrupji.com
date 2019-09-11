@@ -1,0 +1,31 @@
+#summary-main {
+    padding-top: 150px;
+    padding-bottom: 100px;
+    
+    p {
+        font-size: 25px !important;
+    }
+}
+
+@media (max-width:768px) {
+    #summary-main {
+        padding-bottom: 50px;
+    
+        p {
+            font-size: 16px !important;
+            line-height: 24px;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 50px;
+        }
+    }
+}
+
+@media only screen and (min-width:769px) and (max-width: 1169px) {
+    #summary-main p {
+        font-size: 20px !important;
+    }
+}
+
+@media only screen and (min-width: 1170px) {
+}

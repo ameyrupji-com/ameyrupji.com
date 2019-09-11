@@ -21,6 +21,11 @@ Please feel free to use any part of this repository. If you find this useful ple
 
 - Visual Studio Code or Atom or any other text editor of your choice 
 
+## Run Code
+
+```
+$ parcel index.hbs --no-cache
+```
 
 ## Useful links to dependant repositories
 

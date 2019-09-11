@@ -135,7 +135,7 @@
         {
             "skill-name": "PHP",
             "skill-css": "devicon-php-plain",
-            "skill-using": true
+            "skill-using": false
         },
         {
             "skill-name": "PostgreSQL",
