@@ -68,13 +68,6 @@
             },
             {
                 "element": "button",
-                "type": "reset",
-                "css-id": "cancel-btn",
-                "css-class": "btn btn-light btn-block",
-                "text": "Reset"
-            },
-            {
-                "element": "button",
                 "type": "submit",
                 "css-id": "contact-submit-btn",
                 "css-class": "btn btn-primary btn-block",

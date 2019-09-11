@@ -1,0 +1,18 @@
+@import './variables.scss';
+
+#image-back-main {
+    #gradient-main {
+        background-color: rgba(0, 0, 0, 0);
+        background-image: $gradient-1-light-transparent;
+    }
+
+}
+
+@media (prefers-color-scheme: dark) {
+    #image-back-main {
+        #gradient-main {
+            background-color: rgba(0, 0, 0, 0);
+            background-image: $gradient-1-dark-transparent;
+        }
+    }
+}

@@ -6,21 +6,20 @@
     min-width: 100%;
     margin: 0;
 
-    .modal-header {
-        border-radius: 0;
-        border-bottom: 0;
-        margin-bottom: 50px;
-    }
-
-    .modal-header button {
-        font-size: 4em;
-        font-weight: 100;
-    }
-
     .modal-content {
         min-height: 100vh;
         padding: 10px 100px 200px;
     
+        .modal-header {
+            border-radius: 0;
+            border-bottom: 0;
+         
+            button {
+                font-size: 4em;
+                font-weight: 100;
+            }
+        }
+
         .timeline-content .text p:last-child {
             margin-bottom: 0;
         }

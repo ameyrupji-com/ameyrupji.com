@@ -1,0 +1,57 @@
+@import './variables.scss';
+
+#contact-main {
+    background-color: $background-color-1-light;
+
+    #map {
+        background-image: url("../images/austin_map_light.jpg");
+    }
+
+    .title,
+    p,
+    ul#follow-me li a {
+        color: $font-color-light;
+    }
+
+    .btn {
+        &.btn-primary {
+            background-color: $background-color-3-light-alternate;
+            background: $gradient-3-light;
+            background: $-webkit-gradient-3-light;
+            background: $-moz-gradient-3-light;
+            background: $-o-gradient-3-light;
+            color: #fff;
+            border: none;
+        }
+    }
+
+
+}
+
+@media (prefers-color-scheme: dark) {
+    #contact-main  {
+        background-color: $background-color-1-dark;
+
+        #map {
+            background-image: url("../images/austin_map_dark.jpg");
+        }
+
+        .title,
+        p,
+        ul#follow-me li a {
+            color: $font-color-dark;
+        }
+
+        .btn {
+            &.btn-primary {
+                background-color: $background-color-3-light-alternate;
+                background: $gradient-3-dark;
+                background: $-webkit-gradient-3-dark;
+                background: $-moz-gradient-3-dark;
+                background: $-o-gradient-3-dark ;
+                color: #fff;
+                border: none;
+            }
+        }
+    }
+}
