@@ -5,12 +5,16 @@
                 <h1 class="title">{{summary.title-light}} <span class="title-strong">{{summary.title-strong}}</span></h1>
             </div>
         </div>
-        <div class="row" id="summary-summaries">
+
+        <div class="card-deck mb-3 text-center">
             {{#each summary.summaries}}
-            <div class="col-xl-4 col-lg-4 col-md-12 col-12 text-center">
-                <p>
-                {{this}} 
-                </p>
+            <div class="card mb-4 box-shadow">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal"><i class="{{this.i-class}}"></i></h4>
+                </div>
+                <div class="card-body">
+                    <p>{{this.text}}</p>
+                </div>
             </div>
             {{/each}}
         </div>
