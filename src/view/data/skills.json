@@ -53,6 +53,11 @@
             "skill-using": true
         },
         {
+            "skill-name": "Docker",
+            "skill-css": "fab fa-docker",
+            "skill-using": true
+        },
+        {
             "skill-name": "Git",
             "skill-css": "devicon-git-plain",
             "skill-using": true
@@ -78,6 +83,11 @@
             "skill-using": true
         },
         {
+            "skill-name": "Java",
+            "skill-css": "devicon-java-plain",
+            "skill-using": true
+        },
+        {
             "skill-name": "JavaScript",
             "skill-css": "devicon-javascript-plain",
             "skill-using": false
@@ -96,6 +106,16 @@
             "skill-name": "jQuery",
             "skill-css": "devicon-jquery-plain",
             "skill-using": false
+        },
+        {
+            "skill-name": "Kafka",
+            "skill-css": "fas fa-code",
+            "skill-using": true
+        },
+        {
+            "skill-name": "Kubernetes",
+            "skill-css": "fas fa-cubes",
+            "skill-using": true
         },
         {
             "skill-name": "Linux",
@@ -128,6 +148,11 @@
             "skill-using": false
         },
         {
+            "skill-name": "Nginx",
+            "skill-css": "devicon-nginx-plain",
+            "skill-using": true
+        },
+        {
             "skill-name": "Photoshop",
             "skill-css": "devicon-photoshop-plain",
             "skill-using": false
@@ -154,6 +179,11 @@
         },
         {
             "skill-name": "Scala",
+            "skill-css": "fas fa-code",
+            "skill-using": true
+        },
+        {
+            "skill-name": "Springs",
             "skill-css": "fas fa-code",
             "skill-using": true
         },
