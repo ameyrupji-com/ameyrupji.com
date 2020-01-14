@@ -64,6 +64,10 @@
                         "skill-css": "fab fa-confluence"
                     },
                     {
+                        "skill-name": "Docker",
+                        "skill-css": "fab fa-docker"
+                    },
+                    {
                         "skill-name": "Git",
                         "skill-css": "devicon-git-plain"
                     },
@@ -76,12 +80,20 @@
                         "skill-css": "devicon-intellij-plain"
                     },
                     {
+                        "skill-name": "Java",
+                        "skill-css": "devicon-java-plain"
+                    },
+                    {
                         "skill-name": "Jenkins",
                         "skill-css": "fab fa-jenkins"
                     },
                     {
                         "skill-name": "Jira",
                         "skill-css": "fab fa-jira"
+                    },
+                    {
+                        "skill-name": "Kafka",
+                        "skill-css": "fas fa-code"
                     },
                     {
                         "skill-name": "Linux",
@@ -94,6 +106,10 @@
                     {
                         "skill-name": "New Relic",
                         "skill-css": "fas fa-code"
+                    },
+                    {
+                        "skill-name": "Nginx",
+                        "skill-css": "devicon-nginx-plain"
                     },
                     {
                         "skill-name": "PostgreSQL",
@@ -109,6 +125,10 @@
                     },
                     {
                         "skill-name": "Scala",
+                        "skill-css": "fas fa-code"
+                    },
+                    {
+                        "skill-name": "Springs",
                         "skill-css": "fas fa-code"
                     },
                     {
