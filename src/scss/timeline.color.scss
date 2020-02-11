@@ -4,6 +4,10 @@
 #timeline-main {
     background-color: $background-color-1-light-alternate;
 
+    .background-images {
+        background-image: url("../images/timeline-logos.png");
+    }
+
     .title {
         color: $font-color-light;
     }
@@ -130,6 +134,10 @@
 
     #timeline-main {
         background-color: $background-color-1-dark;
+
+        .background-images {
+            background-image: url("../images/timeline-logos-grayscale.png");
+        }
 
         .title {
             color: $font-color-dark;

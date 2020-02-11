@@ -15,6 +15,22 @@ site.timeline = (function ($) {
     timelineBtnGroupBtnClass: '#timeline-main .btn-group .btn'
   },
   Controller = {
+    initializeTimelineTwinkle: function initializeTimelineTwinkle() {
+        starTwinkle.init({
+          cssContainer: "#timeline-main",
+          cssContainerData: "#timeline-container",
+          activeBoxesPercentage: 20,
+          starWidth: 100,
+          starHeight: 100,
+          starMarginTop: 40,
+          starMarginRight: 40,
+          starMarginBottom: 40,
+          starMarginLeft: 40,
+          starImageCount: 6,
+          imageUrl: "../images/timeline-logos.png",
+          imageDarkUrl: "../images/timeline-logos-grayscale.png.png"
+        })
+    },
     initializeTimelineAnimation: function initializeTimelineAnimation() {
       var $timeline_block = $(View.timelineBlocksClass);
       var $timeline_block_alt = $(View.timelineBlocksAlternateClass);
@@ -46,7 +62,7 @@ site.timeline = (function ($) {
         });
       });
     },
-    initilizeTimelineBtns: function initilizeTimelineBtns() {
+    initializeTimelineBtns: function initializeTimelineBtns() {
       var $timeline_block = $(View.timelineBlocksClass);
       var $timeline_block_alt = $(View.timelineBlocksAlternateClass);
 
@@ -118,7 +134,8 @@ site.timeline = (function ($) {
     init: function init() {
       console.log('In timeline:init()')
       Controller.initializeTimelineAnimation()
-      Controller.initilizeTimelineBtns()
+      Controller.initializeTimelineBtns()
+      Controller.initializeTimelineTwinkle()
     }
   }
   
