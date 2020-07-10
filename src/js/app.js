@@ -11,6 +11,9 @@ site.all = (function (){
         navBarClass: '.navbar'
     },
     Controller = {
+        initializeAOS: function initializeAOS() {
+            AOS.init();
+        },
         initializeTooltip: function initializeTooltip() {
             //Enable tooltip everywhere
             $('[data-toggle="tooltip"]').tooltip()    
@@ -38,6 +41,7 @@ site.all = (function (){
             console.log('In app:init()')
             Controller.initilizeScrollAnimation()
             Controller.initializeTooltip()
+            Controller.initializeAOS()
         }
     }
    
