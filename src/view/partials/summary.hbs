@@ -1,6 +1,6 @@
 <div class="container-fluid" id="summary-main">
     <div class="container">
-        <div class="row container-title" id="summary-title">
+        <div class="row container-title" id="summary-title" data-aos="fade-down">
             <div class="col-md-12 text-center">
                 <h1 class="title">{{summary.title-light}} <span class="title-strong">{{summary.title-strong}}</span></h1>
             </div>
@@ -8,7 +8,7 @@
 
         <div class="card-deck mb-3 text-center">
             {{#each summary.summaries}}
-            <div class="card mb-4 box-shadow">
+            <div class="card mb-4 box-shadow" data-aos="zoom-out-up" data-aos-anchor-placement="top-center">
                 <div class="card-header">
                     <h4 class="my-0 font-weight-normal"><i class="{{this.i-class}}"></i></h4>
                 </div>
