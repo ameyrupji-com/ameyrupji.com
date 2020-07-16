@@ -9,4 +9,5 @@ $(document).ready(function() {
   site.resume.init();
   site.contact.init();
   site.footer.init();
+  site.versionBand.init();
 });

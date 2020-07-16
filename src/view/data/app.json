@@ -1,7 +1,13 @@
 {
     "app_name": "Amey Rupji - Local",
     "app_url": "http://localhost:1234/",
-    "app_version": "local",
+    "active-version": "Local",
+    "old-versions": [
+        {
+            "text": "Local Old test",
+            "href": "#"
+        }
+    ],
     "icons_folder": "beta-icons",
     "api_base_url": "https://api.beta.ameyrupji.com",
     "other-links": [
@@ -41,11 +47,6 @@
             "text": "Cookie Policy",
             "href": "https://github.com/ameyrupji/ameyrupji.com/blob/v1.1.0/Cookie-Policy.md",
             "id": "cookie-policy"
-        },
-        {
-            "text": "Version: local",
-            "href": "https://github.com/ameyrupji/ameyrupji.com/releases/",
-            "id": "release-number-footer"
         },
         {
             "text": "Release Notes",
