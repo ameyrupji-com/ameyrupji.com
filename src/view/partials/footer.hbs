@@ -52,6 +52,22 @@
                     {{#each app.policy_links}}
                     <li><a href="{{this.href}}" id="{{this.id}}">{{this.text}} <span id="{{this.id}}-span"></span></a></li>
                     {{/each}}
+
+                    {{#if app.old-versions.length}}
+                    <div class="btn-group dropup" id="versions">
+                        <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span>Version: {{app.active-version}}</span>
+                        </button>
+                        <div class="dropdown-menu" x-placement="top-start">
+                            <h6 class="dropdown-header">Older Versions:</h6>
+                            {{#each app.old-versions}}
+                            <a class="dropdown-item" href="{{app.app_url}}/{{this.href}}">{{this.text}}</a>
+                            {{/each}}
+                        </div>
+                    </div>
+                    {{else}}
+                        <li><a href="#image-back-main" id="{{this.id}}">Version: {{app.active-version}} <span id="{{this.id}}-span"></span></a></li>
+                    {{/if}}
                 </ul>
             </div>
         </div>

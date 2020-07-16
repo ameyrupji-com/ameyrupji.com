@@ -1,7 +1,21 @@
 {
     "app_name": "Amey Rupji",
     "app_url": "http://ameyrupji.com/",
-    "app_version": "v1.5.0",
+    "active-version": "v1.5.0",
+    "old-versions": [
+        {
+            "text": "v1.2.0",
+            "href": "release/v1-2-0"
+        },
+        {
+            "text": "v1.3.0",
+            "href": "release/v1-3-0"
+        },
+        {
+            "text": "v1.4.0",
+            "href": "release/v1-4-0"
+        }
+    ],
     "icons_folder": "icons",
     "api_base_url": "https://api.ameyrupji.com",
     "google_analytics_tracking_id": "UA-16933728-4",
@@ -42,11 +56,6 @@
             "text": "Cookie Policy",
             "href": "https://github.com/ameyrupji/ameyrupji.com/blob/v1.5.0/Cookie-Policy.md",
             "id": "cookie-policy"
-        },
-        {
-            "text": "Version: v1.5.0",
-            "href": "https://github.com/ameyrupji/ameyrupji.com/releases/tag/v1.5.0/",
-            "id": "release-number-footer"
         },
         {
             "text": "Release Notes",
