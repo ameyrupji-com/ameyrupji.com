@@ -48,20 +48,8 @@
                         "skill-css": "devicon-amazonwebservices-original"
                     },
                     {
-                        "skill-name": "Atlassian",
-                        "skill-css": "fab fa-atlassian"
-                    },
-                    {
-                        "skill-name": "Bitbucket",
-                        "skill-css": "fab fa-bitbucket"
-                    },
-                    {
-                        "skill-name": "Code",
-                        "skill-css": "devicon-visualstudio-plain"
-                    },
-                    {
-                        "skill-name": "Confluence",
-                        "skill-css": "fab fa-confluence"
+                        "skill-name": "Django",
+                        "skill-css": "devicon-django-plain"
                     },
                     {
                         "skill-name": "Docker",
@@ -76,64 +64,68 @@
                         "skill-css": "devicon-github-plain"
                     },
                     {
-                        "skill-name": "IntelliJ",
-                        "skill-css": "devicon-intellij-plain"
-                    },
-                    {
                         "skill-name": "Java",
                         "skill-css": "devicon-java-plain"
+                    },
+                    {
+                        "skill-name": "JavaScript",
+                        "skill-css": "devicon-javascript-plain"
                     },
                     {
                         "skill-name": "Jenkins",
                         "skill-css": "fab fa-jenkins"
                     },
                     {
-                        "skill-name": "Jira",
-                        "skill-css": "fab fa-jira"
+                        "skill-name": "JMeter",
+                        "skill-css": "devicon-apache-plain"
                     },
                     {
                         "skill-name": "Kafka",
-                        "skill-css": "fas fa-code"
+                        "skill-css": "si light kafka"
                     },
                     {
-                        "skill-name": "Linux",
-                        "skill-css": "devicon-linux-plain"
+                        "skill-name": "Kubernetes",
+                        "skill-css": "si light k8s"
                     },
                     {
-                        "skill-name": "macOS",
-                        "skill-css": "devicon-apple-original"
+                        "skill-name": "MySQL",
+                        "skill-css": "devicon-mysql-plain"
                     },
                     {
                         "skill-name": "New Relic",
-                        "skill-css": "fas fa-code"
+                        "skill-css": "si light new-relic"
                     },
                     {
                         "skill-name": "Nginx",
                         "skill-css": "devicon-nginx-plain"
                     },
                     {
-                        "skill-name": "PostgreSQL",
-                        "skill-css": "devicon-postgresql-plain"
-                    },
-                    {
                         "skill-name": "Python",
                         "skill-css": "devicon-python-plain"
                     },
                     {
-                        "skill-name": "PyCharm",
-                        "skill-css": "devicon-pycharm-plain"
+                        "skill-name": "React",
+                        "skill-css": "devicon-react-plain"
                     },
                     {
-                        "skill-name": "Scala",
-                        "skill-css": "fas fa-code"
+                        "skill-name": "Redis",
+                        "skill-css": "devicon-redis-plain"
                     },
                     {
-                        "skill-name": "Springs",
-                        "skill-css": "fas fa-code"
+                        "skill-name": "Sass",
+                        "skill-css": "si light sass"
+                    },
+                    {
+                        "skill-name": "Splunk",
+                        "skill-css": "si light splunk"
+                    },
+                    {
+                        "skill-name": "Spring",
+                        "skill-css": "si light spring"
                     },
                     {
                         "skill-name": "Terraform",
-                        "skill-css": "fas fa-code"
+                        "skill-css": "si light terraform"
                     }
                 ]
             }
@@ -218,7 +210,7 @@
                     },
                     {
                         "skill-name": "New Relic",
-                        "skill-css": "fas fa-code"
+                        "skill-css": "si new-relic"
                     },
                     {
                         "skill-name": "SQL Server",

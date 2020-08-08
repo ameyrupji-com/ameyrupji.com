@@ -1,0 +1,72 @@
+
+.si {
+    display: block;
+    color: #fff;
+    margin: auto;
+    background-size: cover;
+    background-repeat: none;
+
+    &.light {
+        filter: invert(100%);
+    }
+
+    &.k8s {
+        background-image: url(../images/skills-icons/k8s.svg);
+        width: 62px;
+        height: 60px;
+    }    
+
+    &.kafka {
+        background-image: url(../images/skills-icons/kafka.svg);
+        width: 37px;
+        height: 60px;
+    }
+
+    &.terraform {
+        background-image: url(../images/skills-icons/terraform.svg);
+        width: 54px;
+        height: 60px;
+    }
+
+    &.sql-server {
+        background-image: url(../images/skills-icons/sql-server.svg);
+        width: 54px;
+        height: 60px;
+    }
+    &.spring {
+        background-image: url(../images/skills-icons/spring.svg);
+        width: 60px;
+        height: 60px;
+    }
+    &.new-relic {
+        background-image: url(../images/skills-icons/newrelic.svg);
+        width: 73px;
+        height: 60px;
+    }
+    &.splunk {
+        background-image: url(../images/skills-icons/splunk.svg);
+        width: 60px;
+        height: 60px;
+    }
+    &.selenium {
+        background-image: url(../images/skills-icons/selenium.svg);
+        width: 60px;
+        height: 60px;
+    }
+    &.structuremap {
+        background-image: url(../images/skills-icons/structuremap.svg);
+        width: 60px;
+        height: 60px;
+    }
+    &.nhibernate {
+        background-image: url(../images/skills-icons/nhibernate.svg);
+        width: 60px;
+        height: 60px;
+    }
+    &.sass {
+        background-image: url(../images/skills-icons/sass.svg);
+        width: 70px;
+        height: 53px;
+    }
+}
+
