@@ -4,7 +4,7 @@
     "skills-using": [
         {
             "skill-name": "AWS",
-            "skill-css": "devicon-amazonwebservices-original"
+            "skill-css": "si amazonaws light"
         },
         {
             "skill-name": "Django",
@@ -98,7 +98,7 @@
         },
         {
             "skill-name": "C#",
-            "skill-css": "devicon-csharp-plain"
+            "skill-css": "si c-sharp light"
         },
         {
             "skill-name": "C++",
@@ -126,7 +126,7 @@
         },
         {
             "skill-name": "Gimp",
-            "skill-css": "devicon-gimp-plain"
+            "skill-css": "si gimp light"
         },
         {
             "skill-name": "PostgreSQL",

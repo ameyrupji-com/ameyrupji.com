@@ -10,6 +10,12 @@
         filter: invert(100%);
     }
 
+    &.amazonaws {
+        background-image: url(../images/skills-icons/amazonaws.svg);
+        width: 62px;
+        height: 60px;
+    }
+
     &.k8s {
         background-image: url(../images/skills-icons/k8s.svg);
         width: 62px;
@@ -65,8 +71,18 @@
     }
     &.sass {
         background-image: url(../images/skills-icons/sass.svg);
-        width: 70px;
-        height: 53px;
+        width: 60px;
+        height: 60px;
+    }
+    &.gimp {
+        background-image: url(../images/skills-icons/gimp.svg);
+        width: 60px;
+        height: 60px;
+    }
+    &.c-sharp {
+        background-image: url(../images/skills-icons/csharp.svg);
+        width: 60px;
+        height: 60px;
     }
 }
 
