@@ -480,7 +480,7 @@
             "block-content": {
                 "heading": "Bachelors of Engineering in Information Technology",
                 "organization": {
-                    "name": "Mumbai University",
+                    "name": "University of Mumbai",
                     "css-class": "fas fa-university"
                 },
                 "timeline": {
@@ -493,9 +493,9 @@
                     "state": "MH",
                     "country": "India"
                 },
-                "short-description": "Completed my Bachelors of Engineering in Information Technology from K. J. Somaiya College of Engineering with honors.",
+                "short-description": "Completed my Bachelors of Engineering in Information Technology from K. J. Somaiya College of Engineering with honors .",
                 "course-impact": [
-                    "Completed my Bachelors of Engineering in Information Technology from K. J. Somaiya College of Engineering with honors."
+                    "Completed my Bachelors of Engineering in Information Technology from K. J. Somaiya College of Engineering (affiliated with University of Mumbai) with honors."
                 ],
                 "courses":[
                 ] 
@@ -508,7 +508,7 @@
             "block-content": {
                 "heading": "Higher Secondary Examination in Science",
                 "organization": {
-                    "name": "Mumbai University",
+                    "name": "Maharashtra State Board of Secondary and Higher Secondary Education",
                     "css-class": "fas fa-university"
                 },
                 "timeline": {
@@ -523,7 +523,7 @@
                 },
                 "short-description": "Completed my Higher Secondary Examination in Science from KC College with honors.",
                 "course-impact": [
-                    "Completed my Higher Secondary Examination in Science from KC College with honors."
+                    "Completed my Higher Secondary Examination in Science from Kishinchand Chellaram College (affiliated with Maharashtra State Board of Secondary and Higher Secondary Education) with honors."
                 ],
                 "courses":[
                 ] 
@@ -536,7 +536,7 @@
             "block-content": {
                 "heading": "Indian Certificate of Secondary Education (ICSE)",
                 "organization": {
-                    "name": "Mumbai University",
+                    "name": "Council for The Indian School Certificate Examinations",
                     "css-class": "fas fa-university"
                 },
                 "timeline": {
@@ -551,7 +551,7 @@
                 },
                 "short-description": "Completed schooling from The St. Mary’s School I.C.S.E.",
                 "course-impact": [
-                    "Completed primary and secondary schooling from The St. Mary’s School I.C.S.E. with a score of 80.5 percentile in Indian Certificate of Secondary Education Examination."
+                    "Completed primary and secondary schooling from The St. Mary’s School I.C.S.E. (affiliated with Council for The Indian School Certificate Examinations) with a score of 80.5 percentile in Indian Certificate of Secondary Education Examination."
                 ],
                 "courses":[
                 ],
