@@ -1,211 +1,152 @@
 {
     "title-light": "Technical",
     "title-strong": "Skills",
-    "skills": [
-        {
-            "skill-name": "Apache",
-            "skill-css": "devicon-apache-plain",
-            "skill-using": false
-        },
+    "skills-using": [
         {
             "skill-name": "AWS",
-            "skill-css": "devicon-amazonwebservices-original",
-            "skill-using": true
+            "skill-css": "si amazonaws light"
         },
         {
-            "skill-name": "Atlassian",
-            "skill-css": "fab fa-atlassian",
-            "skill-using": true
-        },
-        {
-            "skill-name": "Bitbucket",
-            "skill-css": "fab fa-bitbucket",
-            "skill-using": true
-        },
-        {
-            "skill-name": "Bootstrap",
-            "skill-css": "devicon-bootstrap-plain",
-            "skill-using": false
-        },
-        {
-            "skill-name": "C#",
-            "skill-css": "devicon-csharp-plain",
-            "skill-using": false
-        },
-        {
-            "skill-name": "C++",
-            "skill-css": "devicon-cplusplus-plain",
-            "skill-using": false
-        },
-        {
-            "skill-name": "Code",
-            "skill-css": "devicon-visualstudio-plain",
-            "skill-using": true
-        },
-        {
-            "skill-name": "Confluence",
-            "skill-css": "fab fa-confluence",
-            "skill-using": true
-        },
-        {
-            "skill-name": "CSS 3",
-            "skill-css": "devicon-css3-plain",
-            "skill-using": true
+            "skill-name": "Django",
+            "skill-css": "devicon-django-plain"
         },
         {
             "skill-name": "Docker",
-            "skill-css": "fab fa-docker",
-            "skill-using": true
+            "skill-css": "fab fa-docker"
         },
         {
             "skill-name": "Git",
-            "skill-css": "devicon-git-plain",
-            "skill-using": true
+            "skill-css": "devicon-git-plain"
         },
         {
             "skill-name": "GitHub",
-            "skill-css": "devicon-github-plain",
-            "skill-using": true
-        },
-        {
-            "skill-name": "Microsoft .Net",
-            "skill-css": "devicon-dot-net-plain",
-            "skill-using": false
-        },
-        {
-            "skill-name": "HTML 5",
-            "skill-css": "devicon-html5-plain-wordmark",
-            "skill-using": false
-        },
-        {
-            "skill-name": "IntelliJ",
-            "skill-css": "devicon-intellij-plain",
-            "skill-using": true
+            "skill-css": "devicon-github-plain"
         },
         {
             "skill-name": "Java",
-            "skill-css": "devicon-java-plain",
-            "skill-using": true
+            "skill-css": "devicon-java-plain"
         },
         {
             "skill-name": "JavaScript",
-            "skill-css": "devicon-javascript-plain",
-            "skill-using": false
+            "skill-css": "devicon-javascript-plain"
         },
         {
             "skill-name": "Jenkins",
-            "skill-css": "fab fa-jenkins",
-            "skill-using": true
+            "skill-css": "fab fa-jenkins"
         },
         {
-            "skill-name": "Jira",
-            "skill-css": "fab fa-jira",
-            "skill-using": true
-        },
-        {
-            "skill-name": "jQuery",
-            "skill-css": "devicon-jquery-plain",
-            "skill-using": false
+            "skill-name": "JMeter",
+            "skill-css": "devicon-apache-plain"
         },
         {
             "skill-name": "Kafka",
-            "skill-css": "fas fa-code",
-            "skill-using": true
+            "skill-css": "si light kafka"
         },
         {
             "skill-name": "Kubernetes",
-            "skill-css": "fas fa-cubes",
-            "skill-using": true
-        },
-        {
-            "skill-name": "Linux",
-            "skill-css": "devicon-linux-plain",
-            "skill-using": true
-        },
-        {
-            "skill-name": "macOS",
-            "skill-css": "devicon-apple-original",
-            "skill-using": true
-        },
-        {
-            "skill-name": "MongoDB",
-            "skill-css": "devicon-mongodb-plain",
-            "skill-using": false
+            "skill-css": "si light k8s"
         },
         {
             "skill-name": "MySQL",
-            "skill-css": "devicon-mysql-plain",
-            "skill-using": false
+            "skill-css": "devicon-mysql-plain"
         },
         {
             "skill-name": "New Relic",
-            "skill-css": "fas fa-code",
-            "skill-using": true
-        },
-        {
-            "skill-name": "Node.js",
-            "skill-css": "devicon-nodejs-plain",
-            "skill-using": false
+            "skill-css": "si light new-relic"
         },
         {
             "skill-name": "Nginx",
-            "skill-css": "devicon-nginx-plain",
-            "skill-using": true
-        },
-        {
-            "skill-name": "Photoshop",
-            "skill-css": "devicon-photoshop-plain",
-            "skill-using": false
-        },
-        {
-            "skill-name": "PHP",
-            "skill-css": "devicon-php-plain",
-            "skill-using": false
-        },
-        {
-            "skill-name": "PostgreSQL",
-            "skill-css": "devicon-postgresql-plain",
-            "skill-using": true
+            "skill-css": "devicon-nginx-plain"
         },
         {
             "skill-name": "Python",
-            "skill-css": "devicon-python-plain",
-            "skill-using": true
+            "skill-css": "devicon-python-plain"
         },
         {
-            "skill-name": "PyCharm",
-            "skill-css": "devicon-pycharm-plain",
-            "skill-using": true
+            "skill-name": "React",
+            "skill-css": "devicon-react-plain"
         },
         {
-            "skill-name": "Scala",
-            "skill-css": "fas fa-code",
-            "skill-using": true
+            "skill-name": "Redis",
+            "skill-css": "devicon-redis-plain"
         },
         {
-            "skill-name": "Springs",
-            "skill-css": "fas fa-code",
-            "skill-using": true
+            "skill-name": "Sass",
+            "skill-css": "si light sass"
         },
         {
-            "skill-name": "SQL Server",
-            "skill-css": "fas fa-database",
-            "skill-using": false
+            "skill-name": "Splunk",
+            "skill-css": "si light splunk"
+        },
+        {
+            "skill-name": "Spring",
+            "skill-css": "si light spring"
         },
         {
             "skill-name": "Terraform",
-            "skill-css": "fas fa-code",
-            "skill-using": true
-        },
-        {
-            "skill-name": "Windows",
-            "skill-css": "devicon-windows8-plain",
-            "skill-using": false
-        },
-        {
-            "skill-name": "WordPress",
-            "skill-css": "devicon-wordpress-plain",
-            "skill-using": false
+            "skill-css": "si light terraform"
         }
-    ] 
+    ],
+    "skills-other": [
+        {
+            "skill-name": "Atlassian",
+            "skill-css": "fab fa-atlassian"
+        },
+        {
+            "skill-name": "Bootstrap",
+            "skill-css": "devicon-bootstrap-plain"
+        },
+        {
+            "skill-name": "C#",
+            "skill-css": "si c-sharp light"
+        },
+        {
+            "skill-name": "C++",
+            "skill-css": "devicon-cplusplus-plain"
+        },
+        {
+            "skill-name": ".Net MVC",
+            "skill-css": "devicon-dot-net-plain"
+        },
+        {
+            "skill-name": "jQuery",
+            "skill-css": "devicon-jquery-plain"
+        },
+        {
+            "skill-name": "MongoDB",
+            "skill-css": "devicon-mongodb-plain"
+        },
+        {
+            "skill-name": "Node.js",
+            "skill-css": "devicon-nodejs-plain"
+        },
+        {
+            "skill-name": "NHibernate",
+            "skill-css": "si light nhibernate"
+        },
+        {
+            "skill-name": "Gimp",
+            "skill-css": "si gimp light"
+        },
+        {
+            "skill-name": "PostgreSQL",
+            "skill-css": "devicon-postgresql-plain"
+        },
+        {
+            "skill-name": "Scala",
+            "skill-css": "devicon-scala-plain"
+        },
+        {
+            "skill-name": "Selenium",
+            "skill-css": "si light selenium"
+        },
+        {
+            "skill-name": "SQL Server",
+            "skill-css": "si light sql-server"
+        },
+        {
+            "skill-name": "StructureMap",
+            "skill-css": "si light structuremap"
+        }    
+    ]  
 }
