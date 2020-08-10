@@ -5,23 +5,37 @@
                 <h1 class="title">{{skills.title-light}} <span class="title-strong">{{skills.title-strong}}</span></h1>
             </div>
         </div>
-        <div class="row container-btns" id="skills-btns" data-aos="zoom-out-up" data-aos-anchor-placement="top-center" >
-            <div class="col-md-12 text-center">
-                <div class="btn-group center" role="group">
-                <button type="button" class="btn btn-primary" id="skills-btn-current">Current</button>
-                <button type="button" class="btn btn-light" id="skills-btn-all">All</button>
-                </div>
-            </div>
-        </div>
-        <div class="row" id="skills-array" data-aos="zoom-out-up" data-aos-anchor-placement="top-center">
-            {{#each skills.skills}}
-            <div class="col-md-4 col-lg-3 col-xl-2 col-sm-4 col-4 {{#unless skill-using}}unused{{/unless}}">
+        <div class="row" id="skills-array-using" data-aos="zoom-out-up" data-aos-anchor-placement="top-center">
+            {{#each skills.skills-using}}
+            <div class="col-md-4 col-lg-3 col-xl-2 col-sm-4 col-4">
                 <div class="skills-block text-center">
                     <i class="{{skill-css}}"></i>
                     <p>{{skill-name}}</p>
                 </div>
             </div>
             {{/each}}
+            <div class="col-md-4 col-lg-3 col-xl-2 col-sm-4 col-4 unused btn" id="show-more">
+                <div class="skills-block text-center">
+                    <i class="fas fa-angle-down"></i>
+                    <p><a href="#">Show Other</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="skills-array-other" data-aos="zoom-out-up" data-aos-anchor-placement="top-bottom">
+            {{#each skills.skills-other}}
+            <div class="col-md-4 col-lg-3 col-xl-2 col-sm-4 col-4 unused">
+                <div class="skills-block text-center">
+                    <i class="{{skill-css}}"></i>
+                    <p>{{skill-name}}</p>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+        <div class="row" id="skills-key-div" class="float-right">
+            <ul>
+                <li>◉ Currently Using</li>
+                <li class="unused">◉ Past Experience</li>
+            </ul>
         </div>
     </div>
 </div>
