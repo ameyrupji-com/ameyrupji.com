@@ -1,8 +1,12 @@
 {
     "app_name": "Amey Rupji - Beta",
     "app_url": "http://beta.ameyrupji.com/",
-    "active-version": "v1.6.0 - Beta",
+    "active-version": "v1.7.0 - Beta",
     "old-versions": [
+        {
+            "text": "v1.6.0",
+            "href": "feature/v1-6-0"
+        }
     ],
     "icons_folder": "beta-icons",
     "api_base_url": "https://api.beta.ameyrupji.com",

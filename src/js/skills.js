@@ -4,39 +4,23 @@ site.skills = (function ($) {
   var Model = {
   },
   View = {
-    skillsUnusedBlockClass: '.unused',
-    skillsAllBtnId: '#skills-btn-all',
-    skillsCurrentBtnId: '#skills-btn-current',
-    skillsBtnGroupBtnClass: '#skills-main .btn-group .btn'
+    skillsArrayOther: '#skills-array-other',
+    showMore: '#show-more'
   },
   Controller = {
-    initilizeSkillsBtns: function initilizeSkillsBtn() {
-      var $skills_blocks = $(View.skillsUnusedBlockClass)
-      $skills_blocks.each(function(){
-        $(this).hide()
-      });
+    initializeSkillsBtns: function initializeSkillsBtn() {
+      var $skillsArrayOther = $(View.skillsArrayOther)
+      $skillsArrayOther.hide()
 
-      $(View.skillsAllBtnId).click(function() {
-        $(View.skillsBtnGroupBtnClass).removeClass('btn-primary').addClass('btn-light')
-        $(this).removeClass('btn-light').addClass('btn-primary')
-
-        $skills_blocks.each(function(){
-        $(this).show()
-        });
-      });
-
-      $(View.skillsCurrentBtnId).click(function() {
-        $(View.skillsBtnGroupBtnClass).removeClass('btn-primary').addClass('btn-light')
-        $(this).removeClass('btn-light').addClass('btn-primary')
-
-        $skills_blocks.each(function(){
-        $(this).hide()
-        });
-      });
+      $(View.showMore).click(function(event) {
+        event.preventDefault();
+        $skillsArrayOther.show();
+        $(View.showMore).hide();
+      })
     },
     init: function init() {
       console.log('In skills:init()')
-      Controller.initilizeSkillsBtns()
+      Controller.initializeSkillsBtns()
     }
   }
   
