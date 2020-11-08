@@ -1,7 +1,7 @@
 {
     "app_name": "Amey Rupji",
     "app_url": "http://ameyrupji.com/",
-    "active-version": "v1.7.0",
+    "active-version": "v1.7.1",
     "old-versions": [
         {
             "text": "v1.2.0",
@@ -22,6 +22,10 @@
         {
             "text": "v1.6.0",
             "href": "release/v1-6-0"
+        },
+        {
+            "text": "v1.7.0",
+            "href": "release/v1-7-0"
         }
     ],
     "icons_folder": "icons",
