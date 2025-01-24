@@ -3,16 +3,12 @@
     "title-strong": "Skills",
     "skills-using": [
         {
-            "skill-name": "AWS",
-            "skill-css": "si amazonaws light"
-        },
-        {
-            "skill-name": "Django",
-            "skill-css": "devicon-django-plain"
+            "skill-name": "Azure",
+            "skill-css": "devicon-azure-plain"
         },
         {
             "skill-name": "Docker",
-            "skill-css": "fab fa-docker"
+            "skill-css": "devicon-docker-plain"
         },
         {
             "skill-name": "Git",
@@ -31,32 +27,20 @@
             "skill-css": "devicon-javascript-plain"
         },
         {
-            "skill-name": "Jenkins",
-            "skill-css": "fab fa-jenkins"
-        },
-        {
             "skill-name": "JMeter",
             "skill-css": "devicon-apache-plain"
         },
         {
             "skill-name": "Kafka",
-            "skill-css": "si light kafka"
+            "skill-css": "devicon-apachekafka-original"
         },
         {
             "skill-name": "Kubernetes",
-            "skill-css": "si light k8s"
-        },
-        {
-            "skill-name": "MySQL",
-            "skill-css": "devicon-mysql-plain"
+            "skill-css": "devicon-kubernetes-plain"
         },
         {
             "skill-name": "New Relic",
             "skill-css": "si light new-relic"
-        },
-        {
-            "skill-name": "Nginx",
-            "skill-css": "devicon-nginx-plain"
         },
         {
             "skill-name": "Python",
@@ -72,42 +56,43 @@
         },
         {
             "skill-name": "Sass",
-            "skill-css": "si light sass"
+            "skill-css": "devicon-sass-original"
         },
         {
             "skill-name": "Splunk",
-            "skill-css": "si light splunk"
+            "skill-css": "devicon-splunk-original-wordmark"
         },
         {
             "skill-name": "Spring",
-            "skill-css": "si light spring"
+            "skill-css": "devicon-spring-original"
         },
         {
             "skill-name": "Terraform",
-            "skill-css": "si light terraform"
+            "skill-css": "devicon-terraform-plain"
         }
     ],
     "skills-other": [
-        {
-            "skill-name": "Atlassian",
-            "skill-css": "fab fa-atlassian"
-        },
         {
             "skill-name": "Bootstrap",
             "skill-css": "devicon-bootstrap-plain"
         },
         {
             "skill-name": "C#",
-            "skill-css": "si c-sharp light"
+            "skill-css": "devicon-csharp-plain"
         },
         {
             "skill-name": "C++",
             "skill-css": "devicon-cplusplus-plain"
         },
         {
+            "skill-name": "Django",
+            "skill-css": "devicon-django-plain"
+        },
+        {
             "skill-name": ".Net MVC",
             "skill-css": "devicon-dot-net-plain"
         },
+        
         {
             "skill-name": "jQuery",
             "skill-css": "devicon-jquery-plain"
@@ -117,19 +102,27 @@
             "skill-css": "devicon-mongodb-plain"
         },
         {
+            "skill-name": "MySQL",
+            "skill-css": "devicon-mysql-plain"
+        },
+        {
+            "skill-name": "Nginx",
+            "skill-css": "devicon-nginx-plain"
+        },
+        {
             "skill-name": "Node.js",
             "skill-css": "devicon-nodejs-plain"
         },
         {
-            "skill-name": "NHibernate",
-            "skill-css": "si light nhibernate"
+            "skill-name": "nHibernate",
+            "skill-css": "devicon-nhibernate-plain"
         },
         {
             "skill-name": "Gimp",
-            "skill-css": "si gimp light"
+            "skill-css": "devicon-gimp-plain"
         },
         {
-            "skill-name": "PostgreSQL",
+            "skill-name": "Postgress",
             "skill-css": "devicon-postgresql-plain"
         },
         {
@@ -138,11 +131,11 @@
         },
         {
             "skill-name": "Selenium",
-            "skill-css": "si light selenium"
+            "skill-css": "devicon-selenium-original"
         },
         {
             "skill-name": "SQL Server",
-            "skill-css": "si light sql-server"
+            "skill-css": "devicon-microsoftsqlserver-plain"
         },
         {
             "skill-name": "StructureMap",

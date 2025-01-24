@@ -12,6 +12,7 @@ site.all = (function (){
     },
     Controller = {
         initializeAOS: function initializeAOS() {
+            Handlebars.registerPartial('footer', 'Footer');
             AOS.init();
         },
         initializeTooltip: function initializeTooltip() {

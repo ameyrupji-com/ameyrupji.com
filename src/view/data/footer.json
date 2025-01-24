@@ -26,20 +26,20 @@
             "text": "Linkedin",
             "id": "share-linkedin-btn",
             "data-sharer": "linkedin",
-            "icon-class": "fab fa-linkedin"
+            "icon-class": "devicon-linkedin-plain"
         },
         {
             "text": "Facebook",
             "id": "share-facebook-btn",
             "data-sharer": "facebook",
-            "icon-class": "fab fa-facebook",
+            "icon-class": "devicon-facebook-plain",
             "data-title": "Visit Amey Rupji's Website @ "
         },
         {
             "text": "Twitter",
             "id": "share-twitter-btn",
             "data-sharer": "twitter",
-            "icon-class": "fab fa-twitter",
+            "icon-class": "devicon-twitter-original",
             "data-title": "Visit Amey Rupji's Website @ "
         },
         {

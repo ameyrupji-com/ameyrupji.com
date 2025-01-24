@@ -49,7 +49,7 @@ jobs:
             rm view/data/app.json
             mv view/data/prod/app.json view/data/app.json
             rm -rf dist/
-            npm install parcel-bundler --save-dev
+            npm install parcel --save-dev
             npm run build
       - *save_repo
   build-develop:
@@ -63,7 +63,7 @@ jobs:
             rm view/data/app.json
             mv view/data/beta/app.json view/data/app.json
             rm -rf dist/
-            npm install parcel-bundler --save-dev
+            npm install parcel --save-dev
             npm run build
             cd dist/
             find ./ -type f -name '*.css' -exec sed -i 's|url(../|url(|g' {} \;
@@ -79,7 +79,7 @@ jobs:
             rm view/data/app.json
             mv view/data/beta/app.json view/data/app.json
             rm -rf dist/
-            npm install parcel-bundler --save-dev
+            npm install parcel --save-dev
             npm run build
             cd dist/
             find ./ -type f -name '*.css' -exec sed -i 's|url(../|url(|g' {} \;

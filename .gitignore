@@ -81,6 +81,8 @@ typings/
 
 # from parcel/.gitignore
 dist
+.cache
+.parcel-cache
 
 # macOS file
 .DS_Store

@@ -9,23 +9,17 @@
             "image-src": "./images/me.jpeg"
         },
         {
-            "type": "alternate",
-            "css-id": "built-website",
-            "css-class": [ ],
-            "tooltip-title" : "I built this Website"
-        },
-        {
             "type": "work",
-            "css-id": "uhg-sse",
+            "css-id": "uhg-pe",
             "css-class": [ ],
             "block-content": {
-                "heading": "Senior Software Engineer",
+                "heading": "Principal Engineer",
                 "organization": {
                     "name": "UnitedHealth Group",
                     "css-class": "far fa-building"
                 },
                 "timeline": {
-                    "from": "Apr 2015",
+                    "from": "June 2021",
                     "to": "Present",
                     "duration": "(3+ yrs)"
                 },
@@ -34,26 +28,24 @@
                     "state": "Texas Area",
                     "country": ""
                 },
-                "short-description": "Developed a scalable cloud-based data mastering platform.",
+                "short-description": "Leading teams to build platform to support Non Human Identities (NHIs) Authentication & Authorization usecases.",
                 "work-impact": [
-                    "Developed a scalable, cloud-based data mastering platform to consolidate, organize, aggregate, and enrich healthcare entities like patients, providers, payers, and practices.",
-                    "Implemented a model and rule-based distributed matching algorithm to link healthcare entities from disparate data sources, each having millions of records for batch and streaming use cases.",
-                    "Worked with 6+ teams across the globe to support use cases like health system planning, patient care coordination, and consumer outreach initiatives to drive healthy outcomes for patients.",
-                    "Collaborated with teams to implement the best practices in cloud infrastructure automation, cloud application security, data governance, and data stewardship.",
-                    "Onboarded and mentored new developers and other technical stakeholders from integrating products through hands on training and technical product documentation."
+                    "Lead geographically distributed team to build maintain and scale Identity platform for NHIs to be used in conjunction with the UHG/Optum Healthcare Platform API Management Initiative.",
+                    "Involved with all stages of the team planning and software lifecycle such as quarterly planning, agile ceremonies planning, technical solutioning, hiring, training, internal and external client collaboration and communication, documentation, code reviews, release planning, UX collaboration, implementation, strategy planning.",
+                    "Hiried, onboarded and mentored new developers and other technical stakeholders from integrating products through hands on training and technical product documentation."
                 ],
                 "technology-tools":[
                     {
-                        "skill-name": "AWS",
-                        "skill-css": "si amazonaws"
+                        "skill-name": "Azure",
+                        "skill-css": "devicon-azure-plain"
                     },
                     {
-                        "skill-name": "Django",
-                        "skill-css": "devicon-django-plain"
+                        "skill-name": "AWS",
+                        "skill-css": "devicon-amazonwebservices-plain-wordmark"
                     },
                     {
                         "skill-name": "Docker",
-                        "skill-css": "fab fa-docker"
+                        "skill-css": "devicon-docker-plain"
                     },
                     {
                         "skill-name": "Git",
@@ -73,7 +65,184 @@
                     },
                     {
                         "skill-name": "Jenkins",
-                        "skill-css": "fab fa-jenkins"
+                        "skill-css": "devicon-jenkins-line"
+                    },
+                    {
+                        "skill-name": "New Relic",
+                        "skill-css": "si new-relic"
+                    },
+                    {
+                        "skill-name": "Python",
+                        "skill-css": "devicon-python-plain"
+                    },
+                    {
+                        "skill-name": "React",
+                        "skill-css": "devicon-react-plain"
+                    },
+                    {
+                        "skill-name": "Redis",
+                        "skill-css": "devicon-redis-plain"
+                    },
+                    {
+                        "skill-name": "Splunk",
+                        "skill-css": "devicon-splunk-original-wordmark"
+                    },
+                    {
+                        "skill-name": "Spring",
+                        "skill-css": "devicon-spring-original"
+                    },
+                    {
+                        "skill-name": "Terraform",
+                        "skill-css": "devicon-terraform-plain"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "work",
+            "css-id": "uhg-lse",
+            "css-class": [ ],
+            "block-content": {
+                "heading": "Lead Software Engineer",
+                "organization": {
+                    "name": "UnitedHealth Group",
+                    "css-class": "far fa-building"
+                },
+                "timeline": {
+                    "from": "Feb 2021",
+                    "to": "June 2021",
+                    "duration": "(5 mos)"
+                },
+                "location": {
+                    "city": "Austin",
+                    "state": "Texas Area",
+                    "country": ""
+                },
+                "short-description": "Leading teams to build migrate applications to cloud.",
+                "work-impact": [
+                    "Lead team to migrate and enhanced on-prem platform to run data models for analyzing infectious disease patterns of Flu/Influenza and COVID-19 (Infectious Diseases Platform + FluCast) to Azure cloud-based solution. To greatly improve the maintainability, uptime and turn around time for richer and better results for our internal stakeholders.",
+                    "Involved with all stages of the team planning and software lifecycle such as quarterly planning, agile ceremonies planning, technical solutioning, hiring, training, internal client communication, documentation, code reviews, release planning, UX collaboration, implementation.",
+                    "Collaborated with teams to implement the best practices in cloud infrastructure automation, cloud application security, data governance, and data stewardship.",
+                    "Onboarded and mentored new developers and other technical stakeholders from integrating products through hands on training and technical product documentation."
+                ],
+                "technology-tools":[
+                    {
+                        "skill-name": "Azure",
+                        "skill-css": "devicon-azure-plain"
+                    },
+                    {
+                        "skill-name": "Git",
+                        "skill-css": "devicon-git-plain"
+                    },
+                    {
+                        "skill-name": "GitHub",
+                        "skill-css": "devicon-github-plain"
+                    },
+                    {
+                        "skill-name": "JavaScript",
+                        "skill-css": "devicon-javascript-plain"
+                    },
+                    {
+                        "skill-name": "Jenkins",
+                        "skill-css": "devicon-jenkins-line"
+                    },
+                    {
+                        "skill-name": "New Relic",
+                        "skill-css": "si new-relic"
+                    },
+                    {
+                        "skill-name": "Python",
+                        "skill-css": "devicon-python-plain"
+                    },
+                    {
+                        "skill-name": "Postgress",
+                        "skill-css": "devicon-postgresql-plain"
+                    },
+                    {
+                        "skill-name": "React",
+                        "skill-css": "devicon-react-plain"
+                    },
+                    {
+                        "skill-name": "Splunk",
+                        "skill-css": "devicon-splunk-original-wordmark"
+                    },
+                    {
+                        "skill-name": "Terraform",
+                        "skill-css": "devicon-terraform-plain"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "alternate",
+            "css-id": "built-website",
+            "css-class": [ ],
+            "tooltip-title" : "I built this Website"
+        },
+        {
+            "type": "work",
+            "css-id": "uhg-sse",
+            "css-class": [ ],
+            "block-content": {
+                "heading": "Senior Software Engineer",
+                "organization": {
+                    "name": "UnitedHealth Group",
+                    "css-class": "far fa-building"
+                },
+                "timeline": {
+                    "from": "Apr 2015",
+                    "to": "Feb 2021",
+                    "duration": "(5 yr 11 mos)"
+                },
+                "location": {
+                    "city": "Austin",
+                    "state": "Texas Area",
+                    "country": ""
+                },
+                "short-description": "Developed a scalable cloud-based data mastering platform.",
+                "work-impact": [
+                    "Developed a scalable, cloud-based data mastering platform to consolidate, organize, aggregate, and enrich healthcare entities like patients, providers, payers, and practices.",
+                    "Implemented a model and rule-based distributed matching algorithm to link healthcare entities from disparate data sources, each having millions of records for batch and streaming use cases.",
+                    "Worked with 6+ teams across the globe to support use cases like health system planning, patient care coordination, and consumer outreach initiatives to drive healthy outcomes for patients.",
+                    "Collaborated with teams to implement the best practices in cloud infrastructure automation, cloud application security, data governance, and data stewardship.",
+                    "Onboarded and mentored new developers and other technical stakeholders from integrating products through hands on training and technical product documentation."
+                ],
+                "technology-tools":[
+                    {
+                        "skill-name": "AWS",
+                        "skill-css": "devicon-amazonwebservices-plain-wordmark"
+                    },
+                    {
+                        "skill-name": "Azure",
+                        "skill-css": "devicon-azure-plain"
+                    },
+                    {
+                        "skill-name": "Django",
+                        "skill-css": "devicon-django-plain"
+                    },
+                    {
+                        "skill-name": "Docker",
+                        "skill-css": "devicon-docker-plain"
+                    },
+                    {
+                        "skill-name": "Git",
+                        "skill-css": "devicon-git-plain"
+                    },
+                    {
+                        "skill-name": "GitHub",
+                        "skill-css": "devicon-github-plain"
+                    },
+                    {
+                        "skill-name": "Java",
+                        "skill-css": "devicon-java-plain"
+                    },
+                    {
+                        "skill-name": "JavaScript",
+                        "skill-css": "devicon-javascript-plain"
+                    },
+                    {
+                        "skill-name": "Jenkins",
+                        "skill-css": "devicon-jenkins-line"
                     },
                     {
                         "skill-name": "JMeter",
@@ -81,11 +250,11 @@
                     },
                     {
                         "skill-name": "Kafka",
-                        "skill-css": "si kafka"
+                        "skill-css": "devicon-apachekafka-original"
                     },
                     {
                         "skill-name": "Kubernetes",
-                        "skill-css": "si k8s"
+                        "skill-css": "devicon-kubernetes-plain"
                     },
                     {
                         "skill-name": "MySQL",
@@ -113,19 +282,19 @@
                     },
                     {
                         "skill-name": "Sass",
-                        "skill-css": "si sass"
+                        "skill-css": "devicon-sass-original"
                     },
                     {
                         "skill-name": "Splunk",
-                        "skill-css": "si splunk"
+                        "skill-css": "devicon-splunk-original-wordmark"
                     },
                     {
                         "skill-name": "Spring",
-                        "skill-css": "si spring"
+                        "skill-css": "devicon-spring-original"
                     },
                     {
                         "skill-name": "Terraform",
-                        "skill-css": "si terraform"
+                        "skill-css": "devicon-terraform-plain"
                     }
                 ]
             }
@@ -165,20 +334,16 @@
                 ],
                 "technology-tools":[
                     {
-                        "skill-name": "Atlassian",
-                        "skill-css": "fab fa-atlassian"
-                    },
-                    {
                         "skill-name": "Bitbucket",
-                        "skill-css": "fab fa-bitbucket"
+                        "skill-css": "devicon-bitbucket-original"
                     },
                     {
                         "skill-name": "C#",
-                        "skill-css": "si c-sharp"
+                        "skill-css": "devicon-csharp-plain"
                     },
                     {
                         "skill-name": "Confluence",
-                        "skill-css": "fab fa-confluence"
+                        "skill-css": "devicon-confluence-plain"
                     },
                     {
                         "skill-name": "CSS 3",
@@ -202,7 +367,7 @@
                     },
                     {
                         "skill-name": "Jira",
-                        "skill-css": "fab fa-jira"
+                        "skill-css": "devicon-jira-plain"
                     },
                     {
                         "skill-name": "jQuery",
@@ -214,7 +379,7 @@
                     },
                     {
                         "skill-name": "SQL Server",
-                        "skill-css": "si sql-server"
+                        "skill-css": "devicon-microsoftsqlserver-plain"
                     },
                     {
                         "skill-name": "Windows",
@@ -255,20 +420,16 @@
                         "skill-css": "devicon-apache-plain"
                     },
                     {
-                        "skill-name": "Atlassian",
-                        "skill-css": "fab fa-atlassian"
-                    },
-                    {
                         "skill-name": "Bitbucket",
-                        "skill-css": "fab fa-bitbucket"
+                        "skill-css": "devicon-bitbucket-original"
                     },
                     {
                         "skill-name": "C#",
-                        "skill-css": "si c-sharp"
+                        "skill-css": "devicon-csharp-plain"
                     },
                     {
                         "skill-name": "Confluence",
-                        "skill-css": "fab fa-confluence"
+                        "skill-css": "devicon-confluence-plain"
                     },
                     {
                         "skill-name": "Microsoft .Net",
@@ -276,15 +437,15 @@
                     },
                     {
                         "skill-name": "Jira",
-                        "skill-css": "fab fa-jira"
+                        "skill-css": "devicon-jira-plain"
                     },
                     {
                         "skill-name": "New Relic",
-                        "skill-css": "fas fa-code"
+                        "skill-css": "si new-relic"
                     },
                     {
                         "skill-name": "SQL Server",
-                        "skill-css": "si sql-server"
+                        "skill-css": "devicon-microsoftsqlserver-plain"
                     },
                     {
                         "skill-name": "Windows",
@@ -398,7 +559,7 @@
                     },
                     {
                         "skill-name": "HTML",
-                        "skill-css": "fab fa-html5"
+                        "skill-css": "devicon-html5-plain"
                     },
                     {
                         "skill-name": "JavaScript",
@@ -452,7 +613,7 @@
                     },
                     {
                         "skill-name": "HTML",
-                        "skill-css": "fab fa-html5"
+                        "skill-css": "devicon-html5-plain"
                     },
                     {
                         "skill-name": "JavaScript",
