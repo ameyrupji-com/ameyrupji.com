@@ -1,0 +1,27 @@
+@import '../_variables';
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: $font-weight-default !important;
+    color: $font-color-light;
+}
+
+.title {
+    text-transform: uppercase;
+    
+    span.title-strong {
+        font-weight: $font-weight-bold;
+    }
+    
+    span.title-hollow {
+        font-weight: $font-weight-bold;
+        color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: $title-color-light;
+    }
+}

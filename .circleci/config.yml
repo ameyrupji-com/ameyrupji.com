@@ -1,7 +1,8 @@
 version: 2.1
 
 orbs:
-  aws-s3: circleci/aws-s3@1.0.4
+  aws-cli: circleci/aws-cli@5.1.1
+  aws-s3: circleci/aws-s3@4.1.1
 
 references:
 
@@ -9,7 +10,7 @@ build_base_image: &build_base_image
   circleci/node:11.10.0
 
 deploy_base_image: &deploy_base_image
-  circleci/python:2.7
+  cimg/python:3.12
 
 working_directory: &working_directory
   ~/ameyrupji
@@ -88,6 +89,9 @@ jobs:
     <<: *deploy_default_config
     steps:
       - *restore_repo
+      - aws-cli/setup:
+          aws_access_key_id: AWS_ACCESS_KEY_ID
+          aws_secret_access_key: AWS_SECRET_ACCESS_KEY
       - aws-s3/copy:
           from: /home/circleci/ameyrupji/src/dist/ 
           to: 's3://ameyrupji.com/'
@@ -96,6 +100,9 @@ jobs:
     <<: *deploy_default_config
     steps:
       - *restore_repo
+      - aws-cli/setup:
+          aws_access_key_id: AWS_ACCESS_KEY_ID
+          aws_secret_access_key: AWS_SECRET_ACCESS_KEY
       - aws-s3/copy:
           from: /home/circleci/ameyrupji/src/dist/ 
           to: 's3://beta.ameyrupji.com/'
@@ -104,6 +111,9 @@ jobs:
     <<: *deploy_default_config
     steps:
       - *restore_repo
+      - aws-cli/setup:
+          aws_access_key_id: AWS_ACCESS_KEY_ID
+          aws_secret_access_key: AWS_SECRET_ACCESS_KEY
       - aws-s3/copy:
           from: /home/circleci/ameyrupji/src/dist/ 
           to: s3://beta.ameyrupji.com/${CIRCLE_BRANCH}
@@ -112,6 +122,9 @@ jobs:
     <<: *deploy_default_config
     steps:
       - *restore_repo
+      - aws-cli/setup:
+          aws_access_key_id: AWS_ACCESS_KEY_ID
+          aws_secret_access_key: AWS_SECRET_ACCESS_KEY
       - aws-s3/copy:
           from: /home/circleci/ameyrupji/src/dist/ 
           to: s3://ameyrupji.com/${CIRCLE_BRANCH}

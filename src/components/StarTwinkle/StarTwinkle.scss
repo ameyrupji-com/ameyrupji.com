@@ -1,0 +1,51 @@
+.background-images-container {
+  position: absolute;
+  left: 0;
+  width: 110%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.star {
+  position: relative;
+  display: inline-block;
+  background-image: var(--star-image-url);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  opacity: 0;
+  visibility: hidden;
+}
+
+@media (prefers-color-scheme: dark) {
+  .star {
+    background-image: var(--star-dark-image-url);
+  }
+}
+
+.animate-flicker {
+  -webkit-animation: flickerAnimation 10s infinite;
+  -moz-animation: flickerAnimation 10s infinite;
+  -o-animation: flickerAnimation 10s infinite;
+  animation: flickerAnimation 10s infinite;
+}
+
+@keyframes flickerAnimation {
+  0%   { opacity:0; visibility: visible; }
+  70%  { opacity:.25; }
+  100% { opacity:0; }
+}
+@-o-keyframes flickerAnimation{
+  0%   { opacity:0; visibility: visible; }
+  70%  { opacity:.25; }
+  100% { opacity:0; }
+}
+@-moz-keyframes flickerAnimation{
+  0%   { opacity:0; visibility: visible; }
+  70%  { opacity:.25; }
+  100% { opacity:0; }
+}
+@-webkit-keyframes flickerAnimation{
+  0%   { opacity:0; visibility: visible; }
+  70%  { opacity:.25; }
+  100% { opacity:0; }
+}

@@ -1,0 +1,56 @@
+@import '../_variables';
+
+#summary-main {
+    padding-top: 150px;
+    padding-bottom: 100px;
+    
+
+    .card-deck {
+        .card {
+            border-radius: 20px;
+
+            .card-header {
+                i {
+                    border: 2px solid $background-color-1-light-alternate;
+                    border-radius: 50%;
+                    width: 50px;
+                    height: 50px;
+                    top: -35px;
+                    position: relative;
+                    line-height: 1.8;
+                }
+            }
+
+            background-color: transparent !important;
+            border: 2px solid $background-color-1-light-alternate;
+
+            p {
+                font-size: 20px !important;
+            }
+        }
+    }
+
+}
+
+@media (max-width:768px) {
+    #summary-main {
+        padding-bottom: 50px;
+    
+        p {
+            font-size: 16px !important;
+            line-height: 24px;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 50px;
+        }
+    }
+}
+
+@media only screen and (min-width:769px) and (max-width: 1169px) {
+    #summary-main p {
+        font-size: 20px !important;
+    }
+}
+
+@media only screen and (min-width: 1170px) {
+}

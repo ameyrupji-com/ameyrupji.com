@@ -84,3 +84,4 @@ dist
 
 # macOS file
 .DS_Store
+/.parcel-cache

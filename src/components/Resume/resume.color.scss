@@ -1,0 +1,20 @@
+@import '../_variables.scss';
+
+#resume-main {
+    background-color: $background-color-4-light;
+    background: $gradient-4-light;
+    background: $-webkit-gradient-4-light;
+    background: $-moz-gradient-4-light;
+    background: $-o-gradient-4-light;
+}
+
+@media (prefers-color-scheme: dark) {
+
+    #resume-main {
+        background-color: $background-color-4-light-alternate;
+        background: $gradient-4-dark;
+        background: $-webkit-gradient-4-dark;
+        background: $-moz-gradient-4-dark;
+        background: $-o-gradient-4-dark ;
+    }
+}

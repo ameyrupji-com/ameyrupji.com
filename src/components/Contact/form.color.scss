@@ -1,0 +1,81 @@
+@import '../_variables.scss';
+
+.form-label-group {
+
+    background-color: $form-element-background-light;
+
+    > label {
+        color: form-label-color-light;
+    }
+
+    input:not(:placeholder-shown) ~ label,
+    textarea:not(:placeholder-shown) ~ label {
+        color: $form-label-shown-color-light;
+    }
+
+    &.error {
+        .form-control {
+            border-color: $form-error-color-light;
+        }
+
+        > label {
+            color: $form-error-color-light;
+        }
+
+        > label.error {
+            color: $form-error-color-light;
+        }
+    }
+
+    &.success > label.valid {
+        color: $form-success-color-light;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .form-label-group {
+
+        background-color: $form-element-background-dark;
+        
+        input,
+        input:focus,
+        textarea,
+        textarea:focus,
+        select,
+        select:focus {
+            color: $form-label-color-dark;
+            background-color: transparent;
+        }
+        
+
+        > label {
+            color: $form-label-color-dark;
+            background-color: transparent;
+        }
+
+        
+        input:not(:placeholder-shown) ~ label,
+        textarea:not(:placeholder-shown) ~ label {
+            color: $form-label-shown-color-dark;
+        }
+
+        &.error {
+            .form-control {
+                border-color: $form-error-color-dark;
+            }
+
+            > label {
+                color: $form-error-color-dark;
+            }
+
+            > label.error {
+                color: $form-error-color-dark;
+            }
+        }
+
+        &.success > label.valid {
+            color: $form-success-color-dark;
+        }
+    }
+}
+

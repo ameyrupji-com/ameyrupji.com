@@ -1,0 +1,109 @@
+@import '../_variables.scss';
+
+
+#footer-main {
+    background-color: $background-color-2-light;
+    background: $gradient-2-light;
+    background: $-webkit-gradient-2-light;
+    background: $-moz-gradient-2-light;
+    background: $-o-gradient-2-light;
+    color: $font-color-dark;
+    
+    .footer-no-icons-flat-list li {
+        &:not(:first-child) a {
+            border-color: $font-color-dark;
+
+        }
+    }
+
+    #versions button {
+        span {
+            border-color: $font-color-dark;
+            color: $font-color-dark;
+        }
+        &:after {
+            color: $font-color-dark;
+        }
+    }
+
+    p,
+    a,
+    i,
+    li {
+        color: $font-color-dark;
+    }
+
+    hr {
+        border-top: 1px solid #aaa;
+    }
+
+    
+    .dropdown-menu {
+        background-color: $background-color-2-light;
+
+        .dropdown-header {
+            color: #ccc; 
+        }
+        .dropdown-item {
+            &:hover, 
+            &:focus {
+                color: $font-color-dark;
+                background-color: $background-color-2-light-alternate;
+            }
+        }
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+
+    #footer-main {
+        background-color: $background-color-2-light-alternate;
+        background: $gradient-2-dark;
+        background: $-webkit-gradient-2-dark;
+        background: $-moz-gradient-2-dark;
+        background: $-o-gradient-2-dark ;
+        color: #eee;
+
+        .footer-no-icons-flat-list li {
+            &:not(:first-child) a {
+                border-color:  #eee;
+            }
+        }
+
+        #versions button {
+            span {
+                border-color:  #eee;
+                color: #eee;
+            }
+            &:after {
+                color: #eee;
+            }
+        }
+    
+        p,
+        a,
+        i,
+        li {
+            color: #eee;
+        }
+    
+        hr {
+            border-top: 1px solid #eee;
+        }
+
+        .dropdown-menu {
+            background-color: $background-color-2-light-alternate;
+    
+            .dropdown-header {
+                color: #ccc; 
+            }
+            .dropdown-item {
+                &:hover, 
+                &:focus {
+                    color: $font-color-dark;
+                    background-color: $background-color-2-light;
+                }
+            }
+        }
+    }
+}
