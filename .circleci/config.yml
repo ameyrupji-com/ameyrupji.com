@@ -47,10 +47,10 @@ jobs:
           name: build
           command: | 
             cd src/
-            rm view/data/app.json
-            mv view/data/prod/app.json view/data/app.json
+            rm data/app.json
+            mv data/prod/app.json data/app.json
             rm -rf dist/
-            npm install parcel-bundler --save-dev
+            npm install
             npm run build
       - *save_repo
   build-develop:
@@ -61,13 +61,13 @@ jobs:
           name: build
           command: | 
             cd src/
-            rm view/data/app.json
-            mv view/data/beta/app.json view/data/app.json
+            rm data/app.json
+            mv data/beta/app.json data/app.json
             rm -rf dist/
-            npm install parcel-bundler --save-dev
+            npm install
             npm run build
             cd dist/
-            find ./ -type f -name '*.css' -exec sed -i 's|url(../|url(|g' {} \;
+            # find ./ -type f -name '*.css' -exec sed -i 's|url(../|url(|g' {} \;
       - *save_repo
   build-branch:
     <<: *build_default_config
@@ -77,13 +77,13 @@ jobs:
           name: build
           command: | 
             cd src/
-            rm view/data/app.json
-            mv view/data/beta/app.json view/data/app.json
+            rm data/app.json
+            mv data/beta/app.json data/app.json
             rm -rf dist/
-            npm install parcel-bundler --save-dev
+            npm install
             npm run build
             cd dist/
-            find ./ -type f -name '*.css' -exec sed -i 's|url(../|url(|g' {} \;
+            # find ./ -type f -name '*.css' -exec sed -i 's|url(../|url(|g' {} \;
       - *save_repo
   upload-master:
     <<: *deploy_default_config
