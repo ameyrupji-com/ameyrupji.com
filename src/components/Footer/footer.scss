@@ -45,10 +45,25 @@
         i {
             width: 30px;
         }
+    }
 
-        &.sharer {
-            margin: 0;
-            padding: 0;
+    .share-btn {
+        margin-right: 10px;
+        margin-bottom: 10px;
+        opacity: .8;
+        color: #fff;
+        text-transform: uppercase;
+        svg {
+            margin-left: 10px;
+            vertical-align: center;
+        }
+        span {
+            margin-left: 15px
+        };
+        
+        &:hover {
+            opacity: 1;
+            text-decoration: none;
         }
     }
 

@@ -1,12 +1,25 @@
 import React, { useState, useRef, useEffect } from 'react';
 
+import {
+  FacebookIcon,
+  FacebookShareButton,
+  LinkedinIcon,
+  LinkedinShareButton,
+  RedditIcon,
+  RedditShareButton,
+  TwitterShareButton,
+  WhatsappIcon,
+  WhatsappShareButton,
+  XIcon,
+} from "react-share";
+
+
 import './footer.scss';
 import './footer.color.scss';
 
 interface FooterProps {
     footer: {
         'site-links': { href: string; text: string }[];
-        'share-links': { id: string; 'data-sharer': string; 'data-title': string; 'icon-class': string; text: string }[];
     };
     app: {
         'other-links': { href: string; text: string; 'img-src'?: string }[];
@@ -72,15 +85,42 @@ const Footer: React.FC<FooterProps> = ({ footer, app }) => {
                     <div className="col-md-6 col-lg-3 col-xl-3 col-6">
                         <ul className="footer-no-icons-list">
                             <li className="list-heading">Share <span className="list-heading-strong">website</span></li>
-                            {footer['share-links'].map((link, index) => (
-                                <li key={index}>
-                                    <a className="btn btn-link sharer" href="#" id={link.id} data-sharer={link['data-sharer']}
-                                        data-title={link['data-title']} data-url={app.app_url}>
-                                        <i className={link['icon-class']}></i>
-                                        {link.text}
-                                    </a>
-                                </li>
-                            ))}
+                            <LinkedinShareButton url={app.app_url}>
+                                <div className="share-btn btn-link">
+                                    <LinkedinIcon size={16} round={false} />
+                                    <span>Linkedin</span>
+                                </div>
+                            </LinkedinShareButton>
+                            <br/>
+                            <FacebookShareButton url={app.app_url}>
+                                <div className="share-btn btn-link">
+                                    <FacebookIcon size={16} round={false} />
+                                    <span>Facebook</span>
+                                </div>
+                            </FacebookShareButton>
+                            <br/>
+                            <TwitterShareButton url={app.app_url}>
+                                <div className="share-btn btn-link">
+                                    <XIcon size={16} round={false} />
+                                    <span>X</span>
+                                </div>
+                            </TwitterShareButton>
+                            <br/>
+                            <WhatsappShareButton url={app.app_url}>
+                                <div className="share-btn btn-link">
+                                    <WhatsappIcon size={16} round={false} />
+                                    <span>Whatsapp</span>
+                                </div>
+                            </WhatsappShareButton>
+                            <br/>
+                            <RedditShareButton url={app.app_url}>
+                                <div className="share-btn btn-link">
+                                    <RedditIcon size={16} round={false} />
+                                    <span>Reddit</span>
+                                </div>
+                            </RedditShareButton>
+            
+
                         </ul>
                     </div>
                     <div className="col-md-6 col-lg-3 col-xl-3 col-6">
@@ -125,6 +165,7 @@ const Footer: React.FC<FooterProps> = ({ footer, app }) => {
                             )}
                         </ul>
                     </div>
+                    
                 </div>
             </div>
         </footer>
