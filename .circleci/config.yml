@@ -59,9 +59,8 @@ jobs:
       - run: 
           name: build
           command: | 
-            cd src/
-            rm data/app.json
-            mv data/beta/app.json data/app.json
+            rm src/data/app.json
+            mv src/data/beta/app.json src/data/app.json
             rm -rf dist/
             npm install
             npm run build
@@ -92,7 +91,7 @@ jobs:
           aws_access_key_id: AWS_ACCESS_KEY_ID
           aws_secret_access_key: AWS_SECRET_ACCESS_KEY
       - aws-s3/copy:
-          from: /home/circleci/ameyrupji/src/dist/ 
+          from: /home/circleci/ameyrupji/dist/ 
           to: 's3://ameyrupji.com/'
           arguments: --recursive
   upload-develop:
@@ -103,7 +102,7 @@ jobs:
           aws_access_key_id: AWS_ACCESS_KEY_ID
           aws_secret_access_key: AWS_SECRET_ACCESS_KEY
       - aws-s3/copy:
-          from: /home/circleci/ameyrupji/src/dist/ 
+          from: /home/circleci/ameyrupji/dist/ 
           to: 's3://beta.ameyrupji.com/'
           arguments: --recursive
   upload-branches:
@@ -114,7 +113,7 @@ jobs:
           aws_access_key_id: AWS_ACCESS_KEY_ID
           aws_secret_access_key: AWS_SECRET_ACCESS_KEY
       - aws-s3/copy:
-          from: /home/circleci/ameyrupji/src/dist/ 
+          from: /home/circleci/ameyrupji/dist/ 
           to: s3://beta.ameyrupji.com/${CIRCLE_BRANCH}
           arguments: --recursive
   upload-releases:
@@ -125,7 +124,7 @@ jobs:
           aws_access_key_id: AWS_ACCESS_KEY_ID
           aws_secret_access_key: AWS_SECRET_ACCESS_KEY
       - aws-s3/copy:
-          from: /home/circleci/ameyrupji/src/dist/ 
+          from: /home/circleci/ameyrupji/dist/ 
           to: s3://ameyrupji.com/${CIRCLE_BRANCH}
           arguments: --recursive
 
