@@ -75,9 +75,8 @@ jobs:
       - run: 
           name: build
           command: | 
-            cd src/
-            rm data/app.json
-            mv data/beta/app.json data/app.json
+            rm src/data/app.json
+            mv src/data/beta/app.json src/data/app.json
             rm -rf dist/
             npm install
             npm run build
