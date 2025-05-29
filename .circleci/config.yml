@@ -7,7 +7,7 @@ orbs:
 references:
 
 build_base_image: &build_base_image
-  circleci/node:21.18.0
+  cimg/node:21.7.0
 
 deploy_base_image: &deploy_base_image
   cimg/python:3.12
