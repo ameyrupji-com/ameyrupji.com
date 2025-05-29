@@ -82,6 +82,7 @@ jobs:
             rm -rf dist/
             npm install
             npm run build
+            ls
             cd dist/
             # find ./ -type f -name '*.css' -exec sed -i 's|url(../|url(|g' {} \;
       - *save_repo
