@@ -9,7 +9,7 @@
 .star {
   position: relative;
   display: inline-block;
-  background-image: var(--star-image-url);
+  background-image: url("./timeline-logos.png");
   background-repeat: no-repeat;
   background-size: auto 100%;
   opacity: 0;
@@ -18,7 +18,7 @@
 
 @media (prefers-color-scheme: dark) {
   .star {
-    background-image: var(--star-dark-image-url);
+    background-image: url("./timeline-logos-grayscale.png");
   }
 }
 

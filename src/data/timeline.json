@@ -9,6 +9,176 @@
             "image-src": "./images/me.jpeg"
         },
         {
+            "type": "work",
+            "css-id": "uhg-pe",
+            "css-class": [ ],
+            "block-content": {
+                "heading": "Principal Engineer, Technology Leader Career Path",
+                "organization": {
+                    "name": "UnitedHealth Group",
+                    "css-class": "far fa-building"
+                },
+                "timeline": {
+                    "from": "June 2021",
+                    "to": "Present",
+                    "duration": "(4+ yrs)"
+                },
+                "location": {
+                    "city": "Austin",
+                    "state": "Texas Area",
+                    "country": ""
+                },
+                "short-description": "Leading teams to build platform to support Machine to Machine IAM, IGA, and ITDR use-cases.",
+                "work-impact": [
+                    "Leading UHG’s machine identity governance initiative, establishing a comprehensive asset inventory and defining organizational controls to ensure compliance with evolving security policies and IAM best practices.",
+                    "Lead a globally distributed team to architect, build, and scale UHG’s Machine Identity Platform, enabling secure service-to-service communication for tens of thousands of APIs as part of the enterprise-wide Healthcare Platform API Management initiative.",
+                    "Drove end-to-end technical and strategic planning, including quarterly roadmapping, agile execution, solution design, cross-functional alignment, hiring, onboarding, stakeholder engagement, UX collaboration, and release governance.",
+                    "Lead, designed and deployed a resilient, multi-region machine-to-machine Identity Provider using OAuth 2.0, leveraging Azure services such as Front Door, Application Gateway, and Container App. Seamlessly migrated the platform from AWS with zero customer disruption, enabling a scalable SaaS solution that meets business MBOs of 99.99% uptime and peak performance exceeding 3,000 transactions per second.",
+                    "Spearheaded a full-scale infrastructure automation effort, implementing Infrastructure-as-Code (IaC) practices using Terraform on Azure—reducing deployment errors by 80% and enabling reproducible environments across dev, staging, and production.",
+                    "Improved CI/CD velocity 3x by building modular GitHub Actions workflows and Terraform Cloud pipelines, ensuring reliable, secure, and environment-aware deployments across teams.",
+                    "Implemented a comprehensive monitoring and alerting solution using Splunk, Azure Monitor, and Azure Application Insights enhancing system observability and reducing incident response times by 50%.",
+                    "Hired, onboarded, and mentored, and managed developers and technical stakeholders, supporting product integrations through hands-on training, shadowing, and detailed technical documentation."
+                ],
+                "technology-tools":[
+                    {
+                        "skill-name": "Azure",
+                        "skill-css": "devicon-azure-plain"
+                    },
+                    {
+                        "skill-name": "AWS",
+                        "skill-css": "devicon-amazonwebservices-plain-wordmark"
+                    },
+                    {
+                        "skill-name": "Docker",
+                        "skill-css": "devicon-docker-plain"
+                    },
+                    {
+                        "skill-name": "Git",
+                        "skill-css": "devicon-git-plain"
+                    },
+                    {
+                        "skill-name": "GitHub",
+                        "skill-css": "devicon-github-plain"
+                    },
+                    {
+                        "skill-name": "Java",
+                        "skill-css": "devicon-java-plain"
+                    },
+                    {
+                        "skill-name": "JavaScript",
+                        "skill-css": "devicon-javascript-plain"
+                    },
+                    {
+                        "skill-name": "Jenkins",
+                        "skill-css": "devicon-jenkins-line"
+                    },
+                    {
+                        "skill-name": "New Relic",
+                        "skill-css": "si new-relic"
+                    },
+                    {
+                        "skill-name": "Python",
+                        "skill-css": "devicon-python-plain"
+                    },
+                    {
+                        "skill-name": "React",
+                        "skill-css": "devicon-react-plain"
+                    },
+                    {
+                        "skill-name": "Redis",
+                        "skill-css": "devicon-redis-plain"
+                    },
+                    {
+                        "skill-name": "Splunk",
+                        "skill-css": "devicon-splunk-original-wordmark"
+                    },
+                    {
+                        "skill-name": "Spring",
+                        "skill-css": "devicon-spring-original"
+                    },
+                    {
+                        "skill-name": "Terraform",
+                        "skill-css": "devicon-terraform-plain"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "work",
+            "css-id": "uhg-lse",
+            "css-class": [ ],
+            "block-content": {
+                "heading": "Lead Software Engineer",
+                "organization": {
+                    "name": "UnitedHealth Group",
+                    "css-class": "far fa-building"
+                },
+                "timeline": {
+                    "from": "Feb 2021",
+                    "to": "June 2021",
+                    "duration": "(5 mos)"
+                },
+                "location": {
+                    "city": "Austin",
+                    "state": "Texas Area",
+                    "country": ""
+                },
+                "short-description": "Leading teams to build migrate applications to cloud.",
+                "work-impact": [
+                    "Led a cross-functional team to migrate and modernize the Infectious Diseases Platform from an on-premises environment to Azure—achieving 99.99% uptime and 5x improvement in data processing turnaround—enabling faster, more reliable analysis of flu and COVID-19 trends for internal stakeholders.",
+                    "Drove full lifecycle execution—including quarterly planning, agile ceremonies, technical design, implementation, UX collaboration, code reviews, release coordination, and stakeholder engagement—ensuring alignment across engineering and business teams.",
+                    "Championed best practices in cloud infrastructure automation, application security, and data governance, laying the foundation for long-term platform scalability and compliance.",
+                    "Hired, onboarded, and mentored developers and technical partners through structured documentation, hands-on guidance, and knowledge-sharing sessions to accelerate ramp-up and product integration efforts."
+                ],
+                "technology-tools":[
+                    {
+                        "skill-name": "Azure",
+                        "skill-css": "devicon-azure-plain"
+                    },
+                    {
+                        "skill-name": "Git",
+                        "skill-css": "devicon-git-plain"
+                    },
+                    {
+                        "skill-name": "GitHub",
+                        "skill-css": "devicon-github-plain"
+                    },
+                    {
+                        "skill-name": "JavaScript",
+                        "skill-css": "devicon-javascript-plain"
+                    },
+                    {
+                        "skill-name": "Jenkins",
+                        "skill-css": "devicon-jenkins-line"
+                    },
+                    {
+                        "skill-name": "New Relic",
+                        "skill-css": "si new-relic"
+                    },
+                    {
+                        "skill-name": "Python",
+                        "skill-css": "devicon-python-plain"
+                    },
+                    {
+                        "skill-name": "Postgress",
+                        "skill-css": "devicon-postgresql-plain"
+                    },
+                    {
+                        "skill-name": "React",
+                        "skill-css": "devicon-react-plain"
+                    },
+                    {
+                        "skill-name": "Splunk",
+                        "skill-css": "devicon-splunk-original-wordmark"
+                    },
+                    {
+                        "skill-name": "Terraform",
+                        "skill-css": "devicon-terraform-plain"
+                    }
+                ]
+            }
+        },
+        {
             "type": "alternate",
             "css-id": "built-website",
             "css-class": [ ],
@@ -26,8 +196,8 @@
                 },
                 "timeline": {
                     "from": "Apr 2015",
-                    "to": "Present",
-                    "duration": "(3+ yrs)"
+                    "to": "Feb 2021",
+                    "duration": "(5 yr 11 mos)"
                 },
                 "location": {
                     "city": "Austin",
@@ -170,15 +340,15 @@
                     },
                     {
                         "skill-name": "Bitbucket",
-                        "skill-css": "fab fa-bitbucket"
+                        "skill-css": "devicon-bitbucket-original"
                     },
                     {
                         "skill-name": "C#",
-                        "skill-css": "si c-sharp"
+                        "skill-css": "devicon-csharp-plain"
                     },
                     {
                         "skill-name": "Confluence",
-                        "skill-css": "fab fa-confluence"
+                        "skill-css": "devicon-confluence-plain"
                     },
                     {
                         "skill-name": "CSS 3",
@@ -202,7 +372,7 @@
                     },
                     {
                         "skill-name": "Jira",
-                        "skill-css": "fab fa-jira"
+                        "skill-css": "devicon-jira-plain"
                     },
                     {
                         "skill-name": "jQuery",
@@ -214,7 +384,7 @@
                     },
                     {
                         "skill-name": "SQL Server",
-                        "skill-css": "si sql-server"
+                        "skill-css": "devicon-microsoftsqlserver-plain"
                     },
                     {
                         "skill-name": "Windows",
@@ -260,15 +430,15 @@
                     },
                     {
                         "skill-name": "Bitbucket",
-                        "skill-css": "fab fa-bitbucket"
+                        "skill-css": "devicon-bitbucket-original"
                     },
                     {
                         "skill-name": "C#",
-                        "skill-css": "si c-sharp"
+                        "skill-css": "devicon-csharp-plain"
                     },
                     {
                         "skill-name": "Confluence",
-                        "skill-css": "fab fa-confluence"
+                        "skill-css": "devicon-confluence-plain"
                     },
                     {
                         "skill-name": "Microsoft .Net",
@@ -276,7 +446,7 @@
                     },
                     {
                         "skill-name": "Jira",
-                        "skill-css": "fab fa-jira"
+                        "skill-css": "devicon-jira-plain"
                     },
                     {
                         "skill-name": "New Relic",
@@ -284,7 +454,7 @@
                     },
                     {
                         "skill-name": "SQL Server",
-                        "skill-css": "si sql-server"
+                        "skill-css": "devicon-microsoftsqlserver-plain"
                     },
                     {
                         "skill-name": "Windows",
@@ -398,7 +568,7 @@
                     },
                     {
                         "skill-name": "HTML",
-                        "skill-css": "fab fa-html5"
+                        "skill-css": "devicon-html5-plain"
                     },
                     {
                         "skill-name": "JavaScript",
@@ -452,7 +622,7 @@
                     },
                     {
                         "skill-name": "HTML",
-                        "skill-css": "fab fa-html5"
+                        "skill-css": "devicon-html5-plain"
                     },
                     {
                         "skill-name": "JavaScript",

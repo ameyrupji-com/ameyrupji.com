@@ -1,4 +1,4 @@
-@import '../_variables';
+@import '../_variables.scss';
 
 #summary-main {
     padding-top: 150px;
@@ -9,23 +9,18 @@
         .card {
             border-radius: 20px;
 
-            .card-header {
-                i {
-                    border: 2px solid $background-color-1-light-alternate;
-                    border-radius: 50%;
-                    width: 50px;
-                    height: 50px;
-                    top: -35px;
-                    position: relative;
-                    line-height: 1.8;
-                }
-            }
-
             background-color: transparent !important;
             border: 2px solid $background-color-1-light-alternate;
 
             p {
+                margin-top: 1rem;
                 font-size: 20px !important;
+            }
+            
+            &:hover {
+                transform: translateY(-10px);
+                transition: transform 0.3s ease-in-out;
+                
             }
         }
     }

@@ -1,9 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './StarTwinkle.scss';
 
-import logos from './timeline-logos.png';
-import logosDark from './timeline-logos-grayscale.png';
-
 interface StarTwinkleProps {
   starWidth?: number;
   starHeight?: number;
@@ -56,9 +53,6 @@ const StarTwinkle = ({
 
     updateDimensions();
     window.addEventListener('resize', updateDimensions);
-
-    containerRef.current.style.setProperty('--star-image-url', `url(${logos})`);
-    containerRef.current.style.setProperty('--star-dark-image-url', `url(${logosDark})`);
 
     return () => window.removeEventListener('resize', updateDimensions);
   }, []);

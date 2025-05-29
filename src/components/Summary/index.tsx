@@ -34,9 +34,9 @@ const Summary: React.FC<SummaryProps> = ({ summary }) => {
                 <div className="card-deck mb-3 text-center">
                     {summary.summaries.map((item, index) => (
                         <div className="card mb-4 box-shadow" data-aos="zoom-out-up" data-aos-anchor-placement="top-center" key={index}>
-                            <div className="card-header">
-                                <h4 className="my-0 font-weight-normal"><i className={item['i-class']}></i></h4>
-                            </div>
+                            {/* <div className="card-header">
+                                <h4 className="my-0 font-weight-normal"></h4>
+                            </div> */}
                             <div className="card-body">
                                 <p>{item.text}</p>
                             </div>

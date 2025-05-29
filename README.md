@@ -24,7 +24,13 @@ Please feel free to use any part of this repository. If you find this useful ple
 ## Run Code
 
 ```
-$ parcel index.hbs --no-cache
+$ npm start
+```
+
+## Build Code
+
+```
+$ npm run build
 ```
 
 ## Useful links to dependant repositories

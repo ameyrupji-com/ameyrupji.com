@@ -78,7 +78,7 @@ jobs:
             mv src/data/beta/app.json src/data/app.json
             rm -rf dist/
             npm install
-            npm run build
+            npm run build-branch ${CIRCLE_BRANCH}
             ls
             cd dist/
             # find ./ -type f -name '*.css' -exec sed -i 's|url(../|url(|g' {} \;

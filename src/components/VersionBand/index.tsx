@@ -11,7 +11,6 @@ interface AppProps {
 const VersionBand = ({ app }: { app: AppProps }) => {
     const [isLatest, setIsLatest] = useState<boolean>(true);
     useEffect(() => {
-        console.log(app['active-version']);
         if (app['active-version'] !== 'Local') {
             fetch('https://api.github.com/repos/ameyrupji-com/ameyrupji.com/releases/latest')
                 .then(response => response.json())

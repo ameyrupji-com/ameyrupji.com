@@ -71,6 +71,7 @@ const Cover: React.FC<CoverProps> = ({ cover, app }): JSX.Element => {
             <div className="jumbotron" id="gradient-main">
                 <nav className={`${isNavCollapsed ? '' : 'navbar-open'} navbar navbar-expand-sm navbar-light bg-transparent fixed-top`}>
                     <div className="container" data-aos="fade-down">
+                        <div className="navbar-logo"></div>
                         <a className="navbar-brand" href="#summary-main">
                             {cover['first-name']} <span id="navbar-brand-alternate">{cover['last-name']}</span>
                         </a>
@@ -118,7 +119,7 @@ const Cover: React.FC<CoverProps> = ({ cover, app }): JSX.Element => {
                         Amey <span className="title-strong">Rupji</span>
                     </h1>
                     <h3 className="title">
-                        Software <span className="title-strong">Engineer</span> <span className="title-hollow">Artist</span>
+                        Software <span className="title-strong">Engineer</span> <span className="title-hollow">Leader</span>
                     </h3>
                 </div>
             </div>

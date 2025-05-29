@@ -85,42 +85,46 @@ const Footer: React.FC<FooterProps> = ({ footer, app }) => {
                     <div className="col-md-6 col-lg-3 col-xl-3 col-6">
                         <ul className="footer-no-icons-list">
                             <li className="list-heading">Share <span className="list-heading-strong">website</span></li>
-                            <LinkedinShareButton url={app.app_url}>
-                                <div className="share-btn btn-link">
-                                    <LinkedinIcon size={16} round={false} />
-                                    <span>Linkedin</span>
-                                </div>
-                            </LinkedinShareButton>
-                            <br/>
-                            <FacebookShareButton url={app.app_url}>
-                                <div className="share-btn btn-link">
-                                    <FacebookIcon size={16} round={false} />
-                                    <span>Facebook</span>
-                                </div>
-                            </FacebookShareButton>
-                            <br/>
-                            <TwitterShareButton url={app.app_url}>
-                                <div className="share-btn btn-link">
-                                    <XIcon size={16} round={false} />
-                                    <span>X</span>
-                                </div>
-                            </TwitterShareButton>
-                            <br/>
-                            <WhatsappShareButton url={app.app_url}>
-                                <div className="share-btn btn-link">
-                                    <WhatsappIcon size={16} round={false} />
-                                    <span>Whatsapp</span>
-                                </div>
-                            </WhatsappShareButton>
-                            <br/>
-                            <RedditShareButton url={app.app_url}>
-                                <div className="share-btn btn-link">
-                                    <RedditIcon size={16} round={false} />
-                                    <span>Reddit</span>
-                                </div>
-                            </RedditShareButton>
-            
-
+                            <li>
+                                <LinkedinShareButton url={app.app_url}>
+                                    <div className="share-btn btn-link">
+                                        <LinkedinIcon size={16} round={false} />
+                                        <span>Linkedin</span>
+                                    </div>
+                                </LinkedinShareButton>
+                            </li>
+                            <li>
+                                <FacebookShareButton url={app.app_url}>
+                                    <div className="share-btn btn-link">
+                                        <FacebookIcon size={16} round={false} />
+                                        <span>Facebook</span>
+                                    </div>
+                                </FacebookShareButton>
+                            </li>
+                            <li>
+                                <TwitterShareButton url={app.app_url}>
+                                    <div className="share-btn btn-link">
+                                        <XIcon size={16} round={false} />
+                                        <span>X</span>
+                                    </div>
+                                </TwitterShareButton>
+                            </li>
+                            <li>
+                                <WhatsappShareButton url={app.app_url}>
+                                    <div className="share-btn btn-link">
+                                        <WhatsappIcon size={16} round={false} />
+                                        <span>Whatsapp</span>
+                                    </div>
+                                </WhatsappShareButton>
+                            </li>
+                            <li>
+                                <RedditShareButton url={app.app_url}>
+                                    <div className="share-btn btn-link">
+                                        <RedditIcon size={16} round={false} />
+                                        <span>Reddit</span>
+                                    </div>
+                                </RedditShareButton>
+                            </li>
                         </ul>
                     </div>
                     <div className="col-md-6 col-lg-3 col-xl-3 col-6">
