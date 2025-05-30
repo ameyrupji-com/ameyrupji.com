@@ -38,16 +38,19 @@ const Site: React.FC = () => {
     }, [appData, coverData, summaryData, skillsData, timelineData, resumeData, contactData, footerData]);
 
     return <>
-      
-      <TouchIcons app={appData}/>
-      <VersionBand app={appData} />
-      <Cover cover={coverData} app={appData} />
-      <Summary summary={summaryData} />
-      <Skills skills={skillsData} />
-      <Timeline timeline={timelineData} />
-      <Resume resume={resumeData} />
-      <Contact contact={contactData} app={appData} />
-      <Footer footer={footerData} app={appData} />
+      { appData && coverData && summaryData && skillsData && timelineData && resumeData && contactData && footerData &&(
+        <>
+          <TouchIcons app={appData}/>
+          <VersionBand app={appData} />
+          <Cover cover={coverData} app={appData} />
+          <Summary summary={summaryData} />
+          <Skills skills={skillsData} />
+          <Timeline timeline={timelineData} />
+          <Resume resume={resumeData} />
+          <Contact contact={contactData} app={appData} />
+          <Footer footer={footerData} app={appData} />
+        </>
+      )}
     </>;
 };
 
