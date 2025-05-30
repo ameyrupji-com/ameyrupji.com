@@ -50,12 +50,7 @@ interface AppProps {
     "app_name": string;
 }
 
-const TouchIcons: React.FC = ({ app }: { app: AppProps }) => {
-    useEffect(() => {
-        // Initialize any scripts or libraries that require the DOM to be ready
-        // For example, you can initialize AOS or any other library here
-    }, [app]);
-
+const TouchIcons = ({ app }: { app: AppProps }) => {
     return (
         <Helmet>
         <title>{app["app_name"]}</title>
