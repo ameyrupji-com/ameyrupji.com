@@ -123,7 +123,7 @@
                     "state": "Texas Area",
                     "country": ""
                 },
-                "short-description": "Leading teams to build migrate applications to cloud.",
+                "short-description": "Leading teams to build and migrate applications to cloud.",
                 "work-impact": [
                     "Led a cross-functional team to migrate and modernize the Infectious Diseases Platform from an on-premises environment to Azure—achieving 99.99% uptime and 5x improvement in data processing turnaround—enabling faster, more reliable analysis of flu and COVID-19 trends for internal stakeholders.",
                     "Drove full lifecycle execution—including quarterly planning, agile ceremonies, technical design, implementation, UX collaboration, code reviews, release coordination, and stakeholder engagement—ensuring alignment across engineering and business teams.",
@@ -215,7 +215,7 @@
                 "technology-tools":[
                     {
                         "skill-name": "AWS",
-                        "skill-css": "si amazonaws"
+                        "skill-css": "devicon-amazonwebservices-plain-wordmark"
                     },
                     {
                         "skill-name": "Django",
@@ -251,11 +251,11 @@
                     },
                     {
                         "skill-name": "Kafka",
-                        "skill-css": "si kafka"
+                        "skill-css": "devicon-apachekafka-original"
                     },
                     {
                         "skill-name": "Kubernetes",
-                        "skill-css": "si k8s"
+                        "skill-css": "devicon-kubernetes-plain"
                     },
                     {
                         "skill-name": "MySQL",
@@ -283,19 +283,19 @@
                     },
                     {
                         "skill-name": "Sass",
-                        "skill-css": "si sass"
+                        "skill-css": "devicon-sass-original"
                     },
                     {
                         "skill-name": "Splunk",
-                        "skill-css": "si splunk"
+                        "skill-css": "devicon-splunk-original-wordmark"
                     },
                     {
                         "skill-name": "Spring",
-                        "skill-css": "si spring"
+                        "skill-css": "devicon-spring-original"
                     },
                     {
                         "skill-name": "Terraform",
-                        "skill-css": "si terraform"
+                        "skill-css": "devicon-terraform-plain"
                     }
                 ]
             }

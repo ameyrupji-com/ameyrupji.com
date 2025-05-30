@@ -119,7 +119,7 @@ const Cover: React.FC<CoverProps> = ({ cover, app }): JSX.Element => {
                         Amey <span className="title-strong">Rupji</span>
                     </h1>
                     <h3 className="title">
-                        Software <span className="title-strong">Engineer</span> <span className="title-hollow">Leader</span>
+                        Software <span className="title-strong">Engineering</span> <span className="title-hollow">Leader</span>
                     </h3>
                 </div>
             </div>

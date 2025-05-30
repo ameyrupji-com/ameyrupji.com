@@ -1,3 +1,5 @@
+@use '../_variables';
+
 #version-band-main {
     padding: 0;
     margin-bottom: 0;
@@ -5,4 +7,6 @@
     z-index: 9999;
     border-radius: 0;
     text-align: center;
+    color: var(--version-band-color-light);
+    background: var(--version-band-background-light);
 }

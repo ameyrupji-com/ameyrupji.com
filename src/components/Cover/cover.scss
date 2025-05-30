@@ -1,4 +1,4 @@
-@import '../variables.scss';
+@use '../variables.scss';
 
 $font-color: rgba(255, 255, 255, 1);
 
@@ -38,7 +38,7 @@ $font-color: rgba(255, 255, 255, 1);
 
     h1.title {
         font-size: 75px;
-        color: $font-color;
+        color: var(--font-color);
     }
 }
 

@@ -1,3 +1,5 @@
+@use '../_variables';
+
 .background-images-container {
   position: absolute;
   left: 0;
@@ -9,7 +11,7 @@
 .star {
   position: relative;
   display: inline-block;
-  background-image: url("./timeline-logos.png");
+  background-image: url("./images/timeline-logos.png");
   background-repeat: no-repeat;
   background-size: auto 100%;
   opacity: 0;
@@ -18,7 +20,7 @@
 
 @media (prefers-color-scheme: dark) {
   .star {
-    background-image: url("./timeline-logos-grayscale.png");
+    background-image: url("./images/timeline-logos-grayscale.png");
   }
 }
 

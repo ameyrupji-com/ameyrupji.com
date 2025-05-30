@@ -8,8 +8,6 @@ import {
   RedditIcon,
   RedditShareButton,
   TwitterShareButton,
-  WhatsappIcon,
-  WhatsappShareButton,
   XIcon,
 } from "react-share";
 
@@ -108,14 +106,6 @@ const Footer: React.FC<FooterProps> = ({ footer, app }) => {
                                         <span>X</span>
                                     </div>
                                 </TwitterShareButton>
-                            </li>
-                            <li>
-                                <WhatsappShareButton url={app.app_url}>
-                                    <div className="share-btn btn-link">
-                                        <WhatsappIcon size={16} round={false} />
-                                        <span>Whatsapp</span>
-                                    </div>
-                                </WhatsappShareButton>
                             </li>
                             <li>
                                 <RedditShareButton url={app.app_url}>

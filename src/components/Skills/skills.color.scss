@@ -1,20 +1,16 @@
-@import '../_variables.scss';
+@use '../_variables';
 
 #skills-main {
-    background-color: $background-color-3-light;
-    background: $gradient-3-light;
-    background: $-webkit-gradient-3-light;
-    background: $-moz-gradient-3-light;
-    background: $-o-gradient-3-light;
+    background-color: var(--background-color-3-light);
+    background: var(--gradient-3-light);
+    background: var(--webkit-gradient-3-light);
 }
 
 @media (prefers-color-scheme: dark) {
 
     #skills-main {
-        background-color: $background-color-3-light-alternate;
-        background: $gradient-3-dark;
-        background: $-webkit-gradient-3-dark;
-        background: $-moz-gradient-3-dark;
-        background: $-o-gradient-3-dark;
+        background-color: var(--background-color-3-light-alternate);
+        background: var(--gradient-3-dark);
+        background-image: var(--webkit-gradient-3-dark);
     }
 }

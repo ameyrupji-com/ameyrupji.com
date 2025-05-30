@@ -1,4 +1,4 @@
-@import '../_variables.scss';
+@use '../_variables';
 
 #contact-main {
 	padding: 0 0 100px 0;
@@ -31,7 +31,7 @@
                 margin-bottom: 15px;
                 
                 a {
-                    color: #000;
+                    color: var(--contact-color-light);
                     opacity: .6;
                     padding-bottom: 10px;
                     text-decoration: none;

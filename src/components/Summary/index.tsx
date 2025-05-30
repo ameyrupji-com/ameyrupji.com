@@ -31,18 +31,26 @@ const Summary: React.FC<SummaryProps> = ({ summary }) => {
                     </div>
                 </div>
 
-                <div className="card-deck mb-3 text-center">
-                    {summary.summaries.map((item, index) => (
-                        <div className="card mb-4 box-shadow" data-aos="zoom-out-up" data-aos-anchor-placement="top-center" key={index}>
-                            {/* <div className="card-header">
-                                <h4 className="my-0 font-weight-normal"></h4>
-                            </div> */}
-                            <div className="card-body">
-                                <p>{item.text}</p>
-                            </div>
+                <div className="row">
+                    <div className="col-sm" data-aos="zoom-out-up" data-aos-anchor-placement="top-center">
+                        <div className="card-deck-row text-center">
+                            {summary.summaries.map((item, index) => (
+                                <div className="card box-shadow"  key={index}>
+                                    <div className="card-body">
+                                        <p>{item.text}</p>
+                                    </div>
+                                </div>
+                            ))}
                         </div>
-                    ))}
+                    </div>
+                    <div className="col-sm" data-aos="zoom-out-up" data-aos-anchor-placement="top-center">
+                        <div id="working-photo"></div>
+                    </div>
                 </div>
+
+                
+                
+
             </div>
         </div>
     );

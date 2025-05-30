@@ -1,4 +1,4 @@
-@import '../_variables.scss';
+@use '../_variables';
 
 #resume-main {
     padding-top: 150px;
@@ -44,20 +44,16 @@
         border: none;
 
         &.pdf {
-            background-color: $background-color-4-light-alternate;
-            background: $gradient-5-light;
-            background: $-webkit-gradient-5-light;
-            background: $-moz-gradient-5-light;
-            background: $-o-gradient-5-light;
+            background-color: var(--background-color-4-light-alternate);
+            background: var(--gradient-5-light);
+            background: var(--webkit-gradient-5-light);
             color: #fff;
         }
 
         &.word {
-            background-color: $background-color-2-light;
-            background: $gradient-2-light;
-            background: $-webkit-gradient-2-light;
-            background: $-moz-gradient-2-light;
-            background: $-o-gradient-2-light;
+            background-color: var(--background-color-2-light);
+            background: var(--gradient-2-light);
+            background: var(--webkit-gradient-2-light);
             color: #fff;
         }
 

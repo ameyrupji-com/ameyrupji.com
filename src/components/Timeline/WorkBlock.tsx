@@ -74,7 +74,7 @@ const WorkBlock: React.FC<{ block: any, index: any }> = ({ block, index }) => {
                                 </h2>
                                 <h4 className="text-center">
                                     <span className="from">{block['block-content'].timeline.from}</span> - <span className="to">{block['block-content'].timeline.to}</span>
-                                    <span className="duration">{block['block-content'].timeline.duration}</span>
+                                    <span className="duration">&nbsp;{block['block-content'].timeline.duration}</span>
                                     <span className="separator">|</span>
                                     <span className="city-state">
                                         {block['block-content'].location.city}, {block['block-content'].location.state}{block['block-content'].location.country && `, ${block['block-content'].location.country}`}

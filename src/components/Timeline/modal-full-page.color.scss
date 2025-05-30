@@ -1,9 +1,9 @@
-@import '../_variables.scss';
+@use '../_variables';
 
 .modal-full {
 
     .modal-content {
-        background-color: $modal-background-color-light;
+        background-color: var(--modal-background-color-light);
 
         .modal-title,
         h2,
@@ -13,7 +13,7 @@
         i,
         .close,
         li  {
-            color: $title-color-light;
+            color: var(--title-color-light);
         }
     }
 }
@@ -21,7 +21,7 @@
 @media (prefers-color-scheme: dark) {
     .modal-full {
         .modal-content {
-            background-color: $modal-background-color-dark;
+            background-color: var(--modal-background-color-dark);
 
             .modal-title,
             h2, 
@@ -31,7 +31,11 @@
             i,
             .close,
             li {
-                color: $title-color-dark;
+                color: var(--title-color-dark);
+            }
+
+            .si {
+                filter: invert(100%);
             }
         }
     }

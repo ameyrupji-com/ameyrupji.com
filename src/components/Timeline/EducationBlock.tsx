@@ -40,7 +40,7 @@ const EducationBlock: React.FC<{ block: any, index: any }> = ({ block, index }) 
                     <p>
                         <i className="far fa-calendar-alt"></i>
                         <span className="from">{block['block-content'].timeline.from}</span> - <span className="to">{block['block-content'].timeline.to}</span>
-                        <span className="duration">{block['block-content'].timeline.duration}</span>
+                        <span className="duration"> {block['block-content'].timeline.duration}</span>
                     </p>
                     <p>
                         <i className="fas fa-map-marker-alt"></i>

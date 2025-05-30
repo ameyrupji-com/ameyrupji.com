@@ -1,4 +1,4 @@
-@import '../_variables.scss';
+@use '../_variables';
 
 
 .navbar {
@@ -18,11 +18,11 @@
     }
 
     .navbar-brand {
-        font-weight: $font-weight-default;
+        font-weight: var(--font-weight-default);
     }
 
     #navbar-brand-alternate {
-        font-weight: $font-weight-bold;
+        font-weight: var(--font-weight-bold);
     }
 
     &.bg-transparent {
@@ -42,11 +42,12 @@
         
         .nav-item {
             a {
-                font-weight: $font-weight-default;
-                color: $navbar-items;
+                font-weight: var(--font-weight-default);
+                color: var(--navbar-items);
 
                 &:hover {
-                    color: $navbar-items-hover;
+                    color: var(--navbar-items-hover);
+                    cursor: pointer;
                 }
             }
         }
@@ -60,14 +61,14 @@
 
         .nav-item {
             a {
-                font-weight: $font-weight-default;
+                font-weight: var(--font-weight-default);
             }
         }
 
     }
 
     &.nav-scrolled-vh {
-        box-shadow: $navbar-shadow 0px 1px 4px 0px;
+        box-shadow: var(--navbar-shadow) 0px 1px 4px 0px;
     }
 
     &.fixed-top {

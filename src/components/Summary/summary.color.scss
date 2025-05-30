@@ -1,47 +1,58 @@
-@import '../_variables.scss';
+@use '../_variables';
 
 #summary-main {
-    background-color: $background-color-1-light;
+    background-color: var(--background-color-1-light);
 
     .title {
-        color: $font-color-light;
+        color: var(--summary-color-light);
     }
 
-    .card-deck {
+    .card-deck-row {
         .card {
             background-color: transparent !important;
-            border-color: $background-color-1-light-alternate;
+            background-color: var(--summary-background-light) !important;
+            border: 2px solid var(--background-color-1-light-alternate);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 
             .card-body {
                 p {
-                    color: $font-color-light;;
+                    color: var(--summary-color-light);
                 }
             }
         }
+    }
+
+    #working-photo {
+        border: 2px solid var(--background-color-1-light-alternate);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     }
 }
 
 @media (prefers-color-scheme: dark) {
     #summary-main {
-        background-color: $background-color-1-dark;
+        background-color: var(--background-color-1-dark);
 
         .title {
-            color: $font-color-dark;
+            color: var(--summary-color-dark);
         }
 
-        .card-deck {
+        .card-deck-row {
             .card {
                 background-color: transparent !important;
-                border-color: $background-color-1-light-alternate;
+                border: 1px solid var(--background-color-1-light-alternate);
                 box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
 
                 .card-body {
                     p {
-                        color: $font-color-dark;
+                        color: var(--summary-color-dark);
                     }
                 }
             }
+        }
+
+        #working-photo {
+            border: 1px solid var(--background-color-1-light-alternate);
+            box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
         }
     }
 }

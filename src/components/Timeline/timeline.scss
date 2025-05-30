@@ -1,8 +1,7 @@
-@import '../_variables.scss';
-
+@use '../_variables';
 
 #timeline-main {
-    background-color: $background-color-1-light-alternate;
+    background-color: var(--background-color-1-light-alternate);
     padding-top: 150px;
     padding-bottom: 100px;
     overflow: hidden;
@@ -12,11 +11,9 @@
         border-radius: 6px;
 
         .btn.btn-primary {
-            background: $background-color-2-light-alternate;
-            background: $gradient-2-light;
-            background: $-webkit-gradient-2-light;
-            background: $-moz-gradient-2-light;
-            background: $-o-gradient-2-light;
+            background: var(--background-color-2-light-alternate);
+            background: var(--gradient-2-light);
+            background: var(--webkit-gradient-2-light);
             border: none;
         }
     }

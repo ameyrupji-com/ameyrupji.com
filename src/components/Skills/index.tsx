@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import './skills.scss';
 import './skills.color.scss';
 import './skills-icons.scss';
+import './skills-icons.color.scss';
 
 interface Skill {
     'skill-css': string;

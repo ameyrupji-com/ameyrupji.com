@@ -1,47 +1,47 @@
-@import '../_variables.scss';
+@use '../_variables';
 
 .navbar { 
     &.nav-scrolled-20 {
-        background: $navbar-scrolled-background-light;
+        background: var(--navbar-scrolled-background-light);
 
         .navbar-brand {
-            color: $navbar-scrolled-items-hover-light;
+            color: var(--navbar-scrolled-items-hover-light);
 
             &:hover {
-                color: $navbar-scrolled-items-hover-light;
+                color: var(--navbar-scrolled-items-hover-light);
             }
         }
         
         .nav-item {
             a {
-                color: $navbar-scrolled-items-light;
+                color: var(--navbar-scrolled-items-light);
                 
                 &:hover {
-                    color: $navbar-scrolled-items-hover-light;
+                    color: var(--navbar-scrolled-items-hover-light);
                 }
             }
         }
 
         #burger .bar {
-            background: $navbar-scrolled-items-hover-light;
+            background: var(--navbar-scrolled-items-hover-light);
         }
     }
 
     &.navbar-open {
         .navbar-brand {
-            color: $font-color-light;
+            color: var(--font-color-light);
         }
     }
 
     #burger .bar {
-        background: $navbar-items-hover;
+        background: var(--navbar-items-hover);
     }
 }
 
 @media (prefers-color-scheme: dark) {
     .navbar {
         &.nav-scrolled-20 {
-            background: $navbar-scrolled-background-dark;
+            background: var(--navbar-scrolled-background-dark);
 
             .navbar-brand {
                 color: #fff;
@@ -49,22 +49,22 @@
             
             .nav-item {
                 a {
-                    color: $navbar-scrolled-items-dark;
+                    color: var(--navbar-scrolled-items-dark);
                     
                     &:hover {
-                        color: $navbar-scrolled-items-hover-dark;
+                        color: var(--navbar-scrolled-items-hover-dark);
                     }
                 }
             }
 
             #burger .bar {
-                background: $navbar-scrolled-items-hover-dark;
+                background: var(--navbar-scrolled-items-hover-dark);
             }
         }
 
         &.navbar-open {
             .navbar-brand {
-                color: $font-color-dark;
+                color: var(--font-color-dark);
             }
         }
     }

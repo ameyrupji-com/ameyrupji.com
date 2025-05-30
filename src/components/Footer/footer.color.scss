@@ -1,28 +1,27 @@
-@import '../_variables.scss';
+@use '../_variables';
 
 
 #footer-main {
-    background-color: $background-color-2-light;
-    background: $gradient-2-light;
-    background: $-webkit-gradient-2-light;
-    background: $-moz-gradient-2-light;
-    background: $-o-gradient-2-light;
-    color: $font-color-dark;
+    background-color: var(--background-color-2-light);
+    background: var(--footer-background-light);
+    background: var(--gradient-2-light);
+    background: var(--webkit-gradient-2-light);
+    color: var(--footer-color-light);
     
     .footer-no-icons-flat-list li {
         &:not(:first-child) a {
-            border-color: $font-color-dark;
+            border-color: var(--footer-color-light);
 
         }
     }
 
     #versions button {
         span {
-            border-color: $font-color-dark;
-            color: $font-color-dark;
+            border-color: var(--footer-color-light);
+            color: var(--footer-color-light);
         }
         &:after {
-            color: $font-color-dark;
+            color: var(--footer-color-light);
         }
     }
 
@@ -30,7 +29,7 @@
     a,
     i,
     li {
-        color: $font-color-dark;
+        color: var(--footer-color-light);
     }
 
     hr {
@@ -39,7 +38,7 @@
 
     
     .dropdown-menu {
-        background-color: $background-color-2-light;
+        background-color: var(--background-color-2-light);
 
         .dropdown-header {
             color: #ccc; 
@@ -47,8 +46,8 @@
         .dropdown-item {
             &:hover, 
             &:focus {
-                color: $font-color-dark;
-                background-color: $background-color-2-light-alternate;
+                color: var(--footer-color-light);
+                background-color: var(--background-color-2-light-alternate);
             }
         }
     }
@@ -57,26 +56,24 @@
 @media (prefers-color-scheme: dark) {
 
     #footer-main {
-        background-color: $background-color-2-light-alternate;
-        background: $gradient-2-dark;
-        background: $-webkit-gradient-2-dark;
-        background: $-moz-gradient-2-dark;
-        background: $-o-gradient-2-dark ;
-        color: #eee;
+        background-color: var(--background-color-2-light-alternate);
+        background: var(--gradient-2-dark);
+        background: var(--webkit-gradient-2-dark);
+        color: var(--footer-color-dark);
 
         .footer-no-icons-flat-list li {
             &:not(:first-child) a {
-                border-color:  #eee;
+                border-color: var(--footer-color-dark);
             }
         }
 
         #versions button {
             span {
-                border-color:  #eee;
-                color: #eee;
+                border-color: var(--footer-color-dark);
+                color: var(--footer-color-dark);
             }
             &:after {
-                color: #eee;
+                color: var(--footer-color-dark);
             }
         }
     
@@ -84,15 +81,15 @@
         a,
         i,
         li {
-            color: #eee;
+            color: var(--footer-color-dark);
         }
     
         hr {
-            border-top: 1px solid #eee;
+            border-top: 1px solid var(--footer-color-dark);
         }
 
         .dropdown-menu {
-            background-color: $background-color-2-light-alternate;
+            background-color: var(--background-color-2-light-alternate);
     
             .dropdown-header {
                 color: #ccc; 
@@ -100,8 +97,8 @@
             .dropdown-item {
                 &:hover, 
                 &:focus {
-                    color: $font-color-dark;
-                    background-color: $background-color-2-light;
+                    color: var(--footer-color-dark);
+                    background-color: var(--background-color-2-light);
                 }
             }
         }

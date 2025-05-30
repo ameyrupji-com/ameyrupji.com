@@ -4,7 +4,7 @@
     "skills-using": [
         {
             "skill-name": "AWS",
-            "skill-css": "si amazonaws light"
+            "skill-css": "devicon-amazonwebservices-plain-wordmark"
         },
         {
             "skill-name": "Django",
@@ -40,11 +40,11 @@
         },
         {
             "skill-name": "Kafka",
-            "skill-css": "si light kafka"
+            "skill-css": "devicon-apachekafka-original"
         },
         {
             "skill-name": "Kubernetes",
-            "skill-css": "si light k8s"
+            "skill-css": "devicon-kubernetes-plain"
         },
         {
             "skill-name": "MySQL",
@@ -72,19 +72,19 @@
         },
         {
             "skill-name": "Sass",
-            "skill-css": "si light sass"
+            "skill-css": "devicon-sass-original"
         },
         {
             "skill-name": "Splunk",
-            "skill-css": "si light splunk"
+            "skill-css": "devicon-splunk-original-wordmark"
         },
         {
             "skill-name": "Spring",
-            "skill-css": "si light spring"
+            "skill-css": "devicon-spring-original"
         },
         {
             "skill-name": "Terraform",
-            "skill-css": "si light terraform"
+            "skill-css": "devicon-terraform-plain"
         }
     ],
     "skills-other": [
@@ -122,11 +122,11 @@
         },
         {
             "skill-name": "NHibernate",
-            "skill-css": "si light nhibernate"
+            "skill-css": "devicon-nhibernate-plain"
         },
         {
             "skill-name": "Gimp",
-            "skill-css": "si gimp light"
+            "skill-css": "devicon-gimp-plain"
         },
         {
             "skill-name": "PostgreSQL",
@@ -138,15 +138,11 @@
         },
         {
             "skill-name": "Selenium",
-            "skill-css": "si light selenium"
+            "skill-css": "devicon-selenium-original"
         },
         {
             "skill-name": "SQL Server",
-            "skill-css": "si light sql-server"
-        },
-        {
-            "skill-name": "StructureMap",
-            "skill-css": "si light structuremap"
-        }    
+            "skill-css": "devicon-microsoftsqlserver-plain"
+        }  
     ]  
 }
