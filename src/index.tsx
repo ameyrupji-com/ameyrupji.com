@@ -12,9 +12,10 @@ root.render(
     <HelmetProvider>
       <BrowserRouter>
         <Routes>
-          <Route path="*" element={<App />} />
           <Route path="/" element={<App />} />
           <Route path="index.html" element={<App />} />
+          <Route path="feature/GH-115-upgrade-to-react/index.html" element={<App />} />
+          <Route path="*" element={<App />} />
         </Routes>
       </BrowserRouter>
     </HelmetProvider>
