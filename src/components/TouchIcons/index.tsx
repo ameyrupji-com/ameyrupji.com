@@ -43,11 +43,9 @@ import msTile144x144 from './icons/mstile-144x144.png';
 import msTile150x150 from './icons/mstile-150x150.png';
 import msTile310x310 from './icons/mstile-310x310.png';
 
-
-
 interface AppProps {
-    "env": string;
     "app_name": string;
+    "env": string;
 }
 
 const TouchIcons = ({ app }: { app: AppProps }) => {

@@ -40,7 +40,7 @@ const Site: React.FC = () => {
     return <>
       { appData && coverData && summaryData && skillsData && timelineData && resumeData && contactData && footerData &&(
         <>
-          <TouchIcons app={appData}/>
+          {/* <TouchIcons app={appData}/> */}
           <VersionBand app={appData} />
           <Cover cover={coverData} app={appData} />
           <Summary summary={summaryData} />
