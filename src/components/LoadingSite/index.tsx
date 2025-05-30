@@ -10,7 +10,7 @@ const LoadingSite: React.FC = () => {
       <div id="loading-site">
         <div className="loading-logo">
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-              width="50%" viewBox="0 0 1562 1301" enableBackground="new 0 0 1562 1301" preserveAspectRatio='0.1269815462'>
+              width="50%" viewBox="0 0 1562 1301" enableBackground="new 0 0 1562 1301" preserveAspectRatio="xMidYMid meet">
             <path fill="#fff" opacity="1.000000" stroke="none" 
               d="
             M1147.583374,1.000000 
