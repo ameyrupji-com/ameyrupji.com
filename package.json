@@ -39,7 +39,7 @@
     "react-share": "^5.2.2"
   },
   "scripts": {
-    "build-branch": "parcel build --public-url ./",
+    "build-branch": "parcel build --public-url .",
     "build": "parcel build",
     "clean": "rm -rf .parcel-cache dist",
     "lint": "eslint .",
