@@ -10,7 +10,7 @@ const root = createRoot(document.getElementById('root')!);
 root.render(
   <StrictMode>
     <HelmetProvider>
-      <BrowserRouter basename={"/feature/GH-115-upgrade-to-react"}>
+      <BrowserRouter basename={"/feature/GH-115-upgrade-to-react/index.html"}>
         <Routes>
           <Route path="/" element={<App />} />
           <Route path="/index.html" element={<App />} />
