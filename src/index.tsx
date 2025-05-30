@@ -13,6 +13,8 @@ root.render(
       <BrowserRouter>
         <Routes>
           <Route path="*" element={<App />} />
+          <Route path="/" element={<App />} />
+          <Route path="index.html" element={<App />} />
         </Routes>
       </BrowserRouter>
     </HelmetProvider>
