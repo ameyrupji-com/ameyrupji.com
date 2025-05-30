@@ -11,6 +11,7 @@ root.render(
   <StrictMode>
     <HelmetProvider>
       <BrowserRouter>
+        <h1>React Router v6.4 Example</h1>
         <Routes>
           <Route path="/" element={<App />} />
           <Route path="/index.html" element={<App />} />
