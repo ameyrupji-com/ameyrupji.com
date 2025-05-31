@@ -7,7 +7,6 @@ interface StarTwinkleProps {
   starMargins?: number;
   starImageCount?: number;
   children?: React.ReactNode;
-
 }
 
 const StarTwinkle = ({
@@ -73,7 +72,6 @@ const StarTwinkle = ({
             style={{
               width: starWidth,
               height: starHeight,
-              margin: starMargins,
               animationDelay: star.animationDelay,
               backgroundPosition: `-${starWidth * star.imageCount}px 0px`
             }}
