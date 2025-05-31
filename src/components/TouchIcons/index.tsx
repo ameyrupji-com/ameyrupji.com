@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import ReactDOM from 'react-dom';
 // import { Helmet } from 'react-helmet-async';
 
 // beta icons
@@ -49,8 +50,17 @@ interface AppProps {
 }
 
 const TouchIcons = ({ app }: { app: AppProps }) => {
-    return (
-        <></>
+    return ReactDOM.createPortal(
+        <>
+            <title>{app["app_name"]}</title>
+            <meta name="application-name" content={app["app_name"]}/>
+            <meta name="description" content={app["app_name"]} />
+            <meta name="og:title" property="og:title" content={app["app_name"]} />
+        </>,
+        document.head
+    );
+    // return (
+    //     <></>
     //     <Helmet>
     //     <title>{app["app_name"]}</title>
     //     <meta name="application-name" content={app["app_name"]}/>
@@ -115,7 +125,7 @@ const TouchIcons = ({ app }: { app: AppProps }) => {
     //     )}
         
     //   </Helmet>
-    );
+    // );
 };
 
 export default TouchIcons;
