@@ -3,27 +3,27 @@ import ReactDOM from 'react-dom';
 // import { Helmet } from 'react-helmet-async';
 
 // beta icons
-// import facicon16x16Beta from './beta-icons/favicon-16x16.png';
-// import facicon32x32Beta from './beta-icons/favicon-32x32.png';
-// import facicon96x96Beta from './beta-icons/favicon-96x96.png';
-// import facicon128x128Beta from './beta-icons/favicon-128x128.png';
-// import facicon196x1968Beta from './beta-icons/favicon-196x196.png';
+import facicon16x16Beta from './beta-icons/favicon-16x16.png';
+import facicon32x32Beta from './beta-icons/favicon-32x32.png';
+import facicon96x96Beta from './beta-icons/favicon-96x96.png';
+import facicon128x128Beta from './beta-icons/favicon-128x128.png';
+import facicon196x1968Beta from './beta-icons/favicon-196x196.png';
 
-// import appleTouchIconBeta57x57 from './beta-icons/apple-touch-icon-57x57.png';
-// import appleTouchIconBeta60x60 from './beta-icons/apple-touch-icon-60x60.png';
-// import appleTouchIconBeta72x72 from './beta-icons/apple-touch-icon-72x72.png';
-// import appleTouchIconBeta76x76 from './beta-icons/apple-touch-icon-76x76.png';
-// import appleTouchIconBeta114x114 from './beta-icons/apple-touch-icon-114x114.png';
-// import appleTouchIconBeta120x120 from './beta-icons/apple-touch-icon-120x120.png';
-// import appleTouchIconBeta144x144 from './beta-icons/apple-touch-icon-144x144.png';
-// import appleTouchIconBeta152x152 from './beta-icons/apple-touch-icon-152x152.png';
+import appleTouchIconBeta57x57 from './beta-icons/apple-touch-icon-57x57.png';
+import appleTouchIconBeta60x60 from './beta-icons/apple-touch-icon-60x60.png';
+import appleTouchIconBeta72x72 from './beta-icons/apple-touch-icon-72x72.png';
+import appleTouchIconBeta76x76 from './beta-icons/apple-touch-icon-76x76.png';
+import appleTouchIconBeta114x114 from './beta-icons/apple-touch-icon-114x114.png';
+import appleTouchIconBeta120x120 from './beta-icons/apple-touch-icon-120x120.png';
+import appleTouchIconBeta144x144 from './beta-icons/apple-touch-icon-144x144.png';
+import appleTouchIconBeta152x152 from './beta-icons/apple-touch-icon-152x152.png';
 
-// import msTileBeta70x70 from './beta-icons/mstile-70x70.png';
-// import msTileBeta144x144 from './beta-icons/mstile-144x144.png';
-// import msTileBeta150x150 from './beta-icons/mstile-150x150.png';
-// import msTileBeta310x310 from './beta-icons/mstile-310x310.png';
+import msTileBeta70x70 from './beta-icons/mstile-70x70.png';
+import msTileBeta144x144 from './beta-icons/mstile-144x144.png';
+import msTileBeta150x150 from './beta-icons/mstile-150x150.png';
+import msTileBeta310x310 from './beta-icons/mstile-310x310.png';
 
-// // # prod icons
+// # prod icons
 // import facicon16x16 from './icons/favicon-16x16.png';
 // import facicon32x32 from './icons/favicon-32x32.png';
 // import facicon96x96 from './icons/favicon-96x96.png';
@@ -56,6 +56,38 @@ const TouchIcons = ({ app }: { app: AppProps }) => {
             <meta name="application-name" content={app["app_name"]}/>
             <meta name="description" content={app["app_name"]} />
             <meta name="og:title" property="og:title" content={app["app_name"]} />
+            
+            <meta name="theme-color" content="#845007" media="(prefers-color-scheme: light)" />
+            <meta name="theme-color" content="#845007" media="(prefers-color-scheme: dark)" />
+
+
+            <meta name="apple-mobile-web-app-status-bar-style" content="#845007" />
+            <meta name="apple-mobile-web-app-title" content={app["app_name"]} />
+            <meta name="apple-mobile-web-app-capable" content="yes" />
+
+            <meta name="msapplication-TileColor" content="#845007" />
+            <meta name="msapplication-tooltip" content={app["app_name"]} />
+
+            <link rel="icon" type="image/png" href={facicon16x16Beta} sizes="16x16" />
+            <link rel="icon" type="image/png" href={facicon32x32Beta} sizes="32x32" />
+            <link rel="icon" type="image/png" href={facicon96x96Beta} sizes="96x96" />
+            <link rel="icon" type="image/png" href={facicon128x128Beta} sizes="128x128" />
+            <link rel="icon" type="image/png" href={facicon196x1968Beta} sizes="196x196" />
+
+
+            <link rel="apple-touch-icon-precomposed" sizes="57x57" href={appleTouchIconBeta57x57} />
+            <link rel="apple-touch-icon-precomposed" sizes="60x60" href={appleTouchIconBeta60x60} />
+            <link rel="apple-touch-icon-precomposed" sizes="72x72" href={appleTouchIconBeta72x72} />
+            <link rel="apple-touch-icon-precomposed" sizes="76x76" href={appleTouchIconBeta76x76} />
+            <link rel="apple-touch-icon-precomposed" sizes="114x114" href={appleTouchIconBeta114x114} />
+            <link rel="apple-touch-icon-precomposed" sizes="120x120" href={appleTouchIconBeta120x120} />
+            <link rel="apple-touch-icon-precomposed" sizes="144x144" href={appleTouchIconBeta144x144} />
+            <link rel="apple-touch-icon-precomposed" sizes="152x152" href={appleTouchIconBeta152x152} />
+
+            <meta name="msapplication-TileImage" content={msTileBeta144x144} />
+            <meta name="msapplication-square70x70logo" content= {msTileBeta70x70} />
+            <meta name="msapplication-square150x150log" content= {msTileBeta150x150} />
+            <meta name="msapplication-square310x310logo" content= {msTileBeta310x310} />
         </>,
         document.head
     );
