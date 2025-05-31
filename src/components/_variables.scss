@@ -47,7 +47,7 @@
 
 
     --gradient-4-light: linear-gradient(141deg, rgba(31, 75, 55, 1), rgba(3, 93, 52, 1));
-    --webkit-gradient-4-light: -webkit-linear-gradient(141deg, rgba(31, 75, 55, 1), rgba(3, 93, 52, 1));
+    --webkit-gradient-4-light: -webkit-linear-gradient(141deg, hwb(153 12% 71%), rgba(3, 93, 52, 1));
 
     --gradient-4-dark: linear-gradient(141deg, rgba(2, 68, 38, 1), rgba(31, 75, 55, 1));
     --webkit-gradient-4-dark: -webkit-linear-gradient(141deg, rgba(2, 68, 38, 1), rgba(31, 75, 55, 1));
@@ -58,8 +58,8 @@
 
 
 
-    --gradient-1-light-transparent: linear-gradient(141deg, rgba(189, 141, 75, 0.9), rgba(53, 92, 125, 0.9));
-    --gradient-1-dark-transparent: linear-gradient(141deg, rgba(132, 80, 7, 0.9), rgba(31, 55, 75, 0.9));
+    --gradient-1-light-transparent: linear-gradient(141deg, rgba(189, 141, 75, 0.902), rgba(53, 92, 125, 0.9));
+    --gradient-1-dark-transparent: linear-gradient(141deg, rgba(132, 80, 7, 0.902), rgba(31, 55, 75, 0.9));
 
     --version-band-color-light:#856404;
     --version-band-color-dark:#856404;
