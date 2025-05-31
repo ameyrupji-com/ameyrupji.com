@@ -23,25 +23,25 @@ import msTileBeta150x150 from './beta-icons/mstile-150x150.png';
 import msTileBeta310x310 from './beta-icons/mstile-310x310.png';
 
 // # prod icons
-// import facicon16x16 from './icons/favicon-16x16.png';
-// import facicon32x32 from './icons/favicon-32x32.png';
-// import facicon96x96 from './icons/favicon-96x96.png';
-// import facicon128x128 from './icons/favicon-128x128.png';
-// import facicon196x1968 from './icons/favicon-196x196.png';
+import facicon16x16 from './icons/favicon-16x16.png';
+import facicon32x32 from './icons/favicon-32x32.png';
+import facicon96x96 from './icons/favicon-96x96.png';
+import facicon128x128 from './icons/favicon-128x128.png';
+import facicon196x1968 from './icons/favicon-196x196.png';
 
-// import appleTouchIcon57x57 from './icons/apple-touch-icon-57x57.png';
-// import appleTouchIcon60x60 from './icons/apple-touch-icon-60x60.png';
-// import appleTouchIcon72x72 from './icons/apple-touch-icon-72x72.png';
-// import appleTouchIcon76x76 from './icons/apple-touch-icon-76x76.png';
-// import appleTouchIcon114x114 from './icons/apple-touch-icon-114x114.png';
-// import appleTouchIcon120x120 from './icons/apple-touch-icon-120x120.png';
-// import appleTouchIcon144x144 from './icons/apple-touch-icon-144x144.png';
-// import appleTouchIcon152x152 from './icons/apple-touch-icon-152x152.png';
+import appleTouchIcon57x57 from './icons/apple-touch-icon-57x57.png';
+import appleTouchIcon60x60 from './icons/apple-touch-icon-60x60.png';
+import appleTouchIcon72x72 from './icons/apple-touch-icon-72x72.png';
+import appleTouchIcon76x76 from './icons/apple-touch-icon-76x76.png';
+import appleTouchIcon114x114 from './icons/apple-touch-icon-114x114.png';
+import appleTouchIcon120x120 from './icons/apple-touch-icon-120x120.png';
+import appleTouchIcon144x144 from './icons/apple-touch-icon-144x144.png';
+import appleTouchIcon152x152 from './icons/apple-touch-icon-152x152.png';
 
-// import msTile70x70 from './icons/mstile-70x70.png';
-// import msTile144x144 from './icons/mstile-144x144.png';
-// import msTile150x150 from './icons/mstile-150x150.png';
-// import msTile310x310 from './icons/mstile-310x310.png';
+import msTile70x70 from './icons/mstile-70x70.png';
+import msTile144x144 from './icons/mstile-144x144.png';
+import msTile150x150 from './icons/mstile-150x150.png';
+import msTile310x310 from './icons/mstile-310x310.png';
 
 interface AppProps {
     "app_name": string;
