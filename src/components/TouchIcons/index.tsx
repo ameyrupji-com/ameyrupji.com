@@ -99,13 +99,13 @@ const TouchIcons = ({ app }: { app: AppProps }) => {
                 <link rel="icon" type="image/png" href={facicon196x1968} sizes="196x196" /> */}
 
 
-                <link rel="apple-touch-icon-precomposed" sizes="57x57" href={`${process.env.PUBLIC_URL}/images/beta-icons/apple-touch-icon-57x57.png`} />
-                <link rel="apple-touch-icon-precomposed" sizes="72x72" href={`${process.env.PUBLIC_URL}/images/beta-icons/apple-touch-icon-72x72.png`} />
-                <link rel="apple-touch-icon-precomposed" sizes="76x76" href={`${process.env.PUBLIC_URL}/images/beta-icons/apple-touch-icon-76x76.png`} />
-                <link rel="apple-touch-icon-precomposed" sizes="114x114" href={`${process.env.PUBLIC_URL}/images/beta-icons/apple-touch-icon-114x114.png`} />
-                <link rel="apple-touch-icon-precomposed" sizes="120x120" href={`${process.env.PUBLIC_URL}/images/beta-icons/apple-touch-icon-120x120.png`} />
-                <link rel="apple-touch-icon-precomposed" sizes="144x144" href={`${process.env.PUBLIC_URL}/images/beta-icons/apple-touch-icon-144x144.png`} />
-                <link rel="apple-touch-icon-precomposed" sizes="152x152" href={`${process.env.PUBLIC_URL}/images/beta-icons/apple-touch-icon-152x152.png`} />
+                <link rel="apple-touch-icon-precomposed" sizes="57x57" href={`/images/beta-icons/apple-touch-icon-57x57.png`} />
+                <link rel="apple-touch-icon-precomposed" sizes="72x72" href={`/images/beta-icons/apple-touch-icon-72x72.png`} />
+                <link rel="apple-touch-icon-precomposed" sizes="76x76" href={`/images/beta-icons/apple-touch-icon-76x76.png`} />
+                <link rel="apple-touch-icon-precomposed" sizes="114x114" href={`/images/beta-icons/apple-touch-icon-114x114.png`} />
+                <link rel="apple-touch-icon-precomposed" sizes="120x120" href={`/images/beta-icons/apple-touch-icon-120x120.png`} />
+                <link rel="apple-touch-icon-precomposed" sizes="144x144" href={`/images/beta-icons/apple-touch-icon-144x144.png`} />
+                <link rel="apple-touch-icon-precomposed" sizes="152x152" href={`/images/beta-icons/apple-touch-icon-152x152.png`} />
 
                 {/* <link rel="apple-touch-icon-precomposed" sizes="60x60" href={appleTouchIcon60x60} />
                 <link rel="apple-touch-icon-precomposed" sizes="72x72" href={appleTouchIcon72x72} />
