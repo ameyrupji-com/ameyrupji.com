@@ -179,12 +179,6 @@
             }
         },
         {
-            "type": "alternate",
-            "css-id": "built-website",
-            "css-class": [ ],
-            "tooltip-title" : "I built this Website"
-        },
-        {
             "type": "work",
             "css-id": "uhg-sse",
             "css-class": [ ],
@@ -299,12 +293,6 @@
                     }
                 ]
             }
-        },
-        {
-            "type": "alternate",
-            "css-id": "advisory-to-uhg",
-            "css-class": [ ],
-            "tooltip-title" : "<b>The Advisory Board Company</b> got Acquired by <b>UnitedHealth Group</b>"
         },
         {
             "type": "work",
@@ -462,12 +450,6 @@
                     }
                 ] 
             }
-        },
-        {
-            "type": "alternate",
-            "css-id": "moved-to-austin",
-            "css-class": [ ],
-            "tooltip-title" : "Moved to <b>Austin</b>"
         },
         {
             "type": "education",
@@ -730,18 +712,6 @@
                     "Swam channel from the Elephanta Caves to the Gateway of India a distance of 12.2 kms (7.6 miles) in 3 hrs 15 mins officiated by the Greater Mumbai Armature Aquatic Association (GMAAA)."
                 ]
             }
-        },
-        {
-            "type": "alternate",
-            "css-id": "swam-elephanta-gateway",
-            "css-class": [ ],
-            "tooltip-title" : "Swam Elephanta Caves to Gateway of India <b>(7.6 miles)"
-        },
-        {
-            "type": "alternate",
-            "css-id": "born",
-            "css-class": [ ],
-            "tooltip-title" : "Born in <b>India</b>"
         }
     ]
 }

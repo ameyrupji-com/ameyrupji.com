@@ -97,10 +97,6 @@ const Timeline: React.FC<TimelineProps> = ({ timeline }) => {
                                     </div>
                                 </div>
                             );
-                        } else if (block.type === 'alternate') {
-                            return (
-                                <InfoBlock block={block} index={index} key={index}/>
-                            )
                         } else if (block.type === 'work') {
                             return (
                                 <WorkBlock block={block} index={index} key={index}/>
