@@ -18,7 +18,8 @@ const TouchIcons = ({ app }: { app: AppProps }) => {
             <meta name="theme-color" content="#bd8d4be6" media="(prefers-color-scheme: light)" />
             <meta name="theme-color" content="#845007e6" media="(prefers-color-scheme: dark)" />
 
-            <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+            <meta name="apple-mobile-web-app-capable" content="yes"></meta>
+            <meta name="apple-mobile-web-app-status-bar-style" content="black" />
             <meta name="apple-mobile-web-app-title" content={app["app_name"]} />
             <meta name="apple-mobile-web-app-capable" content="yes" />
 
