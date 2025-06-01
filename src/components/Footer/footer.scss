@@ -39,7 +39,8 @@
     a {
         &:hover {
             opacity: 1;
-            text-decoration: none
+            text-decoration: none;
+            cursor: pointer;
         }
 
         i {
