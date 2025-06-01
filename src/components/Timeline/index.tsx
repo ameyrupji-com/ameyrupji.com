@@ -78,15 +78,6 @@ const Timeline: React.FC<TimelineProps> = ({ timeline }) => {
                         <h1 className="title">{timeline['title-light']} <span className="title-strong">{timeline['title-strong']}</span></h1>
                     </div>
                 </div>
-                {/* <div className="row container-btns" id="timeline-btns" data-aos="zoom-out-up" data-aos-anchor-placement="top-center">
-                    <div className="col-md-12 text-center">
-                        <div className="btn-group center" role="group">
-                            <button type="button" className="btn btn-primary" id="timeline-btn-all" onClick={() => setFilters(['image', 'alternate', 'work', 'education'])}>Complete</button>
-                            <button type="button" className="btn btn-light" id="timeline-btn-work" onClick={() => setFilters(['image', 'work'])}>Work</button>
-                            <button type="button" className="btn btn-light" id="timeline-btn-education"onClick={() => setFilters(['image', 'education'])}>Education</button>
-                        </div>
-                    </div>
-                </div> */}
                 <section id="timeline" className="container">
                     {filteredBlocks.map((block, index) => {
                         if (block.type === 'image') {

@@ -15,6 +15,10 @@
     .nav-item a,
     .fixed-top .nav-item a {
         text-transform: uppercase;
+        &:hover {
+            color: var(--navbar-items-hover);
+            cursor: pointer;
+        }
     }
 
     .navbar-brand {

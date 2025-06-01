@@ -64,7 +64,8 @@ const Cover: React.FC<CoverProps> = ({ cover, app }): JSX.Element => {
 
     useEffect(() => {
         initializeFixedNavBarOnScroll();
-    }, []);
+        scrollFunction();
+    }, [isNavCollapsed]);
 
     return (
         <div className="container-full-bg" id="image-back-main">
