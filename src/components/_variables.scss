@@ -22,7 +22,7 @@
     --background-color-3-light-alternate: rgba(132, 80, 7, 1);
 
     --background-color-4-light: rgba(3, 93, 52, 1);
-    --background-color-4-light-alternate: rgba(31,75, 55, 1);
+    --background-color-4-light-alternate: rgba(31,75, 55, 0.7);
 
     --background-color-5-light: rgba(216, 31, 40, 1);
     --background-color-5-light-alternate: rgba(153, 25, 30, 1);
@@ -111,6 +111,8 @@
     --form-success-color-dark:  #008000;
 
 
+    --timeline-block-background-light: rgba(255, 255, 255, 0.6);
+    --timeline-block-background-dark: rgba(91, 92, 94, 0.6);;
     --timeline-outlines-light: rgba(204, 204, 204, 1);
     --timeline-block-shadow-light: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     --timeline-block-shadow-hover-light: 0 8px 16px 0 rgba(0, 0, 0, 0.2);

@@ -131,11 +131,6 @@ const Contact: React.FC<ContactProps> = ({ contact, app }) => {
                         </h1>
                     </div>
                 </div>
-                <div className="row">
-                    <div className="col-md-12 col-lg-12 col-xl-12 col-12">
-                        <div id="contact-me-form-alerts" className="alert"></div>
-                    </div>
-                </div>
                 <div className="row" data-aos="zoom-out-up" data-aos-anchor-placement="top-bottom">
                     <div className="col-md-8 col-lg-8 col-xl-6 offset-xl-1 col-12">
                         <div className="text-center">
@@ -197,6 +192,9 @@ const Contact: React.FC<ContactProps> = ({ contact, app }) => {
                                 return null;
                             })}
                         </form>
+                         <div className="col-md-12 col-lg-12 col-xl-12 col-12">
+                            <div id="contact-me-form-alerts" className="alert"></div>
+                        </div>
                     </div>
                     <div className="col-md-4 col-lg-4 col-xl-4 offset-xl-1 col-12" id="contact-follow">
                         <div className="text-center">

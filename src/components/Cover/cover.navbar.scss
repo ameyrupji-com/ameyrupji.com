@@ -60,8 +60,8 @@
     &.nav-scrolled-20 {
         transition: 1s;
         padding-top: 8px;
-        -webkit-backdrop-filter: blur(30px);
-        backdrop-filter: blur(30px);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
 
         .nav-item {
             a {

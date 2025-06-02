@@ -37,7 +37,10 @@
 
     .timeline-content {
         border: 1px solid var(--timeline-outlines-light);
-        background-color: var(--background-color-1-light-alternate);
+        background-color: var(--timeline-block-background-light);
+
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
 
         -webkit-box-shadow: var(--timeline-block-shadow-light);
         box-shadow: var(--timeline-block-shadow-light);
@@ -56,7 +59,7 @@
         }
 
         .heading-secondary {
-            background-color: #ddd; 
+            background-color: rgba(221, 221, 221, 0.5); 
         }
 
         .read-more p {
@@ -159,8 +162,8 @@
         }
 
         .timeline-content {
-            border: 1px solid var(--timeline-outlines-dark);
-            background-color: #5b5c5e;
+            border: 1px solid var(--timeline-block-background-dark);
+            background-color: var(--timeline-block-background-dark);
 
             p {
                 color: #fff;
@@ -182,7 +185,7 @@
             }
 
             .heading-secondary {
-                background-color: #444546;
+                background-color: rgba(68, 69, 70, 0.7);
                 
                 p{
                     color: #fff;
