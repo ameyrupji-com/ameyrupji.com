@@ -4,7 +4,7 @@ import './resume.scss';
 import './resume.color.scss';
 
 import resumePdf from './assets/pdf/ameyrupji_resume.pdf';
-import resumeDocx from './assets/word/ameyrupji_resume_parsable.docx';
+import resumeDocx from './assets/pdf/ameyrupji_resume_parsable.pdf';
 
 interface ResumeProps {
     resume: {
