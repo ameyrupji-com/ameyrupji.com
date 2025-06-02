@@ -56,7 +56,7 @@ const EducationBlock: React.FC<{ block: any, index: any }> = ({ block, index }) 
                     <p style={{ textAlign: 'right' }}><span className="read-more-click">Click</span><span className="read-more-tap">Tap</span> to Read More...</p>
                 </div>
             </div>
-            <div className="modal" id={`${block['css-id']}-modal`} tabIndex={-1} role="dialog" aria-labelledby={`${block['css-id']}-modal-label`} aria-hidden="true" style={{display: hideModal ? 'none' : 'block'}}>
+            <div className={`modal ${hideModal ? '' : 'show modal-open'} `} id={`${block['css-id']}-modal`} tabIndex={-1} role="dialog" aria-labelledby={`${block['css-id']}-modal-label`} aria-hidden="true" style={{display: hideModal ? 'none' : 'block'}}>
                 <div className="modal-dialog modal-full" role="document">
                     <div className="modal-content">
                         <div className="modal-header">
