@@ -60,6 +60,10 @@ const Cover: React.FC<CoverProps> = ({ cover, app }): JSX.Element => {
                 behavior: 'smooth'
             });
         }
+
+        if (!isNavCollapsed) {
+            setIsNavCollapsed(true);
+        }
     };
 
     useEffect(() => {
