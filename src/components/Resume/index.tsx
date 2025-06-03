@@ -4,7 +4,7 @@ import './resume.scss';
 import './resume.color.scss';
 
 import resumePdf from './assets/pdf/ameyrupji_resume.pdf';
-import resumeDocx from './assets/pdf/ameyrupji_resume_parsable.pdf';
+import resumePrasablePdf from './assets/pdf/ameyrupji_resume_parsable.pdf';
 
 interface ResumeProps {
     resume: {
@@ -42,7 +42,7 @@ const Resume: React.FC<ResumeProps> = ({ resume }) => {
                                         case 'pdf':
                                             return <a className={item['btn-class']} id={item['btn-id']} target = "_blank" download="ameyrupji_resume" href={resumePdf}>{item.text}</a>;
                                         case 'docx':
-                                            return <a className={item['btn-class']} id={item['btn-id']} target = "_blank" download="ameyrupji_resume" href={resumeDocx}>{item.text}</a>;
+                                            return <a className={item['btn-class']} id={item['btn-id']} target = "_blank" download="ameyrupji_parsable_resume" href={resumePrasablePdf}>{item.text}</a>;
                                         default:
                                             return <a className={item['btn-class']} href={item['btn-href']} id={item['btn-id']} target = "_blank" rel="noreferrer" data-url="https://ameyrupji.com/assets/pdf/ameyrupji_resume.pdf" data-title="Check out Amey Rupji's resume at:" data-subject="Check out Amey Rupji's Resume">{item.text}</a>;
                                     }
