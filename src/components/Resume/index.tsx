@@ -11,6 +11,7 @@ interface ResumeProps {
         'title-light': string;
         'title-strong': string;
         resumes: {
+            'type': string;
             'col-class': string;
             'btn-class': string;
             'btn-href': string;
@@ -38,10 +39,10 @@ const Resume: React.FC<ResumeProps> = ({ resume }) => {
                         <div key={index} className={`resume-cols col-xl-4 col-lg-4 col-md-4 col-12 text-center ${item['col-class']}`}>
                             <div className="download-btn">
                                 { (() => {
-                                    switch (item['btn-href'] ) {
-                                        case 'pdf':
+                                    switch (item['type'] ) {
+                                        case 'resume':
                                             return <a className={item['btn-class']} id={item['btn-id']} target = "_blank" download="ameyrupji_resume" href={resumePdf}>{item.text}</a>;
-                                        case 'docx':
+                                        case 'resume-parser-friendly':
                                             return <a className={item['btn-class']} id={item['btn-id']} target = "_blank" download="ameyrupji_parsable_resume" href={resumePrasablePdf}>{item.text}</a>;
                                         default:
                                             return <a className={item['btn-class']} href={item['btn-href']} id={item['btn-id']} target = "_blank" rel="noreferrer" data-url="https://ameyrupji.com/assets/pdf/ameyrupji_resume.pdf" data-title="Check out Amey Rupji's resume at:" data-subject="Check out Amey Rupji's Resume">{item.text}</a>;
