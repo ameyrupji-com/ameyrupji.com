@@ -1,0 +1,24 @@
+{
+    "site-links": [
+        {
+            "text": "Summary",
+            "href": "#summary-main"
+        },
+        {
+            "text": "Skills",
+            "href": "#skills-main"
+        },
+        {
+            "text": "Timeline",
+            "href": "#timeline-main"
+        },
+        {
+            "text": "Resume",
+            "href": "#resume-main"
+        },
+        {
+            "text": "Contact",
+            "href": "#contact-main"
+        }
+    ]
+}

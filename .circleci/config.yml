@@ -1,15 +1,16 @@
 version: 2.1
 
 orbs:
-  aws-s3: circleci/aws-s3@1.0.4
+  aws-cli: circleci/aws-cli@5.1.1
+  aws-s3: circleci/aws-s3@4.1.1
 
 references:
 
 build_base_image: &build_base_image
-  circleci/node:11.10.0
+  cimg/node:21.7.0
 
 deploy_base_image: &deploy_base_image
-  circleci/python:2.7
+  cimg/python:3.12
 
 working_directory: &working_directory
   ~/ameyrupji
@@ -45,12 +46,13 @@ jobs:
       - run: 
           name: build
           command: | 
-            cd src/
-            rm view/data/app.json
-            mv view/data/prod/app.json view/data/app.json
+            rm src/data/app.json
+            mv src/data/prod/app.json src/data/app.json
             rm -rf dist/
-            npm install parcel-bundler --save-dev
+            npm install
             npm run build
+            cp -r public/images dist/images
+            cd dist/
       - *save_repo
   build-develop:
     <<: *build_default_config
@@ -59,14 +61,13 @@ jobs:
       - run: 
           name: build
           command: | 
-            cd src/
-            rm view/data/app.json
-            mv view/data/beta/app.json view/data/app.json
+            rm src/data/app.json
+            mv src/data/beta/app.json src/data/app.json
             rm -rf dist/
-            npm install parcel-bundler --save-dev
+            npm install
             npm run build
+            cp -r public/images dist/images
             cd dist/
-            find ./ -type f -name '*.css' -exec sed -i 's|url(../|url(|g' {} \;
       - *save_repo
   build-branch:
     <<: *build_default_config
@@ -75,45 +76,56 @@ jobs:
       - run: 
           name: build
           command: | 
-            cd src/
-            rm view/data/app.json
-            mv view/data/beta/app.json view/data/app.json
+            rm src/data/app.json
+            mv src/data/beta/app.json src/data/app.json
             rm -rf dist/
-            npm install parcel-bundler --save-dev
-            npm run build
+            npm install
+            npm run build-branch https://beta.ameyrupji.com/${CIRCLE_BRANCH}
+            cp -r public/images dist/images
             cd dist/
-            find ./ -type f -name '*.css' -exec sed -i 's|url(../|url(|g' {} \;
       - *save_repo
   upload-master:
     <<: *deploy_default_config
     steps:
       - *restore_repo
+      - aws-cli/setup:
+          aws_access_key_id: AWS_ACCESS_KEY_ID
+          aws_secret_access_key: AWS_SECRET_ACCESS_KEY
       - aws-s3/copy:
-          from: /home/circleci/ameyrupji/src/dist/ 
+          from: /home/circleci/ameyrupji/dist/ 
           to: 's3://ameyrupji.com/'
           arguments: --recursive
   upload-develop:
     <<: *deploy_default_config
     steps:
       - *restore_repo
+      - aws-cli/setup:
+          aws_access_key_id: AWS_ACCESS_KEY_ID
+          aws_secret_access_key: AWS_SECRET_ACCESS_KEY
       - aws-s3/copy:
-          from: /home/circleci/ameyrupji/src/dist/ 
+          from: /home/circleci/ameyrupji/dist/ 
           to: 's3://beta.ameyrupji.com/'
           arguments: --recursive
   upload-branches:
     <<: *deploy_default_config
     steps:
       - *restore_repo
+      - aws-cli/setup:
+          aws_access_key_id: AWS_ACCESS_KEY_ID
+          aws_secret_access_key: AWS_SECRET_ACCESS_KEY
       - aws-s3/copy:
-          from: /home/circleci/ameyrupji/src/dist/ 
+          from: /home/circleci/ameyrupji/dist/ 
           to: s3://beta.ameyrupji.com/${CIRCLE_BRANCH}
           arguments: --recursive
   upload-releases:
     <<: *deploy_default_config
     steps:
       - *restore_repo
+      - aws-cli/setup:
+          aws_access_key_id: AWS_ACCESS_KEY_ID
+          aws_secret_access_key: AWS_SECRET_ACCESS_KEY
       - aws-s3/copy:
-          from: /home/circleci/ameyrupji/src/dist/ 
+          from: /home/circleci/ameyrupji/dist/ 
           to: s3://ameyrupji.com/${CIRCLE_BRANCH}
           arguments: --recursive
 

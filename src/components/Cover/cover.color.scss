@@ -1,0 +1,27 @@
+@use '../_variables';
+
+#image-back-main {
+    #gradient-main {
+        background-color: rgba(0, 0, 0, 0);
+        background-image: var(--gradient-1-light-transparent);
+    }
+
+    &.cover {
+        background: var(--cover-background-light);
+        color: var(--cover-color-light);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    #image-back-main {
+        #gradient-main {
+            background-color: rgba(0, 0, 0, 0);
+            background-image: var(--gradient-1-dark-transparent);
+        }
+
+        &.cover {
+            background: var(--cover-background-dark);
+            color: var(--cover-color-dark);
+        }
+    }
+}

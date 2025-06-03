@@ -1,0 +1,33 @@
+{
+    "title-light" : "View",
+    "title-strong" : "Resume",
+    "resumes": [
+        {
+            "type": "resume",
+            "col-class": "",
+            "btn-class": "btn pdf",
+            "btn-id": "pdf-btn",
+            "btn-href": "pdf",
+            "text": "Download",
+            "file-icon-css": "far fa-file-pdf"
+        },
+        {
+            "type": "resume-parser-friendly",
+            "col-class": "",
+            "btn-class": "btn btn-light sharer",
+            "btn-id": "parser-friendly-btn",
+            "btn-href": "pdf",
+            "text": "Parser Friendly",
+            "file-icon-css": "far fa-file-pdf"
+        },
+        {
+            "type": "resume-link",
+            "col-class": "",
+            "btn-class": "btn btn-light sharer",
+            "btn-id": "share-email-btn",
+            "btn-href": "mailto:?subject=Check out Amey Rupji's Resume&body=Check out Amey Rupji's resume at: https://ameyrupji.com/public/ameyrupji_resume.pdf",
+            "text": "Email",
+            "file-icon-css": "fas fa-share"
+        }
+    ]
+}

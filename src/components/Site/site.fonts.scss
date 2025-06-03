@@ -1,0 +1,27 @@
+@use '../_variables';
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: var(--font-weight-default) !important;
+    color: var(--font-color-light);
+}
+
+.title {
+    text-transform: uppercase;
+    
+    span.title-strong {
+        font-weight: var(--font-weight-bold);
+    }
+    
+    span.title-hollow {
+        font-weight: var(--font-weight-bold);
+        color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: var(--title-color-light);
+    }
+}

@@ -1,0 +1,51 @@
+@use '../_variables';
+
+#loading-site-image {
+    background-image: url("../Cover/images/background.jpg");
+    background-size: cover;
+    background-position: 50% 0%;
+}
+
+#loading-site {
+    padding: 0;
+    margin: 0;
+    width : 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column;  
+    align-content: stretch;
+    padding: 15px;
+    gap: 30px;
+
+    .loading-logo {
+        text-align:center;
+    }
+}
+
+.progress {
+  background-color: rgba(255,255,255,0.05);
+  justify-content: flex-start;
+  border-radius: 50%;
+  align-items: center;
+  position: relative;
+  padding: 5px;
+  display: flex;
+  height: 40px;
+  width: 300px;
+}
+
+.progress-value {
+  animation: load 1s normal forwards;
+  border-radius: 100px;
+  background: rgba(0,0,0,0.75);
+  height: 10px;
+  width: 0;
+}
+
+@keyframes load {
+  0% { width: 0; }
+  100% { width: 88%; }
+}

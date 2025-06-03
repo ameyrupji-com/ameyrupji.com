@@ -1,0 +1,717 @@
+{
+    "title-light" : "My",
+    "title-strong" : "Timeline",
+    "blocks": [
+        {
+            "type": "image",
+            "css-id": "me-image",
+            "css-class": [ "work", "education"],
+            "image-src": "./images/me.jpeg"
+        },
+        {
+            "type": "work",
+            "css-id": "uhg-pe",
+            "css-class": [ ],
+            "block-content": {
+                "heading": "Principal Engineer, Technology Leader Career Path",
+                "organization": {
+                    "name": "UnitedHealth Group",
+                    "css-class": "far fa-building"
+                },
+                "timeline": {
+                    "from": "June 2021",
+                    "to": "Present",
+                    "duration": "(4+ yrs)"
+                },
+                "location": {
+                    "city": "Austin",
+                    "state": "Texas Area",
+                    "country": ""
+                },
+                "short-description": "Leading teams to build platform to support Machine to Machine IAM, IGA, and ITDR use-cases.",
+                "work-impact": [
+                    "Leading UHG’s machine identity governance initiative, establishing a comprehensive asset inventory and defining organizational controls to ensure compliance with evolving security policies and IAM best practices.",
+                    "Lead a globally distributed team to architect, build, and scale UHG’s Machine Identity Platform, enabling secure service-to-service communication for tens of thousands of APIs as part of the enterprise-wide Healthcare Platform API Management initiative.",
+                    "Drove end-to-end technical and strategic planning, including quarterly roadmapping, agile execution, solution design, cross-functional alignment, hiring, onboarding, stakeholder engagement, UX collaboration, and release governance.",
+                    "Lead, designed and deployed a resilient, multi-region machine-to-machine Identity Provider using OAuth 2.0, leveraging Azure services such as Front Door, Application Gateway, and Container App. Seamlessly migrated the platform from AWS with zero customer disruption, enabling a scalable SaaS solution that meets business MBOs of 99.99% uptime and peak performance exceeding 3,000 transactions per second.",
+                    "Spearheaded a full-scale infrastructure automation effort, implementing Infrastructure-as-Code (IaC) practices using Terraform on Azure—reducing deployment errors by 80% and enabling reproducible environments across dev, staging, and production.",
+                    "Improved CI/CD velocity 3x by building modular GitHub Actions workflows and Terraform Cloud pipelines, ensuring reliable, secure, and environment-aware deployments across teams.",
+                    "Implemented a comprehensive monitoring and alerting solution using Splunk, Azure Monitor, and Azure Application Insights enhancing system observability and reducing incident response times by 50%.",
+                    "Hired, onboarded, and mentored, and managed developers and technical stakeholders, supporting product integrations through hands-on training, shadowing, and detailed technical documentation."
+                ],
+                "technology-tools":[
+                    {
+                        "skill-name": "Azure",
+                        "skill-css": "devicon-azure-plain"
+                    },
+                    {
+                        "skill-name": "AWS",
+                        "skill-css": "devicon-amazonwebservices-plain-wordmark"
+                    },
+                    {
+                        "skill-name": "Docker",
+                        "skill-css": "devicon-docker-plain"
+                    },
+                    {
+                        "skill-name": "Git",
+                        "skill-css": "devicon-git-plain"
+                    },
+                    {
+                        "skill-name": "GitHub",
+                        "skill-css": "devicon-github-plain"
+                    },
+                    {
+                        "skill-name": "Java",
+                        "skill-css": "devicon-java-plain"
+                    },
+                    {
+                        "skill-name": "JavaScript",
+                        "skill-css": "devicon-javascript-plain"
+                    },
+                    {
+                        "skill-name": "Jenkins",
+                        "skill-css": "devicon-jenkins-line"
+                    },
+                    {
+                        "skill-name": "New Relic",
+                        "skill-css": "si new-relic"
+                    },
+                    {
+                        "skill-name": "Python",
+                        "skill-css": "devicon-python-plain"
+                    },
+                    {
+                        "skill-name": "React",
+                        "skill-css": "devicon-react-plain"
+                    },
+                    {
+                        "skill-name": "Redis",
+                        "skill-css": "devicon-redis-plain"
+                    },
+                    {
+                        "skill-name": "Splunk",
+                        "skill-css": "devicon-splunk-original-wordmark"
+                    },
+                    {
+                        "skill-name": "Spring",
+                        "skill-css": "devicon-spring-original"
+                    },
+                    {
+                        "skill-name": "Terraform",
+                        "skill-css": "devicon-terraform-plain"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "work",
+            "css-id": "uhg-lse",
+            "css-class": [ ],
+            "block-content": {
+                "heading": "Lead Software Engineer",
+                "organization": {
+                    "name": "UnitedHealth Group",
+                    "css-class": "far fa-building"
+                },
+                "timeline": {
+                    "from": "Feb 2021",
+                    "to": "June 2021",
+                    "duration": "(5 mos)"
+                },
+                "location": {
+                    "city": "Austin",
+                    "state": "Texas Area",
+                    "country": ""
+                },
+                "short-description": "Leading teams to build and migrate applications to cloud.",
+                "work-impact": [
+                    "Led a cross-functional team to migrate and modernize the Infectious Diseases Platform from an on-premises environment to Azure—achieving 99.99% uptime and 5x improvement in data processing turnaround—enabling faster, more reliable analysis of flu and COVID-19 trends for internal stakeholders.",
+                    "Drove full lifecycle execution—including quarterly planning, agile ceremonies, technical design, implementation, UX collaboration, code reviews, release coordination, and stakeholder engagement—ensuring alignment across engineering and business teams.",
+                    "Championed best practices in cloud infrastructure automation, application security, and data governance, laying the foundation for long-term platform scalability and compliance.",
+                    "Hired, onboarded, and mentored developers and technical partners through structured documentation, hands-on guidance, and knowledge-sharing sessions to accelerate ramp-up and product integration efforts."
+                ],
+                "technology-tools":[
+                    {
+                        "skill-name": "Azure",
+                        "skill-css": "devicon-azure-plain"
+                    },
+                    {
+                        "skill-name": "Git",
+                        "skill-css": "devicon-git-plain"
+                    },
+                    {
+                        "skill-name": "GitHub",
+                        "skill-css": "devicon-github-plain"
+                    },
+                    {
+                        "skill-name": "JavaScript",
+                        "skill-css": "devicon-javascript-plain"
+                    },
+                    {
+                        "skill-name": "Jenkins",
+                        "skill-css": "devicon-jenkins-line"
+                    },
+                    {
+                        "skill-name": "New Relic",
+                        "skill-css": "si new-relic"
+                    },
+                    {
+                        "skill-name": "Python",
+                        "skill-css": "devicon-python-plain"
+                    },
+                    {
+                        "skill-name": "Postgress",
+                        "skill-css": "devicon-postgresql-plain"
+                    },
+                    {
+                        "skill-name": "React",
+                        "skill-css": "devicon-react-plain"
+                    },
+                    {
+                        "skill-name": "Splunk",
+                        "skill-css": "devicon-splunk-original-wordmark"
+                    },
+                    {
+                        "skill-name": "Terraform",
+                        "skill-css": "devicon-terraform-plain"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "work",
+            "css-id": "uhg-sse",
+            "css-class": [ ],
+            "block-content": {
+                "heading": "Senior Software Engineer",
+                "organization": {
+                    "name": "UnitedHealth Group",
+                    "css-class": "far fa-building"
+                },
+                "timeline": {
+                    "from": "Apr 2015",
+                    "to": "Feb 2021",
+                    "duration": "(5 yr 11 mos)"
+                },
+                "location": {
+                    "city": "Austin",
+                    "state": "Texas Area",
+                    "country": ""
+                },
+                "short-description": "Developed a scalable cloud-based data mastering platform.",
+                "work-impact": [
+                    "Developed a scalable, cloud-based data mastering platform to consolidate, organize, aggregate, and enrich healthcare entities like patients, providers, payers, and practices.",
+                    "Implemented a model and rule-based distributed matching algorithm to link healthcare entities from disparate data sources, each having millions of records for batch and streaming use cases.",
+                    "Worked with 6+ teams across the globe to support use cases like health system planning, patient care coordination, and consumer outreach initiatives to drive healthy outcomes for patients.",
+                    "Collaborated with teams to implement the best practices in cloud infrastructure automation, cloud application security, data governance, and data stewardship.",
+                    "Onboarded and mentored new developers and other technical stakeholders from integrating products through hands on training and technical product documentation."
+                ],
+                "technology-tools":[
+                    {
+                        "skill-name": "AWS",
+                        "skill-css": "devicon-amazonwebservices-plain-wordmark"
+                    },
+                    {
+                        "skill-name": "Django",
+                        "skill-css": "devicon-django-plain"
+                    },
+                    {
+                        "skill-name": "Docker",
+                        "skill-css": "fab fa-docker"
+                    },
+                    {
+                        "skill-name": "Git",
+                        "skill-css": "devicon-git-plain"
+                    },
+                    {
+                        "skill-name": "GitHub",
+                        "skill-css": "devicon-github-plain"
+                    },
+                    {
+                        "skill-name": "Java",
+                        "skill-css": "devicon-java-plain"
+                    },
+                    {
+                        "skill-name": "JavaScript",
+                        "skill-css": "devicon-javascript-plain"
+                    },
+                    {
+                        "skill-name": "Jenkins",
+                        "skill-css": "fab fa-jenkins"
+                    },
+                    {
+                        "skill-name": "JMeter",
+                        "skill-css": "devicon-apache-plain"
+                    },
+                    {
+                        "skill-name": "Kafka",
+                        "skill-css": "devicon-apachekafka-original"
+                    },
+                    {
+                        "skill-name": "Kubernetes",
+                        "skill-css": "devicon-kubernetes-plain"
+                    },
+                    {
+                        "skill-name": "MySQL",
+                        "skill-css": "devicon-mysql-plain"
+                    },
+                    {
+                        "skill-name": "New Relic",
+                        "skill-css": "si new-relic"
+                    },
+                    {
+                        "skill-name": "Nginx",
+                        "skill-css": "devicon-nginx-plain"
+                    },
+                    {
+                        "skill-name": "Python",
+                        "skill-css": "devicon-python-plain"
+                    },
+                    {
+                        "skill-name": "React",
+                        "skill-css": "devicon-react-plain"
+                    },
+                    {
+                        "skill-name": "Redis",
+                        "skill-css": "devicon-redis-plain"
+                    },
+                    {
+                        "skill-name": "Sass",
+                        "skill-css": "devicon-sass-original"
+                    },
+                    {
+                        "skill-name": "Splunk",
+                        "skill-css": "devicon-splunk-original-wordmark"
+                    },
+                    {
+                        "skill-name": "Spring",
+                        "skill-css": "devicon-spring-original"
+                    },
+                    {
+                        "skill-name": "Terraform",
+                        "skill-css": "devicon-terraform-plain"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "work",
+            "css-id": "advisory-se",
+            "css-class": [ ],
+            "block-content": {
+                "heading": "Software Engineer",
+                "organization": {
+                    "name": "The Advisory Board Company (UnitedHealth Group)",
+                    "css-class": "far fa-building"
+                },
+                "timeline": {
+                    "from": "Dec 2013",
+                    "to": "Mar 2015",
+                    "duration": "(1 yr 4 mos)"
+                },
+                "location": {
+                    "city": "Austin",
+                    "state": "Texas Area",
+                    "country": ""
+                },
+                "short-description": "Developed a maintained platform to deploy web applications.",
+                "work-impact": [
+                    "Developed and maintained a user facing website and backend web services to deploy web applications for single and multi-tenant SaaS products within the company.",
+                    "Empowered 4+ product teams easily scale their SaaS offerings to hundreds of health systems, maintaining their service-level agreements.",
+                    "Enhanced the single sign-on platform by adding new functionalities and improving on existing testing infrastructure.",
+                    "Demonstrated ownership by handling numerous product integrations on the single sign-on platform by collaborating with team leads, developers, testers, and business analysts."
+                ],
+                "technology-tools":[
+                    {
+                        "skill-name": "Atlassian",
+                        "skill-css": "fab fa-atlassian"
+                    },
+                    {
+                        "skill-name": "Bitbucket",
+                        "skill-css": "devicon-bitbucket-original"
+                    },
+                    {
+                        "skill-name": "C#",
+                        "skill-css": "devicon-csharp-plain"
+                    },
+                    {
+                        "skill-name": "Confluence",
+                        "skill-css": "devicon-confluence-plain"
+                    },
+                    {
+                        "skill-name": "CSS 3",
+                        "skill-css": "devicon-css3-plain"
+                    },
+                    {
+                        "skill-name": "Git",
+                        "skill-css": "devicon-git-plain"
+                    },
+                    {
+                        "skill-name": "Microsoft .Net",
+                        "skill-css": "devicon-dot-net-plain"
+                    },
+                    {
+                        "skill-name": "HTML 5",
+                        "skill-css": "devicon-html5-plain-wordmark"
+                    },
+                    {
+                        "skill-name": "JavaScript",
+                        "skill-css": "devicon-javascript-plain"
+                    },
+                    {
+                        "skill-name": "Jira",
+                        "skill-css": "devicon-jira-plain"
+                    },
+                    {
+                        "skill-name": "jQuery",
+                        "skill-css": "devicon-jquery-plain"
+                    },
+                    {
+                        "skill-name": "New Relic",
+                        "skill-css": "si new-relic"
+                    },
+                    {
+                        "skill-name": "SQL Server",
+                        "skill-css": "devicon-microsoftsqlserver-plain"
+                    },
+                    {
+                        "skill-name": "Windows",
+                        "skill-css": "devicon-windows8-plain"
+                    }
+                ] 
+            }
+        },
+        {
+            "type": "work",
+            "css-id": "advisory-ase",
+            "css-class": [ ],
+            "block-content": {
+                "heading": "Associate Software Engineer",
+                "organization": {
+                    "name": "The Advisory Board Company (UnitedHealth Group)",
+                    "css-class": "far fa-building"
+                },
+                "timeline": {
+                    "from": "Sept 2012",
+                    "to": "Dec 2013",
+                    "duration": "(1 yr 3 mos)"
+                },
+                "location": {
+                    "city": "Austin",
+                    "state": "Texas Area",
+                    "country": ""
+                },
+                "short-description": "Developed an single sign-on and user provisioning platform.",
+                "work-impact": [
+                    "Collaborated with product management, user experience, engineering, quality assurance, and business analyst teams, as well as busniess stakeholders to evangelize, organize, and develop a single sign-on platform using SAML 2.0 protocol.",
+                    "Worked with 10+ internal product teams to replace their ad-hoc password protection policies by migrating them over to the single sign-on platform using stateless RESTful web services combined with an intuitive workflow application. This enabled end users of the system to have a more secure and unified experience with numerous SaaS offerings. This implementation supported federated single sign-on experience for configured clients.",
+                    "Ensured robustness and reliability of the application by building testing frameworks which eased extensibility of unit, integration, functional, and regression tests and supported test-driven development."
+                ],
+                "technology-tools":[
+                    {
+                        "skill-name": "Apache",
+                        "skill-css": "devicon-apache-plain"
+                    },
+                    {
+                        "skill-name": "Atlassian",
+                        "skill-css": "fab fa-atlassian"
+                    },
+                    {
+                        "skill-name": "Bitbucket",
+                        "skill-css": "devicon-bitbucket-original"
+                    },
+                    {
+                        "skill-name": "C#",
+                        "skill-css": "devicon-csharp-plain"
+                    },
+                    {
+                        "skill-name": "Confluence",
+                        "skill-css": "devicon-confluence-plain"
+                    },
+                    {
+                        "skill-name": "Microsoft .Net",
+                        "skill-css": "devicon-dot-net-plain"
+                    },
+                    {
+                        "skill-name": "Jira",
+                        "skill-css": "devicon-jira-plain"
+                    },
+                    {
+                        "skill-name": "New Relic",
+                        "skill-css": "fas fa-code"
+                    },
+                    {
+                        "skill-name": "SQL Server",
+                        "skill-css": "devicon-microsoftsqlserver-plain"
+                    },
+                    {
+                        "skill-name": "Windows",
+                        "skill-css": "devicon-windows8-plain"
+                    }
+                ] 
+            }
+        },
+        {
+            "type": "education",
+            "css-id": "ttu-ms",
+            "css-class": [ "" ],
+            "block-content": {
+                "heading": "Master of Science in Computer Science",
+                "organization": {
+                    "name": "Texas Tech University",
+                    "css-class": "fas fa-university"
+                },
+                "timeline": {
+                    "from": "Aug 2010",
+                    "to": "Aug 2012",
+                    "duration": "(2 yrs)"
+                },
+                "location": {
+                    "city": "Lubbock",
+                    "state": "Texas Area",
+                    "country": ""
+                },
+                "short-description": "Completed my Masters degree in Computer Science with a GPA of 3.66 / 4.",
+                "course-impact": [
+                    "Completed my Masters degree in Computer Science with a GPA of 3.66 / 4."
+                ],
+                "courses":[
+                    {
+                        "course-name": "Advanced Database Management Systems",
+                        "course-number": "CS 5356"
+                    },
+                    {
+                        "course-name": "Advanced Operating Systems",
+                        "course-number": "CS 5352"
+                    },
+                    {
+                        "course-name": "Analysis of Algorithms",
+                        "course-number": "CS 5381"
+                    },
+                    {
+                        "course-name": "Logic for Computer Scientists",
+                        "course-number": "CS 5384"
+                    },
+                    {
+                        "course-name": "Masters Project - Computer Science Department Course Scheduler",
+                        "course-number": "CS 6001"
+                    },
+                    {
+                        "course-name": "Principles of Multiprocessor Systems",
+                        "course-number": "CS 5365"
+                    },
+                    {
+                        "course-name": "Scientific Computing",
+                        "course-number": "CS 5328"
+                    },
+                    {
+                        "course-name": "Secure Software Engineering",
+                        "course-number": "CS 5332"
+                    },
+                    {
+                        "course-name": "Software Modeling and Architecture",
+                        "course-number": "CS 5373"
+                    },
+                    {
+                        "course-name": "Theory of Automata",
+                        "course-number": "CS 5383"
+                    }
+                ] 
+            }
+        },
+        {
+            "type": "work",
+            "css-id": "ttu-ga",
+            "css-class": [ ],
+            "block-content": {
+                "heading": "Graduate Assistant",
+                "organization": {
+                    "name": "Texas Tech University",
+                    "css-class": "far fa-building"
+                },
+                "timeline": {
+                    "from": "Aug 2011",
+                    "to": "Aug 2012",
+                    "duration": "(1 yr)"
+                },
+                "location": {
+                    "city": "Lubbock",
+                    "state": "Texas Area",
+                    "country": ""
+                },
+                "short-description": "Worked part time with the Technology Support team to maintain IT Department websites.",
+                "work-impact": [
+                    "Collaborated with the Information Technology Division on building, reorganizing and testing for web standards and web accessibility and documented various websites and web applications within Texas Tech University."
+                ],
+                "technology-tools":[
+                    {
+                        "skill-name": "CSS",
+                        "skill-css": "devicon-css3-plain"
+                    },
+                    {
+                        "skill-name": "HTML",
+                        "skill-css": "devicon-html5-plain"
+                    },
+                    {
+                        "skill-name": "JavaScript",
+                        "skill-css": "devicon-javascript-plain"
+                    },
+                    {
+                        "skill-name": "jQuery",
+                        "skill-css": "devicon-jquery-plain"
+                    },
+                    {
+                        "skill-name": "Photoshop",
+                        "skill-css": "devicon-photoshop-plain"
+                    },
+                    {
+                        "skill-name": "PHP",
+                        "skill-css": "devicon-php-plain"
+                    }
+                ] 
+            }
+        },
+        {
+            "type": "work",
+            "css-id": "ttu-sa",
+            "css-class": [ ],
+            "block-content": {
+                "heading": "Student Assistant",
+                "organization": {
+                    "name": "Texas Tech University",
+                    "css-class": "far fa-building"
+                },
+                "timeline": {
+                    "from": "Jul 2010",
+                    "to": "Aug 2011",
+                    "duration": "(1 yr 1 mo)"
+                },
+                "location": {
+                    "city": "Lubbock",
+                    "state": "Texas Area",
+                    "country": ""
+                },
+                "short-description": "Worked part time on improving and maintaining websites for the Rawls College of Business.",
+                "work-impact": [
+                    "Worked on improving and maintaining 26+ websites for the Rawls College of Business.",
+                    "Developed an easy to use web framework for mobile compatability. Which lead to improvement in cross platform user experience.",
+                    "Provided support and troubleshooting for technical issues in a printing lab for students of the Rawls College of Business."
+                ],
+                "technology-tools":[
+                    {
+                        "skill-name": "CSS",
+                        "skill-css": "devicon-css3-plain"
+                    },
+                    {
+                        "skill-name": "HTML",
+                        "skill-css": "devicon-html5-plain"
+                    },
+                    {
+                        "skill-name": "JavaScript",
+                        "skill-css": "devicon-javascript-plain"
+                    },
+                    {
+                        "skill-name": "jQuery",
+                        "skill-css": "devicon-jquery-plain"
+                    },
+                    {
+                        "skill-name": "Photoshop",
+                        "skill-css": "devicon-photoshop-plain"
+                    },
+                    {
+                        "skill-name": "PHP",
+                        "skill-css": "devicon-php-plain"
+                    }
+                ] 
+            }
+        },
+        {
+            "type": "education",
+            "css-id": "mu-boe-it",
+            "css-class": [ "" ],
+            "block-content": {
+                "heading": "Bachelors of Engineering in Information Technology",
+                "organization": {
+                    "name": "University of Mumbai",
+                    "css-class": "fas fa-university"
+                },
+                "timeline": {
+                    "from": "Jun 2006",
+                    "to": "May 2010",
+                    "duration": "(4 yrs)"
+                },
+                "location": {
+                    "city": "Mumbai",
+                    "state": "MH",
+                    "country": "India"
+                },
+                "short-description": "Completed my Bachelors of Engineering in Information Technology from K. J. Somaiya College of Engineering with honors .",
+                "course-impact": [
+                    "Completed my Bachelors of Engineering in Information Technology from K. J. Somaiya College of Engineering (affiliated with University of Mumbai) with honors."
+                ],
+                "courses":[
+                ] 
+            }
+        },
+        {
+            "type": "education",
+            "css-id": "mu-hsc-science",
+            "css-class": [ "" ],
+            "block-content": {
+                "heading": "Higher Secondary Examination in Science",
+                "organization": {
+                    "name": "Maharashtra State Board of Secondary and Higher Secondary Education",
+                    "css-class": "fas fa-university"
+                },
+                "timeline": {
+                    "from": "Jun 2004",
+                    "to": "Jul 2006",
+                    "duration": "(2 yrs)"
+                },
+                "location": {
+                    "city": "Mumbai",
+                    "state": "MH",
+                    "country": "India"
+                },
+                "short-description": "Completed my Higher Secondary Examination in Science from KC College with honors.",
+                "course-impact": [
+                    "Completed my Higher Secondary Examination in Science from Kishinchand Chellaram College (affiliated with Maharashtra State Board of Secondary and Higher Secondary Education) with honors."
+                ],
+                "courses":[
+                ] 
+            }
+        },
+        {
+            "type": "education",
+            "css-id": "icse",
+            "css-class": [ "" ],
+            "block-content": {
+                "heading": "Indian Certificate of Secondary Education (ICSE)",
+                "organization": {
+                    "name": "Council for The Indian School Certificate Examinations",
+                    "css-class": "fas fa-university"
+                },
+                "timeline": {
+                    "from": "Mar 1993",
+                    "to": "Apr 2004",
+                    "duration": "(11 yrs)"
+                },
+                "location": {
+                    "city": "Mumbai",
+                    "state": "MH",
+                    "country": "India"
+                },
+                "short-description": "Completed schooling from The St. Mary’s School I.C.S.E.",
+                "course-impact": [
+                    "Completed primary and secondary schooling from The St. Mary’s School I.C.S.E. (affiliated with Council for The Indian School Certificate Examinations) with a score of 80.5 percentile in Indian Certificate of Secondary Education Examination."
+                ],
+                "courses":[
+                ],
+                "activities":[
+                    "Participated and won various medals in district and state level swimming competitions.",
+                    "Swam channel from the Elephanta Caves to the Gateway of India a distance of 12.2 kms (7.6 miles) in 3 hrs 15 mins officiated by the Greater Mumbai Armature Aquatic Association (GMAAA)."
+                ]
+            }
+        }
+    ]
+}

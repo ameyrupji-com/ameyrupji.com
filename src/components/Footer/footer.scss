@@ -1,0 +1,204 @@
+#footer-main {
+    padding: 150px 0 50px 0;
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        
+        li.list-heading {
+            font-weight: 100;
+            margin-bottom: 10px;
+            opacity: 1;
+            
+            .list-heading-strong {
+                font-weight: 900;
+            }
+        }
+    }
+
+    .footer-no-icons-list {
+        text-transform: uppercase;
+    }
+
+    p,
+    a,
+    i,
+    li {
+        opacity: .8;
+    }
+
+    hr {
+        display: block;
+        height: 1px;
+        border: 0;
+        opacity: .8;
+        margin: 1em 0;
+        padding: 0; 
+    }
+
+    a {
+        &:hover {
+            opacity: 1;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        i {
+            width: 30px;
+        }
+    }
+
+    .share-btn {
+        opacity: .8;
+        color: #fff;
+        text-transform: uppercase;
+        
+        svg {
+            margin-left: 10px;
+            vertical-align: center;
+        }
+        span {
+            margin-left: 15px
+        };
+        
+        &:hover {
+            opacity: 1;
+            text-decoration: none;
+        }
+    }
+
+    #versions {
+        vertical-align: initial;
+        
+        button {
+            opacity: .8;
+            padding: 0;
+
+            span {
+                opacity: .8;
+            }
+
+            &:focus,
+            &:hover {
+                text-decoration: none;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 544px) {
+    #footer-main {
+        .footer-no-icons-flat-list li {
+            display: inline-block;
+            width: 45%;
+            padding-top: 10px;
+            text-align: center;
+        
+            &:not(:first-child) a {
+                border: 0px;
+                padding: 0px;
+                margin: 0px;
+            }
+        }
+
+        .footer-no-icons-flat-list li {
+            &:not(:first-child) a {
+                border-left: none !important;
+            }
+        }
+
+        #versions {
+            text-align: center;
+            width: 45%;
+            display: block;
+            padding-top: 10px;
+            
+            button {   
+                span {
+                    border-left: none !important;
+                }
+            }
+        }
+    }
+} 
+
+/* Small devices (portrait tablets and large phones, 544px and up) */
+@media only screen and (min-width: 544px) {
+    #footer-main {
+        .footer-no-icons-flat-list li {
+            display: inline-block;
+            width: 45%;
+            padding-top: 10px;
+            text-align: center;
+        
+            &:not(:first-child) a {
+                border: 0px;
+                padding: 0px;
+                margin: 0px;
+            }
+        }
+
+        .footer-no-icons-flat-list li {
+            &:not(:first-child) a {
+                border-left: none
+            }
+        }
+
+        #versions {
+            text-align: center;
+            width: 45%;
+            display: block;
+            padding-top: 10px;
+            
+            button {   
+                span {
+                    border-left: none
+                    
+                }
+            }
+        }
+    }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #footer-main {
+        .footer-no-icons-flat-list li {
+            display: inline-block;
+            width: initial;
+            
+            &:not(:first-child) a {
+                padding-left: 10px;
+                margin-left: 10px;
+                border-left: 1px solid #eee;
+            }
+        }
+
+        #versions {
+            width: initial;
+            display: inline-block;
+            text-align: initial;
+            vertical-align: initial;
+            padding-top: 0px;
+            position: relative;
+            top: -2px;
+            
+            button span {
+                padding-left: 10px;
+                margin-left: 10px;
+                border-left: 1px solid #eee;
+            }
+        }
+
+    }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
