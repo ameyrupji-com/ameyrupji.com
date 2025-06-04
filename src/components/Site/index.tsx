@@ -45,8 +45,8 @@ const Site: React.FC = () => {
           <Cover cover={coverData} app={appData} />
           <Summary summary={summaryData} />
           <Skills skills={skillsData} />
-          <Timeline timeline={timelineData} />
-          <Resume resume={resumeData} />
+          <Timeline timeline={timelineData}  />
+          <Resume resume={resumeData} app={appData}/>
           <Contact contact={contactData} app={appData} />
           <Footer footer={footerData} app={appData} />
         </>

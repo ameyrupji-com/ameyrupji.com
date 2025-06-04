@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 
-import InfoBlock from './InfoBlock';
 import WorkBlock from './WorkBlock';
 import EducationBlock from './EducationBlock';
 import StarTwinkle from '../StarTwinkle';
@@ -9,8 +8,6 @@ import './timeline.scss';
 import './timeline.color.scss';
 import './modal-full-page.scss'
 import './modal-full-page.color.scss'
-
-
 
 interface TimelineProps {
     timeline: {

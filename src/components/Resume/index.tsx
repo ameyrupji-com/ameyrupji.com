@@ -14,15 +14,17 @@ interface ResumeProps {
             'type': string;
             'col-class': string;
             'btn-class': string;
-            'btn-href': string;
             'btn-id': string;
             text: string;
             'file-icon-css': string;
         }[];
     };
+     app: {
+        'app_url': string;
+    };
 }
 
-const Resume: React.FC<ResumeProps> = ({ resume }) => {
+const Resume: React.FC<ResumeProps> = ({ resume, app }) => {
 
     return (
         <div className="container-fluid" id="resume-main">
@@ -45,7 +47,7 @@ const Resume: React.FC<ResumeProps> = ({ resume }) => {
                                         case 'resume-parser-friendly':
                                             return <a className={item['btn-class']} id={item['btn-id']} target = "_blank" download="ameyrupji_parsable_resume" href={resumePrasablePdf}>{item.text}</a>;
                                         default:
-                                            return <a className={item['btn-class']} href={item['btn-href']} id={item['btn-id']} target = "_blank" rel="noreferrer" data-url="https://ameyrupji.com/assets/pdf/ameyrupji_resume.pdf" data-title="Check out Amey Rupji's resume at:" data-subject="Check out Amey Rupji's Resume">{item.text}</a>;
+                                            return <a className={item['btn-class']} id={item['btn-id']} target = "_blank" rel="noreferrer" href={"mailto:?subject=Check out Amey Rupji's Resume&body=Check out Amey Rupji's resume at: " + app['app_url'] + "assets/pdf/ameyrupji_resume.pdf"}>{item.text}</a>;
                                     }
                                 })()}   
                             </div>

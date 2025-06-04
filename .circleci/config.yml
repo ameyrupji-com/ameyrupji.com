@@ -52,6 +52,7 @@ jobs:
             npm install
             npm run build
             cp -r public/images dist/images
+            cp -r src/components/Resume/assets/ dist/assets/
             cd dist/
       - *save_repo
   build-develop:
@@ -67,6 +68,7 @@ jobs:
             npm install
             npm run build
             cp -r public/images dist/images
+            cp -r src/components/Resume/assets/ dist/assets/
             cd dist/
       - *save_repo
   build-branch:
@@ -82,6 +84,7 @@ jobs:
             npm install
             npm run build-branch https://beta.ameyrupji.com/${CIRCLE_BRANCH}
             cp -r public/images dist/images
+            cp -r src/components/Resume/assets/ dist/assets/
             cd dist/
       - *save_repo
   upload-master:
