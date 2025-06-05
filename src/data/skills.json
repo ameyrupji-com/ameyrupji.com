@@ -1,0 +1,148 @@
+{
+    "title-light": "Technical",
+    "title-strong": "Skills",
+    "skills-using": [
+        {
+            "skill-name": "AWS",
+            "skill-css": "devicon-amazonwebservices-plain-wordmark"
+        },
+        {
+            "skill-name": "Django",
+            "skill-css": "devicon-django-plain"
+        },
+        {
+            "skill-name": "Docker",
+            "skill-css": "fab fa-docker"
+        },
+        {
+            "skill-name": "Git",
+            "skill-css": "devicon-git-plain"
+        },
+        {
+            "skill-name": "GitHub",
+            "skill-css": "devicon-github-plain"
+        },
+        {
+            "skill-name": "Java",
+            "skill-css": "devicon-java-plain"
+        },
+        {
+            "skill-name": "JavaScript",
+            "skill-css": "devicon-javascript-plain"
+        },
+        {
+            "skill-name": "Jenkins",
+            "skill-css": "fab fa-jenkins"
+        },
+        {
+            "skill-name": "JMeter",
+            "skill-css": "devicon-apache-plain"
+        },
+        {
+            "skill-name": "Kafka",
+            "skill-css": "devicon-apachekafka-original"
+        },
+        {
+            "skill-name": "Kubernetes",
+            "skill-css": "devicon-kubernetes-plain"
+        },
+        {
+            "skill-name": "MySQL",
+            "skill-css": "devicon-mysql-plain"
+        },
+        {
+            "skill-name": "New Relic",
+            "skill-css": "si light new-relic"
+        },
+        {
+            "skill-name": "Nginx",
+            "skill-css": "devicon-nginx-plain"
+        },
+        {
+            "skill-name": "Python",
+            "skill-css": "devicon-python-plain"
+        },
+        {
+            "skill-name": "React",
+            "skill-css": "devicon-react-plain"
+        },
+        {
+            "skill-name": "Redis",
+            "skill-css": "devicon-redis-plain"
+        },
+        {
+            "skill-name": "Sass",
+            "skill-css": "devicon-sass-original"
+        },
+        {
+            "skill-name": "Splunk",
+            "skill-css": "devicon-splunk-original-wordmark"
+        },
+        {
+            "skill-name": "Spring",
+            "skill-css": "devicon-spring-original"
+        },
+        {
+            "skill-name": "Terraform",
+            "skill-css": "devicon-terraform-plain"
+        }
+    ],
+    "skills-other": [
+        {
+            "skill-name": "Atlassian",
+            "skill-css": "fab fa-atlassian"
+        },
+        {
+            "skill-name": "Bootstrap",
+            "skill-css": "devicon-bootstrap-plain"
+        },
+        {
+            "skill-name": "C#",
+            "skill-css": "devicon-csharp-plain light"
+        },
+        {
+            "skill-name": "C++",
+            "skill-css": "devicon-cplusplus-plain"
+        },
+        {
+            "skill-name": ".Net MVC",
+            "skill-css": "devicon-dot-net-plain"
+        },
+        {
+            "skill-name": "jQuery",
+            "skill-css": "devicon-jquery-plain"
+        },
+        {
+            "skill-name": "MongoDB",
+            "skill-css": "devicon-mongodb-plain"
+        },
+        {
+            "skill-name": "Node.js",
+            "skill-css": "devicon-nodejs-plain"
+        },
+        {
+            "skill-name": "NHibernate",
+            "skill-css": "devicon-nhibernate-plain"
+        },
+        {
+            "skill-name": "Gimp",
+            "skill-css": "devicon-gimp-plain"
+        },
+        {
+            "skill-name": "PostgreSQL",
+            "skill-css": "devicon-postgresql-plain"
+        },
+        {
+            "skill-name": "Scala",
+            "skill-css": "devicon-scala-plain"
+        },
+        {
+            "skill-name": "Selenium",
+            "skill-css": "devicon-selenium-original"
+        },
+        {
+            "skill-name": "SQL Server",
+            "skill-css": "devicon-microsoftsqlserver-plain"
+        }  
+    ]  
+}

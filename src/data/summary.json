@@ -1,0 +1,18 @@
+{
+    "title-light" : "Professional",
+    "title-strong": "Summary",
+    "summaries": [
+        {
+            "i-class": "far fa-shield",
+            "text": "Technology leader specializing in enterprise security and identity platforms, with a strong background in architecting and deploying highly resilient, cloud-native authentication systems across distributed environments."
+        },
+        {
+            "i-class": "fas fa-dumbbell",
+            "text": "Key strengths include strategic thinking, mentoring and team leadership, and a strong ability to drive process automation through Infrastructure-as-Code and CI/CD practices. Adept at translating complex business challenges into secure, data-driven solutions that are both scalable and operationally efficient."
+        },
+        {
+            "i-class": "fas fa-sync-alt",
+            "text": "Experienced in guiding teams across the entire software development lifecycle—from early technical architecture discussions and agile planning to delivery, performance monitoring, and ongoing team development. Passionate about creating environments where individuals are empowered to succeed and contribute meaningfully to business outcomes."
+        }
+    ]
+}

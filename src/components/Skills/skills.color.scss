@@ -1,0 +1,16 @@
+@use '../_variables';
+
+#skills-main {
+    background-color: var(--background-color-3-light);
+    background: var(--gradient-3-light);
+    background: var(--webkit-gradient-3-light);
+}
+
+@media (prefers-color-scheme: dark) {
+
+    #skills-main {
+        background-color: var(--background-color-3-light-alternate);
+        background: var(--gradient-3-dark);
+        background-image: var(--webkit-gradient-3-dark);
+    }
+}

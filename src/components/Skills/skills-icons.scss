@@ -1,0 +1,18 @@
+@use '../_variables';
+
+.si {
+    display: block;
+    margin: auto;
+    background-size: cover;
+    background-repeat: none;
+
+    &.light {
+        filter: invert(100%);
+    }
+
+    &.new-relic {
+        background-image: url(./images/newrelic.svg);
+        width: 73px;
+        height: 60px;
+    }
+}

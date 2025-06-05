@@ -1,0 +1,13 @@
+@use '../_variables';
+
+#loading-site-gradient {
+  background-color: rgba(0, 0, 0, 0);
+  background-image: var(--gradient-1-light-transparent);
+}
+
+@media (prefers-color-scheme: dark) {
+  #loading-site-gradient {
+    background-color: rgba(0, 0, 0, 0);
+    background-image: var(--gradient-1-dark-transparent);
+  }
+}

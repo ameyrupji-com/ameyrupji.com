@@ -1,0 +1,30 @@
+{
+    "title-light" : "View",
+    "title-strong" : "Resume",
+    "resumes": [
+        {
+            "type": "resume",
+            "col-class": "",
+            "btn-class": "btn pdf",
+            "btn-id": "pdf-btn",
+            "text": "Download",
+            "file-icon-css": "far fa-file-pdf"
+        },
+        {
+            "type": "resume-parser-friendly",
+            "col-class": "",
+            "btn-class": "btn btn-light sharer",
+            "btn-id": "parser-friendly-btn",
+            "text": "Parser Friendly",
+            "file-icon-css": "far fa-file-pdf"
+        },
+        {
+            "type": "resume-link",
+            "col-class": "",
+            "btn-class": "btn btn-light sharer",
+            "btn-id": "share-email-btn",
+            "text": "Email",
+            "file-icon-css": "fas fa-share"
+        }
+    ]
+}

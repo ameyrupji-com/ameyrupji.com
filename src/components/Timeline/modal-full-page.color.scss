@@ -1,0 +1,42 @@
+@use '../_variables';
+
+.modal-full {
+
+    .modal-content {
+        background-color: var(--modal-background-color-light);
+
+        .modal-title,
+        h2,
+        h4,
+        .title-light,
+        p,
+        i,
+        .close,
+        li  {
+            color: var(--title-color-light);
+        }
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .modal-full {
+        .modal-content {
+            background-color: var(--modal-background-color-dark);
+
+            .modal-title,
+            h2, 
+            h4,
+            .title-light,
+            p,
+            i,
+            .close,
+            li {
+                color: var(--title-color-dark);
+            }
+
+            .si {
+                filter: invert(100%);
+            }
+        }
+    }
+}

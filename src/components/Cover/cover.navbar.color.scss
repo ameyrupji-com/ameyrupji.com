@@ -1,0 +1,73 @@
+@use '../_variables';
+
+.navbar { 
+
+
+    &.nav-scrolled-20 {
+        background: var(--navbar-scrolled-background-light);
+
+        .navbar-brand {
+            color: var(--navbar-scrolled-items-hover-light);
+
+            &:hover {
+                color: var(--navbar-scrolled-items-hover-light);
+            }
+        }
+        
+        .nav-item {
+            a {
+                color: var(--navbar-scrolled-items-light);
+                
+                &:hover {
+                    color: var(--navbar-scrolled-items-hover-light);
+                }
+            }
+        }
+
+        #burger .bar {
+            background: var(--navbar-scrolled-items-hover-light);
+        }
+    }
+
+    &.navbar-open {
+        .navbar-brand {
+            color: var(--font-color-light);
+        }
+    }
+
+    #burger .bar {
+        background: var(--navbar-items-hover);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .navbar {
+        &.nav-scrolled-20 {
+            background: var(--navbar-scrolled-background-dark);
+
+            .navbar-brand {
+                color: #fff;
+            }
+            
+            .nav-item {
+                a {
+                    color: var(--navbar-scrolled-items-dark);
+                    
+                    &:hover {
+                        color: var(--navbar-scrolled-items-hover-dark);
+                    }
+                }
+            }
+
+            #burger .bar {
+                background: var(--navbar-scrolled-items-hover-dark);
+            }
+        }
+
+        &.navbar-open {
+            .navbar-brand {
+                color: var(--font-color-dark);
+            }
+        }
+    }
+}

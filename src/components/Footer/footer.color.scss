@@ -1,0 +1,106 @@
+@use '../_variables';
+
+
+#footer-main {
+    background-color: var(--background-color-2-light);
+    background: var(--footer-background-light);
+    background: var(--gradient-2-light);
+    background: var(--webkit-gradient-2-light);
+    color: var(--footer-color-light);
+    
+    .footer-no-icons-flat-list li {
+        &:not(:first-child) a {
+            border-color: var(--footer-color-light);
+
+        }
+    }
+
+    #versions button {
+        span {
+            border-color: var(--footer-color-light);
+            color: var(--footer-color-light);
+        }
+        &:after {
+            color: var(--footer-color-light);
+        }
+    }
+
+    p,
+    a,
+    i,
+    li {
+        color: var(--footer-color-light);
+    }
+
+    hr {
+        border-top: 1px solid #aaa;
+    }
+
+    
+    .dropdown-menu {
+        background-color: var(--background-color-2-light);
+
+        .dropdown-header {
+            color: #ccc; 
+        }
+        .dropdown-item {
+            &:hover, 
+            &:focus {
+                color: var(--footer-color-light);
+                background-color: var(--background-color-2-light-alternate);
+            }
+        }
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+
+    #footer-main {
+        background-color: var(--background-color-2-light-alternate);
+        background: var(--gradient-2-dark);
+        background: var(--webkit-gradient-2-dark);
+        color: var(--footer-color-dark);
+
+        .footer-no-icons-flat-list li {
+            &:not(:first-child) a {
+                border-color: var(--footer-color-dark);
+            }
+        }
+
+        #versions button {
+            span {
+                border-color: var(--footer-color-dark);
+                color: var(--footer-color-dark);
+            }
+            &:after {
+                color: var(--footer-color-dark);
+            }
+        }
+    
+        p,
+        a,
+        i,
+        li {
+            color: var(--footer-color-dark);
+        }
+    
+        hr {
+            border-top: 1px solid var(--footer-color-dark);
+        }
+
+        .dropdown-menu {
+            background-color: var(--background-color-2-light-alternate);
+    
+            .dropdown-header {
+                color: #ccc; 
+            }
+            .dropdown-item {
+                &:hover, 
+                &:focus {
+                    color: var(--footer-color-dark);
+                    background-color: var(--background-color-2-light);
+                }
+            }
+        }
+    }
+}

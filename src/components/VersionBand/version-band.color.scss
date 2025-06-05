@@ -1,0 +1,11 @@
+#version-band-main {
+    color: var(--version-band-color-light);
+    background: var(--version-band-background-light);
+}
+
+@media (prefers-color-scheme: dark) {
+    #version-band-main {
+        color: var(--version-band-color-dark);
+        background: var(--version-band-background-dark);
+    }
+}
