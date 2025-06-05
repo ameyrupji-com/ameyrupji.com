@@ -141,7 +141,7 @@ const Footer: React.FC<FooterProps> = ({ footer, app }) => {
                                             <h6 className="dropdown-header">Older Versions:</h6>
                                             {app['old-versions'].map((version, index) => (
                                                 <a key={index} className="dropdown-item old-version-links"
-                                                    href={`${app.app_url}/${version.href}`}>{version.text}</a>
+                                                    href={`${app.app_url}${version.href}`}>{version.text}</a>
                                             ))}
                                         </div>
                                     )}
