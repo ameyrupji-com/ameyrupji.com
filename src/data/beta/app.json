@@ -6,15 +6,15 @@
     "old-versions": [
         {
             "text": "v1.6.0",
-            "href": "feature/v1-6-0"
+            "href": "feature/v1-6-0/index.html"
         },
         {
             "text": "v1.7.0",
-            "href": "feature/v1-7-0"
+            "href": "feature/v1-7-0/index.html"
         },
         {
             "text": "v1.7.1",
-            "href": "feature/v1-7-1"
+            "href": "feature/v1-7-1/index.html"
         }
     ],
     "icons_folder": "beta-icons",
