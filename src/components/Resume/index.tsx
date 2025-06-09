@@ -27,7 +27,7 @@ interface ResumeProps {
 const Resume: React.FC<ResumeProps> = ({ resume, app }) => {
 
     return (
-        <div className="container-fluid" id="resume-main">
+        <div className="container-fluid" data-section id="resume-main">
             <div className="container">
                 <div className="row" data-aos="fade-down">
                     <div className="col-md-12 text-center">

@@ -4,23 +4,28 @@
     "links": [
         {
             "text": "Summary",
-            "href": "#summary-main"
+            "href": "#summary-main",
+            "active-id": "summary-main"
         },
         {
             "text": "Skills",
-            "href": "#skills-main"
+            "href": "#skills-main",
+            "active-id": "skills-main"
         },
         {
             "text": "Timeline",
-            "href": "#timeline-main"
+            "href": "#timeline-main",
+            "active-id": "timeline-main"
         },
         {
             "text": "Resume",
-            "href": "#resume-main"
+            "href": "#resume-main",
+            "active-id": "resume-main"
         },
         {
             "text": "Contact",
-            "href": "#contact-main"
+            "href": "#contact-main",
+            "active-id": "contact-main"
         }
     ],
     "scroll-link": "#summary-main"

@@ -28,7 +28,7 @@ const Skills: React.FC<SkillsProps> = ({ skills }) => {
       };
 
     return (
-        <div className="container-fluid" id="skills-main">
+        <div className="container-fluid" data-section id="skills-main">
             <div className="container">
                 <div className="row container-title" id="skills-title" data-aos="fade-down">
                     <div className="col-md-12 text-center">
