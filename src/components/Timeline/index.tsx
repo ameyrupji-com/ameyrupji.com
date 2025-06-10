@@ -68,7 +68,7 @@ const Timeline: React.FC<TimelineProps> = ({ timeline }) => {
         starMargins={40}
         starImageCount={6}
       >
-         <div className="container-fluid" id="timeline-main">
+         <div className="container-fluid" data-section id="timeline-main">
             <div className="container" id="timeline-container">
                 <div className="row container-title" id="timeline-title" data-aos="fade-down">
                     <div className="col-md-12 text-center">

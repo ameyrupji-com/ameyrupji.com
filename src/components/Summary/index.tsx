@@ -23,7 +23,7 @@ const Summary: React.FC<SummaryProps> = ({ summary }) => {
     }, [])
 
     return (
-        <div className="container-fluid" id="summary-main">
+        <div className="container-fluid" data-section id="summary-main">
             <div className="container">
                 <div className="row container-title" id="summary-title" data-aos="fade-down">
                     <div className="col-md-12 text-center">

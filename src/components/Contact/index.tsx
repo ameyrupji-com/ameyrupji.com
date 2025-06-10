@@ -121,7 +121,7 @@ const Contact: React.FC<ContactProps> = ({ contact, app }) => {
     }, []);
     
     return (
-        <div className="container-fluid" id="contact-main">
+        <div className="container-fluid" data-section id="contact-main">
             <div className="container-fluid" id="map"></div>
             <div className="container">
                 <div className="row container-title" id="timeline-title" data-aos="fade-down">

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 
 import './cover.scss';
 import './cover.color.scss';
@@ -11,7 +11,7 @@ interface CoverProps {
     cover: {
         'first-name': string;
         'last-name': string;
-        links: { href: string; text: string }[];
+        links: { href: string; text: string, 'active-id': string }[];
         'scroll-link': string;
     };
     app: {
@@ -24,8 +24,9 @@ interface CoverProps {
 const Cover: React.FC<CoverProps> = ({ cover, app }): JSX.Element => {
 
     const [isNavCollapsed, setIsNavCollapsed] = useState(true);
-
     const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
+    const [activeSection, setActiveSection] = useState(null);
+    const observer = useRef(null);
 
     const scrollFunction = () => {
         const scrollTop = window.scrollY;
@@ -71,8 +72,33 @@ const Cover: React.FC<CoverProps> = ({ cover, app }): JSX.Element => {
         scrollFunction();
     }, [isNavCollapsed]);
 
+    useEffect(() => {
+        const config = {
+            rootMargin: "0px 0px -51%",
+        };
+
+        observer.current = new IntersectionObserver((entries) => {
+            const visibleSection = entries.find((entry) => entry.isIntersecting)?.target;
+            if (visibleSection) {
+                console.log('Visible section:', visibleSection.id);
+                setActiveSection(visibleSection.id);
+            }
+        }, config);
+        const sections = document.querySelectorAll('[data-section]');
+
+        sections.forEach((section) => {
+            observer.current.observe(section);
+        });
+        
+        return () => {
+            sections.forEach((section) => {
+                observer.current.unobserve(section);
+            });
+        };
+    }, []);
+
     return (
-        <div className="container-full-bg" id="image-back-main">
+        <div className="container-full-bg" data-section id="image-back-main">
             <div className="jumbotron" id="gradient-main">
                 <nav className={`${isNavCollapsed ? '' : 'navbar-open'} navbar navbar-expand-sm navbar-light bg-transparent fixed-top`}>
                     <div className="container" data-aos="fade-down">
@@ -89,7 +115,7 @@ const Cover: React.FC<CoverProps> = ({ cover, app }): JSX.Element => {
                         <div className={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`} id="navbar-collapse-menu">
                             <ul className="navbar-nav ml-auto">
                                 {cover.links.map((link, index) => (
-                                    <li className="nav-item" key={index}>
+                                    <li className={ activeSection == link['active-id'] ? "nav-item active" : "nav-item"} key={index} >
                                         <a onClick={(event: React.SyntheticEvent) => {event.preventDefault(); smoothScroll(link.href)}} className="nav-link" data-toggle="collapse" data-target="#navbar-collapse-menu">
                                             {link.text}
                                         </a>
