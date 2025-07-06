@@ -43,9 +43,6 @@
   -ms-transform: rotate(45deg); /* IE 9 */
   -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
   transform: rotate(45deg);
-
-  border-right: 2px solid var(--scroll-color-light);
-  border-bottom: 2px solid var(--scroll-color-light);
   margin: 0 0 3px 6px;
 }
 
@@ -55,7 +52,6 @@
   width: 24px;
   border-radius: 17px;
   transform: none;
-  border: 2px solid var(--scroll-color-light);
   top: 170px;
 }
 
@@ -65,7 +61,6 @@
   width: 3px;
   display: block;
   margin: 5px auto;
-  background: var(--scroll-background-light);
   position: relative;
   border-radius: 1px;
 }
