@@ -4,6 +4,35 @@
     background-color: var(--background-color-3-light);
     background: var(--gradient-3-light);
     background: var(--webkit-gradient-3-light);
+
+    #skill-filter-btns {
+        margin: 5em 0;
+        .btn-group {
+            background-color: var(--skills-btns-group--background-light);
+
+            .btn {
+                &.btn-primary {
+                    color: #000;
+                    font-weight: bold;
+                    background-color: rgba(255, 255, 255, 1);
+                    border-color: rgba(255, 255, 255, 1)
+                }
+            }
+
+            background-color: var(--skills-btns-background-light);
+
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+
+            -webkit-box-shadow: var(--skills-btns-shadow-light);
+            box-shadow: var(--skills-btns-shadow-light);
+
+            &:hover {
+                -webkit-box-shadow: var(--skills-btns-shadow-hover-light);
+                box-shadow: var(--skills-btns-shadow-hover-light);
+            }
+        }
+    }
 }
 
 @media (prefers-color-scheme: dark) {

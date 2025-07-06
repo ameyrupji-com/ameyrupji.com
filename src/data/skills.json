@@ -3,146 +3,241 @@
     "title-strong": "Skills",
     "skills-using": [
         {
-            "skill-name": "AWS",
-            "skill-css": "devicon-amazonwebservices-plain-wordmark"
+            "skill-name": "Azure",
+            "skill-css": "devicon-azure-plain",
+            "type": "infrastructure"
         },
         {
-            "skill-name": "Django",
-            "skill-css": "devicon-django-plain"
+            "skill-name": "circleci",
+            "skill-css": "devicon-circleci-plain",
+            "type": "ci-cd"
+        },
+        {
+            "skill-name": "Code",
+            "skill-css": "devicon-vscode-plain",
+            "type": "tools"
         },
         {
             "skill-name": "Docker",
-            "skill-css": "fab fa-docker"
+            "skill-css": "fab fa-docker",
+            "type": "infrastructure"
+        },
+        {
+            "skill-name": "Elastic APM",
+            "skill-css": "devicon-elasticsearch-plain",
+            "type": "monitoring"
         },
         {
             "skill-name": "Git",
-            "skill-css": "devicon-git-plain"
+            "skill-css": "devicon-git-plain",
+            "type": "ci-cd"
+        },
+        {
+            "skill-name": "Go",
+            "skill-css": "devicon-go-original-wordmark",
+            "type": "programming"
         },
         {
             "skill-name": "GitHub",
-            "skill-css": "devicon-github-plain"
+            "skill-css": "devicon-github-plain",
+            "type": "ci-cd"
+        },
+        {
+            "skill-name": "Groovy",
+            "skill-css": "devicon-groovy-plain",
+            "type": "programming"
+        },
+        {
+            "skill-name": "Intellij",
+            "skill-css": "devicon-intellij-plain",
+            "type": "tools"
         },
         {
             "skill-name": "Java",
-            "skill-css": "devicon-java-plain"
+            "skill-css": "devicon-java-plain",
+            "type": "programming"
         },
         {
             "skill-name": "JavaScript",
-            "skill-css": "devicon-javascript-plain"
-        },
-        {
-            "skill-name": "Jenkins",
-            "skill-css": "fab fa-jenkins"
+            "skill-css": "devicon-javascript-plain",
+            "type": "programming"
         },
         {
             "skill-name": "JMeter",
-            "skill-css": "devicon-apache-plain"
-        },
-        {
-            "skill-name": "Kafka",
-            "skill-css": "devicon-apachekafka-original"
-        },
-        {
-            "skill-name": "Kubernetes",
-            "skill-css": "devicon-kubernetes-plain"
-        },
-        {
-            "skill-name": "MySQL",
-            "skill-css": "devicon-mysql-plain"
-        },
-        {
-            "skill-name": "New Relic",
-            "skill-css": "si light new-relic"
-        },
-        {
-            "skill-name": "Nginx",
-            "skill-css": "devicon-nginx-plain"
+            "skill-css": "devicon-apache-plain",
+            "type": "testing"
         },
         {
             "skill-name": "Python",
-            "skill-css": "devicon-python-plain"
+            "skill-css": "devicon-python-plain",
+            "type": "programming"
         },
         {
             "skill-name": "React",
-            "skill-css": "devicon-react-plain"
+            "skill-css": "devicon-react-plain",
+            "type": "progtamming"
         },
         {
             "skill-name": "Redis",
-            "skill-css": "devicon-redis-plain"
+            "skill-css": "devicon-redis-plain",
+            "type": "database"
         },
         {
             "skill-name": "Sass",
-            "skill-css": "devicon-sass-original"
+            "skill-css": "devicon-sass-original",
+            "type": "programming"
         },
         {
-            "skill-name": "Splunk",
-            "skill-css": "devicon-splunk-original-wordmark"
+            "skill-name": "sonarqube",
+            "skill-css": "devicon-sonarqube-original",
+            "type": "ci-cd"
         },
         {
             "skill-name": "Spring",
-            "skill-css": "devicon-spring-original"
+            "skill-css": "devicon-spring-original",
+            "type": "progtamming"
+        },
+         {
+            "skill-name": "Splunk",
+            "skill-css": "devicon-splunk-original-wordmark",
+            "type": "monitoring"
+        },
+        {
+            "skill-name": "SQL Server",
+            "skill-css": "devicon-microsoftsqlserver-plain",
+            "type": "database"
         },
         {
             "skill-name": "Terraform",
-            "skill-css": "devicon-terraform-plain"
+            "skill-css": "devicon-terraform-plain",
+            "type": "infrastructure"
+        },
+        {
+            "skill-name": "TypeScript",
+            "skill-css": "devicon-typescript-plain",
+            "type": "programming"
         }
     ],
     "skills-other": [
         {
+            "skill-name": "AWS",
+            "skill-css": "devicon-amazonwebservices-plain-wordmark",
+            "type": "infrastructure"
+        },
+        {
             "skill-name": "Atlassian",
-            "skill-css": "fab fa-atlassian"
+            "skill-css": "fab fa-atlassian",
+            "type": "tools"
         },
         {
             "skill-name": "Bootstrap",
-            "skill-css": "devicon-bootstrap-plain"
+            "skill-css": "devicon-bootstrap-plain",
+            "type": "programming"
         },
         {
             "skill-name": "C#",
-            "skill-css": "devicon-csharp-plain light"
+            "skill-css": "devicon-csharp-plain light",
+            "type": "programming"
         },
         {
             "skill-name": "C++",
-            "skill-css": "devicon-cplusplus-plain"
+            "skill-css": "devicon-cplusplus-plain",
+            "type": "programming"
+        },
+         {
+            "skill-name": "Django",
+            "skill-css": "devicon-django-plain",
+            "type": "programming"
+        },
+        {
+            "skill-name": "Figma",
+            "skill-css": "devicon-figma-plain",
+            "type": "tools"
         },
         {
             "skill-name": ".Net MVC",
-            "skill-css": "devicon-dot-net-plain"
+            "skill-css": "devicon-dot-net-plain",
+            "type": "programming"
+        },
+        {
+            "skill-name": "Jenkins",
+            "skill-css": "fab fa-jenkins",
+            "type": "ci-cd"
         },
         {
             "skill-name": "jQuery",
-            "skill-css": "devicon-jquery-plain"
+            "skill-css": "devicon-jquery-plain",
+            "type": "programming"
+        },
+        {
+            "skill-name": "Kafka",
+            "skill-css": "devicon-apachekafka-original",
+            "type": "infrastructure"
+        },
+        {
+            "skill-name": "Kubernetes",
+            "skill-css": "devicon-kubernetes-plain",
+            "type": "infrastructure"
         },
         {
             "skill-name": "MongoDB",
-            "skill-css": "devicon-mongodb-plain"
+            "skill-css": "devicon-mongodb-plain",
+            "type": "database"
+        },
+        {
+            "skill-name": "MySQL",
+            "skill-css": "devicon-mysql-plain",
+            "type": "database"
         },
         {
             "skill-name": "Node.js",
-            "skill-css": "devicon-nodejs-plain"
+            "skill-css": "devicon-nodejs-plain",
+            "type": "programming"
+        },
+        {
+            "skill-name": "New Relic",
+            "skill-css": "si light new-relic",
+            "type": "monitoring"
+        },
+        {
+            "skill-name": "Nginx",
+            "skill-css": "devicon-nginx-plain",
+            "type": "infrastructure"
         },
         {
             "skill-name": "NHibernate",
-            "skill-css": "devicon-nhibernate-plain"
+            "skill-css": "devicon-nhibernate-plain",
+            "type": "programming"
+        },
+        {
+            "skill-name": "Playwright",
+            "skill-css": "devicon-playwright-plain",
+            "type": "testing"
         },
         {
             "skill-name": "Gimp",
-            "skill-css": "devicon-gimp-plain"
+            "skill-css": "devicon-gimp-plain",
+            "type": "tools"
         },
         {
             "skill-name": "PostgreSQL",
-            "skill-css": "devicon-postgresql-plain"
+            "skill-css": "devicon-postgresql-plain",
+            "type": "database"
+        },
+        {
+            "skill-name": "Photoshop",
+            "skill-css": "devicon-photoshop-plain",
+            "type": "tools"
         },
         {
             "skill-name": "Scala",
-            "skill-css": "devicon-scala-plain"
+            "skill-css": "devicon-scala-plain",
+            "type": "programming"
         },
         {
             "skill-name": "Selenium",
-            "skill-css": "devicon-selenium-original"
-        },
-        {
-            "skill-name": "SQL Server",
-            "skill-css": "devicon-microsoftsqlserver-plain"
-        }  
+            "skill-css": "devicon-selenium-original",
+            "type": "testing"
+        }
     ]  
 }
