@@ -15,6 +15,13 @@
         }
         
         .nav-item {
+            &.active {
+                a {
+                    color: var(--navbar-scrolled-items-hover-light);
+                    border-bottom: 1px solid var(--navbar-scrolled-items-hover-light);
+                }
+            }
+
             a {
                 color: var(--navbar-scrolled-items-light);
                 
@@ -42,6 +49,14 @@
 
 @media (prefers-color-scheme: dark) {
     .navbar {
+
+        &.active {
+            a {
+                color: var(--navbar-scrolled-items-hover-dark);
+                border-bottom: 1px solid var(--navbar-scrolled-items-hover-dark);
+            }
+        }
+
         &.nav-scrolled-20 {
             background: var(--navbar-scrolled-background-dark);
 
@@ -50,6 +65,13 @@
             }
             
             .nav-item {
+                &.active {
+                    a {
+                        color: var(--navbar-scrolled-items-hover-dark);
+                        border-bottom: 1px solid var(--navbar-scrolled-items-hover-dark);
+                    }
+                }
+                
                 a {
                     color: var(--navbar-scrolled-items-dark);
                     

@@ -60,6 +60,16 @@
 
 @media (max-width:768px) {
     #skills-main {
+        #skill-filter-btns {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+        }
+
+         #skill-filter-btns::-webkit-scrollbar {
+            display: none;
+        }
+        
         .skills-block {
             padding: 20px 0px;
         
