@@ -5,6 +5,7 @@ import './cover.color.scss';
 import './cover.navbar.scss';
 import './cover.navbar.color.scss';
 import './scroll.scss';
+import './scroll.color.scss';
 
 
 interface CoverProps {
