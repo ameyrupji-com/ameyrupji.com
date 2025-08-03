@@ -2,7 +2,7 @@
     "env": "prod",
     "app_name": "Amey Rupji",
     "app_url": "http://ameyrupji.com/",
-    "active-version": "v2.1.0",
+    "active-version": "v2.2.0",
     "old-versions": [
         {
             "text": "v1.2.0",
@@ -34,6 +34,10 @@
         },
         {
             "text": "v2.0.0",
+            "href": "release/v2-0-0/index.html"
+        },
+        {
+            "text": "v2.1.0",
             "href": "release/v2-0-0/index.html"
         }
     ],
