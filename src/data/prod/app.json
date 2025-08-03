@@ -2,35 +2,39 @@
     "env": "prod",
     "app_name": "Amey Rupji",
     "app_url": "http://ameyrupji.com/",
-    "active-version": "v2.0.0",
+    "active-version": "v2.1.0",
     "old-versions": [
         {
             "text": "v1.2.0",
-            "href": "release/v1-2-0"
+            "href": "release/v1-2-0/index.html"
         },
         {
             "text": "v1.3.0",
-            "href": "release/v1-3-0"
+            "href": "release/v1-3-0/index.html"
         },
         {
             "text": "v1.4.0",
-            "href": "release/v1-4-0"
+            "href": "release/v1-4-0/index.html"
         },
         {
             "text": "v1.5.0",
-            "href": "release/v1-5-0"
+            "href": "release/v1-5-0/index.html"
         },
         {
             "text": "v1.6.0",
-            "href": "release/v1-6-0"
+            "href": "release/v1-6-0/index.html"
         },
         {
             "text": "v1.7.0",
-            "href": "release/v1-7-0"
+            "href": "release/v1-7-0/index.html"
         },
         {
             "text": "v1.7.1",
-            "href": "release/v1-7-1"
+            "href": "release/v1-7-1/index.html"
+        },
+        {
+            "text": "v2.0.0",
+            "href": "release/v2-0-0/index.html"
         }
     ],
     "icons_folder": "icons",
