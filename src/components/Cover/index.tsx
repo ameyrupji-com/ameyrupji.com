@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
+import LightRays from './light.rays'
 
 import './cover.scss';
 import './cover.color.scss';
@@ -6,7 +7,6 @@ import './cover.navbar.scss';
 import './cover.navbar.color.scss';
 import './scroll.scss';
 import './scroll.color.scss';
-
 
 interface CoverProps {
     cover: {
@@ -28,6 +28,8 @@ const Cover: React.FC<CoverProps> = ({ cover, app }): JSX.Element => {
     const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
     const [activeSection, setActiveSection] = useState(null);
     const observer = useRef(null);
+
+    const [isDarkMode, setIsDarkMode] = useState(false);
 
     const scrollFunction = () => {
         const scrollTop = window.scrollY;
@@ -98,9 +100,43 @@ const Cover: React.FC<CoverProps> = ({ cover, app }): JSX.Element => {
         };
     }, []);
 
+
+    useEffect(() => {
+        const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+
+        const handleChange = (e) => {
+        setIsDarkMode(e.matches);
+        };
+
+        // Set initial state
+        setIsDarkMode(mediaQuery.matches);
+
+        // Listen for changes
+        mediaQuery.addEventListener('change', handleChange);
+
+        // Clean up the event listener
+        return () => {
+        mediaQuery.removeEventListener('change', handleChange);
+        };
+    }, []);
+
     return (
         <div className="container-full-bg" data-section id="image-back-main">
+
             <div className="jumbotron" id="gradient-main">
+                <LightRays
+                    raysOrigin="top-center"
+                    raysColor={isDarkMode ? "#EAC48F": "#845007"}
+                    saturation={1}
+                    raysSpeed={1.5}
+                    lightSpread={2}
+                    rayLength={3}
+                    followMouse={true}
+                    mouseInfluence={0.1}
+                    noiseAmount={0.1}
+                    distortion={0.05}
+                    className="custom-rays"
+                />
                 <nav className={`${isNavCollapsed ? '' : 'navbar-open'} navbar navbar-expand-sm navbar-light bg-transparent fixed-top`}>
                     <div className="container" data-aos="fade-down">
                         <div className="navbar-logo"></div>
