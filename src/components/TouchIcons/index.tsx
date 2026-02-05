@@ -33,21 +33,21 @@ const TouchIcons = ({ app }: { app: AppProps }) => {
             <link rel="icon" type="image/png" href={`./images/`+app["icons_folder"]+`/favicon-196x196.png`} sizes="196x196" />
 
 
-            <link rel="apple-touch-icon-precomposed" sizes="57x57" href={`./images/`+app["icons_folder"]+`/apple-touch-icon-57x57.png`} media="(prefers-color-scheme: light)" />
-            <link rel="apple-touch-icon-precomposed" sizes="72x72" href={`./images/`+app["icons_folder"]+`/apple-touch-icon-72x72.png`} media="(prefers-color-scheme: light)" />
-            <link rel="apple-touch-icon-precomposed" sizes="76x76" href={`./images/`+app["icons_folder"]+`/apple-touch-icon-76x76.png`} media="(prefers-color-scheme: light)" />
-            <link rel="apple-touch-icon-precomposed" sizes="114x114" href={`./images/`+app["icons_folder"]+`/apple-touch-icon-114x114.png`} media="(prefers-color-scheme: light)" />
-            <link rel="apple-touch-icon-precomposed" sizes="120x120" href={`./images/`+app["icons_folder"]+`/apple-touch-icon-120x120.png`} media="(prefers-color-scheme: light)" />
-            <link rel="apple-touch-icon-precomposed" sizes="144x144" href={`./images/`+app["icons_folder"]+`/apple-touch-icon-144x144.png`} media="(prefers-color-scheme: light)" />
-            <link rel="apple-touch-icon-precomposed" sizes="152x152" href={`./images/`+app["icons_folder"]+`/apple-touch-icon-152x152.png`} media="(prefers-color-scheme: light)" />
+            <link rel="apple-touch-icon" sizes="57x57" href={`./images/`+app["icons_folder"]+`/apple-touch-icon-57x57.png`} media="(prefers-color-scheme: light)" />
+            <link rel="apple-touch-icon" sizes="72x72" href={`./images/`+app["icons_folder"]+`/apple-touch-icon-72x72.png`} media="(prefers-color-scheme: light)" />
+            <link rel="apple-touch-icon" sizes="76x76" href={`./images/`+app["icons_folder"]+`/apple-touch-icon-76x76.png`} media="(prefers-color-scheme: light)" />
+            <link rel="apple-touch-icon" sizes="114x114" href={`./images/`+app["icons_folder"]+`/apple-touch-icon-114x114.png`} media="(prefers-color-scheme: light)" />
+            <link rel="apple-touch-icon" sizes="120x120" href={`./images/`+app["icons_folder"]+`/apple-touch-icon-120x120.png`} media="(prefers-color-scheme: light)" />
+            <link rel="apple-touch-icon" sizes="144x144" href={`./images/`+app["icons_folder"]+`/apple-touch-icon-144x144.png`} media="(prefers-color-scheme: light)" />
+            <link rel="apple-touch-icon" sizes="152x152" href={`./images/`+app["icons_folder"]+`/apple-touch-icon-152x152.png`} media="(prefers-color-scheme: light)" />
 
-            <link rel="apple-touch-icon-precomposed" sizes="57x57" href={`./images/`+app["icons_folder"]+`/apple-touch-icon-dark-57x57.png`} media="(prefers-color-scheme: dark)" />
-            <link rel="apple-touch-icon-precomposed" sizes="72x72" href={`./images/`+app["icons_folder"]+`/apple-touch-icon-dark-72x72.png`} media="(prefers-color-scheme: dark)" />
-            <link rel="apple-touch-icon-precomposed" sizes="76x76" href={`./images/`+app["icons_folder"]+`/apple-touch-icon-dark-76x76.png`} media="(prefers-color-scheme: dark)" />
-            <link rel="apple-touch-icon-precomposed" sizes="114x114" href={`./images/`+app["icons_folder"]+`/apple-touch-icon-dark-114x114.png`} media="(prefers-color-scheme: dark)" />
-            <link rel="apple-touch-icon-precomposed" sizes="120x120" href={`./images/`+app["icons_folder"]+`/apple-touch-icon-dark-120x120.png`} media="(prefers-color-scheme: dark)" />
-            <link rel="apple-touch-icon-precomposed" sizes="144x144" href={`./images/`+app["icons_folder"]+`/apple-touch-icon-dark-144x144.png`} media="(prefers-color-scheme: dark)" />
-            <link rel="apple-touch-icon-precomposed" sizes="152x152" href={`./images/`+app["icons_folder"]+`/apple-touch-icon-dark-152x152.png`} media="(prefers-color-scheme: dark)" />
+            <link rel="apple-touch-icon" sizes="57x57" href={`./images/`+app["icons_folder"]+`/apple-touch-icon-dark-57x57.png`} media="(prefers-color-scheme: dark)" />
+            <link rel="apple-touch-icon" sizes="72x72" href={`./images/`+app["icons_folder"]+`/apple-touch-icon-dark-72x72.png`} media="(prefers-color-scheme: dark)" />
+            <link rel="apple-touch-icon" sizes="76x76" href={`./images/`+app["icons_folder"]+`/apple-touch-icon-dark-76x76.png`} media="(prefers-color-scheme: dark)" />
+            <link rel="apple-touch-icon" sizes="114x114" href={`./images/`+app["icons_folder"]+`/apple-touch-icon-dark-114x114.png`} media="(prefers-color-scheme: dark)" />
+            <link rel="apple-touch-icon" sizes="120x120" href={`./images/`+app["icons_folder"]+`/apple-touch-icon-dark-120x120.png`} media="(prefers-color-scheme: dark)" />
+            <link rel="apple-touch-icon" sizes="144x144" href={`./images/`+app["icons_folder"]+`/apple-touch-icon-dark-144x144.png`} media="(prefers-color-scheme: dark)" />
+            <link rel="apple-touch-icon" sizes="152x152" href={`./images/`+app["icons_folder"]+`/apple-touch-icon-dark-152x152.png`} media="(prefers-color-scheme: dark)" />
 
             <meta name="msapplication-TileImage" content={`./images/`+app["icons_folder"]+`/mstile-144x144.png`} />
             <meta name="msapplication-square70x70logo" content= {`./images/`+app["icons_folder"]+`/mstile-70x70.png`} />
