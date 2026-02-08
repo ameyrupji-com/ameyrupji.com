@@ -103,7 +103,7 @@
                     },
                     {
                         "skill-name": "New Relic",
-                        "skill-css": "si new-relic"
+                        "skill-css": "devicon-newrelic-plain"
                     },
                     {
                         "skill-name": "Python",
@@ -182,7 +182,7 @@
                     },
                     {
                         "skill-name": "New Relic",
-                        "skill-css": "si new-relic"
+                        "skill-css": "devicon-newrelic-plain"
                     },
                     {
                         "skill-name": "Python",

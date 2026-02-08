@@ -9,10 +9,4 @@
     &.light {
         filter: invert(100%);
     }
-
-    &.new-relic {
-        background-image: url(./images/newrelic.svg);
-        width: 73px;
-        height: 60px;
-    }
 }
