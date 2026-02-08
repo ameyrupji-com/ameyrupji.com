@@ -19,7 +19,7 @@
         },
         {
             "skill-name": "Docker",
-            "skill-css": "fab fa-docker",
+            "skill-css": "devicon-docker-plain",
             "type": "infrastructure"
         },
         {

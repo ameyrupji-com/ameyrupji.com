@@ -3,7 +3,8 @@
 
 ## Both Environments:
 ```
-./icons.sh -i ../src/images/icon-styleguide-white.png.png -o ../src/images/icons
+./icons.sh -i ../src/images/icon-styleguide-white.png -o ../src/images/icons
+./icons.sh -i ../src/images/ameyrupji-com-icon-v2.png -o ../src/images/icons
 ```
 
 ## Copy and rename Prod

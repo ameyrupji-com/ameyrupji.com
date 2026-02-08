@@ -4,7 +4,7 @@
 
 # DEFAULTS
 apple_icon_prefix='apple-touch-icon' # do not add space around =
-apple_icon_sizes='57,60,72,76,114,120,144,152'
+apple_icon_sizes='57,60,72,76,114,120,144,152,180'
 favicon_prefix='favicon'
 favicon_sizes='16,32,64,96,128,196'
 mstile_icon_prefix='mstile'
@@ -70,7 +70,7 @@ OPTIONS
     -i                      Input image file (Supported file name format is .png)
     -o                      Output image location 
     -aip                    Apple icon prefix (default 'apple-touch-icon')
-    -ais                    Apple icon sizes (default '57,60,72,76,114,120,144,152')
+    -ais                    Apple icon sizes (default '57,60,72,76,114,120,144,152,180')
     -fip                    Favicon prefix (default 'favicon')
     -fis                    Favicon sizes (default '16,32,64,96,128,196')
     -mip                    Micorsoft tile icon prefix (default 'mstile')
