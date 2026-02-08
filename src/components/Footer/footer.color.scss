@@ -53,53 +53,50 @@
     }
 }
 
-@media (prefers-color-scheme: dark) {
+.dark-mode #footer-main {
+    background-color: var(--background-color-2-light-alternate);
+    background: var(--gradient-2-dark);
+    background: var(--webkit-gradient-2-dark);
+    color: var(--footer-color-dark);
 
-    #footer-main {
-        background-color: var(--background-color-2-light-alternate);
-        background: var(--gradient-2-dark);
-        background: var(--webkit-gradient-2-dark);
-        color: var(--footer-color-dark);
-
-        .footer-no-icons-flat-list li {
-            &:not(:first-child) a {
-                border-color: var(--footer-color-dark);
-            }
+    .footer-no-icons-flat-list li {
+        &:not(:first-child) a {
+            border-color: var(--footer-color-dark);
         }
+    }
 
-        #versions button {
-            span {
-                border-color: var(--footer-color-dark);
-                color: var(--footer-color-dark);
-            }
-            &:after {
-                color: var(--footer-color-dark);
-            }
-        }
-    
-        p,
-        a,
-        i,
-        li {
+    #versions button {
+        span {
+            border-color: var(--footer-color-dark);
             color: var(--footer-color-dark);
         }
-    
-        hr {
-            border-top: 1px solid var(--footer-color-dark);
+        &:after {
+            color: var(--footer-color-dark);
         }
+    }
 
-        .dropdown-menu {
-            background-color: var(--background-color-2-light-alternate);
-    
-            .dropdown-header {
-                color: #ccc; 
-            }
-            .dropdown-item {
-                &:hover, 
-                &:focus {
-                    color: var(--footer-color-dark);
-                    background-color: var(--background-color-2-light);
-                }
+    p,
+    a,
+    i,
+    li {
+        color: var(--footer-color-dark);
+    }
+
+    hr {
+        border-top: 1px solid var(--footer-color-dark);
+    }
+
+    .dropdown-menu {
+        background-color: var(--background-color-2-light-alternate);
+
+        .dropdown-header {
+            color: #ccc; 
+        }
+        .dropdown-item {
+            &:hover, 
+            &:focus {
+                color: var(--footer-color-dark);
+                background-color: var(--background-color-2-light);
             }
         }
     }

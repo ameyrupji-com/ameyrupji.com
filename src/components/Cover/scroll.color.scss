@@ -14,20 +14,18 @@
   background: var(--scroll-color-light);
 }
 
-@media (prefers-color-scheme: dark) {
-  .scroll-container span
-  {
-    border-right: 2px solid var(--scroll-color-dark);
-    border-bottom: 2px solid var(--scroll-color-dark);
-  }
+.dark-mode .scroll-container span
+{
+  border-right: 2px solid var(--scroll-color-dark);
+  border-bottom: 2px solid var(--scroll-color-dark);
+}
 
-  .scroll-container .mouse
-  {
-    border: 2px solid var(--scroll-color-dark);
-  }
+.dark-mode .scroll-container .mouse
+{
+  border: 2px solid var(--scroll-color-dark);
+}
 
-  .scroll-container .wheel
-  {
-    background: var(--scroll-color-dark);
-  }
+.dark-mode .scroll-container .wheel
+{
+  background: var(--scroll-color-dark);
 }

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import { ThemeProvider } from "./context/ThemeContext";
 import Site from "./components/Site";
 import LoadingSite from "./components/LoadingSite";
 
@@ -12,6 +12,8 @@ export default function App() {
     }, []);
 
     return (
-      <>{loading ? (<LoadingSite/>) :(<Site />)}</>  
+        <ThemeProvider>
+            {loading ? (<LoadingSite/>) :(<Site />)}
+        </ThemeProvider>
     );
 }

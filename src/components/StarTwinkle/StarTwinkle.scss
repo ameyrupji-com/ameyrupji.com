@@ -20,7 +20,7 @@
   visibility: hidden;
 }
 
-@media (prefers-color-scheme: dark) {
+.dark-mode {
   .star {
     background-image: url("./images/timeline-logos-grayscale.png");
   }
