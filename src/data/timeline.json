@@ -10,6 +10,34 @@
         },
         {
             "type": "work",
+            "css-id": "uhg-dir",
+            "css-class": [ ],
+            "block-content": {
+                "heading": "Director Software Engineering",
+                "organization": {
+                    "name": "UnitedHealth Group",
+                    "css-class": "far fa-building"
+                },
+                "timeline": {
+                    "from": "Jan 2026",
+                    "to": "Present",
+                    "duration": "(1+ mos)"
+                },
+                "location": {
+                    "city": "Austin",
+                    "state": "Texas Area",
+                    "country": ""
+                },
+                "short-description": "Leading teams in Provider Digital Experience space.",
+                "work-impact": [
+                ],
+                "technology-tools":[
+                    
+                ]
+            }
+        },
+        {
+            "type": "work",
             "css-id": "uhg-pe",
             "css-class": [ ],
             "block-content": {
@@ -20,8 +48,8 @@
                 },
                 "timeline": {
                     "from": "June 2021",
-                    "to": "Present",
-                    "duration": "(4+ yrs)"
+                    "to": "Dec 2025",
+                    "duration": "(4 yrs 9mos)"
                 },
                 "location": {
                     "city": "Austin",
