@@ -6,8 +6,8 @@ import StarTwinkle from '../StarTwinkle';
 
 import './timeline.scss';
 import './timeline.color.scss';
-import './modal-full-page.scss'
-import './modal-full-page.color.scss'
+import './modal-full-page.scss';
+import './modal-full-page.color.scss';
 
 interface TimelineProps {
     timeline: {
@@ -61,6 +61,28 @@ const Timeline: React.FC<TimelineProps> = ({ timeline }) => {
         setFilteredBlocks(timeline.blocks.filter((block) => filters.includes(block.type)));
     }, [filters]);
 
+    useEffect(() => {
+        const handleScroll = () => {
+            const timeline = document.getElementById('timeline');
+            const timelineGradient = document.getElementById('timeline-gradient');
+            
+            if ( timeline && timelineGradient) {
+                const timelineStart = timeline.offsetTop;
+                const scrollPosition = window.scrollY + 800;
+
+                const height = Math.max(0, scrollPosition - timelineStart);
+                
+                timelineGradient.style.setProperty('height', `${height}px`);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
       <StarTwinkle
         starWidth={100}
@@ -76,6 +98,7 @@ const Timeline: React.FC<TimelineProps> = ({ timeline }) => {
                     </div>
                 </div>
                 <section id="timeline" className="container">
+                    <div id="timeline-gradient"></div>
                     {filteredBlocks.map((block, index) => {
                         if (block.type === 'image') {
                             return (
