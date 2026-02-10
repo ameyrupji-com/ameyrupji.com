@@ -68,7 +68,7 @@ const Timeline: React.FC<TimelineProps> = ({ timeline }) => {
             
             if ( timeline && timelineGradient) {
                 const timelineStart = timeline.offsetTop;
-                const scrollPosition = window.scrollY + 800;
+                const scrollPosition = window.scrollY + 600;
 
                 const height = Math.max(0, scrollPosition - timelineStart);
                 
