@@ -196,7 +196,7 @@
         },
         {
             "skill-name": "New Relic",
-            "skill-css": "si light new-relic",
+            "skill-css": "devicon-newrelic-plain",
             "type": "monitoring"
         },
         {

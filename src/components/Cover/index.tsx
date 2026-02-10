@@ -1,5 +1,7 @@
-import React, { useEffect, useState, useRef } from 'react';
-import LightRays from './light.rays'
+import React, { useEffect, useState, useRef, useContext } from 'react';
+import LightRays from './light.rays';
+import ThemeSwitcher from '../ThemeSwitcher';
+import { ThemeContext } from '../../context/ThemeContext';
 
 import './cover.scss';
 import './cover.color.scss';
@@ -7,6 +9,7 @@ import './cover.navbar.scss';
 import './cover.navbar.color.scss';
 import './scroll.scss';
 import './scroll.color.scss';
+import { i } from 'react-router/dist/development/index-react-server-client-CMphySRb';
 
 interface CoverProps {
     cover: {
@@ -23,13 +26,11 @@ interface CoverProps {
 }
 
 const Cover: React.FC<CoverProps> = ({ cover, app }): JSX.Element => {
-
+    const { isDarkMode } = useContext(ThemeContext);
     const [isNavCollapsed, setIsNavCollapsed] = useState(true);
     const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
     const [activeSection, setActiveSection] = useState(null);
     const observer = useRef(null);
-
-    const [isDarkMode, setIsDarkMode] = useState(false);
 
     const scrollFunction = () => {
         const scrollTop = window.scrollY;
@@ -100,26 +101,6 @@ const Cover: React.FC<CoverProps> = ({ cover, app }): JSX.Element => {
         };
     }, []);
 
-
-    useEffect(() => {
-        const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-
-        const handleChange = (e) => {
-        setIsDarkMode(e.matches);
-        };
-
-        // Set initial state
-        setIsDarkMode(mediaQuery.matches);
-
-        // Listen for changes
-        mediaQuery.addEventListener('change', handleChange);
-
-        // Clean up the event listener
-        return () => {
-        mediaQuery.removeEventListener('change', handleChange);
-        };
-    }, []);
-
     return (
         <div className="container-full-bg" data-section id="image-back-main">
 
@@ -143,12 +124,15 @@ const Cover: React.FC<CoverProps> = ({ cover, app }): JSX.Element => {
                         <a className="navbar-brand" href="#summary-main">
                             {cover['first-name']} <span id="navbar-brand-alternate">{cover['last-name']}</span>
                         </a>
-                        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse-menu" onClick={handleNavCollapse} aria-expanded={!isNavCollapsed ? true : false}>
-                            <div id="burger">
-                                <div className="bar top"></div>
-                                <div className="bar bottom"></div>
-                            </div>
-                        </button>
+                        <div style={{ display: 'flex', alignItems: 'center' }}>
+                            {!isNavCollapsed ? <ThemeSwitcher /> : null}
+                            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse-menu" onClick={handleNavCollapse} aria-expanded={!isNavCollapsed ? true : false} style={{marginTop: '10px'}}>
+                                <div id="burger">
+                                    <div className="bar top"></div>
+                                    <div className="bar bottom"></div>
+                                </div>
+                            </button>
+                        </div>
                         <div className={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`} id="navbar-collapse-menu">
                             <ul className="navbar-nav ml-auto">
                                 {cover.links.map((link, index) => (
@@ -158,6 +142,7 @@ const Cover: React.FC<CoverProps> = ({ cover, app }): JSX.Element => {
                                         </a>
                                     </li>
                                 ))}
+                                {isNavCollapsed ? <ThemeSwitcher /> : null}
                             </ul>
                             <hr className="d-block d-md-none d-lg-none d-xl-none" />
                             <ul className="navbar-nav ml-auto d-block d-md-none d-lg-none d-xl-none">
@@ -208,3 +193,4 @@ const Cover: React.FC<CoverProps> = ({ cover, app }): JSX.Element => {
 };
 
 export default Cover;
+

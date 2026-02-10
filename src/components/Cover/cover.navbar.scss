@@ -156,6 +156,7 @@
 
                 a {
                     padding-left: 1rem;
+                    border-bottom: 0px solid;
 
                     &:hover {
                         cursor: pointer;
@@ -166,9 +167,8 @@
 
                 &.active {
                     a {
-                        
+                        border-bottom: 0px solid;
                         border-left: 1px solid;
-                        border-bottom: 0;
                         transition: border 0.3s ease;
 
                         &:hover {
