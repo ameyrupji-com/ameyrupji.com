@@ -10,6 +10,74 @@
         },
         {
             "type": "work",
+            "css-id": "uhg-dir",
+            "css-class": [ ],
+            "block-content": {
+                "heading": "Director Software Engineering",
+                "organization": {
+                    "name": "UnitedHealth Group",
+                    "css-class": "far fa-building"
+                },
+                "timeline": {
+                    "from": "Jan 2026",
+                    "to": "Present",
+                    "duration": "(1+ mos)"
+                },
+                "location": {
+                    "city": "Austin",
+                    "state": "Texas Area",
+                    "country": ""
+                },
+                "short-description": "Leading software teams in Provider Digital Experience space.",
+                "work-impact": [
+                    "Leading software teams in Provider Digital Experience space."
+                ],
+                "technology-tools":[
+                    {
+                        "skill-name": "Docker",
+                        "skill-css": "devicon-docker-plain"
+                    },
+                    {
+                        "skill-name": "Git",
+                        "skill-css": "devicon-git-plain"
+                    },
+                    {
+                        "skill-name": "GitHub",
+                        "skill-css": "devicon-github-plain"
+                    },
+                    {
+                        "skill-name": "Java",
+                        "skill-css": "devicon-java-plain"
+                    },
+                    {
+                        "skill-name": "JavaScript",
+                        "skill-css": "devicon-javascript-plain"
+                    },
+                    {
+                        "skill-name": "New Relic",
+                        "skill-css": "devicon-newrelic-plain"
+                    },
+                    {
+                        "skill-name": "React",
+                        "skill-css": "devicon-react-plain"
+                    },
+                    {
+                        "skill-name": "Splunk",
+                        "skill-css": "devicon-splunk-original-wordmark"
+                    },
+                    {
+                        "skill-name": "Spring",
+                        "skill-css": "devicon-spring-original"
+                    },
+                    {
+                        "skill-name": "MongoDB",
+                        "skill-css": "devicon-mongodb-plain"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "work",
             "css-id": "uhg-pe",
             "css-class": [ ],
             "block-content": {
@@ -20,8 +88,8 @@
                 },
                 "timeline": {
                     "from": "June 2021",
-                    "to": "Present",
-                    "duration": "(4+ yrs)"
+                    "to": "Dec 2025",
+                    "duration": "(4 yrs 9mos)"
                 },
                 "location": {
                     "city": "Austin",
@@ -74,7 +142,7 @@
                     },
                     {
                         "skill-name": "New Relic",
-                        "skill-css": "si new-relic"
+                        "skill-css": "devicon-newrelic-plain"
                     },
                     {
                         "skill-name": "Python",
@@ -153,7 +221,7 @@
                     },
                     {
                         "skill-name": "New Relic",
-                        "skill-css": "si new-relic"
+                        "skill-css": "devicon-newrelic-plain"
                     },
                     {
                         "skill-name": "Python",

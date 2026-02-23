@@ -35,11 +35,8 @@
     }
 }
 
-@media (prefers-color-scheme: dark) {
-
-    #skills-main {
-        background-color: var(--background-color-3-light-alternate);
-        background: var(--gradient-3-dark);
-        background-image: var(--webkit-gradient-3-dark);
-    }
+.dark-mode #skills-main {
+    background-color: var(--background-color-3-light-alternate);
+    background: var(--gradient-3-dark);
+    background-image: var(--webkit-gradient-3-dark);
 }

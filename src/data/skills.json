@@ -19,7 +19,7 @@
         },
         {
             "skill-name": "Docker",
-            "skill-css": "fab fa-docker",
+            "skill-css": "devicon-docker-plain",
             "type": "infrastructure"
         },
         {
@@ -196,7 +196,7 @@
         },
         {
             "skill-name": "New Relic",
-            "skill-css": "si light new-relic",
+            "skill-css": "devicon-newrelic-plain",
             "type": "monitoring"
         },
         {

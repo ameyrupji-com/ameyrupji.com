@@ -66,6 +66,10 @@
             color: #777;
         }
     }
+
+    #timeline-gradient {
+        background: var(--timeline-gradient-light);
+    }
 }
 
 @media (max-width:768px) {
@@ -127,77 +131,80 @@
     }
 }
 
-@media (prefers-color-scheme: dark) {
+.dark-mode #timeline-main {
+    background-color: var(--background-color-1-dark);
 
-    #timeline-main {
-        background-color: var(--background-color-1-dark);
+    .title {
+        color: var(--font-color-dark);
+    }
 
-        .title {
-            color: var(--font-color-dark);
+    #timeline {
+        &::before {
+            background: var(--timeline-outlines-dark);
         }
+    }
 
-        #timeline {
-            &::before {
-                background: var(--timeline-outlines-dark);
-            }
-        }
+    .timeline-img-container {
+        background-color: var(--background-color-1-dark-alternate);
+        border: 3px solid var(--timeline-outlines-dark);
 
-        .timeline-img-container {
-            background-color: var(--background-color-1-dark-alternate);
-            border: 3px solid var(--timeline-outlines-dark);
+        &.top {
+            img {
+                border: 4px solid var(--timeline-outlines-dark);
 
-            &.top {
-                img {
-                    border: 4px solid var(--timeline-outlines-dark);
-    
-                }
-            }
-        }
-    
-        .timeline-img-container-alt {
-            background: var(--background-color-1-dark);
-            background: var(--gradient-2-dark);
-            background: var(--webkit-gradient-2-dark);
-            border: 3px solid var(--timeline-outlines-dark);
-        }
-
-        .timeline-content {
-            border: 1px solid var(--timeline-block-background-dark);
-            background-color: var(--timeline-block-background-dark);
-
-            p {
-                color: #fff;
-            }
-            -webkit-box-shadow: var(--timeline-block-shadow-dark);
-            box-shadow: var(--timeline-block-shadow-dark);
-
-            &:hover {
-                -webkit-box-shadow: var(--timeline-block-shadow-hover-dark);
-                box-shadow: var(--timeline-block-shadow-hover-dark);
-            }
-        }
-
-        .timeline-block-content {
-            .heading {
-                background-color: var(--background-color-2-light-alternate);
-                background: var(--gradient-2-dark);
-                background: var(--webkit-gradient-2-dark);
-            }
-
-            .heading-secondary {
-                background-color: rgba(68, 69, 70, 0.7);
-                
-                p{
-                    color: #fff;
-                }
-            }
-
-            .read-more p {
-                color: #fff;
             }
         }
     }
 
+    .timeline-img-container-alt {
+        background: var(--background-color-1-dark);
+        background: var(--gradient-2-dark);
+        background: var(--webkit-gradient-2-dark);
+        border: 3px solid var(--timeline-outlines-dark);
+    }
+
+    .timeline-content {
+        border: 1px solid var(--timeline-block-background-dark);
+        background-color: var(--timeline-block-background-dark);
+
+        p {
+            color: #fff;
+        }
+        -webkit-box-shadow: var(--timeline-block-shadow-dark);
+        box-shadow: var(--timeline-block-shadow-dark);
+
+        &:hover {
+            -webkit-box-shadow: var(--timeline-block-shadow-hover-dark);
+            box-shadow: var(--timeline-block-shadow-hover-dark);
+        }
+    }
+
+    .timeline-block-content {
+        .heading {
+            background-color: var(--background-color-2-light-alternate);
+            background: var(--gradient-2-dark);
+            background: var(--webkit-gradient-2-dark);
+        }
+
+        .heading-secondary {
+            background-color: rgba(68, 69, 70, 0.7);
+            
+            p{
+                color: #fff;
+            }
+        }
+
+        .read-more p {
+            color: #fff;
+        }
+    }
+
+    #timeline-gradient {
+        background: var(--timeline-gradient-dark);
+    }
+}
+
+.dark-mode {
     @media (max-width:768px) {
         #timeline-main {
             .timeline-block {

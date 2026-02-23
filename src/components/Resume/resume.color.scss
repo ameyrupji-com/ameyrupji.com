@@ -6,10 +6,8 @@
     background: var(--webkit-gradient-4-light);
 }
 
-@media (prefers-color-scheme: dark) {
-    #resume-main {
-        background-color: var(--background-color-4-light-alternate);
-        background: var(--gradient-4-dark);
-        background: var(--webkit-gradient-4-dark);
-    }
+.dark-mode #resume-main {
+    background-color: var(--background-color-4-light-alternate);
+    background: var(--gradient-4-dark);
+    background: var(--webkit-gradient-4-dark);
 }
