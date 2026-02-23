@@ -23,6 +23,14 @@
         {
             "text": "v2.1.0 - Beta",
             "href": "feature/v2-1-0/index.html"
+        },
+        {
+            "text": "v2.2.0 - Beta",
+            "href": "feature/v2-2-0/index.html"
+        },
+        {
+            "text": "v2.3.0 - Beta",
+            "href": "feature/v2-3-0/index.html"
         }
     ],
     "icons_folder": "beta-icons",
