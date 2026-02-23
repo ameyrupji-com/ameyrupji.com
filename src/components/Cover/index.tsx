@@ -9,7 +9,6 @@ import './cover.navbar.scss';
 import './cover.navbar.color.scss';
 import './scroll.scss';
 import './scroll.color.scss';
-import { i } from 'react-router/dist/development/index-react-server-client-CMphySRb';
 
 interface CoverProps {
     cover: {

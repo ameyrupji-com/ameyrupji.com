@@ -45,7 +45,7 @@
     --webkit-gradient-3-dark: -webkit-linear-gradient(141deg, rgba(132, 80, 7, 1), rgba(165, 124, 67, 1));
 
     --gradient-4-light: linear-gradient(141deg, rgba(31, 75, 55, 1), rgba(3, 93, 52, 1));
-    --webkit-gradient-4-light: -webkit-linear-gradient(141deg, hwb(153 12% 71%), rgba(3, 93, 52, 1));
+    --webkit-gradient-4-light: -webkit-linear-gradient(141deg, rgba(31, 74, 54,1), rgba(3, 93, 52, 1));
 
     --gradient-4-dark: linear-gradient(141deg, rgba(2, 68, 38, 1), rgba(31, 75, 55, 1));
     --webkit-gradient-4-dark: -webkit-linear-gradient(141deg, rgba(2, 68, 38, 1), rgba(31, 75, 55, 1));
@@ -55,6 +55,13 @@
 
     --gradient-1-light-transparent: linear-gradient(141deg, rgba(189, 141, 75, 0.902), rgba(53, 92, 125, 0.9));
     --gradient-1-dark-transparent: linear-gradient(141deg, rgba(132, 80, 7, 0.902), rgba(31, 55, 75, 0.9));
+
+    --rainbow-gradient-light: linear-gradient(180deg, red, orange, green, blue, indigo, violet, black);
+    --rainbow-gradient-dark: linear-gradient(180deg, darkred, darkorange, darkgreen, lightblue, #6D5ACF, darkviolet, white);
+
+    // 95% blue with 5% geeen
+    --timeline-gradient-light: linear-gradient(180deg, rgba(53, 92, 125, 1), rgba(53, 92, 125, 1) 95%, rgba(3, 93, 52, 1) 100%);
+    --timeline-gradient-dark: linear-gradient(180deg, rgba(31, 55, 75, 1), rgba(31, 55, 75, 1) 95%, rgba(31, 74, 54,1) 100%);
 
     // cover
 

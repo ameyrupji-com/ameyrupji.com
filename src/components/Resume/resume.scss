@@ -1,8 +1,13 @@
 @use '../_variables';
 
 #resume-main {
-    padding-top: 150px;
+    padding-top: 100px;
     padding-bottom: 100px;
+
+    margin-top: -100px;
+    margin-bottom: -100px;
+
+    clip-path: polygon(0 10%, 50% 0, 100% 10%, 100% 90%, 50% 100%, 0 90%);
     
     .title {
         margin-bottom: 100px;
@@ -71,6 +76,11 @@
 
 @media (max-width:768px) {
     #resume-main {
+        margin-top: 0;
+        margin-bottom: 0;
+
+        clip-path: none;
+
         .file-icon i {
             top: -70px;
             left: 20px;
@@ -86,6 +96,11 @@
 
 @media only screen and (min-width:769px) and (max-width: 1169px) {
     #resume-main {
+        margin-top: 0;
+        margin-bottom: 0;
+
+        clip-path: none;
+
         .file-icon i {
             top: -130px;
             left: 10px;
