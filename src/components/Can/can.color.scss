@@ -1,0 +1,43 @@
+@use '../_variables';
+
+#can-main {
+    
+    background-color: #fff;
+    background-size: 20px 20px;
+    background-image: radial-gradient(circle, #ccc 1px, transparent 1px);
+
+    .title {
+        color: var(--summary-color-light);
+        margin-bottom: 50px;
+    }
+
+    ul {
+        background: var(--rainbow-gradient-light);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.dark-mode #can-main {
+    background-color: var(--background-color-1-dark);;
+    background-size: 20px 20px;
+    background-image: radial-gradient(circle, #444 1px, transparent 1px);
+
+    .title {
+        color: var(--summary-color-dark);
+    }
+
+    p, ul, li {
+        color: white;
+    }
+
+    ul {
+        background: var(--rainbow-gradient-dark);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+    }
+}

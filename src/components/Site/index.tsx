@@ -15,6 +15,7 @@ import Resume from '../Resume';
 import Skills from '../Skills';
 import Timeline from '../Timeline';
 import Contact from '../Contact';
+import Can from '../Can';
 
 
 import './site.scss';
@@ -32,6 +33,7 @@ const Site: React.FC = () => {
     var resumeData = require('../../data/resume.json');
     var contactData = require('../../data/contact.json');
     var footerData = require('../../data/footer.json');
+    var canData = require('../../data/can.json');
 
     useEffect(() => {
       AOS.init();
