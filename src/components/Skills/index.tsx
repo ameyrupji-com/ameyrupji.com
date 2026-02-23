@@ -30,6 +30,10 @@ const Skills: React.FC<SkillsProps> = ({ skills }) => {
         setShowSkills(true);
     };
 
+    const handleShowLessClick = (event: { preventDefault: () => void; }) => {
+        event.preventDefault();
+        setShowSkills(false);
+    };
 
     function filterSills(filter: string): void {
         setActiveFilter(filter);
@@ -86,6 +90,15 @@ const Skills: React.FC<SkillsProps> = ({ skills }) => {
                             </div>
                         </div>
                     )}
+                    {showSkills && (
+                        <div className="col-md-4 col-lg-3 col-xl-2 col-sm-4 col-4 unused btn" id="show-less">
+                            <div className="skills-block text-center" onClick={handleShowLessClick}>
+                                <i className="fas fa-angle-up"></i>
+                                <p><a href="#">Show Less</a></p>
+                            </div>
+                        </div>
+                    )}
+
                 </div>
                 {showSkills && (
                     <div className="row" id="skills-array-other" data-aos="zoom-out-up" data-aos-anchor-placement="top-bottom">

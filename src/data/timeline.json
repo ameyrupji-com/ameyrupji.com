@@ -28,12 +28,51 @@
                     "state": "Texas Area",
                     "country": ""
                 },
-                "short-description": "Leading teams in Provider Digital Experience space.",
+                "short-description": "Leading software teams in Provider Digital Experience space.",
                 "work-impact": [
-                    "Leading teams in Provider Digital Experience space."
+                    "Leading software teams in Provider Digital Experience space."
                 ],
                 "technology-tools":[
-                    
+                    {
+                        "skill-name": "Docker",
+                        "skill-css": "devicon-docker-plain"
+                    },
+                    {
+                        "skill-name": "Git",
+                        "skill-css": "devicon-git-plain"
+                    },
+                    {
+                        "skill-name": "GitHub",
+                        "skill-css": "devicon-github-plain"
+                    },
+                    {
+                        "skill-name": "Java",
+                        "skill-css": "devicon-java-plain"
+                    },
+                    {
+                        "skill-name": "JavaScript",
+                        "skill-css": "devicon-javascript-plain"
+                    },
+                    {
+                        "skill-name": "New Relic",
+                        "skill-css": "devicon-newrelic-plain"
+                    },
+                    {
+                        "skill-name": "React",
+                        "skill-css": "devicon-react-plain"
+                    },
+                    {
+                        "skill-name": "Splunk",
+                        "skill-css": "devicon-splunk-original-wordmark"
+                    },
+                    {
+                        "skill-name": "Spring",
+                        "skill-css": "devicon-spring-original"
+                    },
+                    {
+                        "skill-name": "MongoDB",
+                        "skill-css": "devicon-mongodb-plain"
+                    }
                 ]
             }
         },

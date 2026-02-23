@@ -66,6 +66,10 @@
             color: #777;
         }
     }
+
+    #timeline-gradient {
+        background: var(--timeline-gradient-light);
+    }
 }
 
 @media (max-width:768px) {
@@ -193,6 +197,10 @@
         .read-more p {
             color: #fff;
         }
+    }
+
+    #timeline-gradient {
+        background: var(--timeline-gradient-dark);
     }
 }
 
