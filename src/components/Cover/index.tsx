@@ -1,195 +1,244 @@
-import React, { useEffect, useState, useRef, useContext } from 'react';
-import LightRays from './light.rays';
-import ThemeSwitcher from '../ThemeSwitcher';
-import { ThemeContext } from '../../context/ThemeContext';
+import React, { useEffect, useState, useRef, useContext } from "react";
+import LightRays from "./light.rays";
+import ThemeSwitcher from "../ThemeSwitcher";
+import { ThemeContext } from "../../context/ThemeContext";
 
-import './cover.scss';
-import './cover.color.scss';
-import './cover.navbar.scss';
-import './cover.navbar.color.scss';
-import './scroll.scss';
-import './scroll.color.scss';
+import "./cover.scss";
+import "./cover.color.scss";
+import "./cover.navbar.scss";
+import "./cover.navbar.color.scss";
+import "./scroll.scss";
+import "./scroll.color.scss";
 
 interface CoverProps {
-    cover: {
-        'first-name': string;
-        'last-name': string;
-        links: { href: string; text: string, 'active-id': string }[];
-        'scroll-link': string;
-    };
-    app: {
-        'other-links': { href: string; text: string; 'img-src'?: string }[];
-        href: string;
-        'active-version': string;
-    };
+  cover: {
+    "first-name": string;
+    "last-name": string;
+    links: { href: string; text: string; "active-id": string }[];
+    "scroll-link": string;
+  };
+  app: {
+    "other-links": { href: string; text: string; "img-src"?: string }[];
+    href?: string;
+    "active-version": string;
+  };
 }
 
-const Cover: React.FC<CoverProps> = ({ cover, app }): JSX.Element => {
-    const { isDarkMode } = useContext(ThemeContext);
-    const [isNavCollapsed, setIsNavCollapsed] = useState(true);
-    const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
-    const [activeSection, setActiveSection] = useState(null);
-    const observer = useRef(null);
+const Cover: React.FC<CoverProps> = ({ cover, app }) => {
+  const { isDarkMode } = useContext(ThemeContext);
+  const [isNavCollapsed, setIsNavCollapsed] = useState(true);
+  const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
+  const [activeSection, setActiveSection] = useState<string | null>(null);
+  const observer = useRef<IntersectionObserver | null>(null);
 
-    const scrollFunction = () => {
-        const scrollTop = window.scrollY;
-        const windowHeight = window.innerHeight;
+  const scrollFunction = () => {
+    const scrollTop = window.scrollY;
+    const windowHeight = window.innerHeight;
 
-        const navbar = document.querySelector(`.navbar`);
+    const navbar = document.querySelector(`.navbar`);
 
-        if (navbar) {
-            if (scrollTop > 70 && scrollTop < (windowHeight - 200)) {
-                navbar.classList.remove('bg-transparent', 'nav-scrolled-vh');
-                navbar.classList.add('nav-scrolled-20');
-            } else if (scrollTop > (windowHeight - 200)) {
-                navbar.classList.remove('bg-transparent');
-                navbar.classList.add('nav-scrolled-20', 'nav-scrolled-vh');
-            } else {
-                navbar.classList.add('bg-transparent');
-                navbar.classList.remove('nav-scrolled-20', 'nav-scrolled-vh');
-            }
-        }
+    if (navbar) {
+      if (scrollTop > 70 && scrollTop < windowHeight - 200) {
+        navbar.classList.remove("bg-transparent", "nav-scrolled-vh");
+        navbar.classList.add("nav-scrolled-20");
+      } else if (scrollTop > windowHeight - 200) {
+        navbar.classList.remove("bg-transparent");
+        navbar.classList.add("nav-scrolled-20", "nav-scrolled-vh");
+      } else {
+        navbar.classList.add("bg-transparent");
+        navbar.classList.remove("nav-scrolled-20", "nav-scrolled-vh");
+      }
+    }
+  };
+
+  const initializeFixedNavBarOnScroll = () => {
+    window.onscroll = scrollFunction;
+  };
+
+  const smoothScroll = (target: string) => {
+    const element = document.querySelector(target);
+    if (element) {
+      const offsetTop = element.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({
+        top: offsetTop,
+        behavior: "smooth",
+      });
+    }
+
+    if (!isNavCollapsed) {
+      setIsNavCollapsed(true);
+    }
+  };
+
+  useEffect(() => {
+    initializeFixedNavBarOnScroll();
+    scrollFunction();
+  }, [isNavCollapsed]);
+
+  useEffect(() => {
+    const config = {
+      rootMargin: "0px 0px -51%",
     };
 
-    const initializeFixedNavBarOnScroll = () => {
-        window.onscroll = scrollFunction;
+    observer.current = new IntersectionObserver((entries) => {
+      const visibleSection = entries.find(
+        (entry) => entry.isIntersecting,
+      )?.target;
+      if (visibleSection) {
+        console.log("Visible section:", visibleSection.id);
+        setActiveSection(visibleSection.id);
+      }
+    }, config);
+    const sections = document.querySelectorAll("[data-section]");
+
+    sections.forEach((section) => {
+      observer.current?.observe(section);
+    });
+
+    return () => {
+      sections.forEach((section) => {
+        observer.current?.unobserve(section);
+      });
     };
+  }, []);
 
-    const smoothScroll = (target: string) => {
-        const element = document.querySelector(target);
-        if (element) {
-            const offsetTop = element.getBoundingClientRect().top + window.scrollY;
-            window.scrollTo({
-                top: offsetTop,
-                behavior: 'smooth'
-            });
-        }
-
-        if (!isNavCollapsed) {
-            setIsNavCollapsed(true);
-        }
-    };
-
-    useEffect(() => {
-        initializeFixedNavBarOnScroll();
-        scrollFunction();
-    }, [isNavCollapsed]);
-
-    useEffect(() => {
-        const config = {
-            rootMargin: "0px 0px -51%",
-        };
-
-        observer.current = new IntersectionObserver((entries) => {
-            const visibleSection = entries.find((entry) => entry.isIntersecting)?.target;
-            if (visibleSection) {
-                console.log('Visible section:', visibleSection.id);
-                setActiveSection(visibleSection.id);
-            }
-        }, config);
-        const sections = document.querySelectorAll('[data-section]');
-
-        sections.forEach((section) => {
-            observer.current.observe(section);
-        });
-        
-        return () => {
-            sections.forEach((section) => {
-                observer.current.unobserve(section);
-            });
-        };
-    }, []);
-
-    return (
-        <div className="container-full-bg" data-section id="image-back-main">
-
-            <div className="jumbotron" id="gradient-main">
-                <LightRays
-                    raysOrigin="top-center"
-                    raysColor={isDarkMode ? "#EAC48F": "#845007"}
-                    saturation={1}
-                    raysSpeed={1.5}
-                    lightSpread={2}
-                    rayLength={3}
-                    followMouse={true}
-                    mouseInfluence={0.1}
-                    noiseAmount={0.1}
-                    distortion={0.05}
-                    className="custom-rays"
-                />
-                <nav className={`${isNavCollapsed ? '' : 'navbar-open'} navbar navbar-expand-sm navbar-light bg-transparent fixed-top`}>
-                    <div className="container" data-aos="fade-down">
-                        <div className="navbar-logo"></div>
-                        <a className="navbar-brand" href="#summary-main">
-                            {cover['first-name']} <span id="navbar-brand-alternate">{cover['last-name']}</span>
-                        </a>
-                        <div style={{ display: 'flex', alignItems: 'center' }}>
-                            {!isNavCollapsed ? <ThemeSwitcher /> : null}
-                            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse-menu" onClick={handleNavCollapse} aria-expanded={!isNavCollapsed ? true : false} style={{marginTop: '10px'}}>
-                                <div id="burger">
-                                    <div className="bar top"></div>
-                                    <div className="bar bottom"></div>
-                                </div>
-                            </button>
-                        </div>
-                        <div className={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`} id="navbar-collapse-menu">
-                            <ul className="navbar-nav ml-auto">
-                                {cover.links.map((link, index) => (
-                                    <li className={ activeSection == link['active-id'] ? "nav-item active" : "nav-item"} key={index} >
-                                        <a onClick={(event: React.SyntheticEvent) => {event.preventDefault(); smoothScroll(link.href)}} className="nav-link" data-toggle="collapse" data-target="#navbar-collapse-menu">
-                                            {link.text}
-                                        </a>
-                                    </li>
-                                ))}
-                                {isNavCollapsed ? <ThemeSwitcher /> : null}
-                            </ul>
-                            <hr className="d-block d-md-none d-lg-none d-xl-none" />
-                            <ul className="navbar-nav ml-auto d-block d-md-none d-lg-none d-xl-none">
-                                {app['other-links'].map((link, index) => (
-                                    <li className="nav-item" key={index}>
-                                        <a href={link.href} className="nav-link" data-toggle="collapse" data-target="#navbar-collapse-menu">
-                                            {link.text}
-                                            {link['img-src'] && <img src={link['img-src']} alt="" />} &nbsp;
-                                            <i className="fas fa-external-link-alt"></i>
-                                        </a>
-                                    </li>
-                                ))}
-                            </ul>
-                            <hr className="d-block d-md-none d-lg-none d-xl-none" />
-                            <ul className="navbar-nav ml-auto d-block d-md-none d-lg-none d-xl-none">
-                                <li className="nav-item">
-                                    <a href={app.href} className="nav-link" data-toggle="collapse" data-target="#navbar-collapse-menu">
-                                        Version: <span id="release-number-span" style={{ textTransform: 'lowercase' }}>{app['active-version']}</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-                <div id="jumbotron-content" data-aos="fade-up">
-                    <h1 className="title">
-                        Amey <span className="title-strong">Rupji</span>
-                    </h1>
-                    <h3 className="title">
-                        Software <span className="title-strong">Engineering</span> <span className="title-hollow">Leader</span>
-                    </h3>
+  return (
+    <div className="container-full-bg" data-section id="image-back-main">
+      <div className="jumbotron" id="gradient-main">
+        <LightRays
+          raysOrigin="top-center"
+          raysColor={isDarkMode ? "#EAC48F" : "#845007"}
+          saturation={1}
+          raysSpeed={1.5}
+          lightSpread={2}
+          rayLength={3}
+          followMouse={true}
+          mouseInfluence={0.1}
+          noiseAmount={0.1}
+          distortion={0.05}
+          className="custom-rays"
+        />
+        <nav
+          className={`${isNavCollapsed ? "" : "navbar-open"} navbar navbar-expand-sm navbar-light bg-transparent fixed-top`}
+        >
+          <div className="container" data-aos="fade-down">
+            <div className="navbar-logo"></div>
+            <a className="navbar-brand" href="#summary-main">
+              {cover["first-name"]}{" "}
+              <span id="navbar-brand-alternate">{cover["last-name"]}</span>
+            </a>
+            <div style={{ display: "flex", alignItems: "center" }}>
+              {!isNavCollapsed ? <ThemeSwitcher /> : null}
+              <button
+                className="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbar-collapse-menu"
+                onClick={handleNavCollapse}
+                aria-expanded={!isNavCollapsed ? true : false}
+                style={{ marginTop: "10px" }}
+              >
+                <div id="burger">
+                  <div className="bar top"></div>
+                  <div className="bar bottom"></div>
                 </div>
+              </button>
             </div>
-            <div className="scroll-container">
-                <div className="mouse">
-                    <div className="wheel"></div>
-                </div>
-                <div>
-                    <a href={cover['scroll-link']}>
-                        <span className="unu"></span>
-                        <span className="doi"></span>
-                        <span className="trei"></span>
+            <div
+              className={`${isNavCollapsed ? "collapse" : ""} navbar-collapse`}
+              id="navbar-collapse-menu"
+            >
+              <ul className="navbar-nav ml-auto">
+                {cover.links.map((link, index) => (
+                  <li
+                    className={
+                      activeSection == link["active-id"]
+                        ? "nav-item active"
+                        : "nav-item"
+                    }
+                    key={index}
+                  >
+                    <a
+                      onClick={(event: React.SyntheticEvent) => {
+                        event.preventDefault();
+                        smoothScroll(link.href);
+                      }}
+                      className="nav-link"
+                      data-toggle="collapse"
+                      data-target="#navbar-collapse-menu"
+                    >
+                      {link.text}
                     </a>
-                </div>
+                  </li>
+                ))}
+                {isNavCollapsed ? <ThemeSwitcher /> : null}
+              </ul>
+              <hr className="d-block d-md-none d-lg-none d-xl-none" />
+              <ul className="navbar-nav ml-auto d-block d-md-none d-lg-none d-xl-none">
+                {app["other-links"].map((link, index) => (
+                  <li className="nav-item" key={index}>
+                    <a
+                      href={link.href}
+                      className="nav-link"
+                      data-toggle="collapse"
+                      data-target="#navbar-collapse-menu"
+                    >
+                      {link.text}
+                      {link["img-src"] && (
+                        <img src={link["img-src"]} alt="" />
+                      )}{" "}
+                      &nbsp;
+                      <i className="fas fa-external-link-alt"></i>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+              <hr className="d-block d-md-none d-lg-none d-xl-none" />
+              <ul className="navbar-nav ml-auto d-block d-md-none d-lg-none d-xl-none">
+                <li className="nav-item">
+                  <a
+                    href={app.href}
+                    className="nav-link"
+                    data-toggle="collapse"
+                    data-target="#navbar-collapse-menu"
+                  >
+                    Version:{" "}
+                    <span
+                      id="release-number-span"
+                      style={{ textTransform: "lowercase" }}
+                    >
+                      {app["active-version"]}
+                    </span>
+                  </a>
+                </li>
+              </ul>
             </div>
+          </div>
+        </nav>
+        <div id="jumbotron-content" data-aos="fade-up">
+          <h1 className="title">
+            Amey <span className="title-strong">Rupji</span>
+          </h1>
+          <h3 className="title">
+            Software <span className="title-strong">Engineering</span>{" "}
+            <span className="title-hollow">Leader</span>
+          </h3>
         </div>
-    );
+      </div>
+      <div className="scroll-container">
+        <div className="mouse">
+          <div className="wheel"></div>
+        </div>
+        <div>
+          <a href={cover["scroll-link"]}>
+            <span className="unu"></span>
+            <span className="doi"></span>
+            <span className="trei"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Cover;
-

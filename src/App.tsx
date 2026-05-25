@@ -4,16 +4,12 @@ import Site from "./components/Site";
 import LoadingSite from "./components/LoadingSite";
 
 export default function App() {
-    const [loading, setLoading] = useState(true);
-    useEffect(() => {
-        setTimeout(() => {
-            setLoading(false)
-        }, 500);
-    }, []);
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 500);
+  }, []);
 
-    return (
-        <ThemeProvider>
-            {loading ? (<LoadingSite/>) :(<Site />)}
-        </ThemeProvider>
-    );
+  return <ThemeProvider>{loading ? <LoadingSite /> : <Site />}</ThemeProvider>;
 }

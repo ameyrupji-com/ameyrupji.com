@@ -1,14 +1,29 @@
-import React, { useContext } from 'react';
-import { ThemeContext } from '../../context/ThemeContext';
-import './theme-switcher.scss';
+import React, { useContext } from "react";
+import { ThemeContext } from "../../context/ThemeContext";
+import "./theme-switcher.scss";
 
 const ThemeSwitcher: React.FC = () => {
   const { isDarkMode, toggleTheme } = useContext(ThemeContext);
 
   return (
-    <button className="theme-switcher" onClick={toggleTheme} aria-label="Toggle dark mode">
+    <button
+      className="theme-switcher"
+      onClick={toggleTheme}
+      aria-label="Toggle dark mode"
+    >
       {isDarkMode ? (
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="feather feather-sun">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="feather feather-sun"
+        >
           <title>Switch to light mode</title>
           <circle cx="12" cy="12" r="5"></circle>
           <line x1="12" y1="1" x2="12" y2="3"></line>
@@ -21,9 +36,18 @@ const ThemeSwitcher: React.FC = () => {
           <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
         </svg>
       ) : (
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" strokeWidth="1" stroke="currentColor" className="feather feather-moon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          strokeWidth="1"
+          stroke="currentColor"
+          className="feather feather-moon"
+        >
           <title>Switch to dark mode</title>
-          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
           <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
         </svg>
       )}
@@ -32,4 +56,3 @@ const ThemeSwitcher: React.FC = () => {
 };
 
 export default ThemeSwitcher;
-
