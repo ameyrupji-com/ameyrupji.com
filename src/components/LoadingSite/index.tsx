@@ -1,18 +1,30 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 
-import './loading.site.scss';
-import './loading.site.color.scss';
+import "./loading.site.scss";
+import "./loading.site.color.scss";
 
 const LoadingSite: React.FC = () => {
   return (
     <div id="loading-site-image">
-    <div id="loading-site-gradient">
-      <div id="loading-site">
-        <div className="loading-logo">
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-              width="50%" viewBox="0 0 1562 1301" enableBackground="new 0 0 1562 1301" preserveAspectRatio="xMidYMid meet">
-            <path fill="#fff" opacity="1.000000" stroke="none" 
-              d="
+      <div id="loading-site-gradient">
+        <div id="loading-site">
+          <div className="loading-logo">
+            <svg
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="50%"
+              viewBox="0 0 1562 1301"
+              enableBackground="new 0 0 1562 1301"
+              preserveAspectRatio="xMidYMid meet"
+            >
+              <path
+                fill="#fff"
+                opacity="1.000000"
+                stroke="none"
+                d="
             M1147.583374,1.000000 
               C1148.994385,1.323490 1149.977417,1.889659 1150.984619,1.936162 
               C1339.082886,10.620954 1499.254883,139.047195 1548.554199,321.025543 
@@ -26,9 +38,13 @@ const LoadingSite: React.FC = () => {
               C1024.456665,1.989442 1075.541382,2.029421 1126.625854,1.955542 
               C1132.084351,1.947648 1137.541992,1.333115 1143.000000,1.000000 
               C1144.388916,1.000000 1145.777832,1.000000 1147.583374,1.000000 
-            z"/>
-            <path fill="#fff" opacity="1.000000" stroke="none" 
-              d="
+            z"
+              />
+              <path
+                fill="#fff"
+                opacity="1.000000"
+                stroke="none"
+                d="
             M2.468667,1302.000000 
               C2.647123,1300.519287 3.157650,1298.959839 3.960730,1297.569214 
               C121.495354,1094.039185 239.057831,890.525146 356.542297,686.966125 
@@ -37,9 +53,13 @@ const LoadingSite: React.FC = () => {
               C728.656738,682.507080 730.136963,682.507080 732.495422,682.507080 
               C613.109619,889.203491 494.097504,1095.252808 375.042725,1301.651123 
               C250.979111,1302.000000 126.958206,1302.000000 2.468667,1302.000000 
-            z"/>
-            <path fill="#fff" opacity="1.000000" stroke="none" 
-              d="
+            z"
+              />
+              <path
+                fill="#fff"
+                opacity="1.000000"
+                stroke="none"
+                d="
             M1126.468628,1302.000000 
               C1113.114380,1279.519653 1100.289673,1257.004028 1087.333252,1234.564575 
               C982.114746,1052.332153 876.871460,870.114319 771.639526,687.889832 
@@ -50,9 +70,13 @@ const LoadingSite: React.FC = () => {
               C1262.087891,890.760803 1380.139893,1095.139771 1498.178589,1299.526611 
               C1498.510010,1300.100586 1498.803711,1300.696167 1499.057617,1301.640869 
               C1374.979126,1302.000000 1250.958130,1302.000000 1126.468628,1302.000000 
-            z"/>
-            <path fill="#fff" opacity="1.000000" stroke="none" 
-              d="
+            z"
+              />
+              <path
+                fill="#fff"
+                opacity="1.000000"
+                stroke="none"
+                d="
             M454.999695,622.493164 
               C434.517212,622.493164 414.534760,622.493164 393.507324,622.493164 
               C511.921600,415.290649 629.954590,208.755310 748.281921,1.704882 
@@ -62,14 +86,15 @@ const LoadingSite: React.FC = () => {
               C882.254700,427.291748 827.711609,522.292847 773.280212,617.357727 
               C771.139038,621.097351 768.984253,622.624939 764.464172,622.617859 
               C661.476196,622.455872 558.487915,622.493103 454.999695,622.493164 
-            z"/>
-          </svg>
-        </div>
-        <div className="progress">
-          <div className="progress-value"></div>
+            z"
+              />
+            </svg>
+          </div>
+          <div className="progress">
+            <div className="progress-value"></div>
+          </div>
         </div>
       </div>
-    </div>
     </div>
   );
 };

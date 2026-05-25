@@ -59,7 +59,7 @@
             },
             {
                 "element": "textarea",
-                "rows": "8",
+                "rows": 8,
                 "css-id": "messageTextarea",
                 "css-class": "form-control",
                 "placeholder": "Message",
